@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f9">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Luffy Liu">
+  <meta name="description" content="FanFan Cards is a local-first Chrome extension for learning English while you read: get AI explanations in context, save source sentences, and review on a spaced schedule.">
+  <link rel="canonical" href="https://luffyliu.com/en/fanfan-cards/">
+  <link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/">
+  <link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/">
+  <link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/en/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260819-6">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Luffy Liu">
+  <meta property="og:title" content="FanFan Cards — AI Reading Companion for English Learners">
+  <meta property="og:description" content="Understand words in real web pages with AI, save the original context, and review what matters on a spaced schedule.">
+  <meta property="og:url" content="https://luffyliu.com/en/fanfan-cards/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:image" content="https://luffyliu.com/assets/fanfan/contextual-reading.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt" content="FanFan Cards explaining a selected word in context on an English web page">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@luffyliux">
+  <meta name="twitter:title" content="FanFan Cards — AI Reading Companion for English Learners">
+  <meta name="twitter:description" content="Understand words in real web pages with AI, save the original context, and review what matters on a spaced schedule.">
+  <meta name="twitter:image" content="https://luffyliu.com/assets/fanfan/contextual-reading.jpg">
+  <meta name="twitter:image:alt" content="FanFan Cards explaining a selected word in context on an English web page">
+  <title>FanFan Cards — AI Reading Companion for English Learners</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://luffyliu.com/en/fanfan-cards/#app",
+    "name": "FanFan Cards",
+    "alternateName": "翻翻词卡",
+    "url": "https://luffyliu.com/en/fanfan-cards/",
+    "description": "A local-first Chrome extension that gives English learners AI explanations in context, saves source sentences, and supports spaced review.",
+    "inLanguage": "en",
+    "image": "https://luffyliu.com/assets/fanfan/contextual-reading.jpg",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Language Learning",
+    "operatingSystem": "Chrome",
+    "browserRequirements": "Requires Google Chrome",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "@id": "https://luffyliu.com/#person",
+      "name": "Luffy Liu",
+      "url": "https://luffyliu.com/"
+    },
+    "sameAs": "https://github.com/CarGod/fanfan-cards"
+  }
+  </script>
+  <script>
+    (() => {
+      const storageKey = 'luffy-home-language';
+      let preferred;
+      try { preferred = localStorage.getItem(storageKey); } catch (_) {}
+      if (!['zh-CN', 'en'].includes(preferred)) {
+        const browserLanguage = (navigator.languages?.[0] || navigator.language || '').toLowerCase();
+        preferred = browserLanguage.startsWith('zh') ? 'zh-CN' : 'en';
+      }
+      if (preferred === 'zh-CN') location.replace(`/fanfan-cards/${location.search}${location.hash}`);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="/en/"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Portrait of Luffy Liu"><span>Luffy Liu</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/en/">Home</a>
+      <a href="/fanfan-cards/privacy/" lang="zh-CN" hreflang="zh-CN">Privacy (Chinese)</a>
+      <a class="nav-github" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <div class="language-switch" role="group" aria-label="Language selection">
+        <a href="/fanfan-cards/" data-language="zh-CN" lang="zh-CN" hreflang="zh-CN">中</a><span aria-hidden="true">/</span><a href="/en/fanfan-cards/" data-language="en" aria-current="page" lang="en" hreflang="en">EN</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="page-shell">
+    <section class="product-hero">
+      <div class="product-icon-wrap">
+        <img class="product-icon" src="/assets/fanfan/icon-128.png" width="88" height="88" alt="FanFan Cards app icon">
+        <span aria-hidden="true">F</span>
+      </div>
+      <p class="eyebrow"><span class="status-dot"></span> FanFan Cards · Chrome Extension</p>
+      <h1>FanFan Cards</h1>
+      <p class="tagline">More than a translation you forget five minutes later. FanFan remembers the sentence where you met a word, keeping its meaning, source, and review history together.</p>
+      <div class="hero-actions product-actions">
+        <span class="button button-primary button-pending" aria-disabled="true">Chrome Web Store · Coming soon</span>
+        <a class="button button-quiet" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">Source on GitHub ↗</a>
+      </div>
+      <p class="release-note">Preparing the first Chrome Web Store release · Open source · Free</p>
+    </section>
+
+    <section class="product-stage" aria-label="FanFan Cards interface preview">
+      <div class="stage-glow stage-glow-one"></div>
+      <div class="stage-glow stage-glow-two"></div>
+      <figure class="product-shot product-shot-main">
+        <figcaption><span>01</span> Reading in context</figcaption>
+        <img src="/assets/fanfan/contextual-reading.jpg" width="1280" height="800" alt="FanFan Cards showing a contextual definition, sentence translation, and example after the word migration is selected in a technical article">
+      </figure>
+      <figure class="product-shot product-shot-secondary">
+        <figcaption><span>02</span> Learning dashboard</figcaption>
+        <img src="/assets/fanfan/learning-dashboard.jpg" width="1280" height="800" alt="FanFan Cards learning dashboard showing saved cards, reviews due, and learning progress">
+      </figure>
+      <div class="stage-note" aria-hidden="true"><strong>Read in context.</strong><span>Keep what matters.</span></div>
+    </section>
+
+    <section class="product-principles" aria-label="Product highlights">
+      <div><span>01</span><strong>Explain on selection</strong><small>Stay on the page you are reading</small></div>
+      <div><span>02</span><strong>Keep the context</strong><small>Save the source sentence and page</small></div>
+      <div><span>03</span><strong>Review on schedule</strong><small>Bring cards back at the right time</small></div>
+      <div><span>04</span><strong>Local first</strong><small>No developer-operated relay server</small></div>
+    </section>
+
+    <section class="manifesto">
+      <div><p class="section-kicker">How it works</p><h2>One path from getting stuck to making it stick.</h2></div>
+      <div class="manifesto-copy">
+        <article><h3>01 · Understand it in context</h3><p>Select a word, phrase, or sentence. AI first works out what it means in that specific passage, then gives you a concise definition, an English explanation, and an example.</p></article>
+        <article><h3>02 · Save it with its source</h3><p>Each card keeps the original sentence, page, date, and model source. When you review it later, you see more than an isolated translation.</p></article>
+        <article><h3>03 · See it again when it matters</h3><p>A four-level confidence rating drives spaced review. The dashboard keeps saved cards, reviews due, study streaks, and familiarity levels visible.</p></article>
+        <article><h3>04 · Keep ownership of your data</h3><p>Your data stays in your browser by default and can be exported as JSON or CSV. If you choose, you can sync it to a private repository in your own GitHub account.</p></article>
+      </div>
+    </section>
+
+    <section class="data-note">
+      <div class="data-note-mark" aria-hidden="true">P</div>
+      <div>
+        <p class="section-kicker">Privacy by design</p>
+        <h2>Know where your data goes before you install.</h2>
+        <p>The extension reads selected text, nearby context, the page title, and URL only when you ask it to explain or translate. Once you configure a model, that content goes directly to the provider you choose. There is no developer-operated relay server and no advertising, analytics, or tracking service.</p>
+        <a href="/fanfan-cards/privacy/" lang="zh-CN" hreflang="zh-CN">Read the full privacy policy (Chinese) ↗</a>
+      </div>
+    </section>
+
+    <section class="product-cta">
+      <p class="section-kicker">Ready when you are</p>
+      <h2>Next time a word stops you,<br>keep it with you.</h2>
+      <div class="hero-actions product-actions">
+        <span class="button button-primary button-pending" aria-disabled="true">Chrome Web Store · Coming soon</span>
+        <a class="button button-quiet" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer page-shell"><span>© 2026 Luffy Liu</span><span>FanFan Cards · Your data stays yours</span></footer>
+  <script>
+    (() => {
+      const storageKey = 'luffy-home-language';
+      document.querySelectorAll('[data-language]').forEach(link => link.addEventListener('click', event => {
+        try { localStorage.setItem(storageKey, link.dataset.language); } catch (_) {}
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        if (link.dataset.language === 'en') return;
+        const target = new URL(link.href);
+        target.search = location.search;
+        target.hash = location.hash;
+        location.replace(target.href);
+      }));
+    })();
+  </script>
+</body>
+</html>

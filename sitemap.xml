@@ -18,6 +18,16 @@
   <url>
     <loc>https://luffyliu.com/fanfan-cards/</loc>
     <lastmod>2026-08-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/"/>
+  </url>
+  <url>
+    <loc>https://luffyliu.com/en/fanfan-cards/</loc>
+    <lastmod>2026-08-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/"/>
   </url>
   <url>
     <loc>https://luffyliu.com/fanfan-cards/privacy/</loc>
