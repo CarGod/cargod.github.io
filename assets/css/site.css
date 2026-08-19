@@ -53,7 +53,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   border-bottom: 1px solid rgba(20, 22, 26, .10);
 }
 .wordmark { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.03em; }
-.wordmark-mark { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 9px; background: var(--ink); color: #fff; font: 500 15px DM Mono, monospace; }
+.wordmark-avatar { width: 38px; height: 38px; flex: 0 0 38px; border: 1px solid rgba(20, 22, 26, .12); border-radius: 12px; object-fit: cover; box-shadow: 0 5px 16px rgba(20, 22, 26, .12); }
 .nav { display: flex; align-items: center; gap: 30px; font-size: 13px; font-weight: 600; }
 .nav a { color: var(--muted); transition: color .18s ease; }
 .nav a:hover, .nav a:focus-visible { color: var(--ink); }
@@ -245,7 +245,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   body { background: radial-gradient(circle at 13% 8%, rgba(255, 106, 61, .10), transparent 23rem), radial-gradient(circle at 88% 34%, rgba(91, 69, 176, .12), transparent 30rem), var(--paper); }
   .nav-github, .button-quiet, .product-meta span { background: rgba(22,25,32,.72); }
   .ticker { background: rgba(22,25,32,.65); }
-  .wordmark-mark { background: var(--brand-paper); color: var(--brand-ink); }
   .maker-card { background: #f2f0ee; color: #14161a; }
   .contact { color: #14161a; }
   .contact .section-kicker { color: rgba(20,22,26,.62); }
