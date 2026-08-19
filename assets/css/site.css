@@ -110,6 +110,44 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .featured-visual img { width: 100%; height: 100%; object-fit: cover; object-position: left center; border-radius: 22px 0 0 22px; box-shadow: 0 26px 70px rgba(20,22,26,.20); transition: transform .25s ease; }
 .featured-visual:hover img { transform: translateX(-7px); }
 
+.million-project { padding-top: 28px; }
+.million-heading { padding-top: 120px; border-top: 1px solid var(--line); }
+.million-board { display: grid; grid-template-columns: 1.08fr .92fr; overflow: hidden; border-radius: 30px; background: var(--brand-ink); color: #fff; box-shadow: var(--shadow); }
+.million-ledger { position: relative; min-height: 570px; padding: clamp(34px, 5vw, 64px); overflow: hidden; border-right: 1px solid rgba(255,255,255,.12); }
+.million-ledger::before { content: ""; position: absolute; width: 360px; height: 360px; right: -170px; top: -190px; border-radius: 50%; background: rgba(255,106,61,.2); filter: blur(2px); }
+.million-ledger::after { content: ""; position: absolute; width: 300px; height: 300px; left: -190px; bottom: -230px; border-radius: 50%; background: rgba(91,69,176,.34); }
+.million-board-topline { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #9298a2; letter-spacing: .1em; font: 500 10px DM Mono, monospace; }
+.million-live { color: #b8d8d3; white-space: nowrap; }
+.million-live i { display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; background: #53bba9; box-shadow: 0 0 0 5px rgba(83,187,169,.12); }
+.million-amount { position: relative; z-index: 1; margin-top: 86px; }
+.million-amount > span, .million-goal span { display: block; color: #9298a2; letter-spacing: .08em; font: 500 10px DM Mono, monospace; }
+.million-amount strong { display: block; margin-top: 7px; font-size: clamp(82px, 10vw, 136px); font-weight: 600; line-height: .92; letter-spacing: -.075em; }
+.million-amount small { margin-right: 10px; color: #ff8a5e; font-size: .36em; vertical-align: top; line-height: 1.5; }
+.million-goal { position: absolute; z-index: 1; right: clamp(34px, 5vw, 64px); top: 174px; text-align: right; }
+.million-goal strong { display: block; margin-top: 5px; color: #d5d7dc; font: 500 14px DM Mono, monospace; letter-spacing: -.02em; }
+.million-progress { position: relative; z-index: 1; height: 7px; margin-top: 74px; overflow: visible; border-radius: 999px; background: rgba(255,255,255,.15); }
+.million-progress::before { content: ""; position: absolute; z-index: 2; width: 13px; height: 13px; left: 0; top: 50%; border: 3px solid var(--brand-ink); border-radius: 50%; background: var(--flame); box-shadow: 0 0 0 1px rgba(255,255,255,.22); transform: translateY(-50%); }
+.million-progress span { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--flame), #ff9b75); }
+.million-progress-meta { position: relative; z-index: 1; display: flex; justify-content: space-between; margin-top: 11px; color: #9298a2; font: 500 10px DM Mono, monospace; }
+.million-definition { position: relative; z-index: 1; max-width: 560px; margin: 38px 0 0; color: #aeb2ba; font-size: 12px; line-height: 1.8; }
+.million-milestones { padding: clamp(34px, 4.5vw, 58px); background: linear-gradient(150deg, #20232a, #181b21); }
+.million-milestones-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding-bottom: 26px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.million-milestones-head .section-kicker { margin: 0; color: #9298a2; }
+.million-milestones-head > span { color: #9298a2; font-size: 12px; }
+.million-milestones ol { margin: 0; padding: 0; list-style: none; }
+.million-milestones li { position: relative; display: grid; grid-template-columns: 36px 1fr auto; gap: 15px; align-items: center; min-height: 91px; border-bottom: 1px solid rgba(255,255,255,.09); color: #9298a2; }
+.million-milestones li::before { content: ""; position: absolute; width: 1px; height: 100%; left: 17px; top: 50%; background: rgba(255,255,255,.12); }
+.million-milestones li:last-child::before { display: none; }
+.million-milestones li.is-current { color: #fff; }
+.milestone-marker { position: relative; z-index: 1; width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid #494e58; border-radius: 50%; background: #20232a; font: 500 9px DM Mono, monospace; }
+.is-current .milestone-marker { border-color: var(--flame); background: var(--flame); color: var(--brand-ink); }
+.million-milestones strong { display: block; font-size: 14px; }
+.million-milestones li p { margin: 4px 0 0; color: #9298a2; font-size: 12px; line-height: 1.45; }
+.million-milestones .is-current p { color: #aeb2ba; }
+.million-milestones em { color: #ff9b75; font: 500 9px DM Mono, monospace; letter-spacing: .12em; }
+.million-collab { display: inline-flex; align-items: center; gap: 8px; margin-top: 32px; color: #fff; font-size: 13px; font-weight: 700; }
+.million-collab span { color: #ff8a5e; }
+
 .about { display: grid; grid-template-columns: .35fr 1fr; gap: 80px; border-top: 1px solid var(--line); }
 .about-index { color: var(--muted); font: 500 11px DM Mono, monospace; letter-spacing: .1em; }
 .about-copy > p { max-width: 780px; margin: 30px 0 0; color: var(--muted); font-size: 18px; line-height: 1.8; }
@@ -189,8 +227,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 20px; padding-top: 62px; }
   .hero-object { min-height: 390px; }
-  .section-heading, .featured-project, .about, .manifesto, .legal-layout { grid-template-columns: 1fr; }
+  .section-heading, .featured-project, .million-board, .about, .manifesto, .legal-layout { grid-template-columns: 1fr; }
   .featured-visual { min-height: 420px; padding-left: 28px; }
+  .million-ledger { min-height: 530px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
   .about { gap: 28px; }
   .legal-toc { position: static; grid-template-columns: repeat(3, 1fr); }
   .product-stage { min-height: 610px; padding: 46px; }
@@ -213,6 +252,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section-heading { gap: 22px; }
   .featured-copy { padding: 28px; }
   .featured-visual { min-height: 310px; padding: 24px 0 24px 24px; }
+  .million-project { padding-top: 0; }
+  .million-heading { padding-top: 84px; }
+  .million-board { border-radius: 22px; }
+  .million-ledger { min-height: 465px; padding: 30px 26px; }
+  .million-board-topline { align-items: flex-start; }
+  .million-amount { margin-top: 72px; }
+  .million-amount strong { font-size: 92px; }
+  .million-goal { position: static; margin-top: 24px; text-align: left; }
+  .million-progress { margin-top: 50px; }
+  .million-definition { margin-top: 30px; }
+  .million-milestones { padding: 30px 26px 34px; }
+  .million-milestones li { grid-template-columns: 36px 1fr; min-height: 98px; }
+  .million-milestones em { display: none; }
   .principles { grid-template-columns: 1fr; }
   .about-copy > p { font-size: 16px; }
   .contact { border-radius: 22px; }
