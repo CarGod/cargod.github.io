@@ -7,116 +7,113 @@
   <meta name="description" content="Luffy Liu 的个人主页：独立产品、开发者工具与 AI 工作流。">
   <link rel="icon" type="image/png" href="/assets/luffy-avatar.png">
   <link rel="canonical" href="https://luffyliu.com/">
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260819-4">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Luffy Liu — Product builder">
-  <meta property="og:description" content="把复杂的工作流，做成安静、直接、真正有人愿意用的工具。">
+  <meta property="og:title" content="Luffy Liu — Independent Product Builder">
+  <meta property="og:description" content="Independent products, developer tools, and practical AI workflows.">
   <meta property="og:url" content="https://luffyliu.com/">
   <meta property="og:image" content="https://luffyliu.com/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Luffy Liu — Product builder</title>
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260819-5">
+  <link rel="stylesheet" href="/assets/css/homepage.css?v=20260819-1">
+  <title>Luffy Liu — 独立产品构建者</title>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
+
   <header class="site-header">
-    <a class="wordmark" href="/" aria-label="Luffy Liu 首页">
+    <a class="wordmark" href="#top" aria-label="Luffy Liu 首页">
       <img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu 头像">
       <span>Luffy Liu</span>
     </a>
     <nav class="nav" aria-label="主导航">
       <a href="#work">作品</a>
-      <a href="#million">公开实验</a>
+      <a href="#experiment">公开实验</a>
       <a href="#about">关于</a>
-      <a href="#contact">联系</a>
+      <a href="#notes">过程记录</a>
       <a class="nav-github" href="https://github.com/CarGod" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <div class="language-switch" role="group" aria-label="语言选择">
+        <button type="button" data-language="zh-CN" aria-pressed="true">中</button><span aria-hidden="true">/</span><button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero shell">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> 独立产品构建者 · 正在做新东西</p>
-        <h1>把复杂的工作流，<br><em>做轻一点。</em></h1>
-        <p class="hero-lede">我叫 Luffy。写产品、做工具，也把 AI 放进那些真正值得被改善的日常动作里。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">看看我在做什么</a>
-          <a class="button button-quiet" href="mailto:luffyliux@gmail.com">聊聊一个想法</a>
-        </div>
-      </div>
-      <div class="hero-object" aria-hidden="true">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="maker-card">
-          <div class="maker-fold"></div>
-          <span class="maker-label">CURRENTLY<br>BUILDING</span>
-          <strong>FanFan<br>Cards</strong>
-          <span class="maker-meta">READ · KEEP · REVIEW</span>
-        </div>
-      </div>
-      <aside class="hero-million" id="million" aria-labelledby="million-title">
-        <div class="hero-million-intro">
-          <p class="section-kicker">Public experiment · ¥0 → ¥1,000,000</p>
-          <h2 id="million-title">用 Vibe Coding（氛围编程），<br>走一遍从 0 到 100 万。</h2>
-          <p>把 AI 做成真实产品，也把每一笔实际收入和重要反馈公开留在这里。</p>
-        </div>
-        <div class="hero-million-ledger">
-          <div class="hero-million-project">
-            <span>当前项目</span>
-            <strong>翻翻词卡</strong>
-            <small>项目收益 <b>¥0</b></small>
-          </div>
-          <div class="hero-million-total">
-            <span>当前累计收益</span>
-            <strong>¥0</strong>
-            <small>目标 ¥1,000,000</small>
-          </div>
-          <div class="million-progress" role="progressbar" aria-label="从零到一百万元收益进度" aria-valuemin="0" aria-valuemax="1000000" aria-valuenow="0" aria-valuetext="当前累计收益 0 元，目标 100 万元">
-            <span></span>
-          </div>
-          <div class="hero-million-progress-meta">
-            <span>0.00%</span>
-            <span>¥1M</span>
+    <div id="top" class="hero-shell">
+      <span id="experiment" class="hero-experiment-anchor" aria-hidden="true"></span>
+      <section class="home-hero shell" aria-labelledby="home-title">
+        <div class="home-hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> AI 时代 · 给未知留一个位置</p>
+          <h1 id="home-title">“若不期待意外，<br><em>就无法发现它。”</em></h1>
+          <p class="quote-author">赫拉克利特</p>
+          <p class="home-hero-lede">新的工具总会把原来的答案打乱。保持好奇，也保持动手；做出来的东西，会告诉我们下一步往哪里走。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">现在在做什么</a>
+            <a class="button button-quiet" href="#notes">看看过程</a>
           </div>
         </div>
-        <a class="hero-million-link" href="mailto:luffyliux@gmail.com?subject=%E5%85%B3%E4%BA%8E%20Vibe%20Coding%20%E5%90%88%E4%BD%9C">一起见证，或聊聊合作 <span>↗</span></a>
-      </aside>
+
+        <aside class="threads-note" aria-label="最近关注的方向">
+          <p class="section-kicker">Recently exploring</p>
+          <h2>最近在折腾什么</h2>
+          <ol>
+            <li><span>01</span><div><strong>Agent</strong><small>当工具开始协作，人的判断放在哪里</small></div></li>
+            <li><span>02</span><div><strong>Vibe Coding</strong><small>当实现变快，什么仍值得慢下来</small></div></li>
+            <li><span>03</span><div><strong>AI 工作流</strong><small>当流程被重写，哪些习惯应该留下</small></div></li>
+          </ol>
+          <a href="https://github.com/CarGod?achievement=mars-2020-contributor&amp;tab=achievements" target="_blank" rel="noreferrer">开源足迹 · GitHub Mars 2020 Contributor ↗</a>
+        </aside>
+
+        <section class="experiment-strip experiment-strip-light" aria-labelledby="experiment-b-title">
+          <div class="experiment-intro">
+            <p class="section-kicker">A public Vibe Coding experiment</p>
+            <h2 id="experiment-b-title">从 ¥0 出发，走到 ¥1,000,000。</h2>
+            <p>当前项目：翻翻词卡 · 项目收益 ¥0</p>
+          </div>
+          <div class="experiment-ledger">
+            <div class="ledger-total"><span>累计收益</span><strong>¥0</strong><small>目标 ¥1,000,000</small></div>
+            <div class="experiment-progress" role="progressbar" aria-label="从零到一百万元收益进度" aria-valuemin="0" aria-valuemax="1000000" aria-valuenow="0" aria-valuetext="当前累计收益 0 元，目标 100 万元"><span></span></div>
+            <div class="experiment-meta"><span>0.00%</span><span>¥1M</span></div>
+          </div>
+          <a class="experiment-link" href="#notes">查看过程记录 ↗</a>
+        </section>
+      </section>
+
+    </div>
+
+    <section class="interest-line" aria-label="最近关注的方向">
+      <span>最近在折腾</span>
+      <strong>Agent</strong><i></i><strong>Vibe Coding</strong><i></i><strong>AI 工作流</strong>
     </section>
 
-    <section class="ticker" aria-label="关注领域">
-      <div class="ticker-track">
-        <span>PRODUCT THINKING</span><i></i><span>AI WORKFLOWS</span><i></i><span>DEVELOPER TOOLS</span><i></i><span>LOCAL-FIRST SOFTWARE</span>
-      </div>
-    </section>
-
-    <section class="section shell" id="work">
+    <section class="section shell selected-work" id="work">
       <div class="section-heading">
-        <div><p class="section-kicker">Current work</p><h2>现在，只把这一件事做好。</h2></div>
-        <p>翻翻词卡是我目前专注的产品。它从真实阅读里一个很小的卡顿开始，慢慢长成一套完整的学习体验。</p>
+        <div><p class="section-kicker">Selected work · 01</p><h2>作品会继续增加，<br>先把这一件做好。</h2></div>
       </div>
 
-      <article class="featured-project">
-        <div class="featured-copy">
-          <div class="project-topline">
-            <span class="project-number">01</span>
-            <span class="project-status">正在发布 · Chrome Extension</span>
-          </div>
+      <article class="work-row">
+        <div class="work-row-number" aria-hidden="true">01</div>
+        <div class="work-row-copy">
           <div class="product-lockup">
-            <img src="/assets/fanfan/icon-128.png" width="64" height="64" alt="翻翻词卡图标">
-            <div><h3>翻翻词卡</h3><p>FanFan Cards</p></div>
+            <img src="/assets/fanfan/icon-128.png" width="58" height="58" alt="翻翻词卡图标">
+            <div><h3>翻翻词卡</h3><p>FanFan Cards · Chrome Extension</p></div>
           </div>
-          <p class="project-lede">在真实英文网页上划词，让 AI 解释“这个词在这句话里到底是什么意思”，然后把它留成一张会再次出现的词卡。</p>
-          <ul class="feature-list">
-            <li>语境解释，不只给词典义</li>
-            <li>收藏原句、来源与学习轨迹</li>
-            <li>间隔复习与可选 GitHub 同步</li>
-          </ul>
+          <p>在真实英文网页上划词，让 AI 解释它在这句话里的意思，再把语境、来源和复习一起留下来。</p>
+          <div class="work-meta"><span>语境解释</span><span>间隔复习</span><span>数据自己掌管</span><span>永久免费</span></div>
+          <p class="work-data-note">学习数据默认留在浏览器，可选同步到你自己的 GitHub 私有仓库。</p>
           <div class="project-links">
             <a href="/fanfan-cards/">了解产品 <span>↗</span></a>
             <a href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">查看源码 <span>↗</span></a>
           </div>
         </div>
-        <a class="featured-visual" href="/fanfan-cards/" aria-label="查看翻翻词卡产品页">
-          <img src="/assets/fanfan/contextual-reading.jpg" alt="翻翻词卡在英文文章上提供语境解释的界面">
+        <a class="work-row-visual" href="/fanfan-cards/" aria-label="查看翻翻词卡产品页">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="maker-card">
+            <div class="maker-fold"></div>
+            <span class="maker-label">CURRENTLY<br>BUILDING</span>
+            <strong>FanFan<br>Cards</strong>
+            <span class="maker-meta">READ · KEEP · REVIEW</span>
+          </div>
         </a>
       </article>
     </section>
@@ -124,29 +121,89 @@
     <section class="section shell about" id="about">
       <div class="about-index">/ ABOUT</div>
       <div class="about-copy">
-        <h2>我更在意产品留下的感觉，<br>而不只是它堆了多少功能。</h2>
-        <p>一个工具应该尊重人的注意力：入口清楚，反馈诚实，数据归用户。我的项目大多从一个很小、但每天都会遇到的摩擦开始。</p>
-        <div class="principles">
-          <div><span>01</span><strong>先把单一用途说清楚</strong></div>
-          <div><span>02</span><strong>让默认状态就能工作</strong></div>
-          <div><span>03</span><strong>把用户数据当作借来的东西</strong></div>
+        <h2>我们更应该关注的，<span class="accent-word">不是</span> AI 能做多少，<br>而是它最后<span class="accent-word">改变</span>了什么。</h2>
+        <div class="practice-lines">
+          <div><span>01</span><strong>开源与工程</strong><p>公开贡献留下可核验的足迹，也给产品判断打下底子。</p></div>
+          <div><span>02</span><strong>Agent 与 Vibe Coding</strong><p>让想法更快成为可使用、可被质疑的东西。</p></div>
+          <div><span>03</span><strong>AI 工作流</strong><p>把重复动作重新编排，让工具真正进入日常。</p></div>
         </div>
       </div>
     </section>
 
+    <section class="section shell notes" id="notes">
+      <div class="notes-heading">
+        <p class="section-kicker">Building notes</p>
+        <h2>过程也值得留下。</h2>
+      </div>
+      <article class="note-entry">
+        <time datetime="2026-08">2026 · 08</time>
+        <div><span>01 · 起点</span><h3>翻翻词卡，正在准备第一次正式发布。</h3><p>先把产品交到真实用户手里。当前项目收益 ¥0，累计收益 ¥0。</p></div>
+        <a href="/fanfan-cards/">查看作品 ↗</a>
+      </article>
+    </section>
+
     <section class="contact shell" id="contact">
-      <p class="section-kicker">Have something worth making?</p>
-      <h2>有想法，就来聊聊。</h2>
+      <p class="section-kicker">Have a real problem worth solving?</p>
+      <h2>有问题，就来具体聊聊。</h2>
       <div class="contact-row">
-        <a href="mailto:luffyliux@gmail.com">luffyliux@gmail.com <span>↗</span></a>
-        <a href="https://github.com/CarGod" target="_blank" rel="noreferrer">GitHub / CarGod <span>↗</span></a>
+        <a class="contact-link" href="mailto:luffyliux@gmail.com" aria-label="发送邮件给 Luffy Liu">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.75 5.75h16.5v12.5H3.75z"/><path d="m4.5 6.5 7.5 6 7.5-6"/></svg>
+          <span><small>Email</small>luffyliux@gmail.com</span><b aria-hidden="true">↗</b>
+        </a>
+        <a class="contact-link" href="https://x.com/luffyliux" target="_blank" rel="noreferrer" aria-label="在 X 关注 Luffy Liu">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span><small>X</small>@luffyliux</span><b aria-hidden="true">↗</b>
+        </a>
+        <a class="contact-link" href="https://github.com/CarGod" target="_blank" rel="noreferrer" aria-label="查看 CarGod 的 GitHub 主页">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 19.5c-4.5 1.4-4.5-2.5-6.3-3m12.6 5.2v-3.5c0-1 .1-1.6-.5-2.2 2.8-.3 5.7-1.4 5.7-6.2a4.8 4.8 0 0 0-1.3-3.4 4.5 4.5 0 0 0-.1-3.4s-1-.3-3.5 1.3a11.8 11.8 0 0 0-6.4 0C6.7 2.7 5.7 3 5.7 3a4.5 4.5 0 0 0-.1 3.4 4.8 4.8 0 0 0-1.3 3.4c0 4.8 2.9 5.9 5.7 6.2-.6.6-.6 1.2-.5 2.2v3.5"/></svg>
+          <span><small>GitHub</small>CarGod</span><b aria-hidden="true">↗</b>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer shell">
     <span>© 2026 Luffy Liu</span>
-    <span>Reach for the stars, explore the vast ocean.</span>
+    <span>Reach for the stars, explore the vast ocean. · <a class="icon-credit" href="https://icons8.com/icon/phOKFKYpe00C/x" target="_blank" rel="noreferrer">X icon by Icons8</a></span>
   </footer>
+
+  <script>
+    (() => {
+      const storageKey = 'luffy-home-language';
+      const buttons = [...document.querySelectorAll('[data-language]')];
+      const translations = {
+        '跳到正文':'Skip to content','作品':'Work','公开实验':'Public experiment','关于':'About','过程记录':'Notes',
+        'AI 时代 · 给未知留一个位置':'In the age of AI · Leave room for the unknown','“若不期待意外，':'“If you do not expect the unexpected,','就无法发现它。”':'you will not find it.”','赫拉克利特':'Heraclitus',
+        '新的工具总会把原来的答案打乱。保持好奇，也保持动手；做出来的东西，会告诉我们下一步往哪里走。':'New tools have a way of unsettling old answers. Stay curious, keep making—the things we build will show us where to go next.',
+        '现在在做什么':'See what I’m building','看看过程':'Follow the process','最近在折腾什么':'What I’m exploring',
+        '当工具开始协作，人的判断放在哪里':'When tools collaborate, where does human judgment belong?','当实现变快，什么仍值得慢下来':'When building gets faster, what is still worth slowing down for?','当流程被重写，哪些习惯应该留下':'When workflows are rewritten, which habits should remain?',
+        '开源足迹 · GitHub Mars 2020 Contributor ↗':'Open-source trail · GitHub Mars 2020 Contributor ↗','从 ¥0 出发，走到 ¥1,000,000。':'From ¥0 to ¥1,000,000.','当前项目：翻翻词卡 · 项目收益 ¥0':'Current project: FanFan Cards · Revenue ¥0','累计收益':'Total revenue','目标 ¥1,000,000':'Goal ¥1,000,000','查看过程记录 ↗':'Follow the experiment ↗','最近在折腾':'Exploring now',
+        '作品会继续增加，':'More work will follow.','先把这一件做好。':'For now, make this one count.','翻翻词卡':'FanFan Cards','在真实英文网页上划词，让 AI 解释它在这句话里的意思，再把语境、来源和复习一起留下来。':'Select a word on any real English webpage. Let AI explain what it means in context, then keep the sentence, source, and review together.','语境解释':'Context-aware','间隔复习':'Spaced review','数据自己掌管':'Your data, your control','永久免费':'Free forever','学习数据默认留在浏览器，可选同步到你自己的 GitHub 私有仓库。':'Learning data stays in your browser by default, with optional sync to your own private GitHub repository.','了解产品':'Explore the product','查看源码':'View source',
+        '我们更应该关注的，':'What matters most is ','不是':'not','AI 能做多少，':' how much AI can do,','而是它最后':'but what it ultimately ','改变':'changes','了什么。':'.','开源与工程':'Open source & engineering','公开贡献留下可核验的足迹，也给产品判断打下底子。':'Public contributions leave a verifiable trail and ground product decisions in real engineering.','Agent 与 Vibe Coding':'Agents & Vibe Coding','让想法更快成为可使用、可被质疑的东西。':'Turn ideas into usable, testable things faster.','AI 工作流':'AI workflows','把重复动作重新编排，让工具真正进入日常。':'Rearrange repetitive work so tools genuinely fit into everyday life.',
+        '过程也值得留下。':'The process is worth keeping.','01 · 起点':'01 · Starting point','翻翻词卡，正在准备第一次正式发布。':'FanFan Cards is preparing for its first public release.','先把产品交到真实用户手里。当前项目收益 ¥0，累计收益 ¥0。':'First, put the product in the hands of real users. Current project revenue: ¥0. Total revenue: ¥0.','查看作品 ↗':'View project ↗','有问题，就来具体聊聊。':'Let’s talk about the real problem.'
+      };
+      const originalText = new Map();
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {acceptNode(node) { return node.parentElement?.closest('script, .language-switch') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT; }});
+      while (walker.nextNode()) originalText.set(walker.currentNode, walker.currentNode.nodeValue);
+      const originals = [...document.querySelectorAll('[aria-label], img[alt]')].map(element => ({element, aria: element.getAttribute('aria-label'), alt: element.getAttribute('alt')}));
+      const attributeTranslations = {'主导航':'Main navigation','语言选择':'Language selection','Luffy Liu 首页':'Luffy Liu homepage','Luffy Liu 头像':'Portrait of Luffy Liu','最近关注的方向':'Recently explored topics','从零到一百万元收益进度':'Revenue progress from zero to one million yuan','查看翻翻词卡产品页':'View the FanFan Cards product page','翻翻词卡图标':'FanFan Cards icon','发送邮件给 Luffy Liu':'Email Luffy Liu','在 X 关注 Luffy Liu':'Follow Luffy Liu on X','查看 CarGod 的 GitHub 主页':'View CarGod on GitHub'};
+      function applyLanguage(language, persist = false) {
+        const english = language === 'en';
+        document.documentElement.lang = english ? 'en' : 'zh-CN';
+        document.title = english ? 'Luffy Liu — Independent Product Builder' : 'Luffy Liu — 独立产品构建者';
+        document.querySelector('meta[name="description"]').content = english ? 'Luffy Liu’s personal site: independent products, developer tools, and AI workflows.' : 'Luffy Liu 的个人主页：独立产品、开发者工具与 AI 工作流。';
+        originalText.forEach((value, node) => { const key = value.trim(); node.nodeValue = english && translations[key] ? value.replace(key, translations[key]) : value; });
+        originals.forEach(({element, aria, alt}) => { if (aria) element.setAttribute('aria-label', english ? (attributeTranslations[aria] || aria) : aria); if (alt) element.setAttribute('alt', english ? (attributeTranslations[alt] || alt) : alt); });
+        buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === (english ? 'en' : 'zh-CN'))));
+        if (persist) try { localStorage.setItem(storageKey, english ? 'en' : 'zh-CN'); } catch (_) {}
+      }
+      let preferred;
+      try { preferred = localStorage.getItem(storageKey); } catch (_) {}
+      if (!['zh-CN','en'].includes(preferred)) preferred = navigator.language.toLowerCase().startsWith('zh') ? 'zh-CN' : 'en';
+      applyLanguage(preferred);
+      buttons.forEach(button => button.addEventListener('click', () => applyLanguage(button.dataset.language, true)));
+    })();
+  </script>
+
 </body>
 </html>
