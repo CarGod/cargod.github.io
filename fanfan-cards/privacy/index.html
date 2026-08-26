@@ -42,7 +42,7 @@
     <header class="legal-head">
       <p class="eyebrow">FanFan Cards · Privacy</p>
       <h1>翻翻词卡隐私政策</h1>
-      <p class="legal-meta">生效日期：2026 年 8 月 18 日 · 最后更新：2026 年 8 月 18 日</p>
+      <p class="legal-meta">生效日期：2026 年 8 月 26 日 · 最后更新：2026 年 8 月 26 日</p>
     </header>
     <div class="legal-layout">
       <nav class="legal-toc" aria-label="隐私政策目录">
@@ -59,6 +59,7 @@
           <h2>扩展处理的数据</h2>
           <ul>
             <li><strong>网页内容与浏览信息：</strong>当用户主动划词、解释或翻译时，扩展读取选中文字、附近句子或段落、页面标题和页面网址。整页或整段翻译会读取当前页面中可见的文本。</li>
+            <li><strong>YouTube 视频字幕：</strong>当用户在 YouTube 播放器上打开双语字幕时，扩展读取当前视频的字幕轨列表与字幕文本。字幕请求由页面上下文向 <code>youtube.com</code> 发出，因此会像页面自身的字幕请求一样携带浏览器已有的 YouTube Cookie；扩展不读取、不保存、也不传输这些 Cookie。播放器生成的一次性校验参数仅用于紧接着的一次字幕请求，不保存，也不发送给开发者或其他第三方。</li>
             <li><strong>学习数据：</strong>收藏的词、解释、来源句子与网址、复习记录、学习活动和用户设置。</li>
             <li><strong>身份验证信息：</strong>用户自行填写的 AI 服务 API Key，以及启用 GitHub 同步时填写的 GitHub Token。</li>
           </ul>
@@ -67,7 +68,7 @@
         <section id="sharing">
           <h2>数据何时会发送给第三方</h2>
           <ol>
-            <li>用户选择并配置 AI 模型后，选中文字、必要上下文、页面标题和网址会通过 HTTPS 直接发送给用户选择的服务商（Anthropic、OpenAI、DeepSeek、Google Gemini，或用户填写的兼容 API 地址），用于生成解释或翻译。API Key 只发送给对应服务商。</li>
+            <li>用户选择并配置 AI 模型后，选中文字、必要上下文、页面标题和网址会通过 HTTPS 直接发送给用户选择的服务商（Anthropic、OpenAI、DeepSeek、Google Gemini，或用户填写的兼容 API 地址），用于生成解释或翻译。用户打开 YouTube 双语字幕后，当前视频的字幕文本与视频标题会以同样方式发送给该服务商，用于生成译文。API Key 只发送给对应服务商。</li>
             <li>用户主动启用 GitHub 同步后，词卡、来源信息、复习记录和学习活动会发送到用户自己的 GitHub 仓库；GitHub Token 只发送给 GitHub API。</li>
           </ol>
           <p>开发者不会通过中转服务器接收上述数据。第三方如何处理数据，由用户与该服务商之间的条款和隐私政策约束。</p>
@@ -80,6 +81,7 @@
         <section id="security">
           <h2>安全与最小权限</h2>
           <p>扩展不加载或执行远程代码。外部请求使用 HTTPS；仅本机开发地址允许 <code>http://localhost</code>。自定义 API 地址的访问权限只在用户点击“测试连接”时按目标域名申请。</p>
+          <p>扩展会在 <code>youtube.com</code> 上注入一段运行在页面上下文中的脚本。它只用于读取播放器公开的视频与字幕轨信息、记录上述一次性校验参数，以及代为发出获取字幕的同源请求。该脚本不访问任何扩展 API，不读取页面上的其他数据，也不与开发者的任何服务器通信。</p>
           <p>扩展对信息的使用遵守 Chrome Web Store User Data Policy（包括 Limited Use 要求）：</p>
           <p class="legal-callout" lang="en">The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
         </section>
