@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/en/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-2">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Luffy Liu">
   <meta property="og:title" content="FanFan Cards — AI Reading Companion for English Learners">
@@ -47,7 +47,6 @@
     "description": "A local-first Chrome extension with saved-word highlights, contextual AI explanations, page translation, bilingual YouTube subtitles, and spaced review.",
     "inLanguage": "en",
     "image": "https://luffyliu.com/assets/fanfan/fanfan-mode.png",
-    "softwareVersion": "1.4.0",
     "installUrl": "https://chromewebstore.google.com/detail/%E7%BF%BB%E7%BF%BB%E8%AF%8D%E5%8D%A1-%E2%80%94-ai-%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B/ejhmidlnfffkpolnaiflfaojgfbngjba",
     "applicationCategory": "EducationalApplication",
     "applicationSubCategory": "Language Learning",
@@ -113,22 +112,52 @@
       <p class="release-note">Live on the Chrome Web Store · Open source · Free · Local first</p>
     </section>
 
-    <section class="product-stage" aria-label="FanFan Cards interface preview">
-      <div class="stage-glow stage-glow-one"></div>
-      <div class="stage-glow stage-glow-two"></div>
-      <figure class="product-shot product-shot-main">
-        <figcaption><span>01</span> FanFan mode · Saved-word highlights</figcaption>
-        <img src="/assets/fanfan/fanfan-mode.png" width="1280" height="800" alt="Saved words such as migration and idempotent are softly marked in an article; clicking opens the existing word card">
-      </figure>
-      <figure class="product-shot product-shot-secondary">
-        <figcaption><span>02</span> Bilingual YouTube subtitles</figcaption>
-        <img src="/assets/fanfan/youtube-bilingual-subtitles.png" width="1280" height="800" alt="A YouTube player showing English and Chinese subtitles with the FanFan subtitle settings panel open">
-      </figure>
-      <figure class="product-shot product-shot-tertiary">
-        <figcaption><span>03</span> Contextual AI explanation</figcaption>
-        <img src="/assets/fanfan/contextual-reading-v1.4.png" width="1280" height="800" alt="FanFan Cards explains migration in the context of an English engineering article and keeps the original sentence">
-      </figure>
-      <div class="stage-note" aria-hidden="true"><strong>v1.4.0</strong><span>Read · Notice · Remember</span></div>
+    <section class="motion-showcase" aria-labelledby="motion-title">
+      <div class="motion-heading">
+        <div><p class="section-kicker">Product in motion</p><h2 id="motion-title">Not a screenshot.<br>A real reading moment.</h2></div>
+        <div><p>From opening a page to recognizing a word you learned; from pressing one button to reading original and translated subtitles together. Both demos loop automatically and pause on hover.</p><span class="motion-live"><i></i> Live demo</span></div>
+      </div>
+
+      <article class="motion-demo fanfan-demo">
+        <header class="motion-demo-head"><span><b>01</b> FanFan mode</span><strong>Your saved words return to the page</strong></header>
+        <div class="demo-browser" aria-hidden="true">
+          <div class="demo-browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">fieldnotes.dev / systems / reliable-products</span><span class="browser-lock">⌁</span></div>
+          <div class="fanfan-canvas">
+            <div class="demo-article">
+              <span class="demo-article-meta">SYSTEMS · 7 MIN READ</span>
+              <h3>The quiet systems behind reliable products</h3>
+              <p>A database <mark class="saved-word saved-word-one">migration</mark> is rarely difficult because of one command. The real work is designing an <mark class="saved-word saved-word-two">idempotent</mark> path that remains safe when retries arrive together.</p>
+              <p>Good teams remove a <mark class="saved-word saved-word-three">deprecated</mark> path deliberately. They observe the <mark class="saved-word saved-word-four">bottleneck</mark> and keep rollback boring enough to trust.</p>
+            </div>
+            <div class="fanfan-switch"><span>FanFan mode</span><i><b></b></i></div>
+            <aside class="fanfan-word-card">
+              <div class="word-card-top"><div><strong>idempotent</strong><small>/ˌaɪdəmˈpoʊtənt/ · adjective</small></div><span>×</span></div>
+              <div class="word-card-section"><label>MEANING</label><strong>producing the same result</strong></div>
+              <div class="word-card-section word-card-context"><label>IN THIS CONTEXT</label><p>Safe to repeat without creating an additional effect.</p></div>
+              <div class="word-card-source">From Field Notes · Saved</div>
+            </aside>
+            <span class="demo-cursor fanfan-cursor"></span>
+          </div>
+        </div>
+        <footer class="motion-demo-foot"><span>Open a page</span><i></i><span>Words highlight</span><i></i><span>Click to revisit</span><strong>No additional AI call</strong></footer>
+      </article>
+
+      <article class="motion-demo youtube-demo">
+        <header class="motion-demo-head"><span><b>02</b> Bilingual YouTube subtitles</span><strong>One press brings original and translation together</strong></header>
+        <div class="demo-browser" aria-hidden="true">
+          <div class="demo-browser-bar demo-browser-dark"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">youtube.com / watch</span><span class="browser-lock">⌁</span></div>
+          <div class="youtube-canvas">
+            <div class="video-copy"><span>PRODUCT NOTES · EPISODE 04</span><h3>Design for focus,<br>not for noise.</h3><i></i></div>
+            <div class="video-code"><span></span><span></span><span></span><code>const product = {<br>&nbsp;&nbsp;purpose: 'clear',<br>&nbsp;&nbsp;attention: 'respected'<br>}</code></div>
+            <div class="subtitle-stack"><p>Great products make the next step feel obvious.</p><strong>好的产品，会让下一步变得自然而清晰。</strong></div>
+            <div class="video-progress"><i></i></div>
+            <div class="video-controls"><span>▶</span><span>▮▮</span><small>6:18 / 14:42</small><b class="caption-control">翻</b><span>▣</span><span>⌗</span></div>
+            <div class="subtitle-settings"><strong>Bilingual subtitles</strong><div><span>Display</span><b>Both</b><em>Translation</em></div><div><span>Size</span><em>S</em><b>Standard</b><em>L</em></div></div>
+            <span class="demo-cursor youtube-cursor"></span>
+          </div>
+        </div>
+        <footer class="motion-demo-foot"><span>Play video</span><i></i><span>Enable subtitles</span><i></i><span>Read both</span><strong>Preferences remembered</strong></footer>
+      </article>
     </section>
 
     <section class="product-principles" aria-label="Product highlights">
@@ -139,7 +168,7 @@
     </section>
 
     <section class="manifesto">
-      <div><p class="section-kicker">What changed in 1.4</p><h2>FanFan helps when you get stuck—and when a word returns.</h2></div>
+      <div><p class="section-kicker">How it works</p><h2>FanFan helps when you get stuck—and when a word returns.</h2></div>
       <div class="manifesto-copy">
         <article><h3>01 · FanFan mode brings your library back to the page</h3><p>Saved words are marked with a restrained orange highlight on any page. Click one to read the stored meaning, examples, and synonyms—no network request and no additional model cost.</p></article>
         <article><h3>02 · For a new word, understand this occurrence</h3><p>Select a word, phrase, or sentence. AI first works out what it means in that specific passage, then gives a concise meaning, English definition, examples, and synonyms.</p></article>

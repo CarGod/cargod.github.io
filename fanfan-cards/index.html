@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-2">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-3">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Luffy Liu">
   <meta property="og:title" content="翻翻词卡 — AI 英语阅读助手">
@@ -47,7 +47,6 @@
     "description": "一款本地优先的 Chrome 英语阅读扩展，支持收藏词自动高亮、AI 语境解释、整页翻译、YouTube 双语字幕和间隔复习。",
     "inLanguage": "zh-CN",
     "image": "https://luffyliu.com/assets/fanfan/fanfan-mode.png",
-    "softwareVersion": "1.4.0",
     "installUrl": "https://chromewebstore.google.com/detail/%E7%BF%BB%E7%BF%BB%E8%AF%8D%E5%8D%A1-%E2%80%94-ai-%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B/ejhmidlnfffkpolnaiflfaojgfbngjba",
     "applicationCategory": "EducationalApplication",
     "applicationSubCategory": "Language Learning",
@@ -113,22 +112,52 @@
       <p class="release-note">Chrome Web Store 已上线 · 开源 · 免费 · 本地优先</p>
     </section>
 
-    <section class="product-stage" aria-label="翻翻词卡界面预览">
-      <div class="stage-glow stage-glow-one"></div>
-      <div class="stage-glow stage-glow-two"></div>
-      <figure class="product-shot product-shot-main">
-        <figcaption><span>01</span> 翻翻模式 · 收藏词自动高亮</figcaption>
-        <img src="/assets/fanfan/fanfan-mode.png" width="1280" height="800" alt="英文文章里 migration、idempotent 等已收藏单词被轻量标出，点击后直接显示已有词卡">
-      </figure>
-      <figure class="product-shot product-shot-secondary">
-        <figcaption><span>02</span> YouTube 双语字幕</figcaption>
-        <img src="/assets/fanfan/youtube-bilingual-subtitles.png" width="1280" height="800" alt="YouTube 播放器同时显示英文原字幕与中文翻译，并打开翻翻词卡字幕设置面板">
-      </figure>
-      <figure class="product-shot product-shot-tertiary">
-        <figcaption><span>03</span> AI 语境解释</figcaption>
-        <img src="/assets/fanfan/contextual-reading-v1.4.png" width="1280" height="800" alt="在英文技术文章上选中 migration 后，翻翻词卡给出当前语境含义、整句翻译和例句">
-      </figure>
-      <div class="stage-note" aria-hidden="true"><strong>v1.4.0</strong><span>Read · Notice · Remember</span></div>
+    <section class="motion-showcase" aria-labelledby="motion-title">
+      <div class="motion-heading">
+        <div><p class="section-kicker">Product in motion</p><h2 id="motion-title">不是截图，<br>是一次真实的阅读动作。</h2></div>
+        <div><p>从打开网页，到认出学过的词；从按下字幕按钮，到同时看懂原文和翻译。两个演示会自动循环，悬停即可暂停。</p><span class="motion-live"><i></i> 自动演示中</span></div>
+      </div>
+
+      <article class="motion-demo fanfan-demo">
+        <header class="motion-demo-head"><span><b>01</b> 翻翻模式</span><strong>收藏词自己回到阅读现场</strong></header>
+        <div class="demo-browser" aria-hidden="true">
+          <div class="demo-browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">fieldnotes.dev / systems / reliable-products</span><span class="browser-lock">⌁</span></div>
+          <div class="fanfan-canvas">
+            <div class="demo-article">
+              <span class="demo-article-meta">SYSTEMS · 7 MIN READ</span>
+              <h3>The quiet systems behind reliable products</h3>
+              <p>A database <mark class="saved-word saved-word-one">migration</mark> is rarely difficult because of one command. The real work is designing an <mark class="saved-word saved-word-two">idempotent</mark> path that remains safe when retries arrive together.</p>
+              <p>Good teams remove a <mark class="saved-word saved-word-three">deprecated</mark> path deliberately. They observe the <mark class="saved-word saved-word-four">bottleneck</mark> and keep rollback boring enough to trust.</p>
+            </div>
+            <div class="fanfan-switch"><span>翻翻模式</span><i><b></b></i></div>
+            <aside class="fanfan-word-card">
+              <div class="word-card-top"><div><strong>idempotent</strong><small>/ˌaɪdəmˈpoʊtənt/ · 形容词</small></div><span>×</span></div>
+              <div class="word-card-section"><label>基础释义</label><strong>幂等的</strong></div>
+              <div class="word-card-section word-card-context"><label>在这里</label><p>重复执行仍得到相同结果，不会产生额外影响。</p></div>
+              <div class="word-card-source">来自 Field Notes · 已收藏</div>
+            </aside>
+            <span class="demo-cursor fanfan-cursor"></span>
+          </div>
+        </div>
+        <footer class="motion-demo-foot"><span>进入网页</span><i></i><span>自动高亮</span><i></i><span>点击回看</span><strong>不再次调用 AI</strong></footer>
+      </article>
+
+      <article class="motion-demo youtube-demo">
+        <header class="motion-demo-head"><span><b>02</b> YouTube 双语字幕</span><strong>按一下，原文和翻译一起出现</strong></header>
+        <div class="demo-browser" aria-hidden="true">
+          <div class="demo-browser-bar demo-browser-dark"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">youtube.com / watch</span><span class="browser-lock">⌁</span></div>
+          <div class="youtube-canvas">
+            <div class="video-copy"><span>PRODUCT NOTES · EPISODE 04</span><h3>Design for focus,<br>not for noise.</h3><i></i></div>
+            <div class="video-code"><span></span><span></span><span></span><code>const product = {<br>&nbsp;&nbsp;purpose: 'clear',<br>&nbsp;&nbsp;attention: 'respected'<br>}</code></div>
+            <div class="subtitle-stack"><p>Great products make the next step feel obvious.</p><strong>好的产品，会让下一步变得自然而清晰。</strong></div>
+            <div class="video-progress"><i></i></div>
+            <div class="video-controls"><span>▶</span><span>▮▮</span><small>6:18 / 14:42</small><b class="caption-control">翻</b><span>▣</span><span>⌗</span></div>
+            <div class="subtitle-settings"><strong>双语字幕</strong><div><span>显示</span><b>双语</b><em>仅译文</em></div><div><span>字号</span><em>小</em><b>标准</b><em>大</em></div></div>
+            <span class="demo-cursor youtube-cursor"></span>
+          </div>
+        </div>
+        <footer class="motion-demo-foot"><span>播放视频</span><i></i><span>开启字幕</span><i></i><span>双语同步</span><strong>显示偏好自动记住</strong></footer>
+      </article>
     </section>
 
     <section class="product-principles" aria-label="产品特点">
@@ -139,7 +168,7 @@
     </section>
 
     <section class="manifesto">
-      <div><p class="section-kicker">What changed in 1.4</p><h2>不只在卡住时出现，也在你再次遇见时提醒。</h2></div>
+      <div><p class="section-kicker">How it works</p><h2>不只在卡住时出现，也在你再次遇见时提醒。</h2></div>
       <div class="manifesto-copy">
         <article><h3>01 · 翻翻模式：把词库带回网页</h3><p>开启后，词库里收藏过的词会以克制的品牌橙标在任何网页上。点击直接读取已经保存的释义、例句和近义词，不发网络请求，也不产生新的模型费用。</p></article>
         <article><h3>02 · 第一次遇见：在当前语境里解释</h3><p>选中单词、短语或句子，AI 先判断它在这一段里的具体含义，再给出基础释义、英文释义、例句与近义词。</p></article>
