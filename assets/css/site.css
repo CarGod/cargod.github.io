@@ -162,17 +162,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .button-pending { cursor: default; background: linear-gradient(115deg, var(--brand-ink), #2d3139); color: #fff; }
 .button-pending:hover { transform: none; }
 .release-note { margin: 16px 0 0; color: var(--muted); font: 500 10px DM Mono, monospace; letter-spacing: .06em; text-transform: uppercase; }
-.product-stage { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 18px; padding: 58px; overflow: hidden; border-radius: 36px; background: var(--brand-ink); box-shadow: 0 32px 90px rgba(20,22,26,.19); }
+.product-stage { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; margin-top: 18px; padding: 58px; overflow: hidden; border-radius: 36px; background: var(--brand-ink); box-shadow: 0 32px 90px rgba(20,22,26,.19); }
 .stage-glow { position: absolute; border-radius: 50%; filter: blur(2px); }
 .stage-glow-one { width: 420px; height: 420px; right: -120px; top: -160px; background: rgba(255,106,61,.32); }
 .stage-glow-two { width: 480px; height: 480px; left: -190px; bottom: -260px; background: rgba(91,69,176,.38); }
 .product-shot { position: relative; z-index: 1; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 24px; background: #fff; box-shadow: 0 28px 80px rgba(0,0,0,.35); }
 .product-shot figcaption { min-height: 46px; display: flex; align-items: center; gap: 10px; padding: 0 17px; border-bottom: 1px solid #e4e5e8; background: #f5f5f6; color: #555b65; text-transform: uppercase; font: 500 10px DM Mono, monospace; letter-spacing: .08em; }
 .product-shot figcaption span { color: var(--flame-dark); }
-.product-shot img { width: 100%; }
-.product-shot-main { grid-column: 1 / -1; width: 100%; margin: 0; transform: rotate(-.5deg); }
-.product-shot-secondary { width: 100%; margin: 0; transform: rotate(1deg); }
-.product-shot-tertiary { width: 100%; margin: 0; transform: rotate(-1deg); }
+.product-shot img { width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: contain; background: #f5f5f6; }
+.product-shot-main, .product-shot-secondary, .product-shot-tertiary { grid-column: 1; width: 100%; margin: 0; transform: none; }
 .stage-note { position: absolute; right: 58px; top: 46px; z-index: 3; display: grid; transform: rotate(3deg); color: #fff; text-align: right; }
 .stage-note strong { color: #ff9b75; font-size: 24px; letter-spacing: -.03em; }
 .stage-note span { color: #a9aeb6; font: 500 11px DM Mono, monospace; letter-spacing: .08em; text-transform: uppercase; }
