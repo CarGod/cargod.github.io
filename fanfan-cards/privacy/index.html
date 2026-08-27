@@ -8,18 +8,22 @@
   <meta name="author" content="Luffy Liu">
   <meta name="description" content="翻翻词卡隐私政策：数据如何在本机处理、何时发送给用户选择的服务商，以及如何删除。">
   <link rel="canonical" href="https://luffyliu.com/fanfan-cards/privacy/">
+  <link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/privacy/">
+  <link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/privacy/">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260819-2">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-1">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Luffy Liu">
   <meta property="og:title" content="翻翻词卡隐私政策">
   <meta property="og:description" content="了解翻翻词卡如何在本机处理数据、何时发送给用户选择的服务商，以及如何删除数据。">
   <meta property="og:url" content="https://luffyliu.com/fanfan-cards/privacy/">
   <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:image" content="https://luffyliu.com/assets/fanfan/icon-128.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="128">
@@ -36,13 +40,19 @@
   <a class="skip-link" href="#main">跳到正文</a>
   <header class="site-header">
     <a class="wordmark" href="/"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu 头像"><span>Luffy Liu</span></a>
-    <nav class="nav" aria-label="主导航"><a href="/fanfan-cards/">翻翻词卡</a><a class="nav-github" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+    <nav class="nav" aria-label="主导航">
+      <a href="/fanfan-cards/">翻翻词卡</a>
+      <a class="nav-github" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <div class="language-switch" role="group" aria-label="语言选择">
+        <a href="/fanfan-cards/privacy/" aria-current="page" lang="zh-CN" hreflang="zh-CN">中</a><span aria-hidden="true">/</span><a href="/en/fanfan-cards/privacy/" lang="en" hreflang="en">EN</a>
+      </div>
+    </nav>
   </header>
   <main id="main" class="legal page-shell">
     <header class="legal-head">
       <p class="eyebrow">FanFan Cards · Privacy</p>
       <h1>翻翻词卡隐私政策</h1>
-      <p class="legal-meta">生效日期：2026 年 8 月 26 日 · 最后更新：2026 年 8 月 26 日</p>
+      <p class="legal-meta">生效日期：2026 年 8 月 26 日 · 最后更新：2026 年 8 月 27 日</p>
     </header>
     <div class="legal-layout">
       <nav class="legal-toc" aria-label="隐私政策目录">
@@ -59,6 +69,7 @@
           <h2>扩展处理的数据</h2>
           <ul>
             <li><strong>网页内容与浏览信息：</strong>当用户主动划词、解释或翻译时，扩展读取选中文字、附近句子或段落、页面标题和页面网址。整页或整段翻译会读取当前页面中可见的文本。</li>
+            <li><strong>翻翻模式与收藏词高亮：</strong>用户开启翻翻模式后，扩展会在本机扫描当前页面中可见的文本，并与保存在浏览器本地的词库进行匹配。匹配与高亮完全在本机完成，不会把页面内容发送给 AI 服务商、开发者或其他第三方。</li>
             <li><strong>YouTube 视频字幕：</strong>当用户在 YouTube 播放器上打开双语字幕时，扩展读取当前视频的字幕轨列表与字幕文本。字幕请求由页面上下文向 <code>youtube.com</code> 发出，因此会像页面自身的字幕请求一样携带浏览器已有的 YouTube Cookie；扩展不读取、不保存、也不传输这些 Cookie。播放器生成的一次性校验参数仅用于紧接着的一次字幕请求，不保存，也不发送给开发者或其他第三方。</li>
             <li><strong>学习数据：</strong>收藏的词、解释、来源句子与网址、复习记录、学习活动和用户设置。</li>
             <li><strong>身份验证信息：</strong>用户自行填写的 AI 服务 API Key，以及启用 GitHub 同步时填写的 GitHub Token。</li>
@@ -87,7 +98,7 @@
         </section>
         <section id="contact">
           <h2>联系方式</h2>
-          <p>如对本政策有疑问，请通过 <a href="https://github.com/CarGod/fanfan-cards/issues" target="_blank" rel="noreferrer"><strong>GitHub Issues ↗</strong></a> 联系开发者。</p>
+          <p>如对本政策有疑问，请发送邮件至 <a href="mailto:luffyliux@gmail.com"><strong>luffyliux@gmail.com</strong></a>，或通过 <a href="https://github.com/CarGod/fanfan-cards/issues" target="_blank" rel="noreferrer"><strong>GitHub Issues ↗</strong></a> 联系开发者。</p>
         </section>
       </article>
     </div>

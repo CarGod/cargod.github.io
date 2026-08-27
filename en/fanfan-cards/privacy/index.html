@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f9">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Luffy Liu">
+  <meta name="description" content="FanFan Cards privacy policy: what stays on your device, what is sent to a provider you choose, and how to delete your data.">
+  <link rel="canonical" href="https://luffyliu.com/en/fanfan-cards/privacy/">
+  <link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/privacy/">
+  <link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/privacy/">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/en/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Luffy Liu">
+  <meta property="og:title" content="FanFan Cards Privacy Policy">
+  <meta property="og:description" content="Learn what FanFan Cards keeps on your device, when data is sent to a provider you choose, and how to delete it.">
+  <meta property="og:url" content="https://luffyliu.com/en/fanfan-cards/privacy/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:image" content="https://luffyliu.com/assets/fanfan/icon-128.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="128">
+  <meta property="og:image:height" content="128">
+  <meta property="og:image:alt" content="FanFan Cards icon">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FanFan Cards Privacy Policy">
+  <meta name="twitter:description" content="Learn what FanFan Cards keeps on your device, when data is sent to a provider you choose, and how to delete it.">
+  <meta name="twitter:image" content="https://luffyliu.com/assets/fanfan/icon-128.png">
+  <meta name="twitter:image:alt" content="FanFan Cards icon">
+  <title>FanFan Cards Privacy Policy</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="/en/"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Portrait of Luffy Liu"><span>Luffy Liu</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/en/fanfan-cards/">FanFan Cards</a>
+      <a class="nav-github" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <div class="language-switch" role="group" aria-label="Language selection">
+        <a href="/fanfan-cards/privacy/" lang="zh-CN" hreflang="zh-CN">中</a><span aria-hidden="true">/</span><a href="/en/fanfan-cards/privacy/" aria-current="page" lang="en" hreflang="en">EN</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="legal page-shell">
+    <header class="legal-head">
+      <p class="eyebrow">FanFan Cards · Privacy</p>
+      <h1>Privacy Policy</h1>
+      <p class="legal-meta">Effective August 26, 2026 · Last updated August 27, 2026</p>
+    </header>
+    <div class="legal-layout">
+      <nav class="legal-toc" aria-label="Privacy policy contents">
+        <strong>ON THIS PAGE</strong>
+        <a href="#overview">Overview</a><a href="#data">Data processed</a><a href="#sharing">Third-party transfers</a><a href="#retention">Retention and deletion</a><a href="#security">Security and permissions</a><a href="#contact">Contact</a>
+      </nav>
+      <article class="legal-content">
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>FanFan Cards is a local-first Chrome extension. The developer does not operate a server that receives extension user data, does not use advertising, analytics, or tracking services, and does not sell user data.</p>
+          <p class="legal-callout">The extension can use its built-in offline dictionary by default. Data is sent to a third party only when you configure an AI provider or turn on GitHub sync.</p>
+        </section>
+        <section id="data">
+          <h2>Data the extension processes</h2>
+          <ul>
+            <li><strong>Website content and page information:</strong> when you actively select, explain, or translate content, the extension reads the selected text, the nearby sentence or paragraph, the page title, and the page URL. Paragraph and full-page translation read visible text on the current page.</li>
+            <li><strong>FanFan mode and saved-word highlights:</strong> when you enable FanFan mode, the extension scans visible text on the current page and matches it against the word library stored in your browser. Matching and highlighting happen entirely on-device. Page content is not sent to an AI provider, the developer, or another third party.</li>
+            <li><strong>YouTube captions:</strong> when you turn on bilingual captions in the YouTube player, the extension reads the current video's caption-track list and caption text. Caption requests are made from the page context to <code>youtube.com</code>, so they carry the browser's existing YouTube cookies in the same way as the page's own requests. The extension does not read, store, or transmit those cookies. A one-time validation parameter generated by the player is used only for the immediately following caption request; it is not retained or sent to the developer or another third party.</li>
+            <li><strong>Learning data:</strong> saved words, explanations, source sentences and URLs, review history, learning activity, and user settings.</li>
+            <li><strong>Authentication information:</strong> AI service API keys entered by the user and, if GitHub sync is enabled, a GitHub token entered by the user.</li>
+          </ul>
+          <p>This data is stored by default in your own browser through <code>chrome.storage.local</code>. The developer cannot access this local data.</p>
+        </section>
+        <section id="sharing">
+          <h2>When data is sent to third parties</h2>
+          <ol>
+            <li>After you choose and configure an AI provider, the selected text, required context, page title, and URL are sent directly over HTTPS to that provider (Anthropic, OpenAI, DeepSeek, Google Gemini, or an OpenAI-compatible endpoint you provide) to generate an explanation or translation. When you turn on bilingual YouTube captions, the current caption text and video title are sent in the same way to generate the translation. An API key is sent only to its corresponding provider.</li>
+            <li>After you actively enable GitHub sync, word cards, source information, review history, and learning activity are sent to a repository in your own GitHub account. The GitHub token is sent only to the GitHub API.</li>
+          </ol>
+          <p>The developer does not receive this data through a relay server. A third party's handling of the data is governed by the terms and privacy policy between you and that provider.</p>
+        </section>
+        <section id="retention">
+          <h2>Data retention and deletion</h2>
+          <p>Local data remains until you clear it in the extension, remove the extension's data, or uninstall the extension. You can export your cards at any time and can clear translation caches or all cards from the settings page.</p>
+          <p>Data synced to GitHub is governed by the settings and actions of your own GitHub repository and can be deleted by you on GitHub at any time.</p>
+        </section>
+        <section id="security">
+          <h2>Security and minimum permissions</h2>
+          <p>The extension does not load or execute remote code. External requests use HTTPS; only a local development endpoint may use <code>http://localhost</code>. Access to a custom API endpoint is requested for that specific host only after you click “Test connection.”</p>
+          <p>The extension injects a script into the page context on <code>youtube.com</code>. It is used only to read public video and caption-track information from the player, record the one-time validation parameter described above, and make the same-origin caption request. The script cannot access extension APIs, does not read other page data, and does not communicate with a server operated by the developer.</p>
+          <p>The extension's use of information follows the Chrome Web Store User Data Policy, including its Limited Use requirements:</p>
+          <p class="legal-callout">The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>For questions about this policy, email <a href="mailto:luffyliux@gmail.com"><strong>luffyliux@gmail.com</strong></a> or contact the developer through <a href="https://github.com/CarGod/fanfan-cards/issues" target="_blank" rel="noreferrer"><strong>GitHub Issues ↗</strong></a>.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="footer page-shell"><span>© 2026 Luffy Liu</span><span><a href="/en/fanfan-cards/">Back to FanFan Cards</a></span></footer>
+</body>
+</html>

@@ -3,34 +3,44 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://luffyliu.com/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/"/>
   </url>
   <url>
     <loc>https://luffyliu.com/en/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/"/>
   </url>
   <url>
     <loc>https://luffyliu.com/fanfan-cards/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/"/>
   </url>
   <url>
     <loc>https://luffyliu.com/en/fanfan-cards/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/"/>
   </url>
   <url>
     <loc>https://luffyliu.com/fanfan-cards/privacy/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/privacy/"/>
+  </url>
+  <url>
+    <loc>https://luffyliu.com/en/fanfan-cards/privacy/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/privacy/"/>
   </url>
 </urlset>
