@@ -95,6 +95,17 @@ for (const route of ["/", "/zh-tw/", "/en/", "/ja/", "/ko/", "/es/"]) {
   const homeAlternates = Object.fromEntries(matches(page.html, /<link[^>]+rel=["']alternate["'][^>]+hreflang=["']([^"']+)["'][^>]+href=["']([^"']+)/gi).map((item) => [item[1], item[2]]));
   for (const locale of ["zh-CN", "zh-TW", "en", "ja", "ko", "es", "x-default"]) if (!homeAlternates[locale]) errors.push(`${route}: missing homepage hreflang ${locale}`);
   if (matches(page.html, /<a[^>]+data-language=["'](?:zh-CN|zh-TW|en|ja|ko|es)["']/gi).length < 6) errors.push(`${route}: homepage must expose six ordinary language links`);
+  const prefix = route === "/" ? "" : route.slice(0, -1);
+  const mobileNav = page.html.match(/<nav[^>]+class=["'][^"']*mobile-content-nav[^"']*["'][^>]*>([\s\S]*?)<\/nav>/i)?.[1] || "";
+  for (const destination of [`${prefix}/tutorials/`, `${prefix}/blog/`]) {
+    if (!new RegExp(`<a[^>]+href=["']${destination.replaceAll("/", "\\/")}["']`, "i").test(mobileNav)) errors.push(`${route}: mobile content navigation is missing ${destination}`);
+  }
+}
+
+const rootHome = htmlByUrl.get(`${SITE_URL}/`)?.html || "";
+if (/X icon by Icons8|icons8\.com\/icon/i.test(rootHome)) errors.push("/: obsolete visible Icons8 credit remains");
+if (!/<a[^>]+href=["']https:\/\/x\.com\/luffyliux["'][^>]+aria-label=["'][^"']+["'][^>]*>[\s\S]*?<img[^>]+src=["']\/assets\/icons\/x-mark\.svg["'][^>]+alt=["']["']/i.test(rootHome)) {
+  errors.push("/: X contact link must use the local mark and retain an accessible link name");
 }
 
 const sitemapIndex = await fs.readFile(path.join(OUT, "sitemap.xml"), "utf8").catch(() => "");

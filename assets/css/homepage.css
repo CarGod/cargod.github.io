@@ -124,9 +124,6 @@
 .contact-link small { margin-bottom: 2px; color: rgba(255,253,248,.76); font: 500 9px DM Mono, monospace; letter-spacing: .08em; text-transform: uppercase; }
 .contact-link b { font-weight: 500; transition: transform .18s ease; }
 .contact-link:hover b, .contact-link:focus-visible b { transform: translate(2px, -2px); }
-.icon-credit { color: inherit; text-decoration: underline; text-decoration-color: rgba(255,253,248,.42); text-underline-offset: 3px; }
-.icon-credit:hover, .icon-credit:focus-visible { text-decoration-color: currentColor; }
-
 @media (max-width: 980px) {
   .home-hero { min-height: auto; grid-template-columns: 1fr; grid-template-areas: "copy" "experiment" "side"; gap: 40px; padding-block: 64px; }
   .threads-note { max-width: none; }
@@ -141,6 +138,7 @@
 @media (max-width: 640px) {
   .language-switch { margin-left: auto; }
   .home-hero { min-height: auto; gap: 32px; padding-block: 44px 56px; }
+  .experiment-ledger { min-width: 0; }
   .home-hero h1 { font-size: 47px; }
   .home-hero-lede { font-size: 16px; }
   .threads-note { padding: 28px 0 0; border-top: 1px solid var(--line); border-left: 0; }

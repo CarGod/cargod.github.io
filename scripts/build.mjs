@@ -21,12 +21,12 @@ const MAX_SITE_BYTES = 850 * 1024 * 1024;
 const WARN_IMAGE_BYTES = 1.5 * 1024 * 1024;
 const REQUIRED_FIELDS = ["title", "slug", "contentKey", "locale", "description", "published", "updated", "tags", "draft"];
 const LOCALES = {
-  "zh-CN": { prefix: "", html: "zh-CN", og: "zh_CN", label: "简体中文", short: "中", blog: "博客", search: "搜索", tutorials: "教程", home: "首页", archive: "归档", allTags: "全部标签" },
-  "zh-TW": { prefix: "/zh-tw", html: "zh-TW", og: "zh_TW", label: "繁體中文", short: "繁", blog: "網誌", search: "搜尋", tutorials: "教學", home: "首頁", archive: "封存", allTags: "全部標籤" },
-  en: { prefix: "/en", html: "en", og: "en_US", label: "English", short: "EN", blog: "Blog", search: "Search", tutorials: "Tutorials", home: "Home", archive: "Archive", allTags: "All tags" },
-  ja: { prefix: "/ja", html: "ja", og: "ja_JP", label: "日本語", short: "日", blog: "ブログ", search: "検索", tutorials: "チュートリアル", home: "ホーム", archive: "アーカイブ", allTags: "すべてのタグ" },
-  ko: { prefix: "/ko", html: "ko", og: "ko_KR", label: "한국어", short: "한", blog: "블로그", search: "검색", tutorials: "튜토리얼", home: "홈", archive: "아카이브", allTags: "모든 태그" },
-  es: { prefix: "/es", html: "es", og: "es_ES", label: "Español", short: "ES", blog: "Blog", search: "Buscar", tutorials: "Tutoriales", home: "Inicio", archive: "Archivo", allTags: "Todas las etiquetas" }
+  "zh-CN": { prefix: "", html: "zh-CN", og: "zh_CN", label: "简体中文", short: "中", blog: "博客", search: "搜索", tutorials: "教程", home: "首页", archive: "归档", allTags: "全部标签", contentNav: "主要内容" },
+  "zh-TW": { prefix: "/zh-tw", html: "zh-TW", og: "zh_TW", label: "繁體中文", short: "繁", blog: "網誌", search: "搜尋", tutorials: "教學", home: "首頁", archive: "封存", allTags: "全部標籤", contentNav: "主要內容" },
+  en: { prefix: "/en", html: "en", og: "en_US", label: "English", short: "EN", blog: "Blog", search: "Search", tutorials: "Tutorials", home: "Home", archive: "Archive", allTags: "All tags", contentNav: "Primary content" },
+  ja: { prefix: "/ja", html: "ja", og: "ja_JP", label: "日本語", short: "日", blog: "ブログ", search: "検索", tutorials: "チュートリアル", home: "ホーム", archive: "アーカイブ", allTags: "すべてのタグ", contentNav: "メインコンテンツ" },
+  ko: { prefix: "/ko", html: "ko", og: "ko_KR", label: "한국어", short: "한", blog: "블로그", search: "검색", tutorials: "튜토리얼", home: "홈", archive: "아카이브", allTags: "모든 태그", contentNav: "주요 콘텐츠" },
+  es: { prefix: "/es", html: "es", og: "es_ES", label: "Español", short: "ES", blog: "Blog", search: "Buscar", tutorials: "Tutoriales", home: "Inicio", archive: "Archivo", allTags: "Todas las etiquetas", contentNav: "Contenido principal" }
 };
 const COPY = {
   "zh-CN": { blogTitle: "博客：AI、Agent 与独立产品实践", blogLede: "关于企业 AI、Agent、独立产品与真实工作流的长期记录。", searchTitle: "搜索博客", searchLede: "按关键词、标签和年份搜索文章；索引按需分片加载。", keyword: "关键词", placeholder: "例如：Agent、数据治理、Copilot", submit: "搜索", tag: "标签", year: "年份", all: "全部", prompt: "输入关键词，或选择标签和年份。", none: "没有找到匹配文章。" },
@@ -199,12 +199,17 @@ function languageSwitcher(locale, alternates = {}) {
   }).join('<span aria-hidden="true">/</span>')}</div>`;
 }
 
+function mobileContentNav(locale, active = "") {
+  const text = LOCALES[locale];
+  return `<nav class="mobile-content-nav" aria-label="${text.contentNav}" data-pagefind-ignore><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a></nav>`;
+}
+
 function siteHeader(locale, active = "blog", alternates = {}) {
   const text = LOCALES[locale];
   return `<header class="site-header" data-pagefind-ignore>
     <a class="wordmark" href="${localePath(locale, "/")}" aria-label="Luffy Liu ${text.home}"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu"><span>Luffy Liu</span></a>
     <nav class="nav content-nav" aria-label="Navigation"><a href="${localePath(locale, "/")}">${text.home}</a><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}">${text.search}</a>${languageSwitcher(locale, alternates)}</nav>
-  </header>`;
+  </header>${mobileContentNav(locale, active)}`;
 }
 
 function siteFooter(locale) {
@@ -237,8 +242,8 @@ function baseHead({ title, description, canonical, locale = "zh-CN", alternates 
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${image}">
   ${extra}
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260827-3">
-  <link rel="stylesheet" href="/assets/css/content.css?v=20260830-2">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260831-1">
+  <link rel="stylesheet" href="/assets/css/content.css?v=20260831-1">
   <title>${escapeHtml(title)}</title>`;
 }
 
@@ -418,7 +423,7 @@ function entryHome(locale, content, alternates) {
       { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Luffy Liu", url: SITE_URL, image: `${SITE_URL}/assets/luffy-avatar.png`, sameAs: ["https://github.com/CarGod", "https://x.com/luffyliux"] }
     ]
   };
-  const homeHeader = `<header class="site-header" data-pagefind-ignore><a class="wordmark" href="#top" aria-label="Luffy Liu ${text.home}"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu"><span>Luffy Liu</span></a><nav class="nav content-nav" aria-label="${escapeHtml(content.navigation.language)}"><a href="#work">${escapeHtml(content.navigation.work)}</a><a href="${localizedPrefix}/tutorials/">${escapeHtml(content.navigation.tutorials)}</a><a href="${localizedPrefix}/blog/">${escapeHtml(content.navigation.blog)}</a><a href="#about">${escapeHtml(content.navigation.about)}</a><a class="nav-github" href="https://github.com/CarGod" target="_blank" rel="noreferrer">${escapeHtml(content.navigation.github)} ↗</a>${languageSwitcher(locale, alternates)}</nav></header>`;
+  const homeHeader = `<header class="site-header" data-pagefind-ignore><a class="wordmark" href="#top" aria-label="Luffy Liu ${text.home}"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu"><span>Luffy Liu</span></a><nav class="nav content-nav" aria-label="${escapeHtml(content.navigation.language)}"><a href="#work">${escapeHtml(content.navigation.work)}</a><a href="${localizedPrefix}/tutorials/">${escapeHtml(content.navigation.tutorials)}</a><a href="${localizedPrefix}/blog/">${escapeHtml(content.navigation.blog)}</a><a href="#about">${escapeHtml(content.navigation.about)}</a><a class="nav-github" href="https://github.com/CarGod" target="_blank" rel="noreferrer">${escapeHtml(content.navigation.github)} ↗</a>${languageSwitcher(locale, alternates)}</nav></header>${mobileContentNav(locale)}`;
   return `<!doctype html>
 <html lang="${text.html}"><head>
   ${baseHead({ title: content.seo.title, description: content.seo.description, canonical, locale, alternates })}
