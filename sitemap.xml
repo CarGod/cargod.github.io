@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://luffyliu.com/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/"/>
+    <image:image><image:loc>https://luffyliu.com/assets/og.png</image:loc><image:title>Luffy Liu</image:title></image:image>
   </url>
   <url>
     <loc>https://luffyliu.com/en/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/"/>
+    <image:image><image:loc>https://luffyliu.com/assets/og.png</image:loc><image:title>Luffy Liu</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://luffyliu.com/tutorials/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://luffyliu.com/tutorials/prompt-engineering/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://luffyliu.com/blog/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://luffyliu.com/blog/enterprise-ai-four-stages/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <image:image>
+      <image:loc>https://luffyliu.com/assets/blog/enterprise-ai-four-stages/cover-liu-lufei-original-v8.png</image:loc>
+      <image:title>企业老系统如何接入 AI？先看这四个阶段</image:title>
+      <image:caption>企业系统接入 AI 的 Chatbot、AI + Tools、Copilot 和 Agent 四个阶段</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://luffyliu.com/fanfan-cards/</loc>
@@ -21,6 +48,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/"/>
+    <image:image><image:loc>https://luffyliu.com/assets/fanfan/fanfan-mode.png</image:loc><image:title>翻翻词卡 — AI 英语阅读助手</image:title></image:image>
   </url>
   <url>
     <loc>https://luffyliu.com/en/fanfan-cards/</loc>
@@ -28,6 +56,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://luffyliu.com/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://luffyliu.com/en/fanfan-cards/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://luffyliu.com/fanfan-cards/"/>
+    <image:image><image:loc>https://luffyliu.com/assets/fanfan/fanfan-mode.png</image:loc><image:title>FanFan Cards — AI Reading Companion</image:title></image:image>
   </url>
   <url>
     <loc>https://luffyliu.com/fanfan-cards/privacy/</loc>

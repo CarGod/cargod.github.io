@@ -1,0 +1,100 @@
+{
+  "locale": "es",
+  "seo": {
+    "title": "Luffy Liu — Creador independiente de productos",
+    "description": "Sitio personal de Luffy Liu sobre productos independientes, herramientas para desarrolladores, Agents, Vibe Coding y flujos de trabajo prácticos con IA."
+  },
+  "navigation": {
+    "work": "Proyectos",
+    "tutorials": "Tutoriales",
+    "blog": "Blog",
+    "about": "Acerca de",
+    "github": "GitHub",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "En la era de la IA · Dejar espacio para lo desconocido",
+    "quote": "Si no esperas lo inesperado, no lo encontrarás.",
+    "quoteAuthor": "Heráclito",
+    "lede": "Las herramientas nuevas suelen poner en duda las respuestas antiguas. Mantén la curiosidad y sigue creando: lo que construimos nos mostrará por dónde continuar.",
+    "primaryCta": "Ver lo que estoy creando",
+    "secondaryCta": "Seguir el proceso"
+  },
+  "recent": {
+    "eyebrow": "Exploraciones recientes",
+    "title": "En qué estoy pensando",
+    "items": [
+      {
+        "title": "Agents",
+        "description": "Cuando las herramientas colaboran, ¿dónde debe quedar el juicio humano?"
+      },
+      {
+        "title": "Vibe Coding",
+        "description": "Cuando crear se vuelve más rápido, ¿para qué sigue mereciendo la pena ir despacio?"
+      },
+      {
+        "title": "Flujos de trabajo con IA",
+        "description": "Cuando reescribimos los procesos, ¿qué hábitos conviene conservar?"
+      }
+    ],
+    "openSourceLink": "Trayectoria open source · GitHub Mars 2020 Contributor"
+  },
+  "content": {
+    "eyebrow": "Contenido · Tutoriales y notas de campo",
+    "title": "Hacer que lo aprendido en un proyecto sirva más allá de él.",
+    "tutorialLabel": "Tutorial",
+    "tutorialTitle": "Guía de ingeniería de prompts",
+    "tutorialDescription": "Convierte objetivos, contexto, restricciones y validación en un flujo de trabajo práctico con IA.",
+    "blogLabel": "Blog · IA empresarial",
+    "blogTitle": "¿Cómo incorporar IA a los sistemas heredados?",
+    "blogDescription": "Un marco de capacidades en cuatro etapas: Chatbot, AI + Tools, Copilot y Agent.",
+    "tutorialsCta": "Ver tutoriales",
+    "blogCta": "Leer el blog"
+  },
+  "work": {
+    "eyebrow": "Proyecto destacado · 01",
+    "title": "Llegarán más proyectos. Por ahora, hagamos que este cuente.",
+    "productName": "FanFan Cards",
+    "productType": "Extensión de Chrome",
+    "summary": "Las palabras guardadas vuelven a aparecer durante la lectura. Las nuevas reciben explicaciones de IA según el contexto; también hay traducción de páginas largas y subtítulos bilingües en YouTube.",
+    "features": [
+      "Palabras guardadas destacadas",
+      "Explicaciones de IA en contexto",
+      "Traducción de páginas",
+      "Subtítulos bilingües",
+      "Repaso espaciado"
+    ],
+    "dataNote": "Los datos de aprendizaje permanecen por defecto en el navegador y pueden sincronizarse de forma opcional con tu repositorio privado de GitHub.",
+    "primaryCta": "Conocer el producto",
+    "storeCta": "Chrome Web Store",
+    "sourceCta": "Ver el código"
+  },
+  "about": {
+    "label": "Acerca de",
+    "headline": "Lo importante no es cuánto puede hacer la IA, sino qué acaba cambiando.",
+    "items": [
+      {
+        "title": "Open source e ingeniería",
+        "description": "Las contribuciones públicas dejan una trayectoria verificable y conectan las decisiones de producto con ingeniería real."
+      },
+      {
+        "title": "Agents y Vibe Coding",
+        "description": "Convertir antes las ideas en algo utilizable y comprobable."
+      },
+      {
+        "title": "Flujos de trabajo con IA",
+        "description": "Reorganizar tareas repetitivas para que las herramientas formen parte de la vida cotidiana."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "¿Tienes un problema real que merezca la pena resolver?",
+    "headline": "Hablemos del problema concreto."
+  },
+  "languagePrompt": {
+    "switchRecommended": "Tu navegador prefiere {language}. Recomendamos cambiar, pero no te redirigiremos automáticamente.",
+    "stayRecommended": "Esta página ya coincide con tu idioma preferido. Recomendamos mantener el español.",
+    "switchAction": "Cambiar idioma",
+    "stayAction": "Mantener español"
+  }
+}

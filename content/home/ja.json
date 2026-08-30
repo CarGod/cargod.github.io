@@ -1,0 +1,100 @@
+{
+  "locale": "ja",
+  "seo": {
+    "title": "Luffy Liu — インディープロダクトビルダー",
+    "description": "Luffy Liu の個人サイト。独立プロダクト、開発者ツール、Agent、Vibe Coding、実践的な AI ワークフローを紹介します。"
+  },
+  "navigation": {
+    "work": "作品",
+    "tutorials": "チュートリアル",
+    "blog": "ブログ",
+    "about": "プロフィール",
+    "github": "GitHub",
+    "language": "言語"
+  },
+  "hero": {
+    "eyebrow": "AI の時代 · 未知のための余白を残す",
+    "quote": "予期せぬものを期待しなければ、それを見つけることはできない。",
+    "quoteAuthor": "ヘラクレイトス",
+    "lede": "新しい道具は、古い答えを揺さぶります。好奇心を持ち、作り続ける。作ったものが、次に進む方向を教えてくれます。",
+    "primaryCta": "いま作っているものを見る",
+    "secondaryCta": "制作の過程を追う"
+  },
+  "recent": {
+    "eyebrow": "最近の探究",
+    "title": "いま考えていること",
+    "items": [
+      {
+        "title": "Agent",
+        "description": "ツール同士が協働するとき、人の判断はどこに置くべきか。"
+      },
+      {
+        "title": "Vibe Coding",
+        "description": "ものづくりが速くなるほど、何に時間をかける価値があるか。"
+      },
+      {
+        "title": "AI ワークフロー",
+        "description": "仕事の流れを書き換えるとき、どの習慣を残すべきか。"
+      }
+    ],
+    "openSourceLink": "オープンソースの足跡 · GitHub Mars 2020 Contributor"
+  },
+  "content": {
+    "eyebrow": "読みもの · チュートリアルと実践記録",
+    "title": "一つのプロジェクトで得た学びを、その先へ。",
+    "tutorialLabel": "チュートリアル",
+    "tutorialTitle": "プロンプトエンジニアリング・ガイド",
+    "tutorialDescription": "目的、コンテキスト、制約、検証から、実際に使える AI ワークフローを作ります。",
+    "blogLabel": "ブログ · 企業 AI",
+    "blogTitle": "企業のレガシーシステムに AI を導入するには？",
+    "blogDescription": "Chatbot、AI + Tools、Copilot、Agentという四段階の能力フレームワーク。",
+    "tutorialsCta": "チュートリアルを見る",
+    "blogCta": "ブログを読む"
+  },
+  "work": {
+    "eyebrow": "主な作品 · 01",
+    "title": "作品はこれからも増えていく。まずは、この一つを大切に作る。",
+    "productName": "FanFan Cards",
+    "productType": "Chrome 拡張機能",
+    "summary": "保存した単語が実際の読書画面に再び現れます。新しい単語には AI による文脈説明を付け、長いページの翻訳や YouTube の二言語字幕にも対応します。",
+    "features": [
+      "保存単語の強調",
+      "文脈に沿った AI 解説",
+      "ページ翻訳",
+      "二言語字幕",
+      "間隔反復"
+    ],
+    "dataNote": "学習データは既定でブラウザー内に保存され、自分の GitHub 非公開リポジトリへの同期も選べます。",
+    "primaryCta": "製品を見る",
+    "storeCta": "Chrome ウェブストア",
+    "sourceCta": "ソースを見る"
+  },
+  "about": {
+    "label": "プロフィール",
+    "headline": "大切なのは AI に何ができるかではなく、最後に何を変えたかです。",
+    "items": [
+      {
+        "title": "オープンソースとエンジニアリング",
+        "description": "公開された貢献は検証可能な足跡になり、製品判断を実際の技術で支えます。"
+      },
+      {
+        "title": "Agent と Vibe Coding",
+        "description": "アイデアを、使えて検証できるものへ早く変えます。"
+      },
+      {
+        "title": "AI ワークフロー",
+        "description": "反復作業を組み替え、道具を本当に日常へなじませます。"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "解く価値のある現実の問題がありますか？",
+    "headline": "具体的な問題から話しましょう。"
+  },
+  "languagePrompt": {
+    "switchRecommended": "ブラウザーの優先言語は {language} です。切り替えをおすすめしますが、自動では移動しません。",
+    "stayRecommended": "現在のページは優先言語と一致しています。日本語のまま閲覧することをおすすめします。",
+    "switchAction": "言語を切り替える",
+    "stayAction": "日本語のまま見る"
+  }
+}

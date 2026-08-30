@@ -1,0 +1,100 @@
+{
+  "locale": "ko",
+  "seo": {
+    "title": "Luffy Liu — 독립 제품 빌더",
+    "description": "Luffy Liu의 개인 사이트로, 독립 제품과 개발자 도구, Agent, Vibe Coding, 실용적인 AI 워크플로를 소개합니다."
+  },
+  "navigation": {
+    "work": "작업",
+    "tutorials": "튜토리얼",
+    "blog": "블로그",
+    "about": "소개",
+    "github": "GitHub",
+    "language": "언어"
+  },
+  "hero": {
+    "eyebrow": "AI 시대 · 미지의 것을 위한 자리를 남겨 두기",
+    "quote": "예상하지 못한 것을 기대하지 않으면 그것을 발견할 수 없다.",
+    "quoteAuthor": "헤라클레이토스",
+    "lede": "새 도구는 오래된 답을 흔듭니다. 호기심을 잃지 않고 계속 만들다 보면, 우리가 만든 것이 다음 방향을 보여 줍니다.",
+    "primaryCta": "지금 만드는 것 보기",
+    "secondaryCta": "만드는 과정 따라가기"
+  },
+  "recent": {
+    "eyebrow": "최근 탐구",
+    "title": "요즘 생각하는 것",
+    "items": [
+      {
+        "title": "Agent",
+        "description": "도구가 협력하기 시작할 때 사람의 판단은 어디에 있어야 할까?"
+      },
+      {
+        "title": "Vibe Coding",
+        "description": "만드는 속도가 빨라질수록 무엇을 위해 여전히 천천히 가야 할까?"
+      },
+      {
+        "title": "AI 워크플로",
+        "description": "일의 흐름을 다시 쓸 때 어떤 습관을 남겨야 할까?"
+      }
+    ],
+    "openSourceLink": "오픈 소스 기록 · GitHub Mars 2020 Contributor"
+  },
+  "content": {
+    "eyebrow": "글 · 튜토리얼과 실전 기록",
+    "title": "한 프로젝트에서 배운 것을 그 너머에서도 쓸 수 있게.",
+    "tutorialLabel": "튜토리얼",
+    "tutorialTitle": "프롬프트 엔지니어링 가이드",
+    "tutorialDescription": "목표, 맥락, 제약, 검증에서 출발해 실제로 작동하는 AI 업무 방식을 만듭니다.",
+    "blogLabel": "블로그 · 기업 AI",
+    "blogTitle": "기업 레거시 시스템에 AI를 도입하려면?",
+    "blogDescription": "Chatbot, AI + Tools, Copilot, Agent로 이어지는 네 단계의 역량 프레임워크입니다.",
+    "tutorialsCta": "튜토리얼 보기",
+    "blogCta": "블로그 읽기"
+  },
+  "work": {
+    "eyebrow": "주요 작업 · 01",
+    "title": "더 많은 작업은 이어질 것입니다. 지금은 이 하나를 제대로 만듭니다.",
+    "productName": "FanFan Cards",
+    "productType": "Chrome 확장 프로그램",
+    "summary": "저장한 단어가 실제 읽기 화면에 다시 나타납니다. 새 단어에는 AI 맥락 설명을 제공하고, 긴 페이지 번역과 YouTube 이중 언어 자막도 지원합니다.",
+    "features": [
+      "저장 단어 강조",
+      "맥락형 AI 설명",
+      "페이지 번역",
+      "이중 언어 자막",
+      "간격 복습"
+    ],
+    "dataNote": "학습 데이터는 기본적으로 브라우저에 남으며 자신의 비공개 GitHub 저장소에 동기화하도록 선택할 수 있습니다.",
+    "primaryCta": "제품 살펴보기",
+    "storeCta": "Chrome 웹 스토어",
+    "sourceCta": "소스 보기"
+  },
+  "about": {
+    "label": "소개",
+    "headline": "중요한 것은 AI가 얼마나 많이 할 수 있는지가 아니라 결국 무엇을 바꾸는가입니다.",
+    "items": [
+      {
+        "title": "오픈 소스와 엔지니어링",
+        "description": "공개 기여는 검증 가능한 흔적을 남기고 제품 판단을 실제 엔지니어링에 연결합니다."
+      },
+      {
+        "title": "Agent와 Vibe Coding",
+        "description": "아이디어를 더 빨리 사용하고 검증할 수 있는 것으로 만듭니다."
+      },
+      {
+        "title": "AI 워크플로",
+        "description": "반복 작업을 재배치해 도구가 일상에 실제로 자리 잡게 합니다."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "풀 가치가 있는 실제 문제가 있나요?",
+    "headline": "구체적인 문제부터 이야기해 봅시다."
+  },
+  "languagePrompt": {
+    "switchRecommended": "브라우저의 선호 언어는 {language}입니다. 전환을 권하지만 자동으로 이동하지는 않습니다.",
+    "stayRecommended": "현재 페이지가 선호 언어와 일치합니다. 한국어를 유지하는 것을 권합니다.",
+    "switchAction": "언어 전환",
+    "stayAction": "한국어 유지"
+  }
+}

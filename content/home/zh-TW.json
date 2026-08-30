@@ -1,0 +1,100 @@
+{
+  "locale": "zh-TW",
+  "seo": {
+    "title": "Luffy Liu — 獨立產品構建者",
+    "description": "Luffy Liu 的個人網站：獨立產品、開發者工具、Agent、Vibe Coding 與可落地的 AI 工作流程。"
+  },
+  "navigation": {
+    "work": "作品",
+    "tutorials": "教程",
+    "blog": "部落格",
+    "about": "關於",
+    "github": "GitHub",
+    "language": "語言"
+  },
+  "hero": {
+    "eyebrow": "AI 時代 · 為未知留下位置",
+    "quote": "若不期待意料之外的事，就不會發現它。",
+    "quoteAuthor": "赫拉克利特",
+    "lede": "新工具總會鬆動舊答案。保持好奇，繼續動手；我們做出的東西，會告訴我們下一步往哪裡走。",
+    "primaryCta": "看看我在做什麼",
+    "secondaryCta": "追蹤實作過程"
+  },
+  "recent": {
+    "eyebrow": "最近在探索",
+    "title": "我正在想的事",
+    "items": [
+      {
+        "title": "Agent",
+        "description": "當工具開始協作，人的判斷應該放在哪裡？"
+      },
+      {
+        "title": "Vibe Coding",
+        "description": "當構建愈來愈快，哪些事仍值得慢下來？"
+      },
+      {
+        "title": "AI 工作流程",
+        "description": "當流程被重新編排，哪些習慣值得保留？"
+      }
+    ],
+    "openSourceLink": "開源足跡 · GitHub Mars 2020 Contributor"
+  },
+  "content": {
+    "eyebrow": "內容 · 教程與實踐筆記",
+    "title": "讓一次學到的東西，走出一個專案。",
+    "tutorialLabel": "教程",
+    "tutorialTitle": "提示工程指南",
+    "tutorialDescription": "從目標、上下文、限制與驗證出發，建立真正可用的 AI 工作方法。",
+    "blogLabel": "部落格 · 企業 AI",
+    "blogTitle": "企業老系統如何接入 AI？",
+    "blogDescription": "從 Chatbot、AI + Tools、Copilot 到 Agent 的四階段能力框架。",
+    "tutorialsCta": "瀏覽教程",
+    "blogCta": "閱讀部落格"
+  },
+  "work": {
+    "eyebrow": "精選作品 · 01",
+    "title": "更多作品會陸續出現；現在，先把這一個做好。",
+    "productName": "翻翻詞卡",
+    "productType": "Chrome 擴充功能",
+    "summary": "收藏過的單字會重新出現在真實閱讀現場；新詞可獲得 AI 語境解釋，長篇內容支援整頁翻譯，YouTube 也有雙語字幕。",
+    "features": [
+      "收藏詞醒目提示",
+      "語境解釋",
+      "整頁翻譯",
+      "雙語字幕",
+      "間隔複習"
+    ],
+    "dataNote": "學習資料預設保留在瀏覽器，也可選擇同步到自己的 GitHub 私有儲存庫。",
+    "primaryCta": "了解產品",
+    "storeCta": "Chrome 線上應用程式商店",
+    "sourceCta": "查看原始碼"
+  },
+  "about": {
+    "label": "關於",
+    "headline": "更值得關注的，不是 AI 能做多少，而是它最後改變了什麼。",
+    "items": [
+      {
+        "title": "開源與工程",
+        "description": "公開貢獻留下可核驗的足跡，也讓產品判斷有真實工程作為基礎。"
+      },
+      {
+        "title": "Agent 與 Vibe Coding",
+        "description": "讓想法更快成為可使用、可被檢驗的東西。"
+      },
+      {
+        "title": "AI 工作流程",
+        "description": "重新編排重複動作，讓工具真正進入日常。"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "有一個值得解決的真實問題嗎？",
+    "headline": "有問題，就來具體聊聊。"
+  },
+  "languagePrompt": {
+    "switchRecommended": "瀏覽器偏好語言是 {language}，建議切換；本站不會自動跳轉。",
+    "stayRecommended": "目前頁面已符合你的偏好語言，建議保持繁體中文。",
+    "switchAction": "切換語言",
+    "stayAction": "保持繁體中文"
+  }
+}

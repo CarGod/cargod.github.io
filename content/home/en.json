@@ -1,0 +1,100 @@
+{
+  "locale": "en",
+  "seo": {
+    "title": "Luffy Liu — Independent Product Builder",
+    "description": "Luffy Liu’s personal site: independent products, developer tools, Agents, Vibe Coding, and practical AI workflows."
+  },
+  "navigation": {
+    "work": "Work",
+    "tutorials": "Tutorials",
+    "blog": "Blog",
+    "about": "About",
+    "github": "GitHub",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "In the age of AI · Leave room for the unknown",
+    "quote": "If you do not expect the unexpected, you will not find it.",
+    "quoteAuthor": "Heraclitus",
+    "lede": "New tools have a way of unsettling old answers. Stay curious, keep making—the things we build will show us where to go next.",
+    "primaryCta": "See what I’m building",
+    "secondaryCta": "Follow the process"
+  },
+  "recent": {
+    "eyebrow": "Recently exploring",
+    "title": "What I’m exploring",
+    "items": [
+      {
+        "title": "Agents",
+        "description": "When tools collaborate, where does human judgment belong?"
+      },
+      {
+        "title": "Vibe Coding",
+        "description": "When building gets faster, what is still worth slowing down for?"
+      },
+      {
+        "title": "AI workflows",
+        "description": "When workflows are rewritten, which habits should remain?"
+      }
+    ],
+    "openSourceLink": "Open-source trail · GitHub Mars 2020 Contributor"
+  },
+  "content": {
+    "eyebrow": "Writing · Tutorials and field notes",
+    "title": "Make what I learn useful beyond one project.",
+    "tutorialLabel": "Tutorial",
+    "tutorialTitle": "Prompt Engineering Guide",
+    "tutorialDescription": "Turn clear goals, context, constraints, and validation into a practical AI workflow.",
+    "blogLabel": "Blog · Enterprise AI",
+    "blogTitle": "How Should Legacy Enterprise Systems Adopt AI?",
+    "blogDescription": "A four-stage framework spanning Chatbot, AI + Tools, Copilot, and Agent.",
+    "tutorialsCta": "Browse tutorials",
+    "blogCta": "Read the blog"
+  },
+  "work": {
+    "eyebrow": "Selected work · 01",
+    "title": "More work will follow. For now, make this one count.",
+    "productName": "FanFan Cards",
+    "productType": "Chrome Extension",
+    "summary": "Saved words return to the page as you read. New words get contextual AI explanations; long pages can be translated, and YouTube gains bilingual subtitles.",
+    "features": [
+      "Saved-word highlights",
+      "Contextual AI",
+      "Page translation",
+      "Bilingual subtitles",
+      "Spaced review"
+    ],
+    "dataNote": "Learning data stays in your browser by default, with optional sync to your own private GitHub repository.",
+    "primaryCta": "Explore the product",
+    "storeCta": "Chrome Web Store",
+    "sourceCta": "View source"
+  },
+  "about": {
+    "label": "About",
+    "headline": "What matters most is not how much AI can do, but what it ultimately changes.",
+    "items": [
+      {
+        "title": "Open source & engineering",
+        "description": "Public contributions leave a verifiable trail and ground product decisions in real engineering."
+      },
+      {
+        "title": "Agents & Vibe Coding",
+        "description": "Turn ideas into usable, testable things faster."
+      },
+      {
+        "title": "AI workflows",
+        "description": "Rearrange repetitive work so tools genuinely fit into everyday life."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Have a real problem worth solving?",
+    "headline": "Let’s talk about the real problem."
+  },
+  "languagePrompt": {
+    "switchRecommended": "Your browser prefers {language}. We recommend switching, but we will not redirect you automatically.",
+    "stayRecommended": "This page already matches your preferred language. We recommend staying in English.",
+    "switchAction": "Switch language",
+    "stayAction": "Stay in English"
+  }
+}
