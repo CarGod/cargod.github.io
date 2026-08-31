@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "series": "prompt-engineering",
+  "source_repository": "https://github.com/CarGod/gptpmt",
+  "source_commit": "e2f47db",
+  "revision_date": "2026-08-31",
+  "policy": "minimum-corrections-with-original-examples-preserved",
+  "locales": ["zh-CN", "zh-TW", "en", "ja", "ko", "es"],
+  "chapters": [
+    { "contentKey": "tutorial.prompt-engineering", "slug": "prompt-engineering", "correction_categories": ["terminology", "non-absolute-claims", "official-service-links", "privacy-safety"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.first-conversation", "slug": "first-conversation", "correction_categories": ["model-neutral-wording", "privacy-safety"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.tokens", "slug": "tokens", "correction_categories": ["tokenizer-accuracy", "model-variation", "official-tool-link"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.probability-temperature", "slug": "probability-temperature", "correction_categories": ["sampling-accuracy", "temperature-non-absolutism", "model-variation"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.clear-instructions", "slug": "clear-instructions", "correction_categories": ["role-limitations", "delimiter-boundaries", "output-length-verification"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.structured-prompts", "slug": "structured-prompts", "correction_categories": ["template-non-absolutism", "role-limitations", "missing-information-handling"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.json-output", "slug": "json-output", "correction_categories": ["structured-output-validation", "unknown-value-handling", "privacy-safety"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.xml-delimiters", "slug": "xml-delimiters", "correction_categories": ["xml-syntax", "delimiter-security-boundary", "missing-information-handling"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } },
+    { "contentKey": "tutorial.prompt-engineering.complex-tasks", "slug": "complex-tasks", "correction_categories": ["private-reasoning-boundary", "verifiable-calculation", "model-neutral-wording"], "locale_status": { "zh-CN": "synced", "zh-TW": "synced", "en": "synced", "ja": "synced", "ko": "synced", "es": "synced" } }
+  ]
+}

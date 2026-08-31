@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/CarGod/gptpmt",
+  "source_commit": "e2f47db",
+  "source_access": "read-only",
+  "official_model_urls": ["https://chatgpt.com/", "https://claude.ai/", "https://grok.com/", "https://gemini.google.com/", "https://chat.qwen.ai/", "https://www.doubao.com/", "https://yuanbao.tencent.com/", "https://chat.deepseek.com/"],
+  "forbidden_legacy_phrases": ["Cloud", "Prompt Engineer 一定会成为主流", "逐渐取代传统(以编程语言写程序的人)的初级程序员", "未来可能也不会再有人使用 Python 或 Java 进行编程", "只要学完本教程，每个人都能做到"],
+  "chapters": [
+    { "contentKey": "tutorial.prompt-engineering", "slug": "prompt-engineering", "source_path": "pages/index.zh.mdx", "protected_anchors": ["阿拉丁神灯", "一万亿美元", "自然语言正在成为一种新的操作方式", "AI 会让人停止学习吗？"] },
+    { "contentKey": "tutorial.prompt-engineering.first-conversation", "slug": "first-conversation", "source_path": "pages/preface/hello.zh.mdx", "protected_anchors": ["`Hello, World.`", "Hello, ChatGPT.", "Prompt", "输出"] },
+    {
+      "contentKey": "tutorial.prompt-engineering.tokens",
+      "slug": "tokens",
+      "source_path": "pages/preface/basics_token.zh.mdx",
+      "protected_anchors": ["补句实验", "三个小练习", "“水土不服”的 Tokenizer", "把汉字劈开", "Token ID", "Tokenizer", "BPE"],
+      "protected_anchors_by_locale": {
+        "zh-CN": ["三个小练习", "“水土不服”的 Tokenizer", "把汉字劈开"],
+        "zh-TW": ["三個小練習", "「水土不服」的 Tokenizer", "把漢字劈開"],
+        "en": ["Three Small Exercises", "When a Tokenizer Does Not “Travel Well”", "splitting a Chinese character"],
+        "ja": ["三つの小さな練習", "言語が変わると「勝手が違う」Tokenizer", "漢字を割る"],
+        "ko": ["세 가지 작은 연습", "낯선 환경에서 힘을 못 쓰는 Tokenizer", "한자를 쪼갠다"],
+        "es": ["Tres pequeños ejercicios", "Un Tokenizer fuera de su terreno", "partir un carácter chino"]
+      },
+      "required_literals_all_locales": ["cl100k_base", "[15339, 1917]", "https://github.com/openai/tiktoken/blob/main/tests/test_encoding.py"],
+      "minimum_structure": { "heading_counts": { "2": 6, "3": 4 }, "fence_language_counts": { "text": 13 } }
+    },
+    { "contentKey": "tutorial.prompt-engineering.probability-temperature", "slug": "probability-temperature", "source_path": "pages/preface/basics_probability.zh.mdx", "protected_anchors": ["I love", "从前有一个小王子", "Temperature", "不是“创造力开关”"] },
+    {
+      "contentKey": "tutorial.prompt-engineering.clear-instructions",
+      "slug": "clear-instructions",
+      "source_path": "pages/foundation/grammar.zh.mdx",
+      "protected_anchors": ["不会读心术", "每段至少包含一个笑话", "解释黑洞的形成原理", "第一轮：大约 50 个字", "第二轮：两个段落", "第三轮：三个要点", "李白", "海燕", "神奇动物命名器"],
+      "protected_anchors_by_locale": {
+        "zh-CN": ["每段至少包含一个笑话", "解释黑洞的形成原理", "第一轮：大约 50 个字", "第二轮：两个段落", "第三轮：三个要点"],
+        "zh-TW": ["每一段至少包含一個笑話", "解釋黑洞的形成原理", "第一輪：大約 50 個字", "第二輪：兩個段落", "第三輪：三個要點"],
+        "en": ["one joke or playful line in every paragraph", "Explain how black holes form", "Round One: About 50 Words", "Round Two: Two Paragraphs", "Round Three: Three Bullet Points"],
+        "ja": ["各段落に少なくとも一つ、冗談", "ブラックホールが形成される仕組み", "1 回目：約 50 文字", "2 回目：二段落", "3 回目：三つの要点"],
+        "ko": ["각 문단에 농담이나 재치 있는 말을 적어도 하나씩", "블랙홀이 생기는 원리", "첫 번째: 약 50자", "두 번째: 두 문단", "세 번째: 세 가지 요점"],
+        "es": ["un chiste o una frase ingeniosa en cada párrafo", "cómo se forman los agujeros negros", "Primera ronda: unos 50 caracteres", "Segunda ronda: dos párrafos", "Tercera ronda: tres puntos"]
+      },
+      "minimum_structure": { "heading_counts": { "2": 8, "3": 6 }, "fence_language_counts": { "text": 11 } }
+    },
+    {
+      "contentKey": "tutorial.prompt-engineering.structured-prompts",
+      "slug": "structured-prompts",
+      "source_path": "pages/foundation/structured.zh.mdx",
+      "protected_anchors": ["李明", "牛肉饼", "《武林外传》", "姓嘛？叫嘛？", "# Role", "## Constraints"],
+      "protected_anchors_by_locale": {
+        "zh-CN": ["《武林外传》", "姓嘛？叫嘛？"],
+        "zh-TW": ["《武林外傳》", "姓嘛？叫嘛？"],
+        "en": ["My Own Swordsman", "What is your surname? Your given name?"],
+        "ja": ["『武林外伝』", "姓は？名は？"],
+        "ko": ["《무림외전》", "성은 뭐고 이름은 뭐야?"],
+        "es": ["Wulin Waizhuan", "¿Cuál es tu apellido? ¿Y tu nombre?"]
+      },
+      "minimum_structure": { "heading_counts": { "2": 5, "3": 6 }, "fence_language_counts": { "text": 2 } }
+    },
+    { "contentKey": "tutorial.prompt-engineering.json-output", "slug": "json-output", "source_path": "pages/foundation/json_format.zh.mdx", "protected_anchors": ["\"name\": \"John\"", "老师的烦恼", "小美", "JSON parser"] },
+    {
+      "contentKey": "tutorial.prompt-engineering.xml-delimiters",
+      "slug": "xml-delimiters",
+      "source_path": "pages/advance/use_xml.zh.mdx",
+      "protected_anchors": ["Harry Potter", "会议纪要", "<meeting>", "标签只是边界", "Emily Martinez", "David Wilson", "Mary Johnson", "Robert Brown", "Lisa Taylor"],
+      "required_fenced_output": {
+        "language": "text",
+        "heading_level": 3,
+        "owners": ["Emily Martinez", "David Wilson", "Mary Johnson", "Robert Brown", "Lisa Taylor"],
+        "missing_deadline_line_by_locale": {
+          "zh-CN": "- 截止日期：未提供",
+          "zh-TW": "- 截止日期：未提供",
+          "en": "- Deadline: Not provided",
+          "ja": "- 期限：情報なし",
+          "ko": "- 마감일: 제공되지 않음",
+          "es": "- Fecha límite: no proporcionada"
+        }
+      },
+      "minimum_structure": { "heading_counts": { "2": 4, "3": 4 }, "fence_language_counts": { "xml": 2, "text": 3 } }
+    },
+    {
+      "contentKey": "tutorial.prompt-engineering.complex-tasks",
+      "slug": "complex-tasks",
+      "source_path": "pages/advance/let_think.zh.mdx",
+      "protected_anchors": ["科比和乔丹", "三个人三天喝了三桶水", "27 桶", "实习生", "私有思维链"],
+      "protected_anchors_by_locale": {
+        "zh-CN": ["科比和乔丹"],
+        "zh-TW": ["科比和喬丹"],
+        "en": ["Kobe Bryant and Michael Jordan"],
+        "ja": ["コービー・ブライアントとマイケル・ジョーダン"],
+        "ko": ["코비 브라이언트와 마이클 조던"],
+        "es": ["Kobe Bryant y Michael Jordan"]
+      },
+      "minimum_structure": { "heading_counts": { "2": 5 }, "fence_language_counts": { "text": 4 } }
+    }
+  ]
+}

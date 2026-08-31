@@ -90,11 +90,5 @@
   "contact": {
     "eyebrow": "Have a real problem worth solving?",
     "headline": "Let’s talk about the real problem."
-  },
-  "languagePrompt": {
-    "switchRecommended": "Your browser prefers {language}. We recommend switching, but we will not redirect you automatically.",
-    "stayRecommended": "This page already matches your preferred language. We recommend staying in English.",
-    "switchAction": "Switch language",
-    "stayAction": "Stay in English"
   }
 }

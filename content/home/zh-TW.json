@@ -90,11 +90,5 @@
   "contact": {
     "eyebrow": "有一個值得解決的真實問題嗎？",
     "headline": "有問題，就來具體聊聊。"
-  },
-  "languagePrompt": {
-    "switchRecommended": "瀏覽器偏好語言是 {language}，建議切換；本站不會自動跳轉。",
-    "stayRecommended": "目前頁面已符合你的偏好語言，建議保持繁體中文。",
-    "switchAction": "切換語言",
-    "stayAction": "保持繁體中文"
   }
 }

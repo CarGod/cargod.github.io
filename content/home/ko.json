@@ -90,11 +90,5 @@
   "contact": {
     "eyebrow": "풀 가치가 있는 실제 문제가 있나요?",
     "headline": "구체적인 문제부터 이야기해 봅시다."
-  },
-  "languagePrompt": {
-    "switchRecommended": "브라우저의 선호 언어는 {language}입니다. 전환을 권하지만 자동으로 이동하지는 않습니다.",
-    "stayRecommended": "현재 페이지가 선호 언어와 일치합니다. 한국어를 유지하는 것을 권합니다.",
-    "switchAction": "언어 전환",
-    "stayAction": "한국어 유지"
   }
 }

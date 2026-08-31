@@ -1,0 +1,7 @@
+interface:
+  display_name: "Luffy Liu 网站内容维护"
+  short_description: "维护博客、教程与六语内容同步，保护原作者表达"
+  default_prompt: "Use $luffyliu-site-content-maintainer to make a minimal, validated six-locale update to this site's blog or tutorial content."
+
+policy:
+  allow_implicit_invocation: true

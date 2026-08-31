@@ -3,8 +3,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
-import MarkdownIt from "markdown-it";
-import markdownItAnchor from "markdown-it-anchor";
+import { createMarkdownRenderer } from "./lib/markdown.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.resolve(process.env.OUT_DIR || path.join(ROOT, "_site"));
@@ -43,6 +42,14 @@ const TUTORIAL_TITLES = {
   ja: "チュートリアル：AI とプロンプトエンジニアリング | Luffy Liu",
   ko: "튜토리얼: 실용 AI와 프롬프트 엔지니어링 | Luffy Liu",
   es: "Tutoriales prácticos de IA e ingeniería de prompts | Luffy Liu"
+};
+const TUTORIAL_COPY = {
+  "zh-CN": { guide: "提示工程指南", series: "系列教程", chapters: "共 {count} 章 · 按顺序学习", directory: "系列目录", previous: "上一章", next: "下一章", all: "全部教程", start: "从导读开始", standalone: "其他教程", toc: "文章目录", skip: "跳到正文" },
+  "zh-TW": { guide: "提示工程指南", series: "系列教學", chapters: "共 {count} 章 · 依序學習", directory: "系列目錄", previous: "上一章", next: "下一章", all: "全部教學", start: "從導讀開始", standalone: "其他教學", toc: "文章目錄", skip: "跳到正文" },
+  en: { guide: "Prompt Engineering Guide", series: "Tutorial series", chapters: "{count} chapters · Learn in order", directory: "Series contents", previous: "Previous chapter", next: "Next chapter", all: "All tutorials", start: "Start with the introduction", standalone: "Other tutorials", toc: "On this page", skip: "Skip to content" },
+  ja: { guide: "プロンプトエンジニアリングガイド", series: "連載チュートリアル", chapters: "全{count}章 · 順番に学ぶ", directory: "シリーズ目次", previous: "前の章", next: "次の章", all: "すべてのチュートリアル", start: "導入から始める", standalone: "その他のチュートリアル", toc: "記事の目次", skip: "本文へ移動" },
+  ko: { guide: "프롬프트 엔지니어링 가이드", series: "튜토리얼 시리즈", chapters: "총 {count}장 · 순서대로 학습", directory: "시리즈 목차", previous: "이전 장", next: "다음 장", all: "모든 튜토리얼", start: "소개부터 시작", standalone: "다른 튜토리얼", toc: "글 목차", skip: "본문으로 이동" },
+  es: { guide: "Guía de ingeniería de prompts", series: "Serie de tutoriales", chapters: "{count} capítulos · Aprende en orden", directory: "Índice de la serie", previous: "Capítulo anterior", next: "Capítulo siguiente", all: "Todos los tutoriales", start: "Empezar por la introducción", standalone: "Otros tutoriales", toc: "En esta página", skip: "Ir al contenido" }
 };
 const STATIC_ENTRIES = [
   "404.html", "CNAME", "apple-touch-icon.png", "assets", "categories", "en",
@@ -109,7 +116,7 @@ async function loadHomeContent() {
   for (const locale of Object.keys(LOCALES).filter((item) => item !== "zh-CN")) {
     const source = path.join(HOME_CONTENT, `${locale}.json`);
     const content = JSON.parse(await fs.readFile(source, "utf8"));
-    for (const field of ["seo", "navigation", "hero", "recent", "content", "work", "about", "contact", "languagePrompt"]) {
+    for (const field of ["seo", "navigation", "hero", "recent", "content", "work", "about", "contact"]) {
       if (!content[field]) throw new Error(`${path.relative(ROOT, source)} is missing ${field}`);
     }
     if (content.locale !== locale) throw new Error(`${path.relative(ROOT, source)} has locale ${content.locale}`);
@@ -121,7 +128,7 @@ async function loadHomeContent() {
 async function loadCollection(section, directory) {
   const files = await findMarkdown(directory);
   const articles = [];
-  const slugs = new Set();
+  const routes = new Set();
 
   for (const sourcePath of files) {
     const parsed = matter(await fs.readFile(sourcePath, "utf8"));
@@ -132,9 +139,6 @@ async function loadCollection(section, directory) {
     }
     const slug = String(parsed.data.slug);
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error(`Invalid stable slug: ${slug}`);
-    const localeSlug = `${parsed.data.locale}:${slug}`;
-    if (slugs.has(localeSlug)) throw new Error(`Duplicate ${section} slug: ${localeSlug}`);
-    slugs.add(localeSlug);
     if (!LOCALES[parsed.data.locale]) throw new Error(`${slug}: unsupported locale ${parsed.data.locale}`);
     if (!Array.isArray(parsed.data.tags) || !parsed.data.tags.length) throw new Error(`${slug}: tags must be a non-empty array`);
     const tags = parsed.data.tags.map((tag) => {
@@ -150,6 +154,23 @@ async function loadCollection(section, directory) {
     const contentKey = String(parsed.data.contentKey);
     if (!/^[a-z]+(?:\.[a-z0-9]+(?:-[a-z0-9]+)*)+$/.test(contentKey)) throw new Error(`${slug}: invalid contentKey`);
     const sourceDir = path.dirname(sourcePath);
+    const sourceParts = path.relative(directory, sourceDir).split(path.sep);
+    const localizedParts = locale === "zh-CN" ? sourceParts : sourceParts.slice(1);
+    if (locale !== "zh-CN" && sourceParts[0] !== locale) throw new Error(`${path.relative(ROOT, sourcePath)}: source path does not match locale ${locale}`);
+    if (locale === "zh-CN" && LOCALES[sourceParts[0]]) throw new Error(`${path.relative(ROOT, sourcePath)}: zh-CN content must not live below a locale directory`);
+    if (localizedParts.at(-1) !== slug) throw new Error(`${path.relative(ROOT, sourcePath)}: source directory must end with slug ${slug}`);
+    if (section === "tutorials") {
+      if (parsed.data.series) {
+        if (localizedParts[0] !== parsed.data.series || (localizedParts.length === 1 && slug !== parsed.data.series) || localizedParts.length > 2) throw new Error(`${path.relative(ROOT, sourcePath)}: tutorial series path must be <series>/<slug> with its landing at <series>`);
+      } else if (localizedParts.length !== 1) {
+        throw new Error(`${path.relative(ROOT, sourcePath)}: a non-series tutorial must live directly below its locale root`);
+      }
+    }
+    const routePath = section === "tutorials" ? localizedParts.join("/") : slug;
+    const url = localePath(locale, `/${section}/${routePath}/`);
+    const localeRoute = `${locale}:${url}`;
+    if (routes.has(localeRoute)) throw new Error(`Duplicate ${section} route: ${localeRoute}`);
+    routes.add(localeRoute);
     const coverRelative = parsed.data.cover ? String(parsed.data.cover).replace(/^\.\//, "") : "";
     if (section === "blog" && !coverRelative) throw new Error(`${slug}: blog cover is required`);
     const configuredMediaBase = parsed.data.media_base ? String(parsed.data.media_base) : "local";
@@ -172,9 +193,10 @@ async function loadCollection(section, directory) {
       body: parsed.content.trim().replace(/^# .+\n+/, ""),
       sourcePath,
       sourceDir,
+      routePath,
       year: published.slice(0, 4),
-      url: localePath(locale, `/${section}/${slug}/`),
-      absoluteUrl: localeUrl(locale, `/${section}/${slug}/`),
+      url,
+      absoluteUrl: `${SITE_URL}${url}`,
       mediaBase,
       localMedia,
       sharedMedia,
@@ -190,6 +212,29 @@ async function loadCollection(section, directory) {
   }
   for (const article of publishedArticles) article.translations = clusters.get(article.contentKey);
   return publishedArticles;
+}
+
+function attachTutorialSeries(tutorials) {
+  const groups = new Map();
+  for (const tutorial of tutorials) {
+    if (!tutorial.series) continue;
+    const key = `${tutorial.locale}:${tutorial.series}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(tutorial);
+  }
+  for (const group of groups.values()) {
+    group.sort((a, b) => Number(a.order) - Number(b.order) || a.slug.localeCompare(b.slug));
+    const orders = new Set();
+    for (const [index, tutorial] of group.entries()) {
+      if (!Number.isInteger(tutorial.order) || tutorial.order < 1) throw new Error(`${tutorial.contentKey}: series order must be a positive integer`);
+      if (orders.has(tutorial.order)) throw new Error(`${tutorial.locale}:${tutorial.series}: duplicate series order ${tutorial.order}`);
+      orders.add(tutorial.order);
+      tutorial.seriesArticles = group;
+      tutorial.seriesLead = group[0];
+      tutorial.previousArticle = group[index - 1] || null;
+      tutorial.nextArticle = group[index + 1] || null;
+    }
+  }
 }
 
 function languageSwitcher(locale, alternates = {}) {
@@ -214,7 +259,7 @@ function siteHeader(locale, active = "blog", alternates = {}) {
 
 function siteFooter(locale) {
   const text = LOCALES[locale];
-  return `<footer class="footer content-shell" data-pagefind-ignore><span>© 2026 Luffy Liu</span><span><a href="${localePath(locale, "/blog/")}">${text.blog}</a> · <a href="${localePath(locale, "/blog/search/")}">${text.search}</a> · <a href="${localePath(locale, "/tutorials/")}">${text.tutorials}</a> · <a href="${feedPath(locale)}">RSS</a></span></footer><script src="/assets/js/language.js" defer></script>`;
+  return `<footer class="footer content-shell" data-pagefind-ignore><span>© 2026 Luffy Liu</span><span><a href="${localePath(locale, "/blog/")}">${text.blog}</a> · <a href="${localePath(locale, "/blog/search/")}">${text.search}</a> · <a href="${localePath(locale, "/tutorials/")}">${text.tutorials}</a> · <a href="${feedPath(locale)}">RSS</a></span></footer>`;
 }
 
 function baseHead({ title, description, canonical, locale = "zh-CN", alternates = {}, robots = "index, follow, max-image-preview:large", image = `${SITE_URL}/assets/og.png`, type = "website", extra = "" }) {
@@ -297,6 +342,57 @@ function listPage({ title, heading, lede, canonical, posts, base, current, total
 </body></html>\n`;
 }
 
+function tutorialGroups(tutorials) {
+  const series = new Map();
+  const standalone = [];
+  for (const tutorial of tutorials) {
+    if (!tutorial.series) standalone.push(tutorial);
+    else if (!series.has(tutorial.series)) series.set(tutorial.series, tutorial.seriesArticles);
+  }
+  return [
+    ...[...series].map(([key, articles]) => ({ type: "series", key, articles, lead: articles[0] })),
+    ...standalone.map((tutorial) => ({ type: "standalone", key: tutorial.contentKey, articles: [tutorial], lead: tutorial }))
+  ].sort((a, b) => b.lead.published.localeCompare(a.lead.published) || a.lead.title.localeCompare(b.lead.title));
+}
+
+function tutorialSeriesBlock(group, locale) {
+  const copy = TUTORIAL_COPY[locale];
+  const title = group.key === "prompt-engineering" ? copy.guide : group.lead.title;
+  return `<article class="tutorial-series" data-series="${escapeHtml(group.key)}">
+    <header><p class="card-label">${escapeHtml(copy.series)}</p><h2><a href="${group.lead.url}">${escapeHtml(title)}</a></h2><p>${escapeHtml(group.lead.description)}</p><a class="card-link" href="${group.lead.url}">${escapeHtml(copy.start)} <span>↗</span></a></header>
+    <div><p class="series-count">${escapeHtml(copy.chapters.replace("{count}", String(group.articles.length)))}</p><ol class="chapter-list">${group.articles.map((tutorial) => `<li><a href="${tutorial.url}"><span class="chapter-title">${escapeHtml(tutorial.title)}</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>`).join("")}</ol></div>
+  </article>`;
+}
+
+function tutorialListPage({ title, heading, lede, canonical, groups, base, current, total, locale, alternates }) {
+  const pageTitle = current === 1 ? title : `${title} · ${current}`;
+  const series = groups.filter((group) => group.type === "series");
+  const standalone = groups.filter((group) => group.type === "standalone").map((group) => group.lead);
+  const listed = groups.flatMap((group) => group.articles);
+  return `<!doctype html>
+<html lang="${LOCALES[locale].html}"><head>
+  ${baseHead({ title: pageTitle, description: lede, canonical, locale, alternates })}
+  ${collectionJsonLd({ canonical, name: pageTitle, posts: listed, locale })}
+</head><body>
+  <a class="skip-link" href="#main">${escapeHtml(TUTORIAL_COPY[locale].skip)}</a>
+  ${siteHeader(locale, "tutorials", alternates)}
+  <main id="main">
+    <header class="content-header content-shell"><nav class="crumbs" aria-label="Breadcrumb"><a href="${localePath(locale, "/")}">${LOCALES[locale].home}</a><span>/</span><span aria-current="page">${escapeHtml(heading)}</span></nav><p class="eyebrow">Tutorials · Learn by making</p><h1>${escapeHtml(heading)}</h1><p class="content-lede">${escapeHtml(lede)}</p></header>
+    <section class="listing content-shell" aria-label="${escapeHtml(LOCALES[locale].tutorials)}">${series.map((group) => tutorialSeriesBlock(group, locale)).join("\n")}${standalone.length ? `<section class="standalone-tutorials"><h2>${escapeHtml(TUTORIAL_COPY[locale].standalone)}</h2><div class="content-grid">${standalone.map(postCard).join("\n")}</div></section>` : ""}${pagination(base, current, total, locale)}</section>
+  </main>
+  ${siteFooter(locale)}
+</body></html>\n`;
+}
+
+function seriesNavigation(post) {
+  if (!post.seriesArticles?.length) return { sidebar: "", footer: "" };
+  const copy = TUTORIAL_COPY[post.locale];
+  const seriesTitle = post.series === "prompt-engineering" ? copy.guide : post.seriesLead.title;
+  const sidebar = `<nav class="series-toc" aria-label="${escapeHtml(copy.directory)}" data-pagefind-ignore><strong>${escapeHtml(seriesTitle)}</strong><ol>${post.seriesArticles.map((tutorial) => `<li${tutorial === post ? ' aria-current="page"' : ""}><a href="${tutorial.url}">${escapeHtml(tutorial.title)}</a></li>`).join("")}</ol></nav>`;
+  const footer = `<nav class="series-pagination" aria-label="${escapeHtml(copy.directory)}" data-pagefind-ignore>${post.previousArticle ? `<a rel="prev" href="${post.previousArticle.url}"><span>${escapeHtml(copy.previous)}</span><strong>← ${escapeHtml(post.previousArticle.title)}</strong></a>` : `<a href="${localePath(post.locale, "/tutorials/")}"><span>${escapeHtml(copy.all)}</span><strong>← ${escapeHtml(LOCALES[post.locale].tutorials)}</strong></a>`}${post.nextArticle ? `<a rel="next" href="${post.nextArticle.url}"><span>${escapeHtml(copy.next)}</span><strong>${escapeHtml(post.nextArticle.title)} →</strong></a>` : `<a href="${post.seriesLead.url}"><span>${escapeHtml(copy.directory)}</span><strong>${escapeHtml(seriesTitle)} →</strong></a>`}</nav>`;
+  return { sidebar, footer, seriesTitle };
+}
+
 function renderArticle(post) {
   const headingIds = new Map();
   const slugger = (title) => {
@@ -305,8 +401,7 @@ function renderArticle(post) {
     headingIds.set(base, count + 1);
     return count ? `${base}-${count + 1}` : base;
   };
-  const md = new MarkdownIt({ html: false, linkify: true, typographer: false });
-  md.use(markdownItAnchor, { level: [2, 3], slugify: slugger });
+  const md = createMarkdownRenderer({ slugify: slugger });
   const markdown = post.body
     .replace(/(!\[[^\]]*\]\()assets\//g, `$1${post.mediaBase}/`)
     .replace(/\]\(\/(blog|tutorials)\//g, `](${LOCALES[post.locale].prefix}/$1/`);
@@ -325,15 +420,18 @@ function renderArticle(post) {
   const tags = post.tags.map((tag) => post.section === "blog" ? `<a href="${localePath(post.locale, `/blog/tags/${tag.id}/`)}" data-pagefind-filter="tag:${tag.id}" data-pagefind-meta="tag">${escapeHtml(tag.label)}</a>` : `<span data-pagefind-filter="tag:${tag.id}" data-pagefind-meta="tag">${escapeHtml(tag.label)}</span>`).join(" · ");
   const toc = headings.map((heading) => `<a href="#${escapeHtml(heading.id)}">${escapeHtml(heading.title)}</a>`).join("\n");
   const alternates = Object.fromEntries([...post.translations].map(([locale, translation]) => [locale, translation.absoluteUrl]));
+  const seriesNav = seriesNavigation(post);
+  const breadcrumbItems = [
+    { "@type": "ListItem", position: 1, name: LOCALES[post.locale].home, item: localeUrl(post.locale, "/") },
+    { "@type": "ListItem", position: 2, name: LOCALES[post.locale][post.section], item: localeUrl(post.locale, `/${post.section}/`) }
+  ];
+  if (post.seriesLead && post !== post.seriesLead) breadcrumbItems.push({ "@type": "ListItem", position: 3, name: seriesNav.seriesTitle, item: post.seriesLead.absoluteUrl });
+  breadcrumbItems.push({ "@type": "ListItem", position: breadcrumbItems.length + 1, name: post.title, item: post.absoluteUrl });
   const articleLd = {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": post.section === "blog" ? "BlogPosting" : "TechArticle", "@id": `${post.absoluteUrl}#article`, url: post.absoluteUrl, mainEntityOfPage: post.absoluteUrl, headline: post.title, description: post.description, ...(coverAbsolute ? { image: coverAbsolute } : {}), datePublished: post.published, dateModified: post.updated, inLanguage: LOCALES[post.locale].html, author: { "@id": `${SITE_URL}/#person` }, publisher: { "@id": `${SITE_URL}/#person` }, articleSection: post.tags[0].label, keywords: post.tags.map((tag) => tag.label) },
-      { "@type": "BreadcrumbList", itemListElement: [
-        { "@type": "ListItem", position: 1, name: LOCALES[post.locale].home, item: localeUrl(post.locale, "/") },
-        { "@type": "ListItem", position: 2, name: LOCALES[post.locale][post.section], item: localeUrl(post.locale, `/${post.section}/`) },
-        { "@type": "ListItem", position: 3, name: post.title, item: post.absoluteUrl }
-      ] }
+      { "@type": "BreadcrumbList", itemListElement: breadcrumbItems }
     ]
   };
   const extra = `<meta property="article:published_time" content="${post.published}">
@@ -346,20 +444,20 @@ function renderArticle(post) {
   ${baseHead({ title: post.seoTitle || `${post.title} | Luffy Liu`, description: post.description, canonical: post.absoluteUrl, locale: post.locale, alternates, ...(coverAbsolute ? { image: coverAbsolute } : {}), type: "article", extra })}
   <script type="application/ld+json">${json(articleLd)}</script>
 </head><body>
-  <a class="skip-link" href="#main">跳到正文</a>
+  <a class="skip-link" href="#main">${escapeHtml(TUTORIAL_COPY[post.locale].skip)}</a>
   ${siteHeader(post.locale, post.section, alternates)}
   <main id="main">
     <header class="content-header content-shell">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="${localePath(post.locale, "/")}">${LOCALES[post.locale].home}</a><span>/</span><a href="${localePath(post.locale, `/${post.section}/`)}">${LOCALES[post.locale][post.section]}</a><span>/</span><span aria-current="page">${escapeHtml(post.title)}</span></nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="${localePath(post.locale, "/")}">${LOCALES[post.locale].home}</a><span>/</span><a href="${localePath(post.locale, `/${post.section}/`)}">${LOCALES[post.locale][post.section]}</a>${post.seriesLead && post !== post.seriesLead ? `<span>/</span><a href="${post.seriesLead.url}">${escapeHtml(seriesNav.seriesTitle)}</a>` : ""}<span>/</span><span aria-current="page">${escapeHtml(post.title)}</span></nav>
       <p class="eyebrow">${escapeHtml(post.tags.map((tag) => tag.label).join(" · "))}</p>
       <h1 data-pagefind-meta="title">${escapeHtml(post.title)}</h1>
       <p class="content-lede" data-pagefind-meta="description">${escapeHtml(post.description)}</p>
-      <div class="content-meta"><span>Luffy Liu</span><time datetime="${post.published}" data-pagefind-meta="date" data-pagefind-sort="date">${post.published}</time>${post.section === "blog" ? `<a href="${localePath(post.locale, `/blog/archive/${post.year}/`)}" data-pagefind-filter="year:${post.year}">${post.year}</a>` : `<span data-pagefind-filter="year:${post.year}">${post.year}</span>`}<span>${tags}</span></div>
+      <div class="content-meta"><span>Luffy Liu</span><time datetime="${post.published}" data-pagefind-meta="date" data-pagefind-sort="date">${post.published}</time>${post.section === "blog" ? `<a href="${localePath(post.locale, `/blog/archive/${post.year}/`)}" data-pagefind-filter="year:${post.year}">${post.year}</a>` : `<span data-pagefind-filter="year:${post.year}">${post.year}</span>`}<span>${tags}</span>${post.series ? `<span data-pagefind-filter="series:${escapeHtml(post.series)}" data-pagefind-meta="series">${escapeHtml(seriesNav.seriesTitle)}</span>` : ""}</div>
       ${post.coverUrl ? `<figure class="article-cover"><img src="${post.coverUrl}" alt="${escapeHtml(post.cover_alt || post.title)}" fetchpriority="high"></figure>` : ""}
     </header>
     <div class="content-layout content-shell">
-      <nav class="content-toc" aria-label="文章目录" data-pagefind-ignore><strong>文章目录</strong>${toc}</nav>
-      <article class="prose" data-pagefind-body data-pagefind-filter="section:${post.section}" data-pagefind-filter="locale:${post.locale}">${body}<div class="author-card"><img src="/assets/luffy-avatar.png" width="58" height="58" alt="Luffy Liu"><div><strong>Luffy Liu</strong><p>Independent product builder · AI, agents and real workflows.</p></div></div></article>
+      <aside class="content-sidebar" data-pagefind-ignore>${seriesNav.sidebar}${toc ? `<nav class="content-toc" aria-label="${escapeHtml(TUTORIAL_COPY[post.locale].toc)}"><strong>${escapeHtml(TUTORIAL_COPY[post.locale].toc)}</strong>${toc}</nav>` : ""}</aside>
+      <article class="prose" data-pagefind-body data-pagefind-filter="section:${post.section}" data-pagefind-filter="locale:${post.locale}">${body}${seriesNav.footer}<div class="author-card"><img src="/assets/luffy-avatar.png" width="58" height="58" alt="Luffy Liu"><div><strong>Luffy Liu</strong><p>Independent product builder · AI, agents and real workflows.</p></div></div></article>
     </div>
   </main>
   ${siteFooter(post.locale)}
@@ -429,7 +527,6 @@ function entryHome(locale, content, alternates) {
   ${baseHead({ title: content.seo.title, description: content.seo.description, canonical, locale, alternates })}
   <link rel="stylesheet" href="/assets/css/homepage.css?v=20260827-1">
   <script type="application/ld+json">${json(homeLd)}</script>
-  <script type="application/json" id="language-copy">${json(content.languagePrompt)}</script>
 </head><body>
   <a class="skip-link" href="#main">Skip</a>${homeHeader}
   <main id="main">
@@ -565,6 +662,7 @@ async function build() {
   if (process.env.SKIP_STATIC !== "1") await copyStatic();
   const posts = await loadCollection("blog", BLOG_CONTENT);
   const tutorials = await loadCollection("tutorials", TUTORIAL_CONTENT);
+  attachTutorialSeries(tutorials);
   const homes = await loadHomeContent();
   const articles = [...posts, ...tutorials];
   await copyContentAssets(articles);
@@ -581,7 +679,7 @@ async function build() {
   for (const article of articles) await write(path.join(article.url.slice(1), "index.html"), renderArticle(article));
 
   const tutorialsByLocale = new Map(localeCodes.map((locale) => [locale, tutorials.filter((article) => article.locale === locale)]));
-  const tutorialPageSets = new Map([...tutorialsByLocale].map(([locale, localized]) => [locale, chunks(localized, PAGE_SIZE)]));
+  const tutorialPageSets = new Map([...tutorialsByLocale].map(([locale, localized]) => [locale, chunks(tutorialGroups(localized), PAGE_SIZE)]));
   for (const locale of localeCodes) {
     const pages = tutorialPageSets.get(locale);
     for (let index = 0; index < pages.length; index++) {
@@ -589,7 +687,7 @@ async function build() {
       const base = localePath(locale, "/tutorials/");
       const url = pageUrl(base, number);
       const alternates = Object.fromEntries(localeCodes.filter((code) => tutorialPageSets.get(code).length >= number).map((code) => [code, `${SITE_URL}${pageUrl(localePath(code, "/tutorials/"), number)}`]));
-      await write(path.join(url.slice(1), "index.html"), listPage({ title: TUTORIAL_TITLES[locale], heading: LOCALES[locale].tutorials, lede: tutorialEntryDescription(locale), canonical: `${SITE_URL}${url}`, posts: pages[index], base, current: number, total: pages.length, locale, alternates, section: "tutorials", eyebrow: "Tutorials · Learn by making" }));
+      await write(path.join(url.slice(1), "index.html"), tutorialListPage({ title: TUTORIAL_TITLES[locale], heading: LOCALES[locale].tutorials, lede: tutorialEntryDescription(locale), canonical: `${SITE_URL}${url}`, groups: pages[index], base, current: number, total: pages.length, locale, alternates }));
       generatedPages.push({ url, lastmod: tutorialsByLocale.get(locale)[0]?.updated || "2026-08-30", locale, section: "tutorials" });
     }
   }

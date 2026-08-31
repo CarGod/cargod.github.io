@@ -76,6 +76,17 @@ for (const file of files.filter((item) => item.endsWith(".html"))) {
     const body = html.match(/<article[^>]+data-pagefind-body[\s\S]*?<\/article>/i)?.[0] || "";
     if (/href=["']\/(?:blog|tutorials)\//i.test(body)) errors.push(`${route}: localized body links to the zh-CN content route`);
   }
+  const article = html.match(/<article[^>]+data-pagefind-body[\s\S]*?<\/article>/i)?.[0];
+  if (article) {
+    const proseOutsideCode = article
+      .replace(/<pre\b[\s\S]*?<\/pre>/gi, "")
+      .replace(/<code\b[\s\S]*?<\/code>/gi, "");
+    if (/\*\*[^*\n]+\*\*/.test(proseOutsideCode)) errors.push(`${route}: rendered article leaks strong Markdown syntax`);
+    if (/__[^_\n]+__/.test(proseOutsideCode)) errors.push(`${route}: rendered article leaks underscore strong Markdown syntax`);
+    if (/(?<!\*)\*(?!\*)[^*\n]+(?<!\s)\*(?!\*)/.test(proseOutsideCode)) errors.push(`${route}: rendered article leaks emphasis Markdown syntax`);
+    if (/(?<!`)`{1,2}[^`\n]+`{1,2}(?!`)/.test(proseOutsideCode)) errors.push(`${route}: rendered article leaks inline-code Markdown syntax`);
+    if (/(?<!!)\[[^\]\n]+\]\([^)\n]+\)/.test(proseOutsideCode)) errors.push(`${route}: rendered article leaks link Markdown syntax`);
+  }
 }
 
 for (const [url, page] of htmlByUrl) {
@@ -102,6 +113,31 @@ for (const route of ["/", "/zh-tw/", "/en/", "/ja/", "/ko/", "/es/"]) {
   }
 }
 
+const guideSlugs = ["prompt-engineering", "first-conversation", "tokens", "probability-temperature", "clear-instructions", "structured-prompts", "json-output", "xml-delimiters", "complex-tasks"];
+const expectedGuideRoutes = [];
+for (const prefix of ["", "/zh-tw", "/en", "/ja", "/ko", "/es"]) {
+  const listingRoute = `${prefix}/tutorials/`;
+  const listing = htmlByUrl.get(`${SITE_URL}${listingRoute}`)?.html || "";
+  if (!/<article[^>]+class=["'][^"']*tutorial-series[^"']*["'][^>]+data-series=["']prompt-engineering["']/i.test(listing)) errors.push(`${listingRoute}: prompt-engineering must be presented as a tutorial series`);
+  const listChapterLinks = matches(listing, /<ol[^>]+class=["'][^"']*chapter-list[^"']*["'][^>]*>([\s\S]*?)<\/ol>/gi).flatMap((item) => matches(item[1], /<a[^>]+href=["']([^"']+)/gi).map((link) => link[1]));
+  if (listChapterLinks.length !== guideSlugs.length) errors.push(`${listingRoute}: expected ${guideSlugs.length} ordered guide links, got ${listChapterLinks.length}`);
+  for (const [index, slug] of guideSlugs.entries()) {
+    const route = slug === "prompt-engineering" ? `${prefix}/tutorials/prompt-engineering/` : `${prefix}/tutorials/prompt-engineering/${slug}/`;
+    expectedGuideRoutes.push(route);
+    const page = htmlByUrl.get(`${SITE_URL}${route}`)?.html || "";
+    if (!page) { errors.push(`Missing localized guide chapter ${route}`); continue; }
+    const seriesToc = page.match(/<nav[^>]+class=["'][^"']*series-toc[^"']*["'][^>]*>([\s\S]*?)<\/nav>/i)?.[1] || "";
+    const tocLinks = matches(seriesToc, /<a[^>]+href=["']([^"']+)/gi).map((item) => item[1]);
+    if (tocLinks.length !== guideSlugs.length) errors.push(`${route}: expected ${guideSlugs.length} links in the series directory, got ${tocLinks.length}`);
+    if (index > 0 && !new RegExp(`<a[^>]+rel=["']prev["']`).test(page)) errors.push(`${route}: missing previous-chapter navigation`);
+    if (index < guideSlugs.length - 1 && !new RegExp(`<a[^>]+rel=["']next["']`).test(page)) errors.push(`${route}: missing next-chapter navigation`);
+  }
+  for (const slug of guideSlugs.slice(1)) {
+    const obsolete = `${prefix}/tutorials/${slug}/`;
+    if (htmlByUrl.has(`${SITE_URL}${obsolete}`)) errors.push(`${obsolete}: obsolete flattened tutorial route must not be generated`);
+  }
+}
+
 const rootHome = htmlByUrl.get(`${SITE_URL}/`)?.html || "";
 if (/X icon by Icons8|icons8\.com\/icon/i.test(rootHome)) errors.push("/: obsolete visible Icons8 credit remains");
 if (!/<a[^>]+href=["']https:\/\/x\.com\/luffyliux["'][^>]+aria-label=["'][^"']+["'][^>]*>[\s\S]*?<img[^>]+src=["']\/assets\/icons\/x-mark\.svg["'][^>]+alt=["']["']/i.test(rootHome)) {
@@ -125,6 +161,7 @@ for (const shardUrl of shardUrls) {
     if (/noindex/i.test(htmlByUrl.get(url)?.html || "")) errors.push(`Noindex URL appears in sitemap: ${url}`);
   }
 }
+for (const route of expectedGuideRoutes) if (!sitemapUrls.has(`${SITE_URL}${route}`)) errors.push(`${route}: localized guide chapter is missing from sitemap`);
 
 for (const localePath of ["index.xml", "zh-tw/index.xml", "en/index.xml", "ja/index.xml", "ko/index.xml", "es/index.xml"]) {
   const xml = await fs.readFile(path.join(OUT, localePath), "utf8").catch(() => "");
@@ -153,7 +190,11 @@ await validateSources(path.join(ROOT, "content", "tutorials"));
 const contentKeys = new Set();
 for (const source of sourceFiles) {
   const parsed = matter(await fs.readFile(source, "utf8"));
-  if (/^#\s+/m.test(parsed.content)) errors.push(`${path.relative(ROOT, source)}: body must not contain H1`);
+  const contentWithoutFences = parsed.content.replace(/(^|\n)[ \t]{0,3}(`{3,}|~{3,})[^\n]*\n[\s\S]*?\n[ \t]{0,3}\2(?=\n|$)/g, "$1");
+  if (/^#\s+/m.test(contentWithoutFences)) errors.push(`${path.relative(ROOT, source)}: body must not contain H1 outside fenced code`);
+  if (/^(?:import|export)\s.+(?:from\s+)?["'][^"']+["'];?\s*$/m.test(contentWithoutFences) || /<\/?[A-Z][A-Za-z0-9_.:-]*(?:\s[^<>]*?)?\s*\/?>/.test(contentWithoutFences)) {
+    errors.push(`${path.relative(ROOT, source)}: MDX imports/components must be cleaned before the content build`);
+  }
   const key = `${parsed.data.locale}:${parsed.data.contentKey}`;
   if (contentKeys.has(key)) errors.push(`${path.relative(ROOT, source)}: duplicate locale + contentKey ${key}`);
   contentKeys.add(key);

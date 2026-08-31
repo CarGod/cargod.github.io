@@ -11,13 +11,16 @@
     "build:static": "node scripts/build.mjs",
     "build:search": "pagefind --site _site",
     "build": "npm run build:static && npm run build:search",
-    "validate": "node scripts/validate-site.mjs",
+    "test:markdown": "node scripts/test-markdown.mjs",
+    "test:content-protection": "node scripts/test-content-protection.mjs",
+    "validate": "npm run test:markdown && npm run test:content-protection && node scripts/validate-content-sync.mjs && node scripts/validate-site.mjs",
     "benchmark": "node scripts/benchmark.mjs"
   },
   "dependencies": {
     "gray-matter": "4.0.3",
     "markdown-it": "14.3.1",
-    "markdown-it-anchor": "9.2.0"
+    "markdown-it-anchor": "9.2.0",
+    "markdown-it-cjk-friendly": "3.0.0"
   },
   "devDependencies": {
     "pagefind": "1.5.2"
