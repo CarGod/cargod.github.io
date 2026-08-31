@@ -5,7 +5,7 @@ description: "Chatbot、AI + Tools、Copilot、Agentという四段階から、�
 slug: enterprise-ai-four-stages
 contentKey: blog.enterprise-ai-four-stages
 published: 2026-08-20
-updated: 2026-08-30
+updated: 2026-08-31
 tags:
   - id: ai
     label: AI
@@ -18,7 +18,7 @@ tags:
   - id: ai-customer-service
     label: カスタマーサポート
 translation_of: "/blog/enterprise-ai-four-stages/"
-cover: "assets/cover-liu-lufei-original-v8.png"
+cover: "assets/cover-liu-lufei-ja-v1.png"
 cover_alt: "企業のレガシーシステムに AI を導入する四つの段階"
 media_base: "shared:enterprise-ai-four-stages"
 draft: false
@@ -54,7 +54,7 @@ AI は物流が遅れる一般的な理由を長々と説明し、最後に注�
 
 これは業界標準ではなく、能力を点検するための枠組みです。すべての中間版を正式公開する必要はありませんが、データ、ツール、タスク、ガバナンスという土台は飛ばせません。
 
-![企業システムに AI を導入する四段階と、各段階で必要な能力](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-original-v6.png)
+![企業システムに AI を導入する四段階と、各段階で必要な能力](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-ja-v1.png)
 
 *四つの段階、四つの能力層。*
 
@@ -199,7 +199,7 @@ AI は「現在の目標を理解する → 次の手を決める → ツール�
 
 意図のガバナンスは一文にラベルを付けることではありません。ユーザーが本当に達成したいことを、システムが実行できるタスクへ段階的に絞ることです。
 
-![ユーザーの表現を業務領域と具体的意図へ絞り、正しい注文ワークフローへ導く](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-original-v6.png)
+![ユーザーの表現を業務領域と具体的意図へ絞り、正しい注文ワークフローへ導く](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-ja-v1.png)
 
 *一つの発話から、実行可能なタスクへ。*
 
@@ -255,7 +255,7 @@ Agent が無制限に保証するという意味ではありません。
 
 人が全件確認しなくても、監督は消えません。「人が各手順を見る」から「システムがリスクを自動で抑える」へ変わります。
 
-![Copilot は人の確認に依存し、Agent はシステムのガードレールで合意境界内を動く](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-original-v6.png)
+![Copilot は人の確認に依存し、Agent はシステムのガードレールで合意境界内を動く](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-ja-v1.png)
 
 *無人運用は、無監督という意味ではありません。*
 
@@ -286,7 +286,7 @@ Agent が無制限に保証するという意味ではありません。
 
 「Agent をどう作るか」と尋ねる前に、現在のシステムに何が欠けているかを見ます。
 
-![知識、ツール、ワークフロー、ガバナンスの四層から、次に整える能力を判断する](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-original-v6.png)
+![知識、ツール、ワークフロー、ガバナンスの四層から、次に整える能力を判断する](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-ja-v1.png)
 
 *最も弱い層を見つけ、そこから始める。*
 

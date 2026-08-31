@@ -13,7 +13,9 @@
     "build": "npm run build:static && npm run build:search",
     "test:markdown": "node scripts/test-markdown.mjs",
     "test:content-protection": "node scripts/test-content-protection.mjs",
-    "validate": "npm run test:markdown && npm run test:content-protection && node scripts/validate-content-sync.mjs && node scripts/validate-site.mjs",
+    "test:localized-visuals": "node scripts/test-localized-visuals.mjs",
+    "test:search": "node scripts/test-search.mjs",
+    "validate": "npm run test:markdown && npm run test:content-protection && node scripts/validate-content-sync.mjs && npm run test:localized-visuals && npm run test:search && node scripts/validate-site.mjs",
     "benchmark": "node scripts/benchmark.mjs"
   },
   "dependencies": {

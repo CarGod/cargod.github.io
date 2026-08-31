@@ -54,6 +54,14 @@ Dates must parse as ISO calendar dates (`YYYY-MM-DD`; quoting is recommended for
 
 Never change a published slug or `contentKey` during ordinary copy editing. Stable tag URLs use tag IDs, not translated labels.
 
+## Localized media
+
+- `media_base: "local"` means the asset directory beside the default-locale source is copied to the public content asset root.
+- A translation may use `media_base: "shared:<media-key>"` to reuse that public root, but any image with visible text must still use a locale-specific filename inside the shared root.
+- Keep `cover` relative to the configured media root. The build uses it for the page image and Open Graph metadata.
+- Keep Markdown image `alt` text in the page language. Text-free assets may share one file; text-bearing covers and diagrams may not.
+- Validate locale-specific image references, SVG locale metadata, PNG dimensions, and generated HTML with `npm run test:localized-visuals`.
+
 ## Markdown structure
 
 - Use H2 for top-level body sections and H3 only below an H2.

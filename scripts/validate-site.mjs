@@ -78,6 +78,7 @@ for (const file of files.filter((item) => item.endsWith(".html"))) {
   }
   const article = html.match(/<article[^>]+data-pagefind-body[\s\S]*?<\/article>/i)?.[0];
   if (article) {
+    if (!/<div[^>]+class=["'][^"']*author-card[^"']*["'][^>]+data-pagefind-ignore(?:\s|=|>)/i.test(article)) errors.push(`${route}: repeated author boilerplate must be excluded from Pagefind`);
     const proseOutsideCode = article
       .replace(/<pre\b[\s\S]*?<\/pre>/gi, "")
       .replace(/<code\b[\s\S]*?<\/code>/gi, "");
@@ -108,8 +109,30 @@ for (const route of ["/", "/zh-tw/", "/en/", "/ja/", "/ko/", "/es/"]) {
   if (matches(page.html, /<a[^>]+data-language=["'](?:zh-CN|zh-TW|en|ja|ko|es)["']/gi).length < 6) errors.push(`${route}: homepage must expose six ordinary language links`);
   const prefix = route === "/" ? "" : route.slice(0, -1);
   const mobileNav = page.html.match(/<nav[^>]+class=["'][^"']*mobile-content-nav[^"']*["'][^>]*>([\s\S]*?)<\/nav>/i)?.[1] || "";
-  for (const destination of [`${prefix}/tutorials/`, `${prefix}/blog/`]) {
+  for (const destination of [`${prefix}/tutorials/`, `${prefix}/blog/`, `${prefix}/blog/search/`]) {
     if (!new RegExp(`<a[^>]+href=["']${destination.replaceAll("/", "\\/")}["']`, "i").test(mobileNav)) errors.push(`${route}: mobile content navigation is missing ${destination}`);
+  }
+}
+
+for (const prefix of ["", "/zh-tw", "/en", "/ja", "/ko", "/es"]) {
+  const route = `${prefix}/blog/search/`;
+  const page = htmlByUrl.get(`${SITE_URL}${route}`);
+  if (!page) { errors.push(`Missing localized search page ${route}`); continue; }
+  const expectedAction = route;
+  if (!new RegExp(`<form[^>]+id=["']blog-search-form["'][^>]+method=["']get["'][^>]+action=["']${expectedAction.replaceAll("/", "\\/")}["']`, "i").test(page.html)) errors.push(`${route}: search form needs a localized GET action`);
+  for (const name of ["q", "type", "tag", "year", "sort"]) if (!new RegExp(`<(?:input|select)[^>]+name=["']${name}["']`, "i").test(page.html)) errors.push(`${route}: search form is missing ${name}`);
+  if (!/<script[^>]+type=["']module["'][^>]+src=["']\/assets\/js\/search\.js["'][^>]*><\/script>/i.test(page.html)) errors.push(`${route}: search module is missing`);
+  if (!/<script[^>]+type=["']application\/json["'][^>]+id=["']blog-search-config["']/i.test(page.html)) errors.push(`${route}: localized search configuration is missing`);
+  if (!/<button[^>]+id=["']blog-search-more["'][^>]+hidden/i.test(page.html)) errors.push(`${route}: incremental result control is missing`);
+  const noscript = page.html.match(/<noscript>([\s\S]*?)<\/noscript>/i)?.[1] || "";
+  for (const destination of [`${prefix}/blog/`, `${prefix}/tutorials/`]) if (!new RegExp(`href=["']${destination.replaceAll("/", "\\/")}["']`, "i").test(noscript)) errors.push(`${route}: no-JavaScript browse link is missing ${destination}`);
+  const mobileNav = page.html.match(/<nav[^>]+class=["'][^"']*mobile-content-nav[^"']*["'][^>]*>([\s\S]*?)<\/nav>/i)?.[1] || "";
+  if (!new RegExp(`<a[^>]+href=["']${route.replaceAll("/", "\\/")}["'][^>]+aria-current=["']page["']`, "i").test(mobileNav)) errors.push(`${route}: mobile search link is not active`);
+}
+
+for (const page of htmlByUrl.values()) {
+  for (const tag of matches(page.html, /<[^>]+>/g)) {
+    if (matches(tag[0], /\bdata-pagefind-filter\s*=/gi).length > 1) errors.push(`${page.route}: element contains duplicate data-pagefind-filter attributes`);
   }
 }
 
@@ -173,6 +196,7 @@ for (const forbidden of ["content", "scripts", "docs", "node_modules", ".git"]) 
   if (await fs.stat(path.join(OUT, forbidden)).then(() => true).catch(() => false)) errors.push(`Forbidden artifact directory: ${forbidden}`);
 }
 if (!await fs.stat(path.join(OUT, "pagefind", "pagefind.js")).then(() => true).catch(() => false)) errors.push("Pagefind index is missing");
+if (!await fs.stat(path.join(OUT, "assets", "js", "search.js")).then(() => true).catch(() => false)) errors.push("Search client module is missing");
 const total = (await Promise.all(files.map((file) => fs.stat(file).then((stat) => stat.size)))).reduce((sum, size) => sum + size, 0);
 if (total > MAX_BYTES) errors.push(`Artifact is ${(total / 1024 / 1024).toFixed(2)} MiB, above 850 MiB limit`);
 

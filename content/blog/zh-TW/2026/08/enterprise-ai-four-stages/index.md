@@ -5,7 +5,7 @@ description: "企業老系統接入 AI 的四階段框架：Chatbot、AI + Tools
 slug: enterprise-ai-four-stages
 contentKey: blog.enterprise-ai-four-stages
 published: 2026-08-20
-updated: 2026-08-30
+updated: 2026-08-31
 tags:
   - id: ai
     label: AI
@@ -18,7 +18,7 @@ tags:
   - id: ai-customer-service
     label: 智慧客服
 translation_of: "/blog/enterprise-ai-four-stages/"
-cover: "assets/cover-liu-lufei-original-v8.png"
+cover: "assets/cover-liu-lufei-zh-tw-v1.png"
 cover_alt: "企業老系統接入 AI 的四個階段"
 media_base: "shared:enterprise-ai-four-stages"
 draft: false
@@ -54,7 +54,7 @@ draft: false
 
 這不是業界標準，而是一套檢查能力的框架。企業不必正式上線每個中間版本，但資料、工具、任務與治理這幾層能力不能跳過。
 
-![企業系統接入 AI 的四個階段，以及各階段需要補齊的能力](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-original-v6.png)
+![企業系統接入 AI 的四個階段，以及各階段需要補齊的能力](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-zh-tw-v1.png)
 
 *四個階段，四層能力。*
 
@@ -199,7 +199,7 @@ AI + Tools 比較像人說一步、AI 做一步。Copilot 則是人給出目標�
 
 意圖治理不是替一句話貼標籤，而是把使用者真正想完成的事，逐層收斂成系統可以執行的任務。
 
-![使用者表達經過業務領域與具體意圖兩層收斂，進入正確訂單工作流程](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-original-v6.png)
+![使用者表達經過業務領域與具體意圖兩層收斂，進入正確訂單工作流程](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-zh-tw-v1.png)
 
 *從一句話，到可執行任務。*
 
@@ -255,7 +255,7 @@ Agent 代表另一種承諾：在雙方約定的運行邊界內，業務人員�
 
 人工不再逐筆審核後，監管沒有消失，只是從「人盯著每一步」變成「系統自動控制風險」。
 
-![Copilot 依賴人工確認，Agent 依靠系統護欄在約定邊界內運行](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-original-v6.png)
+![Copilot 依賴人工確認，Agent 依靠系統護欄在約定邊界內運行](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-zh-tw-v1.png)
 
 *無人值守不等於無人監管。*
 
@@ -286,7 +286,7 @@ Agent 代表另一種承諾：在雙方約定的運行邊界內，業務人員�
 
 先別問「如何做一個 Agent」，看看目前系統缺什麼。
 
-![企業可從知識、工具、工作流程與治理四層判斷下一步要補的能力](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-original-v6.png)
+![企業可從知識、工具、工作流程與治理四層判斷下一步要補的能力](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-zh-tw-v1.png)
 
 *找出目前最薄弱的一層，從那裡開始。*
 

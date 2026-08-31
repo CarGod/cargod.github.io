@@ -23,10 +23,11 @@ Read [editing-policy.md](references/editing-policy.md), [voice-profile.md](refer
 2. Identify whether the request is a correction, translation sync, metadata change, or new article. Do not broaden a correction into a rewrite.
 3. Make the smallest adequate change in `zh-CN` first. Preserve examples, analogies, cases, sequence, and distinctive phrasing unless they are the factual error being fixed.
 4. Apply the same semantic change to all five translated variants. Keep stable IDs, dates, tag IDs, `series`, `order`, links, heading levels, and code-block structure aligned.
-5. For GPTPMT material, keep every protected anchor and remove only the objective legacy error. Never turn a chapter into a summary or generic AI copy.
-6. Add or update the relevant revision-log entry with an objective correction category and six-locale sync status.
-7. Run `npm run build` and `npm run validate`. Resolve route, Markdown, hreflang, sitemap, RSS, and content-sync failures before handoff.
-8. Report changed content, validation, and any editorial choice that still requires the user's decision. Do not publish implicitly.
+5. If a cover or inline image contains readable prose, labels, or a title, localize that image for every published locale from the approved editable source. Share only text-free artwork such as the Yunzhou avatar. Keep layout, illustration, nodes, arrows, and visual identity unchanged; use deterministic SVG text layout for exact copy.
+6. For GPTPMT material, keep every protected anchor and remove only the objective legacy error. Never turn a chapter into a summary or generic AI copy.
+7. Add or update the relevant revision-log entry with an objective correction category and six-locale sync status.
+8. Run `npm run build` and `npm run validate`. Resolve route, Markdown, localized-visual, hreflang, sitemap, RSS, and content-sync failures before handoff.
+9. Report changed content, validation, and any editorial choice that still requires the user's decision. Do not publish implicitly.
 
 ## Decision rule
 

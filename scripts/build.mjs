@@ -35,6 +35,34 @@ const COPY = {
   ko: { blogTitle: "블로그: AI, 에이전트와 인디 제품", blogLede: "기업 AI, 에이전트, 인디 제품과 실제 워크플로에 대한 기록입니다.", searchTitle: "블로그 검색", searchLede: "키워드, 태그, 연도로 검색합니다. 인덱스는 필요한 조각만 불러옵니다.", keyword: "키워드", placeholder: "예: Agent, 거버넌스, Copilot", submit: "검색", tag: "태그", year: "연도", all: "전체", prompt: "키워드를 입력하거나 태그와 연도를 선택하세요.", none: "일치하는 글이 없습니다." },
   es: { blogTitle: "Blog: IA, agentes y productos independientes", blogLede: "Notas sobre IA empresarial, agentes, productos independientes y flujos de trabajo reales.", searchTitle: "Buscar en el blog", searchLede: "Busca por palabra clave, etiqueta y año. El índice carga fragmentos bajo demanda.", keyword: "Palabra clave", placeholder: "p. ej., agentes, gobernanza, Copilot", submit: "Buscar", tag: "Etiqueta", year: "Año", all: "Todo", prompt: "Escribe una palabra clave o elige etiqueta y año.", none: "No hay artículos coincidentes." }
 };
+const SEARCH_COPY = {
+  "zh-CN": {
+    title: "搜索博客与教程", lede: "在本站的博客与教程中按关键词搜索，并可用标签或年份缩小范围。索引会按需分片加载。", eyebrow: "站内搜索 · Pagefind", skip: "跳到搜索", sectionLabel: "站内搜索", formLabel: "搜索博客与教程", keyword: "关键词", placeholder: "例如：AI、企业、提示工程", submit: "搜索", filters: "筛选条件", tag: "标签", year: "年份", all: "全部", clear: "清除", prompt: "输入关键词，或选择标签和年份开始搜索。", loading: "正在搜索…", none: "没有找到匹配内容。试试更短的关键词或清除筛选条件。", error: "搜索索引暂时无法加载，请稍后重试。", summary: "找到 {total} 项，显示前 {shown} 项。", resultsLabel: "搜索结果", read: "查看内容", blogType: "博客", tutorialType: "教程", untitled: "未命名内容"
+  },
+  "zh-TW": {
+    title: "搜尋網誌與教學", lede: "在本站的網誌與教學中依關鍵字搜尋，並可用標籤或年份縮小範圍。索引會按需分片載入。", eyebrow: "站內搜尋 · Pagefind", skip: "跳到搜尋", sectionLabel: "站內搜尋", formLabel: "搜尋網誌與教學", keyword: "關鍵字", placeholder: "例如：AI、企業、提示工程", submit: "搜尋", filters: "篩選條件", tag: "標籤", year: "年份", all: "全部", clear: "清除", prompt: "輸入關鍵字，或選擇標籤和年份開始搜尋。", loading: "正在搜尋…", none: "找不到相符內容。請嘗試較短的關鍵字或清除篩選條件。", error: "搜尋索引暫時無法載入，請稍後再試。", summary: "找到 {total} 項，顯示前 {shown} 項。", resultsLabel: "搜尋結果", read: "查看內容", blogType: "網誌", tutorialType: "教學", untitled: "未命名內容"
+  },
+  en: {
+    title: "Search blogs & tutorials", lede: "Search across the site's blogs and tutorials, then narrow results by tag or year. The index loads in small chunks on demand.", eyebrow: "Site search · Pagefind", skip: "Skip to search", sectionLabel: "Site search", formLabel: "Search blogs and tutorials", keyword: "Keyword", placeholder: "Try AI, enterprise, or prompt engineering", submit: "Search", filters: "Refine results", tag: "Tag", year: "Year", all: "All", clear: "Clear", prompt: "Enter a keyword, or choose a tag and year to begin.", loading: "Searching…", none: "No matching content. Try a shorter keyword or clear the filters.", error: "The search index could not be loaded. Please try again.", summary: "Found {total} results; showing the first {shown}.", resultsLabel: "Search results", read: "View content", blogType: "Blog", tutorialType: "Tutorial", untitled: "Untitled content"
+  },
+  ja: {
+    title: "ブログとチュートリアルを検索", lede: "サイト内のブログとチュートリアルをキーワードで検索し、タグや年で絞り込めます。インデックスは必要な分だけ読み込みます。", eyebrow: "サイト内検索 · Pagefind", skip: "検索へ移動", sectionLabel: "サイト内検索", formLabel: "ブログとチュートリアルを検索", keyword: "キーワード", placeholder: "例：AI、企業、プロンプト", submit: "検索", filters: "絞り込み", tag: "タグ", year: "年", all: "すべて", clear: "クリア", prompt: "キーワードを入力するか、タグと年を選択してください。", loading: "検索しています…", none: "一致する内容がありません。短いキーワードを試すか、絞り込みを解除してください。", error: "検索インデックスを読み込めませんでした。もう一度お試しください。", summary: "{total} 件中、先頭の {shown} 件を表示しています。", resultsLabel: "検索結果", read: "内容を見る", blogType: "ブログ", tutorialType: "チュートリアル", untitled: "無題のコンテンツ"
+  },
+  ko: {
+    title: "블로그와 튜토리얼 검색", lede: "사이트의 블로그와 튜토리얼을 키워드로 검색하고 태그나 연도로 범위를 좁힐 수 있습니다. 인덱스는 필요한 조각만 불러옵니다.", eyebrow: "사이트 검색 · Pagefind", skip: "검색으로 이동", sectionLabel: "사이트 검색", formLabel: "블로그와 튜토리얼 검색", keyword: "키워드", placeholder: "예: AI, 기업, 프롬프트", submit: "검색", filters: "결과 필터", tag: "태그", year: "연도", all: "전체", clear: "초기화", prompt: "키워드를 입력하거나 태그와 연도를 선택하세요.", loading: "검색 중…", none: "일치하는 콘텐츠가 없습니다. 더 짧은 키워드를 사용하거나 필터를 초기화해 보세요.", error: "검색 인덱스를 불러오지 못했습니다. 다시 시도해 주세요.", summary: "{total}개 결과 중 앞의 {shown}개를 표시합니다.", resultsLabel: "검색 결과", read: "내용 보기", blogType: "블로그", tutorialType: "튜토리얼", untitled: "제목 없는 콘텐츠"
+  },
+  es: {
+    title: "Buscar en el blog y los tutoriales", lede: "Busca por palabra clave en el blog y los tutoriales, y acota los resultados por etiqueta o año. El índice carga fragmentos bajo demanda.", eyebrow: "Búsqueda del sitio · Pagefind", skip: "Ir a la búsqueda", sectionLabel: "Búsqueda del sitio", formLabel: "Buscar en el blog y los tutoriales", keyword: "Palabra clave", placeholder: "Prueba IA, empresa o prompts", submit: "Buscar", filters: "Filtrar resultados", tag: "Etiqueta", year: "Año", all: "Todo", clear: "Limpiar", prompt: "Escribe una palabra clave o elige una etiqueta y un año.", loading: "Buscando…", none: "No hay contenido coincidente. Prueba una palabra más corta o limpia los filtros.", error: "No se pudo cargar el índice de búsqueda. Inténtalo de nuevo.", summary: "Se encontraron {total} resultados; se muestran los primeros {shown}.", resultsLabel: "Resultados de búsqueda", read: "Ver contenido", blogType: "Blog", tutorialType: "Tutorial", untitled: "Contenido sin título"
+  }
+};
+const SEARCH_EXTRA_COPY = {
+  "zh-CN": { type: "内容类型", allTypes: "博客与教程", sort: "排序", relevance: "相关度", newest: "最新发布", oldest: "最早发布", loadMore: "再加载 20 项", loadingMore: "正在加载更多结果…", noScript: "全文搜索需要 JavaScript。你仍可浏览以下静态栏目：", browseBlog: "浏览博客", browseTutorials: "浏览教程", browseTags: "博客标签", browseArchive: "博客归档" },
+  "zh-TW": { type: "內容類型", allTypes: "網誌與教學", sort: "排序", relevance: "相關度", newest: "最新發布", oldest: "最早發布", loadMore: "再載入 20 項", loadingMore: "正在載入更多結果…", noScript: "全文搜尋需要 JavaScript。你仍可瀏覽以下靜態欄目：", browseBlog: "瀏覽網誌", browseTutorials: "瀏覽教學", browseTags: "網誌標籤", browseArchive: "網誌封存" },
+  en: { type: "Content type", allTypes: "Blogs & tutorials", sort: "Sort", relevance: "Relevance", newest: "Newest first", oldest: "Oldest first", loadMore: "Load 20 more", loadingMore: "Loading more results…", noScript: "Full-text search requires JavaScript. You can still browse these static sections:", browseBlog: "Browse the blog", browseTutorials: "Browse tutorials", browseTags: "Blog tags", browseArchive: "Blog archive" },
+  ja: { type: "コンテンツ種別", allTypes: "ブログとチュートリアル", sort: "並び順", relevance: "関連度", newest: "新しい順", oldest: "古い順", loadMore: "さらに 20 件読み込む", loadingMore: "結果をさらに読み込んでいます…", noScript: "全文検索には JavaScript が必要です。次の静的ページはそのまま閲覧できます：", browseBlog: "ブログを見る", browseTutorials: "チュートリアルを見る", browseTags: "ブログのタグ", browseArchive: "ブログのアーカイブ" },
+  ko: { type: "콘텐츠 유형", allTypes: "블로그와 튜토리얼", sort: "정렬", relevance: "관련도", newest: "최신순", oldest: "오래된순", loadMore: "20개 더 불러오기", loadingMore: "결과를 더 불러오는 중…", noScript: "전체 텍스트 검색에는 JavaScript가 필요합니다. 다음 정적 페이지는 계속 탐색할 수 있습니다:", browseBlog: "블로그 보기", browseTutorials: "튜토리얼 보기", browseTags: "블로그 태그", browseArchive: "블로그 아카이브" },
+  es: { type: "Tipo de contenido", allTypes: "Blog y tutoriales", sort: "Ordenar", relevance: "Relevancia", newest: "Más recientes", oldest: "Más antiguos", loadMore: "Cargar 20 más", loadingMore: "Cargando más resultados…", noScript: "La búsqueda de texto completo requiere JavaScript. Aún puedes consultar estas secciones estáticas:", browseBlog: "Ver el blog", browseTutorials: "Ver tutoriales", browseTags: "Etiquetas del blog", browseArchive: "Archivo del blog" }
+};
 const TUTORIAL_TITLES = {
   "zh-CN": "教程：AI 与提示工程实用指南 | Luffy Liu",
   "zh-TW": "教學：AI 與提示工程實用指南 | Luffy Liu",
@@ -246,14 +274,14 @@ function languageSwitcher(locale, alternates = {}) {
 
 function mobileContentNav(locale, active = "") {
   const text = LOCALES[locale];
-  return `<nav class="mobile-content-nav" aria-label="${text.contentNav}" data-pagefind-ignore><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a></nav>`;
+  return `<nav class="mobile-content-nav" aria-label="${text.contentNav}" data-pagefind-ignore><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}"${active === "search" ? ' aria-current="page"' : ""}>${text.search}</a></nav>`;
 }
 
 function siteHeader(locale, active = "blog", alternates = {}) {
   const text = LOCALES[locale];
   return `<header class="site-header" data-pagefind-ignore>
     <a class="wordmark" href="${localePath(locale, "/")}" aria-label="Luffy Liu ${text.home}"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu"><span>Luffy Liu</span></a>
-    <nav class="nav content-nav" aria-label="Navigation"><a href="${localePath(locale, "/")}">${text.home}</a><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}">${text.search}</a>${languageSwitcher(locale, alternates)}</nav>
+    <nav class="nav content-nav" aria-label="Navigation"><a href="${localePath(locale, "/")}">${text.home}</a><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}"${active === "search" ? ' aria-current="page"' : ""}>${text.search}</a>${languageSwitcher(locale, alternates)}</nav>
   </header>${mobileContentNav(locale, active)}`;
 }
 
@@ -287,8 +315,8 @@ function baseHead({ title, description, canonical, locale = "zh-CN", alternates 
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${image}">
   ${extra}
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260831-1">
-  <link rel="stylesheet" href="/assets/css/content.css?v=20260831-1">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260831-2">
+  <link rel="stylesheet" href="/assets/css/content.css?v=20260831-2">
   <title>${escapeHtml(title)}</title>`;
 }
 
@@ -457,55 +485,34 @@ function renderArticle(post) {
     </header>
     <div class="content-layout content-shell">
       <aside class="content-sidebar" data-pagefind-ignore>${seriesNav.sidebar}${toc ? `<nav class="content-toc" aria-label="${escapeHtml(TUTORIAL_COPY[post.locale].toc)}"><strong>${escapeHtml(TUTORIAL_COPY[post.locale].toc)}</strong>${toc}</nav>` : ""}</aside>
-      <article class="prose" data-pagefind-body data-pagefind-filter="section:${post.section}" data-pagefind-filter="locale:${post.locale}">${body}${seriesNav.footer}<div class="author-card"><img src="/assets/luffy-avatar.png" width="58" height="58" alt="Luffy Liu"><div><strong>Luffy Liu</strong><p>Independent product builder · AI, agents and real workflows.</p></div></div></article>
+      <article class="prose" data-pagefind-body data-pagefind-filter="section:${post.section}">${body}${seriesNav.footer}<div class="author-card" data-pagefind-ignore><img src="/assets/luffy-avatar.png" width="58" height="58" alt="Luffy Liu"><div><strong>Luffy Liu</strong><p>Independent product builder · AI, agents and real workflows.</p></div></div></article>
     </div>
   </main>
   ${siteFooter(post.locale)}
 </body></html>\n`;
 }
 
-function searchPage(locale, tags, years, alternates) {
-  const copy = COPY[locale];
+function searchPage(locale, tags, years, alternates, fallbackTags, fallbackYears) {
+  const copy = { ...SEARCH_COPY[locale], ...SEARCH_EXTRA_COPY[locale] };
   const canonical = localeUrl(locale, "/blog/search/");
+  const searchConfig = { prompt: copy.prompt, loading: copy.loading, loadingMore: copy.loadingMore, none: copy.none, error: copy.error, summary: copy.summary, read: copy.read, blogType: copy.blogType, tutorialType: copy.tutorialType, untitled: copy.untitled, loadMore: copy.loadMore };
   return `<!doctype html>
 <html lang="${LOCALES[locale].html}"><head>
-  ${baseHead({ title: `${copy.searchTitle} | Luffy Liu`, description: copy.searchLede, canonical, locale, alternates, robots: "noindex, follow" })}
+  ${baseHead({ title: `${copy.title} | Luffy Liu`, description: copy.lede, canonical, locale, alternates, robots: "noindex, follow" })}
 </head><body>
-  <a class="skip-link" href="#main">Skip</a>${siteHeader(locale, "blog", alternates)}
-  <main id="main"><header class="content-header content-shell"><nav class="crumbs" aria-label="Breadcrumb"><a href="${localePath(locale, "/")}">${LOCALES[locale].home}</a><span>/</span><a href="${localePath(locale, "/blog/")}">${LOCALES[locale].blog}</a><span>/</span><span aria-current="page">${copy.searchTitle}</span></nav><p class="eyebrow">Pagefind · Static search</p><h1>${copy.searchTitle}</h1><p class="content-lede">${copy.searchLede}</p></header>
-    <section class="search-shell content-shell" aria-label="Search">
-      <form id="blog-search-form" class="search-form"><label for="blog-search-input">${copy.keyword}</label><div class="search-row"><input id="blog-search-input" name="q" type="search" autocomplete="off" placeholder="${copy.placeholder}"><button class="button button-primary" type="submit">${copy.submit}</button></div><div class="search-filters"><label>${copy.tag}<select id="blog-search-tag"><option value="">${copy.all}</option>${tags.map((tag) => `<option value="${tag.id}">${escapeHtml(tag.label)}</option>`).join("")}</select></label><label>${copy.year}<select id="blog-search-year"><option value="">${copy.all}</option>${years.map((year) => `<option value="${year}">${year}</option>`).join("")}</select></label></div></form>
-      <p id="blog-search-status" class="search-status" aria-live="polite">${copy.prompt}</p><div id="blog-search-results" class="search-results"></div>
+  <a class="skip-link" href="#blog-search-input">${copy.skip}</a>${siteHeader(locale, "search", alternates)}
+  <main id="main"><header class="content-header content-shell search-header"><nav class="crumbs" aria-label="Breadcrumb"><a href="${localePath(locale, "/")}">${LOCALES[locale].home}</a><span>/</span><span aria-current="page">${copy.title}</span></nav><p class="eyebrow">${copy.eyebrow}</p><h1>${copy.title}</h1><p class="content-lede">${copy.lede}</p></header>
+    <section class="search-shell content-shell" aria-label="${copy.sectionLabel}">
+      <div class="search-panel"><form id="blog-search-form" class="search-form" role="search" method="get" action="${localePath(locale, "/blog/search/")}" aria-label="${copy.formLabel}" aria-describedby="blog-search-status">
+        <div class="search-primary"><label class="search-label" for="blog-search-input">${copy.keyword}</label><div class="search-row"><input id="blog-search-input" name="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" aria-controls="blog-search-results" placeholder="${copy.placeholder}"><button class="button button-primary search-submit" type="submit">${copy.submit}</button></div></div>
+        <fieldset class="search-filters"><legend>${copy.filters}</legend><div class="search-filter-grid"><label for="blog-search-type"><span>${copy.type}</span><select id="blog-search-type" name="type"><option value="">${copy.allTypes}</option><option value="blog">${copy.blogType}</option><option value="tutorials">${copy.tutorialType}</option></select></label><label for="blog-search-tag"><span>${copy.tag}</span><select id="blog-search-tag" name="tag"><option value="">${copy.all}</option>${tags.map((tag) => `<option value="${tag.id}">${escapeHtml(tag.label)}</option>`).join("")}</select></label><label for="blog-search-year"><span>${copy.year}</span><select id="blog-search-year" name="year"><option value="">${copy.all}</option>${years.map((year) => `<option value="${year}">${year}</option>`).join("")}</select></label><label for="blog-search-sort"><span>${copy.sort}</span><select id="blog-search-sort" name="sort"><option value="relevance">${copy.relevance}</option><option value="newest">${copy.newest}</option><option value="oldest">${copy.oldest}</option></select></label><button class="search-reset" type="reset">${copy.clear}</button></div></fieldset>
+      </form></div>
+      <div class="search-output"><p id="blog-search-status" class="search-status" data-state="initial" aria-live="polite" aria-atomic="true" tabindex="-1">${copy.prompt}</p><div id="blog-search-results" class="search-results" aria-label="${copy.resultsLabel}"></div><div class="search-more-row"><button id="blog-search-more" class="button button-quiet search-more" type="button" hidden>${copy.loadMore}</button></div></div>
+      <noscript><div class="search-noscript"><p>${copy.noScript}</p><ul><li><a href="${localePath(locale, "/blog/")}">${copy.browseBlog}</a></li><li><a href="${localePath(locale, "/tutorials/")}">${copy.browseTutorials}</a></li>${fallbackTags.map((tag) => `<li><a href="${localePath(locale, `/blog/tags/${tag.id}/`)}">${copy.browseTags} · ${escapeHtml(tag.label)}</a></li>`).join("")}${fallbackYears.map((year) => `<li><a href="${localePath(locale, `/blog/archive/${year}/`)}">${copy.browseArchive} · ${year}</a></li>`).join("")}</ul></div></noscript>
     </section>
   </main>${siteFooter(locale)}
-  <script type="module">
-    const form = document.querySelector('#blog-search-form');
-    const input = document.querySelector('#blog-search-input');
-    const tag = document.querySelector('#blog-search-tag');
-    const year = document.querySelector('#blog-search-year');
-    const status = document.querySelector('#blog-search-status');
-    const results = document.querySelector('#blog-search-results');
-    const pagefind = await import('/pagefind/pagefind.js');
-    await pagefind.options({ excerptLength: 30 });
-    const params = new URLSearchParams(location.search);
-    input.value = params.get('q') || ''; tag.value = params.get('tag') || ''; year.value = params.get('year') || '';
-    const render = async () => {
-      const filters = { locale: ${json(locale)} }; if (tag.value) filters.tag = tag.value; if (year.value) filters.year = year.value;
-      const query = input.value.trim(); const search = await pagefind.search(query || null, { filters });
-      const loaded = await Promise.all(search.results.slice(0, 20).map((item) => item.data())); results.replaceChildren();
-      for (const item of loaded) {
-        const article = document.createElement('article'); article.className = 'search-result';
-        const title = document.createElement('h2'); const link = document.createElement('a'); link.href = item.url; link.textContent = item.meta.title || item.url; title.append(link);
-        const excerpt = document.createElement('p'); excerpt.innerHTML = item.excerpt || '';
-        const meta = document.createElement('small'); meta.textContent = [item.meta.date, ...(Array.isArray(item.meta.tag) ? item.meta.tag : [item.meta.tag])].filter(Boolean).join(' · ');
-        article.append(title, excerpt, meta); results.append(article);
-      }
-      status.textContent = search.results.length ? search.results.length + ' result(s), showing ' + loaded.length + '.' : ${json(copy.none)};
-      const next = new URLSearchParams(); if (query) next.set('q', query); if (tag.value) next.set('tag', tag.value); if (year.value) next.set('year', year.value); history.replaceState(null, '', next.size ? '?' + next : location.pathname);
-    };
-    form.addEventListener('submit', (event) => { event.preventDefault(); render(); }); tag.addEventListener('change', render); year.addEventListener('change', render);
-    if (input.value || tag.value || year.value) render();
-  </script>
+  <script type="application/json" id="blog-search-config">${json(searchConfig)}</script>
+  <script type="module" src="/assets/js/search.js"></script>
 </body></html>\n`;
 }
 
@@ -750,8 +757,11 @@ async function build() {
     const tagMap = new Map(); for (const article of searchable) for (const tag of article.tags) tagMap.set(tag.id, tag);
     const tags = [...tagMap.values()].sort((a, b) => a.label.localeCompare(b.label, locale));
     const years = [...new Set(searchable.map((article) => article.year))].sort().reverse();
+    const fallbackTagMap = new Map(); for (const article of localized) for (const tag of article.tags) fallbackTagMap.set(tag.id, tag);
+    const fallbackTags = [...fallbackTagMap.values()].sort((a, b) => a.label.localeCompare(b.label, locale));
+    const fallbackYears = [...new Set(localized.map((article) => article.year))].sort().reverse();
     const url = localePath(locale, "/blog/search/");
-    await write(path.join(url.slice(1), "index.html"), searchPage(locale, tags, years, searchAlternates));
+    await write(path.join(url.slice(1), "index.html"), searchPage(locale, tags, years, searchAlternates, fallbackTags, fallbackYears));
     generatedPages.push({ url, lastmod: searchable[0]?.updated || "2026-08-30", locale, section: "blog-search", indexable: false });
     await writeRss(locale, localized);
   }

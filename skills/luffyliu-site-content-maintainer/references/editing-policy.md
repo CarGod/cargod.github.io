@@ -26,6 +26,15 @@ Keep these values identical within a cluster: `slug`, `contentKey`, `translation
 
 Maintain the same heading-level sequence, fenced-code languages, and JSON/XML example structure in all locales. A translation may phrase prose naturally, but it may not add or remove a teaching step without an explicit editorial decision.
 
+## Images with visible text
+
+- Treat readable words inside a cover, diagram, screenshot annotation, or infographic as part of the translation cluster. A translated page must not silently reuse a Chinese text image.
+- Reuse the approved editable SVG or deterministic layout source. Change only text, typography sizing, and necessary line breaks; preserve the illustration, mascot identity, color palette, nodes, arrows, order, and factual relationships.
+- Prefer exact SVG/HTML text layout over image-model lettering. Do not regenerate an approved character or background merely to translate labels.
+- Text-free assets may remain shared. The Yunzhou avatar is intentionally shared; a cover or diagram containing a title or labels is not.
+- Keep localized alt text in the Markdown source and localized SVG `<title>` metadata. Use stable locale-specific filenames so the generated page, Open Graph image, feed, and search result use the same language.
+- For `enterprise-ai-four-stages`, run `node scripts/generate-enterprise-ai-localized-visuals.mjs` after changing visual copy, then run `npm run test:localized-visuals` after the site build.
+
 ## Corrections and revision logs
 
 Record objective correction categories such as `terminology`, `official-service-links`, `privacy-safety`, `sampling-accuracy`, `structured-output-validation`, or `private-reasoning-boundary`. Do not use word counts, paragraph counts, or prose-length ratios as quality gates.

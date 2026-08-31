@@ -1,0 +1,63 @@
+<svg lang="en" data-locale="en" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1410" height="600" viewBox="0 0 1410 600" role="img" aria-labelledby="cover-title cover-desc">
+  <title id="cover-title">How Should Legacy Enterprise Systems Adopt AI? Start with These Four Stages</title>
+  <desc id="cover-desc">Luffy Liu article cover with the original Yunzhou technology explorer and three planets on the right and the article title on the left.</desc>
+  <defs>
+    <pattern id="paper" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="1" fill="#FFFFFF" opacity="0.22"/>
+      <circle cx="22" cy="20" r="0.8" fill="#103B70" opacity="0.035"/>
+    </pattern>
+    <linearGradient id="avatarSeamBlend" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#54A6E8"/>
+      <stop offset="1" stop-color="#54A6E8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1410" height="600" fill="#54A6E8"/>
+
+  <g fill="#B8E7DA" opacity="0.92">
+    <ellipse cx="95" cy="165" rx="150" ry="94"/>
+    <ellipse cx="300" cy="112" rx="170" ry="92"/>
+    <ellipse cx="518" cy="166" rx="176" ry="112"/>
+    <ellipse cx="1195" cy="80" rx="220" ry="105"/>
+    <ellipse cx="1325" cy="490" rx="210" ry="126"/>
+  </g>
+
+  <g fill="#FFF2DA">
+    <ellipse cx="20" cy="335" rx="170" ry="138"/>
+    <ellipse cx="185" cy="286" rx="188" ry="150"/>
+    <ellipse cx="385" cy="284" rx="196" ry="155"/>
+    <ellipse cx="580" cy="348" rx="190" ry="150"/>
+    <rect x="0" y="300" width="720" height="244"/>
+    <ellipse cx="1055" cy="36" rx="170" ry="94"/>
+    <ellipse cx="1250" cy="48" rx="190" ry="110"/>
+    <ellipse cx="1400" cy="110" rx="138" ry="130"/>
+    <ellipse cx="1060" cy="575" rx="190" ry="92"/>
+    <ellipse cx="1260" cy="558" rx="205" ry="110"/>
+  </g>
+
+  <g fill="#7897D9" opacity="0.76">
+    <path d="M0 552 C72 510 142 522 205 575 C130 550 64 570 0 600 Z"/>
+    <path d="M1174 16 C1240 50 1292 50 1348 15 C1302 82 1220 86 1174 16 Z"/>
+  </g>
+
+  <g fill="none" stroke="#103B70" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path d="M730 92 C775 145 710 205 755 262 C798 315 720 370 770 443"/>
+  </g>
+  <g stroke="#103B70" stroke-width="5">
+    <circle cx="730" cy="92" r="18" fill="#FFF2DA"/>
+    <circle cx="755" cy="208" r="18" fill="#F07B67"/>
+    <circle cx="742" cy="323" r="18" fill="#B8E7DA"/>
+    <circle cx="770" cy="443" r="18" fill="#7897D9"/>
+  </g>
+
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" text-rendering="geometricPrecision">
+    <line x1="76" y1="106" x2="126" y2="106" stroke="#F07B67" stroke-width="6" stroke-linecap="round"/>
+    <text x="148" y="117" fill="#103B70" font-size="25" font-weight="700" letter-spacing="1.5">Luffy Liu</text>
+    <g data-multiline="true"><text x="72" y="224" fill="#103B70" font-size="40" font-weight="800" letter-spacing="0">How Should Enterprise</text><text x="72" y="282" fill="#103B70" font-size="40" font-weight="800" letter-spacing="0">Legacy Systems Adopt AI?</text></g>
+    <text x="72" y="340" fill="#103B70" font-size="40" font-weight="800" letter-spacing="0">Start with These Four Stages</text>
+  </g>
+
+  <image x="810" y="0" width="600" height="600" preserveAspectRatio="xMidYMid meet" href="mascot-yunzhou-avatar-v4.png" xlink:href="mascot-yunzhou-avatar-v4.png"/>
+  <rect x="810" y="0" width="90" height="600" fill="url(#avatarSeamBlend)"/>
+  <rect width="1410" height="600" fill="url(#paper)" pointer-events="none"/>
+</svg>

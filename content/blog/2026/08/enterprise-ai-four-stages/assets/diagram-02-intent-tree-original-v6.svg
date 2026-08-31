@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="820" viewBox="0 0 1080 820">
+  <title>用户表达逐层收敛为可执行的订单任务</title>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#FFFFFF" opacity="0.20"/>
+      <circle cx="20" cy="18" r="0.8" fill="#29305F" opacity="0.035"/>
+    </pattern>
+    <clipPath id="mascotBubble"><circle cx="935" cy="715" r="89"/></clipPath>
+  </defs>
+  <rect width="1080" height="820" fill="#EAF6FF"/>
+  <g fill="#FFF8EC">
+    <circle cx="908" cy="34" r="66"/><circle cx="974" cy="30" r="94"/><circle cx="1058" cy="66" r="70"/>
+  </g>
+  <g fill="#BDE9DC" opacity="0.78">
+    <circle cx="960" cy="77" r="36"/><circle cx="1012" cy="80" r="45"/><circle cx="1070" cy="92" r="36"/>
+  </g>
+  <path d="M64 58 H118" stroke="#F47F70" stroke-width="7" stroke-linecap="round"/>
+  <text x="64" y="116" fill="#292A5A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="40" font-weight="700">从一句话，到可执行任务</text>
+  <text x="64" y="157" fill="#4B527C" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="21">先找业务域，再拆具体意图，最后进入正确的工作流</text>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="96" y="246" fill="#4B527C" font-size="19">用户表达</text>
+    <text x="302" y="246" fill="#292A5A" font-size="26" font-weight="600">“快递三天没动了，我要投诉并退款”</text>
+    <line x1="302" y1="274" x2="930" y2="274" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M260 272 V340" stroke="#3E97E8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M252 329 L260 341 L268 329" fill="none" stroke="#292A5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="260" cy="272" r="8" fill="#FFDCC2" stroke="#292A5A" stroke-width="2"/>
+    <text x="96" y="372" fill="#4B527C" font-size="19">业务域</text>
+    <text x="302" y="372" fill="#292A5A" font-size="28" font-weight="600">订单售后</text>
+    <line x1="302" y1="400" x2="930" y2="400" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M260 398 V466" stroke="#3E97E8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M252 455 L260 467 L268 455" fill="none" stroke="#292A5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="260" cy="398" r="8" fill="#BDE9DC" stroke="#292A5A" stroke-width="2"/>
+    <text x="96" y="498" fill="#4B527C" font-size="19">具体意图</text>
+    <text x="302" y="498" fill="#292A5A" font-size="28" font-weight="600">物流异常  +  投诉  +  退款申请</text>
+    <line x1="302" y1="526" x2="930" y2="526" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M260 524 V592" stroke="#3E97E8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M252 581 L260 593 L268 581" fill="none" stroke="#292A5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="260" cy="524" r="8" fill="#929FE5" stroke="#292A5A" stroke-width="2"/>
+    <text x="96" y="624" fill="#4B527C" font-size="19">执行顺序</text>
+    <text x="302" y="624" fill="#3E97E8" font-size="28" font-weight="700">先查物流，再判断退款，最后进入投诉流程</text>
+  </g>
+  <line x1="64" y1="696" x2="1016" y2="696" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+  <text x="64" y="751" fill="#292A5A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="600">走错工作流，后面执行得再顺也没有意义</text>
+  <g aria-label="原创云舟人物主持人">
+    <circle cx="935" cy="715" r="92" fill="#FFDCC2" stroke="#292A5A" stroke-width="3"/>
+    <image href="mascot-yunzhou-avatar-v4.png" x="846" y="626" width="178" height="178" preserveAspectRatio="xMidYMid slice" clip-path="url(#mascotBubble)"/>
+  </g>
+  <rect width="1080" height="820" fill="url(#paper)" pointer-events="none"/>
+</svg>

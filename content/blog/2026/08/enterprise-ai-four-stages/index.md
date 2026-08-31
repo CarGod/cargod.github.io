@@ -6,7 +6,7 @@ translation_of: "/blog/enterprise-ai-four-stages/"
 locale: "zh-CN"
 description: "企业老系统接入 AI 的四阶段框架：Chatbot、AI + Tools、Copilot 与 Agent，以及每一阶段必须补齐的数据、工具、工作流和治理能力。"
 published: "2026-08-20"
-updated: "2026-08-30"
+updated: "2026-08-31"
 tags:
   - id: "ai"
     label: "AI"

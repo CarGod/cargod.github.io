@@ -1,0 +1,50 @@
+<svg lang="zh-TW" data-locale="zh-TW" xmlns="http://www.w3.org/2000/svg" width="1080" height="820" viewBox="0 0 1080 820">
+  <title>Copilot 的人工確認與 Agent 的系統護欄</title>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#FFFFFF" opacity="0.20"/>
+      <circle cx="20" cy="18" r="0.8" fill="#29305F" opacity="0.035"/>
+    </pattern>
+    <clipPath id="mascotBubble"><circle cx="935" cy="715" r="89"/></clipPath>
+  </defs>
+  <rect width="1080" height="820" fill="#EAF6FF"/>
+  <g fill="#FFF8EC">
+    <circle cx="906" cy="34" r="66"/><circle cx="972" cy="30" r="94"/><circle cx="1056" cy="66" r="70"/>
+  </g>
+  <g fill="#BDE9DC" opacity="0.78">
+    <circle cx="958" cy="77" r="36"/><circle cx="1010" cy="80" r="45"/><circle cx="1068" cy="92" r="36"/>
+  </g>
+  <path d="M64 58 H118" stroke="#F47F70" stroke-width="7" stroke-linecap="round"/>
+  <text x="64" y="116" fill="#292A5A" font-family="PingFang TC, Noto Sans CJK TC, Microsoft JhengHei, sans-serif" font-size="38" font-weight="700">人工檢查，轉為系統護欄</text>
+  <text x="64" y="157" fill="#4B527C" font-family="PingFang TC, Noto Sans CJK TC, Microsoft JhengHei, sans-serif" font-size="20">無人值守不等於無人監管</text>
+  <line x1="540" y1="205" x2="540" y2="670" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+  <g font-family="PingFang TC, Noto Sans CJK TC, Microsoft JhengHei, sans-serif">
+    <text x="92" y="238" fill="#292A5A" font-size="31" font-weight="700">Copilot</text>
+    <text x="92" y="273" fill="#4B527C" font-size="18">關鍵節點由人確認</text>
+    <circle cx="164" cy="360" r="30" fill="#FFF8EC" stroke="#292A5A" stroke-width="3"/>
+    <text x="164" y="367" text-anchor="middle" fill="#292A5A" font-size="18">目標</text>
+    <line x1="194" y1="360" x2="290" y2="360" stroke="#7E8FD5" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="322" cy="360" r="34" fill="#BDE9DC" stroke="#292A5A" stroke-width="3"/>
+    <text x="322" y="367" text-anchor="middle" fill="#292A5A" font-size="18">執行</text>
+    <line x1="356" y1="360" x2="438" y2="360" stroke="#7E8FD5" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="466" cy="360" r="30" fill="#F47F70" stroke="#292A5A" stroke-width="3"/>
+    <text x="466" y="367" text-anchor="middle" fill="#FFFFFF" font-size="18">人</text>
+    <text x="92" y="454" fill="#292A5A" font-size="22" font-weight="600">風險由人工逐筆接住</text>
+    <text x="92" y="493" fill="#4B527C" font-size="18">檢查 · 駁回 · 接管</text>
+    <text x="604" y="238" fill="#292A5A" font-size="31" font-weight="700">Agent</text>
+    <text x="604" y="273" fill="#4B527C" font-size="18">在約定邊界內自主運行</text>
+    <rect x="604" y="324" width="356" height="92" rx="28" fill="#929FE5" stroke="#292A5A" stroke-width="3"/>
+    <text x="782" y="365" text-anchor="middle" fill="#FFFFFF" font-size="23" font-weight="600">目標 → 執行 → 結果</text>
+    <text x="782" y="397" text-anchor="middle" fill="#FFF8EC" font-size="18">系統護欄持續生效</text>
+    <text x="604" y="472" fill="#4B527C" font-size="18">權限　預算　監控</text>
+    <text x="604" y="514" fill="#4B527C" font-size="18">熔斷　稽核　恢復</text>
+    <text x="604" y="556" fill="#292A5A" font-size="20" font-weight="600">責任主體與事故回應</text>
+  </g>
+  <line x1="64" y1="670" x2="1016" y2="670" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+  <text x="64" y="729" fill="#292A5A" font-family="PingFang TC, Noto Sans CJK TC, Microsoft JhengHei, sans-serif" font-size="25" font-weight="600">Agent 是邊界內的責任承諾</text>
+  <g aria-label="原創雲舟人物主持人">
+    <circle cx="935" cy="715" r="92" fill="#FFF8EC" stroke="#292A5A" stroke-width="3"/>
+    <image href="mascot-yunzhou-avatar-v4.png" x="846" y="626" width="178" height="178" preserveAspectRatio="xMidYMid slice" clip-path="url(#mascotBubble)"/>
+  </g>
+  <rect width="1080" height="820" fill="url(#paper)" pointer-events="none"/>
+</svg>

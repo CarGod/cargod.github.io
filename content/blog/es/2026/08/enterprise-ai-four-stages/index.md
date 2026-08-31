@@ -6,7 +6,7 @@ description: "Un marco en cuatro etapas—Chatbot, AI + Tools, Copilot y Agent�
 slug: enterprise-ai-four-stages
 contentKey: blog.enterprise-ai-four-stages
 published: 2026-08-20
-updated: 2026-08-30
+updated: 2026-08-31
 tags:
   - id: ai
     label: IA
@@ -19,7 +19,7 @@ tags:
   - id: ai-customer-service
     label: atención al cliente
 translation_of: "/blog/enterprise-ai-four-stages/"
-cover: "assets/cover-liu-lufei-original-v8.png"
+cover: "assets/cover-liu-lufei-es-v1.png"
 cover_alt: "Cuatro etapas para incorporar IA a los sistemas heredados de una empresa"
 media_base: "shared:enterprise-ai-four-stages"
 draft: false
@@ -55,7 +55,7 @@ Integrar IA en sistemas heredados también exige completar capacidades capa por 
 
 No es un estándar del sector. Es un marco para revisar capacidades. Una empresa puede decidir no lanzar todas las versiones intermedias, pero no puede saltarse las capas subyacentes de datos, herramientas, tareas y gobernanza.
 
-![Cuatro etapas para integrar IA en sistemas empresariales y las capacidades necesarias en cada una](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-original-v6.png)
+![Cuatro etapas para integrar IA en sistemas empresariales y las capacidades necesarias en cada una](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-es-v1.png)
 
 *Cuatro etapas, cuatro capas de capacidad.*
 
@@ -200,7 +200,7 @@ Un caso de transporte lo muestra con claridad. «Llévame al aeropuerto mañana 
 
 Gobernar intenciones no es poner una etiqueta a una frase. Es concretar gradualmente lo que la persona quiere conseguir hasta convertirlo en una tarea que el sistema pueda ejecutar.
 
-![Una petición se concreta por dominio e intención hasta llegar al flujo de pedidos correcto](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-original-v6.png)
+![Una petición se concreta por dominio e intención hasta llegar al flujo de pedidos correcto](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-es-v1.png)
 
 *De una frase a una tarea ejecutable.*
 
@@ -256,7 +256,7 @@ Dentro del límite puede terminar por sí mismo. Fuera no debe seguir adivinando
 
 Cuando las personas dejan de revisar cada caso, la supervisión no desaparece. Pasa de «una persona observa cada paso» a «el sistema contiene automáticamente el riesgo».
 
-![Copilot depende de confirmación humana; Agent opera con barreras del sistema dentro de límites acordados](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-original-v6.png)
+![Copilot depende de confirmación humana; Agent opera con barreras del sistema dentro de límites acordados](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-es-v1.png)
 
 *Operación desatendida no significa operación sin control.*
 
@@ -287,7 +287,7 @@ En este marco, Agent no es un nombre más moderno para Copilot. Es un compromiso
 
 No empieces preguntando «¿cómo construimos un Agent?». Observa qué le falta al sistema actual.
 
-![Evaluación de capacidades en las capas de conocimiento, herramientas, flujos y gobernanza](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-original-v6.png)
+![Evaluación de capacidades en las capas de conocimiento, herramientas, flujos y gobernanza](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-es-v1.png)
 
 *Encuentra la capa más débil y empieza allí.*
 

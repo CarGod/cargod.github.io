@@ -1,0 +1,49 @@
+<svg lang="ko" data-locale="ko" xmlns="http://www.w3.org/2000/svg" width="1080" height="880" viewBox="0 0 1080 880">
+  <title>지식, 도구, 워크플로, 거버넌스 네 층에서 다음 역량을 판단한다</title>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#FFFFFF" opacity="0.20"/>
+      <circle cx="20" cy="18" r="0.8" fill="#29305F" opacity="0.035"/>
+    </pattern>
+    <clipPath id="mascotBubble"><circle cx="935" cy="777" r="89"/></clipPath>
+  </defs>
+  <rect width="1080" height="880" fill="#EAF6FF"/>
+  <g fill="#FFF8EC">
+    <circle cx="908" cy="34" r="66"/><circle cx="974" cy="30" r="94"/><circle cx="1058" cy="66" r="70"/>
+  </g>
+  <g fill="#BDE9DC" opacity="0.78">
+    <circle cx="960" cy="77" r="36"/><circle cx="1012" cy="80" r="45"/><circle cx="1070" cy="92" r="36"/>
+  </g>
+  <path d="M64 58 H118" stroke="#F47F70" stroke-width="7" stroke-linecap="round"/>
+  <text x="64" y="116" fill="#292A5A" font-family="Apple SD Gothic Neo, Noto Sans CJK KR, Malgun Gothic, sans-serif" font-size="38" font-weight="700">부족한 층부터 먼저 채운다</text>
+  <text x="64" y="157" fill="#4B527C" font-family="Apple SD Gothic Neo, Noto Sans CJK KR, Malgun Gothic, sans-serif" font-size="20">처음부터 ‘Agent를 어떻게 만들까?’라고 묻지 않는다</text>
+  <g font-family="Apple SD Gothic Neo, Noto Sans CJK KR, Malgun Gothic, sans-serif">
+    <line x1="64" y1="224" x2="1016" y2="224" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="279" r="34" fill="#3E97E8" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="291" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">01</text>
+    <text x="164" y="289" fill="#292A5A" font-size="24" font-weight="700">지식</text>
+    <text x="370" y="289" fill="#4B527C" font-size="19">답변에 근거가 있는가? 모르면 모른다고 인정하는가?</text>
+    <line x1="64" y1="348" x2="1016" y2="348" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="403" r="34" fill="#FFDCC2" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="415" text-anchor="middle" fill="#292A5A" font-family="Arial, sans-serif" font-size="28" font-weight="700">02</text>
+    <text x="164" y="413" fill="#292A5A" font-size="24" font-weight="700">도구</text>
+    <text x="370" y="413" fill="#4B527C" font-size="19">진입점이 명확하고 안전하며 추적 가능한가?</text>
+    <line x1="64" y1="472" x2="1016" y2="472" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="527" r="34" fill="#BDE9DC" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="539" text-anchor="middle" fill="#292A5A" font-family="Arial, sans-serif" font-size="28" font-weight="700">03</text>
+    <text x="164" y="537" fill="#292A5A" font-size="24" font-weight="700">워크플로</text>
+    <text x="370" y="537" fill="#4B527C" font-size="19">작업을 계속 진행하고 변화 뒤에도 이어갈 수 있는가?</text>
+    <line x1="64" y1="596" x2="1016" y2="596" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="651" r="34" fill="#929FE5" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="663" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">04</text>
+    <text x="164" y="661" fill="#292A5A" font-size="24" font-weight="700">거버넌스</text>
+    <text x="370" y="661" fill="#4B527C" font-size="19">경계 안에서 문제가 생기면 누가 처리하고 책임지는가?</text>
+    <line x1="64" y1="720" x2="1016" y2="720" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="64" y="794" fill="#292A5A" font-family="Apple SD Gothic Neo, Noto Sans CJK KR, Malgun Gothic, sans-serif" font-size="21" font-weight="600">가장 약한 층을 찾아 그곳에서 시작한다</text>
+  <g aria-label="오리지널 캐릭터 윈저우">
+    <circle cx="935" cy="777" r="92" fill="#FFDCC2" stroke="#292A5A" stroke-width="3"/>
+    <image href="mascot-yunzhou-avatar-v4.png" x="846" y="688" width="178" height="178" preserveAspectRatio="xMidYMid slice" clip-path="url(#mascotBubble)"/>
+  </g>
+  <rect width="1080" height="880" fill="url(#paper)" pointer-events="none"/>
+</svg>

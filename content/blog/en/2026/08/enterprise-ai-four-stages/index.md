@@ -6,7 +6,7 @@ description: "A four-stage framework for bringing AI into legacy enterprise syst
 slug: enterprise-ai-four-stages
 contentKey: blog.enterprise-ai-four-stages
 published: 2026-08-20
-updated: 2026-08-30
+updated: 2026-08-31
 tags:
   - id: ai
     label: AI
@@ -19,7 +19,7 @@ tags:
   - id: ai-customer-service
     label: customer service
 translation_of: "/blog/enterprise-ai-four-stages/"
-cover: "assets/cover-liu-lufei-original-v8.png"
+cover: "assets/cover-liu-lufei-en-v1.png"
 cover_alt: "How legacy enterprise systems can adopt AI in four stages"
 media_base: "shared:enterprise-ai-four-stages"
 draft: false
@@ -55,7 +55,7 @@ Bringing AI into legacy enterprise systems also requires capabilities to be adde
 
 This is not an industry standard. It is a framework for checking capabilities. A company does not need to formally launch every intermediate version, but it cannot skip the underlying layers of data, tools, tasks, and governance.
 
-![Four stages for integrating AI into enterprise systems and the capabilities required at each stage](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-original-v6.png)
+![Four stages for integrating AI into enterprise systems and the capabilities required at each stage](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-en-v1.png)
 
 *Four stages, four layers of capability.*
 
@@ -200,7 +200,7 @@ A ride-hailing example makes this clearer. When a user says, “Take me to the a
 
 Intent governance is not about putting a label on one sentence. It gradually narrows what the user actually wants to accomplish into a task the system can execute.
 
-![A user request narrows through business domain and specific intent into the correct order workflow](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-original-v6.png)
+![A user request narrows through business domain and specific intent into the correct order workflow](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-en-v1.png)
 
 *From one sentence to an executable task.*
 
@@ -256,7 +256,7 @@ Inside the boundary it may finish the task itself. Outside the boundary it must 
 
 When people stop checking each case, oversight does not disappear. It changes from “a person watches every step” to “the system automatically contains the risk.”
 
-![Copilot relies on human confirmation; Agent operates within agreed boundaries using system guardrails](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-original-v6.png)
+![Copilot relies on human confirmation; Agent operates within agreed boundaries using system guardrails](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-en-v1.png)
 
 *Unattended operation does not mean ungoverned operation.*
 
@@ -287,7 +287,7 @@ Under this framework, Agent is not a fashionable new name for Copilot. It is a c
 
 Do not start by asking, “How do we build an Agent?” Look at what the current system lacks.
 
-![Companies can assess the next capability to build across knowledge, tools, workflows, and governance](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-original-v6.png)
+![Companies can assess the next capability to build across knowledge, tools, workflows, and governance](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-en-v1.png)
 
 *Find the weakest layer and start there.*
 

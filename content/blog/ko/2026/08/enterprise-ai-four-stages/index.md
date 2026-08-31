@@ -5,7 +5,7 @@ description: "Chatbot, AI + Tools, Copilot, Agent의 네 단계로 기업이 갖
 slug: enterprise-ai-four-stages
 contentKey: blog.enterprise-ai-four-stages
 published: 2026-08-20
-updated: 2026-08-30
+updated: 2026-08-31
 tags:
   - id: ai
     label: AI
@@ -18,7 +18,7 @@ tags:
   - id: ai-customer-service
     label: 고객 지원
 translation_of: "/blog/enterprise-ai-four-stages/"
-cover: "assets/cover-liu-lufei-original-v8.png"
+cover: "assets/cover-liu-lufei-ko-v1.png"
 cover_alt: "기업 레거시 시스템에 AI를 도입하는 네 단계"
 media_base: "shared:enterprise-ai-four-stages"
 draft: false
@@ -54,7 +54,7 @@ AI는 배송이 늦어질 수 있는 일반적인 이유를 길게 설명한 뒤
 
 이는 업계 표준이 아니라 역량을 점검하는 프레임워크입니다. 기업이 모든 중간 버전을 정식 출시할 필요는 없지만 데이터, 도구, 작업, 거버넌스라는 기반 역량은 건너뛸 수 없습니다.
 
-![기업 시스템의 AI 도입 네 단계와 단계별 필수 역량](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-original-v6.png)
+![기업 시스템의 AI 도입 네 단계와 단계별 필수 역량](/assets/blog/enterprise-ai-four-stages/diagram-01-four-stages-ko-v1.png)
 
 *네 단계, 네 겹의 역량.*
 
@@ -199,7 +199,7 @@ AI는 현재 목표 이해, 다음 단계 판단, 도구 호출, 결과 읽기, 
 
 의도 거버넌스는 문장에 라벨 하나를 붙이는 일이 아닙니다. 사용자가 실제로 이루려는 일을 시스템이 실행 가능한 작업으로 단계적으로 좁히는 일입니다.
 
-![사용자 표현을 업무 영역과 구체적 의도로 좁혀 올바른 주문 워크플로로 연결하는 구조](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-original-v6.png)
+![사용자 표현을 업무 영역과 구체적 의도로 좁혀 올바른 주문 워크플로로 연결하는 구조](/assets/blog/enterprise-ai-four-stages/diagram-02-intent-tree-ko-v1.png)
 
 *한 문장에서 실행 가능한 작업으로.*
 
@@ -255,7 +255,7 @@ Agent가 무한정 책임진다는 뜻은 아닙니다.
 
 사람이 매 건을 확인하지 않아도 감독은 사라지지 않습니다. ‘사람이 매 단계를 지켜보는 방식’에서 ‘시스템이 자동으로 위험을 통제하는 방식’으로 바뀝니다.
 
-![Copilot은 사람의 확인에 의존하고 Agent는 시스템 가드레일로 합의된 경계 안에서 작동한다](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-original-v6.png)
+![Copilot은 사람의 확인에 의존하고 Agent는 시스템 가드레일로 합의된 경계 안에서 작동한다](/assets/blog/enterprise-ai-four-stages/diagram-03-governance-ko-v1.png)
 
 *무인 운영은 무감독 운영이 아닙니다.*
 
@@ -286,7 +286,7 @@ Agent가 무한정 책임진다는 뜻은 아닙니다.
 
 ‘Agent를 어떻게 만들까?’부터 묻지 말고 현재 시스템에 무엇이 부족한지 보세요.
 
-![기업이 지식, 도구, 워크플로, 거버넌스 네 층에서 다음 역량을 판단하는 기준](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-original-v6.png)
+![기업이 지식, 도구, 워크플로, 거버넌스 네 층에서 다음 역량을 판단하는 기준](/assets/blog/enterprise-ai-four-stages/diagram-04-upgrade-checklist-ko-v1.png)
 
 *가장 약한 층을 찾아 그곳에서 시작합니다.*
 

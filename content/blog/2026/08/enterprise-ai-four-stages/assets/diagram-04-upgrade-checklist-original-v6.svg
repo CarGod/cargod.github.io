@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="880" viewBox="0 0 1080 880">
+  <title>企业从知识、工具、工作流和治理四层判断需要补齐的能力</title>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#FFFFFF" opacity="0.20"/>
+      <circle cx="20" cy="18" r="0.8" fill="#29305F" opacity="0.035"/>
+    </pattern>
+    <clipPath id="mascotBubble"><circle cx="935" cy="777" r="89"/></clipPath>
+  </defs>
+  <rect width="1080" height="880" fill="#EAF6FF"/>
+  <g fill="#FFF8EC">
+    <circle cx="908" cy="34" r="66"/><circle cx="974" cy="30" r="94"/><circle cx="1058" cy="66" r="70"/>
+  </g>
+  <g fill="#BDE9DC" opacity="0.78">
+    <circle cx="960" cy="77" r="36"/><circle cx="1012" cy="80" r="45"/><circle cx="1070" cy="92" r="36"/>
+  </g>
+  <path d="M64 58 H118" stroke="#F47F70" stroke-width="7" stroke-linecap="round"/>
+  <text x="64" y="116" fill="#292A5A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="40" font-weight="700">先补自己缺的那一层</text>
+  <text x="64" y="157" fill="#4B527C" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="21">不要一开始就问“怎样做 Agent”</text>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <line x1="64" y1="224" x2="1016" y2="224" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="279" r="34" fill="#3E97E8" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="291" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">01</text>
+    <text x="164" y="289" fill="#292A5A" font-size="29" font-weight="700">知识</text>
+    <text x="370" y="289" fill="#4B527C" font-size="24">回答有没有依据？不知道时会不会承认？</text>
+    <line x1="64" y1="348" x2="1016" y2="348" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="403" r="34" fill="#FFDCC2" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="415" text-anchor="middle" fill="#292A5A" font-family="Arial, sans-serif" font-size="28" font-weight="700">02</text>
+    <text x="164" y="413" fill="#292A5A" font-size="29" font-weight="700">工具</text>
+    <text x="370" y="413" fill="#4B527C" font-size="24">入口是否清楚、安全并且可以追踪？</text>
+    <line x1="64" y1="472" x2="1016" y2="472" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="527" r="34" fill="#BDE9DC" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="539" text-anchor="middle" fill="#292A5A" font-family="Arial, sans-serif" font-size="28" font-weight="700">03</text>
+    <text x="164" y="537" fill="#292A5A" font-size="29" font-weight="700">工作流</text>
+    <text x="370" y="537" fill="#4B527C" font-size="24">任务能否持续推进，变化以后能否接着走？</text>
+    <line x1="64" y1="596" x2="1016" y2="596" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="92" cy="651" r="34" fill="#929FE5" stroke="#292A5A" stroke-width="3"/>
+    <text x="92" y="663" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">04</text>
+    <text x="164" y="661" fill="#292A5A" font-size="29" font-weight="700">治理</text>
+    <text x="370" y="661" fill="#4B527C" font-size="24">边界内出了问题，谁处理，谁负责？</text>
+    <line x1="64" y1="720" x2="1016" y2="720" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="64" y="794" fill="#292A5A" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="600">找到当前最薄弱的一层，从那里开始</text>
+  <g aria-label="原创云舟人物主持人">
+    <circle cx="935" cy="777" r="92" fill="#FFDCC2" stroke="#292A5A" stroke-width="3"/>
+    <image href="mascot-yunzhou-avatar-v4.png" x="846" y="688" width="178" height="178" preserveAspectRatio="xMidYMid slice" clip-path="url(#mascotBubble)"/>
+  </g>
+  <rect width="1080" height="880" fill="url(#paper)" pointer-events="none"/>
+</svg>

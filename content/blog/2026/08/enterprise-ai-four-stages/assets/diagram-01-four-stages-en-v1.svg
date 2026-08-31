@@ -1,0 +1,51 @@
+<svg lang="en" data-locale="en" xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <title>Four stages and four capability layers for adding AI to enterprise systems</title>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#FFFFFF" opacity="0.20"/>
+      <circle cx="20" cy="18" r="0.8" fill="#29305F" opacity="0.035"/>
+    </pattern>
+    <clipPath id="mascotBubble"><circle cx="940" cy="653" r="89"/></clipPath>
+  </defs>
+  <rect width="1080" height="760" fill="#EAF6FF"/>
+  <g fill="#FFF8EC">
+    <circle cx="905" cy="34" r="66"/><circle cx="970" cy="32" r="92"/><circle cx="1054" cy="61" r="70"/>
+    <circle cx="-14" cy="728" r="74"/><circle cx="58" cy="752" r="94"/><circle cx="150" cy="770" r="64"/>
+  </g>
+  <g fill="#BDE9DC" opacity="0.78">
+    <circle cx="950" cy="76" r="35"/><circle cx="1002" cy="80" r="45"/><circle cx="1064" cy="94" r="38"/>
+  </g>
+  <path d="M64 58 H118" stroke="#F47F70" stroke-width="7" stroke-linecap="round"/>
+  <text x="64" y="116" fill="#292A5A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Four Stages, Four Capability Layers</text>
+  <text x="64" y="157" fill="#4B527C" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="20">Each step forward adds one more question for the system</text>
+  <path d="M128 296 H934" stroke="#7E8FD5" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
+    <circle cx="144" cy="296" r="40" fill="#3E97E8" stroke="#292A5A" stroke-width="3"/>
+    <text x="144" y="309" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">1</text>
+    <text x="104" y="381" fill="#292A5A" font-size="27" font-weight="700">Chatbot</text>
+    <text x="104" y="421" fill="#4B527C" font-size="17">How much does it know?</text>
+    <text x="104" y="464" fill="#3E97E8" font-size="16" font-weight="600">Data governance</text>
+    <circle cx="408" cy="296" r="40" fill="#FFDCC2" stroke="#292A5A" stroke-width="3"/>
+    <text x="408" y="309" text-anchor="middle" fill="#292A5A" font-family="Arial, sans-serif" font-size="34" font-weight="700">2</text>
+    <text x="350" y="381" fill="#292A5A" font-size="27" font-weight="700">AI + Tools</text>
+    <text x="350" y="421" fill="#4B527C" font-size="17">How much can it do?</text>
+    <text x="350" y="464" fill="#3E97E8" font-size="16" font-weight="600">Tool governance</text>
+    <circle cx="672" cy="296" r="40" fill="#BDE9DC" stroke="#292A5A" stroke-width="3"/>
+    <text x="672" y="309" text-anchor="middle" fill="#292A5A" font-family="Arial, sans-serif" font-size="34" font-weight="700">3</text>
+    <text x="624" y="381" fill="#292A5A" font-size="27" font-weight="700">Copilot</text>
+    <g data-multiline="true"><text x="624" y="421" fill="#4B527C" font-size="17">Can it keep moving</text><text x="624" y="443" fill="#4B527C" font-size="17">on its own?</text></g>
+    <text x="624" y="464" fill="#3E97E8" font-size="16" font-weight="600">Intent and state</text>
+    <circle cx="936" cy="296" r="40" fill="#929FE5" stroke="#292A5A" stroke-width="3"/>
+    <text x="936" y="309" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">4</text>
+    <text x="900" y="381" fill="#292A5A" font-size="27" font-weight="700">Agent</text>
+    <text x="868" y="421" fill="#4B527C" font-size="17">Who owns the outcome?</text>
+    <text x="868" y="464" fill="#3E97E8" font-size="16" font-weight="600">Systematic oversight</text>
+  </g>
+  <line x1="64" y1="570" x2="1016" y2="570" stroke="#7E8FD5" stroke-width="3" stroke-linecap="round"/>
+  <g data-multiline="true"><text x="64" y="615" fill="#292A5A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">You can skip a product release,</text><text x="64" y="642" fill="#292A5A" font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">but not capability building or validation</text></g>
+  <g aria-label="Original Yunzhou mascot host">
+    <circle cx="940" cy="653" r="92" fill="#FFF8EC" stroke="#292A5A" stroke-width="3"/>
+    <image href="mascot-yunzhou-avatar-v4.png" x="851" y="564" width="178" height="178" preserveAspectRatio="xMidYMid slice" clip-path="url(#mascotBubble)"/>
+  </g>
+  <rect width="1080" height="760" fill="url(#paper)" pointer-events="none"/>
+</svg>
