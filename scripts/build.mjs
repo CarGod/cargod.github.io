@@ -27,6 +27,14 @@ const LOCALES = {
   ko: { prefix: "/ko", html: "ko", og: "ko_KR", label: "한국어", short: "한", blog: "블로그", search: "검색", tutorials: "튜토리얼", home: "홈", archive: "아카이브", allTags: "모든 태그", contentNav: "주요 콘텐츠" },
   es: { prefix: "/es", html: "es", og: "es_ES", label: "Español", short: "ES", blog: "Blog", search: "Buscar", tutorials: "Tutoriales", home: "Inicio", archive: "Archivo", allTags: "Todas las etiquetas", contentNav: "Contenido principal" }
 };
+const GITHUB_LABELS = {
+  "zh-CN": "在 GitHub 查看 Luffy Liu",
+  "zh-TW": "在 GitHub 查看 Luffy Liu",
+  en: "View Luffy Liu on GitHub",
+  ja: "GitHub で Luffy Liu を見る",
+  ko: "GitHub에서 Luffy Liu 보기",
+  es: "Ver a Luffy Liu en GitHub"
+};
 const COPY = {
   "zh-CN": { blogTitle: "博客：AI、Agent 与独立产品实践", blogLede: "关于企业 AI、Agent、独立产品与真实工作流的长期记录。", searchTitle: "搜索博客", searchLede: "按关键词、标签和年份搜索文章；索引按需分片加载。", keyword: "关键词", placeholder: "例如：Agent、数据治理、Copilot", submit: "搜索", tag: "标签", year: "年份", all: "全部", prompt: "输入关键词，或选择标签和年份。", none: "没有找到匹配文章。" },
   "zh-TW": { blogTitle: "網誌：AI、Agent 與獨立產品實踐", blogLede: "關於企業 AI、Agent、獨立產品與真實工作流程的長期記錄。", searchTitle: "搜尋網誌", searchLede: "依關鍵字、標籤與年份搜尋文章；索引會按需分片載入。", keyword: "關鍵字", placeholder: "例如：Agent、資料治理、Copilot", submit: "搜尋", tag: "標籤", year: "年份", all: "全部", prompt: "輸入關鍵字，或選擇標籤與年份。", none: "找不到相符文章。" },
@@ -277,11 +285,16 @@ function mobileContentNav(locale, active = "") {
   return `<nav class="mobile-content-nav" aria-label="${text.contentNav}" data-pagefind-ignore><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}"${active === "search" ? ' aria-current="page"' : ""}>${text.search}</a></nav>`;
 }
 
-function siteHeader(locale, active = "blog", alternates = {}) {
+function githubButton(locale) {
+  const label = GITHUB_LABELS[locale];
+  return `<a class="nav-github" href="https://github.com/CarGod" target="_blank" rel="noreferrer" aria-label="${label}" title="${label}"><img src="/assets/icons/github-mark.svg" width="20" height="20" alt=""></a>`;
+}
+
+function siteHeader(locale, active = "", alternates = {}) {
   const text = LOCALES[locale];
   return `<header class="site-header" data-pagefind-ignore>
     <a class="wordmark" href="${localePath(locale, "/")}" aria-label="Luffy Liu ${text.home}"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu"><span>Luffy Liu</span></a>
-    <nav class="nav content-nav" aria-label="Navigation"><a href="${localePath(locale, "/")}">${text.home}</a><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}"${active === "search" ? ' aria-current="page"' : ""}>${text.search}</a>${languageSwitcher(locale, alternates)}</nav>
+    <nav class="nav content-nav" aria-label="${text.contentNav}"><a href="${localePath(locale, "/")}"${active === "home" ? ' aria-current="page"' : ""}>${text.home}</a><a href="${localePath(locale, "/tutorials/")}"${active === "tutorials" ? ' aria-current="page"' : ""}>${text.tutorials}</a><a href="${localePath(locale, "/blog/")}"${active === "blog" ? ' aria-current="page"' : ""}>${text.blog}</a><a href="${localePath(locale, "/blog/search/")}"${active === "search" ? ' aria-current="page"' : ""}>${text.search}</a>${githubButton(locale)}${languageSwitcher(locale, alternates)}</nav>
   </header>${mobileContentNav(locale, active)}`;
 }
 
@@ -315,7 +328,7 @@ function baseHead({ title, description, canonical, locale = "zh-CN", alternates 
   <meta name="twitter:description" content="${escapeHtml(description)}">
   <meta name="twitter:image" content="${image}">
   ${extra}
-  <link rel="stylesheet" href="/assets/css/site.css?v=20260831-2">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260831-3">
   <link rel="stylesheet" href="/assets/css/content.css?v=20260831-2">
   <title>${escapeHtml(title)}</title>`;
 }
@@ -528,7 +541,7 @@ function entryHome(locale, content, alternates) {
       { "@type": "Person", "@id": `${SITE_URL}/#person`, name: "Luffy Liu", url: SITE_URL, image: `${SITE_URL}/assets/luffy-avatar.png`, sameAs: ["https://github.com/CarGod", "https://x.com/luffyliux"] }
     ]
   };
-  const homeHeader = `<header class="site-header" data-pagefind-ignore><a class="wordmark" href="#top" aria-label="Luffy Liu ${text.home}"><img class="wordmark-avatar" src="/assets/luffy-avatar.png" width="38" height="38" alt="Luffy Liu"><span>Luffy Liu</span></a><nav class="nav content-nav" aria-label="${escapeHtml(content.navigation.language)}"><a href="#work">${escapeHtml(content.navigation.work)}</a><a href="${localizedPrefix}/tutorials/">${escapeHtml(content.navigation.tutorials)}</a><a href="${localizedPrefix}/blog/">${escapeHtml(content.navigation.blog)}</a><a href="#about">${escapeHtml(content.navigation.about)}</a><a class="nav-github" href="https://github.com/CarGod" target="_blank" rel="noreferrer">${escapeHtml(content.navigation.github)} ↗</a>${languageSwitcher(locale, alternates)}</nav></header>${mobileContentNav(locale)}`;
+  const homeHeader = siteHeader(locale, "home", alternates);
   return `<!doctype html>
 <html lang="${text.html}"><head>
   ${baseHead({ title: content.seo.title, description: content.seo.description, canonical, locale, alternates })}

@@ -36,6 +36,14 @@ const fileForUrl = (raw, current = "/") => {
   return path.join(OUT, pathname.slice(1));
 };
 const matches = (html, regex) => [...html.matchAll(regex)];
+const HEADER_LOCALES = {
+  "zh-CN": { prefix: "", codes: ["zh-CN", "zh-TW", "en", "ja", "ko", "es"] },
+  "zh-TW": { prefix: "/zh-tw", codes: ["zh-CN", "zh-TW", "en", "ja", "ko", "es"] },
+  en: { prefix: "/en", codes: ["zh-CN", "zh-TW", "en", "ja", "ko", "es"] },
+  ja: { prefix: "/ja", codes: ["zh-CN", "zh-TW", "en", "ja", "ko", "es"] },
+  ko: { prefix: "/ko", codes: ["zh-CN", "zh-TW", "en", "ja", "ko", "es"] },
+  es: { prefix: "/es", codes: ["zh-CN", "zh-TW", "en", "ja", "ko", "es"] }
+};
 
 await walk(OUT);
 for (const file of files.filter((item) => item.endsWith(".html"))) {
@@ -99,6 +107,45 @@ for (const [url, page] of htmlByUrl) {
     const reciprocal = matches(peer.html, /<link[^>]+rel=["']alternate["'][^>]+hreflang=["'][^"']+["'][^>]+href=["']([^"']+)/gi).some((item) => item[1] === url);
     if (!reciprocal) errors.push(`${page.route}: hreflang target does not link back (${peerUrl})`);
   }
+}
+
+for (const page of htmlByUrl.values()) {
+  const headerMatch = page.html.match(/<header[^>]+class=["'][^"']*site-header[^"']*["'][^>]*>[\s\S]*?<\/header>/i);
+  if (!headerMatch) continue;
+  const header = headerMatch[0];
+  const htmlLocale = page.html.match(/<html[^>]+lang=["']([^"']+)/i)?.[1];
+  const config = HEADER_LOCALES[htmlLocale];
+  if (!config) { errors.push(`${page.route}: site header uses an unsupported locale ${htmlLocale || "missing"}`); continue; }
+  if (!/<header[^>]+data-pagefind-ignore(?:\s|=|>)/i.test(header)) errors.push(`${page.route}: site header must be excluded from Pagefind`);
+  const brand = header.match(/<a[^>]+class=["'][^"']*wordmark[^"']*["'][^>]*>[\s\S]*?<\/a>/i)?.[0] || "";
+  if (!new RegExp(`href=["']${(config.prefix || "") + "/"}["']`, "i").test(brand)) errors.push(`${page.route}: wordmark does not link to its locale home`);
+  if (!/<img[^>]+class=["'][^"']*wordmark-avatar[^"']*["'][^>]+src=["']\/assets\/luffy-avatar\.png["']/i.test(brand) || !/<span>Luffy Liu<\/span>/i.test(brand)) errors.push(`${page.route}: site header brand is inconsistent`);
+
+  const nav = header.match(/<nav[^>]+class=["'][^"']*content-nav[^"']*["'][^>]*>[\s\S]*?<\/nav>/i)?.[0] || "";
+  if (!nav) { errors.push(`${page.route}: site header is missing the shared content navigation`); continue; }
+  const languageStart = nav.search(/<div[^>]+class=["'][^"']*language-switch-six[^"']*["']/i);
+  if (languageStart < 0) { errors.push(`${page.route}: site header is missing the six-language switch`); continue; }
+  const primary = nav.slice(0, languageStart);
+  const primaryHrefs = matches(primary, /<a[^>]+href=["']([^"']+)["']/gi).map((match) => match[1]);
+  const expectedHrefs = [`${config.prefix}/`, `${config.prefix}/tutorials/`, `${config.prefix}/blog/`, `${config.prefix}/blog/search/`, "https://github.com/CarGod"];
+  if (JSON.stringify(primaryHrefs) !== JSON.stringify(expectedHrefs)) errors.push(`${page.route}: header navigation order differs (${primaryHrefs.join(" | ")})`);
+
+  const github = primary.match(/<a[^>]+class=["'][^"']*nav-github[^"']*["'][^>]*>[\s\S]*?<\/a>/i)?.[0] || "";
+  if (!/href=["']https:\/\/github\.com\/CarGod["']/i.test(github)) errors.push(`${page.route}: GitHub control must link to the profile`);
+  if (!/aria-label=["'][^"']+["']/i.test(github) || !/title=["'][^"']+["']/i.test(github)) errors.push(`${page.route}: GitHub icon control needs an accessible name and title`);
+  if (!/<img[^>]+src=["']\/assets\/icons\/github-mark\.svg["'][^>]+alt=["']["'][^>]*>/i.test(github)) errors.push(`${page.route}: GitHub control must use the local decorative mark`);
+  if (github.replace(/<img\b[^>]*>/gi, "").replace(/<[^>]+>/g, "").trim()) errors.push(`${page.route}: GitHub icon control must not expose a text label`);
+
+  const language = nav.slice(languageStart);
+  const codes = matches(language, /<a[^>]+data-language=["']([^"']+)["']/gi).map((match) => match[1]);
+  if (JSON.stringify(codes) !== JSON.stringify(config.codes)) errors.push(`${page.route}: language switch order differs (${codes.join(" | ")})`);
+  const currentLanguage = matches(language, /<a[^>]+data-language=["']([^"']+)["'][^>]*aria-current=["']page["'][^>]*>|<a[^>]+aria-current=["']page["'][^>]*data-language=["']([^"']+)["'][^>]*>/gi).map((match) => match[1] || match[2]);
+  if (currentLanguage.length !== 1 || currentLanguage[0] !== htmlLocale) errors.push(`${page.route}: language switch must identify ${htmlLocale} as current`);
+
+  const mobileNav = page.html.match(/<nav[^>]+class=["'][^"']*mobile-content-nav[^"']*["'][^>]*>([\s\S]*?)<\/nav>/i)?.[1] || "";
+  const mobileHrefs = matches(mobileNav, /<a[^>]+href=["']([^"']+)["']/gi).map((match) => match[1]);
+  const expectedMobile = [`${config.prefix}/tutorials/`, `${config.prefix}/blog/`, `${config.prefix}/blog/search/`];
+  if (JSON.stringify(mobileHrefs) !== JSON.stringify(expectedMobile)) errors.push(`${page.route}: mobile navigation order differs (${mobileHrefs.join(" | ")})`);
 }
 
 for (const route of ["/", "/zh-tw/", "/en/", "/ja/", "/ko/", "/es/"]) {
@@ -197,6 +244,12 @@ for (const forbidden of ["content", "scripts", "docs", "node_modules", ".git"]) 
 }
 if (!await fs.stat(path.join(OUT, "pagefind", "pagefind.js")).then(() => true).catch(() => false)) errors.push("Pagefind index is missing");
 if (!await fs.stat(path.join(OUT, "assets", "js", "search.js")).then(() => true).catch(() => false)) errors.push("Search client module is missing");
+if (!await fs.stat(path.join(OUT, "assets", "icons", "github-mark.svg")).then(() => true).catch(() => false)) errors.push("Local GitHub navigation mark is missing");
+const siteCss = await fs.readFile(path.join(OUT, "assets", "css", "site.css"), "utf8").catch(() => "");
+if (!/\.site-header\s*\{[^}]*width:\s*min\(1180px,\s*calc\(100% - 48px\)\)[^}]*height:\s*84px/s.test(siteCss)) errors.push("Shared header must use the 1180px container and 84px desktop height");
+if (!/\.nav-github\s*\{[^}]*width:\s*44px[^}]*height:\s*44px/s.test(siteCss)) errors.push("GitHub icon control must retain a 44px touch target");
+if (!/\.nav-github\s*\{[^}]*border:\s*0[^}]*background:\s*transparent/s.test(siteCss)) errors.push("GitHub control must present only the icon without a persistent button surface");
+if (!/@media\s*\(max-width:\s*860px\)[\s\S]*?\.site-header\s*\{[^}]*height:\s*72px[\s\S]*?grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/s.test(siteCss)) errors.push("Responsive header/mobile navigation contract is missing");
 const total = (await Promise.all(files.map((file) => fs.stat(file).then((stat) => stat.size)))).reduce((sum, size) => sum + size, 0);
 if (total > MAX_BYTES) errors.push(`Artifact is ${(total / 1024 / 1024).toFixed(2)} MiB, above 850 MiB limit`);
 
