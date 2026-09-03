@@ -50,7 +50,7 @@ for (const file of files.filter((item) => item.endsWith(".html"))) {
   const route = routeFor(file);
   const html = await fs.readFile(file, "utf8");
   htmlByUrl.set(`${SITE_URL}${route}`, { file, route, html });
-  if (route === "/404.html") continue;
+  if (route === "/404.html" || route === "/baidu_verify_codeva-6mj6cMYHtH.html") continue;
   if (/<meta[^>]+http-equiv=["']?refresh/i.test(html)) continue;
   const noindex = /<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html);
   const titles = matches(html, /<title>[^<]+<\/title>/gi);
@@ -245,6 +245,8 @@ for (const forbidden of ["content", "scripts", "docs", "node_modules", ".git"]) 
 if (!await fs.stat(path.join(OUT, "pagefind", "pagefind.js")).then(() => true).catch(() => false)) errors.push("Pagefind index is missing");
 if (!await fs.stat(path.join(OUT, "assets", "js", "search.js")).then(() => true).catch(() => false)) errors.push("Search client module is missing");
 if (!await fs.stat(path.join(OUT, "assets", "icons", "github-mark.svg")).then(() => true).catch(() => false)) errors.push("Local GitHub navigation mark is missing");
+const baiduVerification = await fs.readFile(path.join(OUT, "baidu_verify_codeva-6mj6cMYHtH.html"), "utf8").catch(() => "");
+if (baiduVerification.trim() !== "cb5eba8b8f1400766c0a5bc7e283defa") errors.push("Baidu verification file is missing or invalid");
 const siteCss = await fs.readFile(path.join(OUT, "assets", "css", "site.css"), "utf8").catch(() => "");
 if (!/\.site-header\s*\{[^}]*width:\s*min\(1180px,\s*calc\(100% - 48px\)\)[^}]*height:\s*84px/s.test(siteCss)) errors.push("Shared header must use the 1180px container and 84px desktop height");
 if (!/\.nav-github\s*\{[^}]*width:\s*44px[^}]*height:\s*44px/s.test(siteCss)) errors.push("GitHub icon control must retain a 44px touch target");

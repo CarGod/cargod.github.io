@@ -91,7 +91,8 @@ const STATIC_ENTRIES = [
   "404.html", "CNAME", "apple-touch-icon.png", "assets", "categories", "en",
   "fanfan-cards", "favicon-16x16.png", "favicon-32x32.png", "favicon-48x48.png",
   "icon-192.png", "icon-512.png", "index.html", "page", "robots.txt", "site.webmanifest",
-  "support", "tags", "f12ccf366cb74427b4136826edc61235.txt"
+  "support", "tags", "f12ccf366cb74427b4136826edc61235.txt",
+  "baidu_verify_codeva-6mj6cMYHtH.html"
 ];
 
 const escapeHtml = (value = "") => String(value)
