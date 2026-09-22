@@ -15,7 +15,7 @@
     "test:content-protection": "node scripts/test-content-protection.mjs",
     "test:localized-visuals": "node scripts/test-localized-visuals.mjs",
     "test:search": "node scripts/test-search.mjs",
-    "validate": "npm run test:markdown && npm run test:content-protection && node scripts/validate-content-sync.mjs && npm run test:localized-visuals && npm run test:search && node scripts/validate-site.mjs && npm run test:council",
+    "validate": "npm run test:markdown && npm run test:content-protection && node scripts/validate-content-sync.mjs && npm run test:localized-visuals && npm run test:search && node scripts/validate-site.mjs && npm run test:council && node scripts/test-stylesheets.mjs",
     "benchmark": "node scripts/benchmark.mjs",
     "test:council": "node scripts/test-council.mjs"
   },

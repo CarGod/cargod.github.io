@@ -1,3 +1,4 @@
+import { fingerprintStylesheets } from './lib/stylesheets.mjs';
 import { councilLocales, localizedCouncil, councilPath, councilAlternates } from './lib/council-i18n.mjs';
 import { createHash } from "node:crypto";
 import { promises as fs } from "node:fs";
@@ -793,6 +794,7 @@ async function build() {
     await writeRss(locale, localized);
   }
   await writeSitemaps(articles, generatedPages);
+  await fingerprintStylesheets(OUT);
   await enforceSizeBudget();
   console.log(`Built ${posts.length} blog post(s), ${tutorials.length} tutorial(s), ${generatedPages.length} collection/search page(s) into ${path.relative(ROOT, OUT)}.`);
 }
