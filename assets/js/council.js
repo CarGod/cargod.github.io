@@ -1,3 +1,4 @@
+const ui = JSON.parse(document.querySelector('#council-ui').textContent);
 const links = [...document.querySelectorAll('[data-advisor]')];
 const panels = [...document.querySelectorAll('.advisor-panel')];
 const status = document.querySelector('#advisor-status');
@@ -9,7 +10,12 @@ function select(id, announce = false) {
     if (link.getAttribute('href') === `#${id}`) link.setAttribute('aria-current', 'true');
     else link.removeAttribute('aria-current');
   }
-  if (announce) status.textContent = `已选择${selected.querySelector('h3').textContent}，共 4 组问答。`;
+  for (const language of document.querySelectorAll('.language-switch a[hreflang]')) {
+    const target = new URL(language.href);
+    target.hash = id;
+    language.href = target.href;
+  }
+  if (announce) status.textContent = ui.selected.replace('{name}', selected.querySelector('h3').childNodes[0].textContent);
   return true;
 }
 select(location.hash.slice(1)) || select(panels[0].id);
@@ -30,13 +36,13 @@ copy.addEventListener('click', async () => {
   const text = document.querySelector('#example-prompt').textContent;
   try {
     await navigator.clipboard.writeText(text);
-    document.querySelector('#copy-status').textContent = '已复制，安装 Skill 后粘贴给你的 AI 助手。';
+    document.querySelector('#copy-status').textContent = ui.questionCopied;
   } catch {
     const range = document.createRange();
     range.selectNodeContents(document.querySelector('#example-prompt'));
     const selection = window.getSelection();
     selection.removeAllRanges(); selection.addRange(range);
-    document.querySelector('#copy-status').textContent = '请手动复制已选中的提问。';
+    document.querySelector('#copy-status').textContent = ui.questionFallback;
   }
 });
 
@@ -49,12 +55,12 @@ installCopy.addEventListener('click', async () => {
   installFeedback.hidden = false;
   try {
     await navigator.clipboard.writeText(installCommand.value);
-    installStatus.textContent = '已复制！发送给你的 Agent：Claude / Codex / Cursor / Workbuddy 等，让它帮你安装专家顾问团队。';
-    installCopy.querySelector('strong').textContent = '已复制安装指令 ✓';
+    installStatus.textContent = ui.installCopied;
+    installCopy.querySelector('strong').textContent = ui.installCopiedLabel;
     installCommand.hidden = true;
     document.querySelector('label[for="install-command"]').hidden = true;
   } catch {
-    installStatus.textContent = '自动复制不可用，请手动复制下方指令，发送给你的 Agent：Claude / Codex / Cursor / Workbuddy 等。';
+    installStatus.textContent = ui.installFallback;
     installCommand.hidden = false;
     document.querySelector('label[for="install-command"]').hidden = false;
     installCommand.focus();

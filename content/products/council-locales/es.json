@@ -1,0 +1,1630 @@
+{
+  "advisors": [
+    {
+      "id": "steve-jobs",
+      "name": "Steve Jobs",
+      "english": "Steve Jobs",
+      "focus": "Foco · Experiencia · Comunicación",
+      "questions": [
+        {
+          "question": "Sobran funciones: ¿cuál eliminamos primero?",
+          "answer": "Concentra los recursos en el valor más claro para el usuario. Define qué debe hacerse realmente bien y clasifica lo demás en conservar, combinar o detener, incluyendo los costes de migración y salida.",
+          "method": "SJ-P01",
+          "methodTitle": "Concentrar la inversión"
+        },
+        {
+          "question": "¿Cómo planificar cuando la demanda cambia?",
+          "answer": "Reducir el retraso entre la señal de demanda y la decisión de suministro limita las conjeturas. Localiza dónde se atasca la información, prueba un cambio pequeño y mide tiempo de respuesta y riesgo de inventario.",
+          "method": "SJ-P02",
+          "methodTitle": "Acortar la respuesta a la demanda"
+        },
+        {
+          "question": "¿Presentamos funciones o beneficios?",
+          "answer": "Explica primero por qué le importa al usuario y demuéstralo con una experiencia concreta. Elige un beneficio memorable y alinea el texto, la demostración y el primer uso con él.",
+          "method": "SJ-P03",
+          "methodTitle": "Comunicar el valor"
+        },
+        {
+          "question": "¿Lanzamos antes de alcanzar la perfección?",
+          "answer": "Separa el mínimo exigible para publicar de las mejoras posteriores. Pregunta qué valor verificable aporta esperar otra iteración. Si la tarea principal funciona, prueba con un público reducido y define la siguiente mejora.",
+          "method": "SJ-P04",
+          "methodTitle": "Equilibrar calidad y entrega"
+        }
+      ]
+    },
+    {
+      "id": "yu-jun",
+      "name": "Yu Jun",
+      "english": "Yu Jun",
+      "focus": "Valor del usuario · Alternativas · Negocio",
+      "questions": [
+        {
+          "question": "¿Más funciones harán que cambien de producto?",
+          "answer": "El usuario compara beneficios nuevos, beneficios actuales y coste de cambiar. Observa cómo resuelve hoy la tarea y contrasta la mejora con los costes de aprendizaje y migración.",
+          "method": "YJ-P01",
+          "methodTitle": "Valor relativo para el usuario"
+        },
+        {
+          "question": "¿Basta con dirigirnos a jóvenes?",
+          "answer": "Una misma persona tiene necesidades distintas según la situación. Describe quién intenta hacer qué y en qué momento; después observa sus decisiones y alternativas reales.",
+          "method": "YJ-P02",
+          "methodTitle": "Comprender la situación"
+        },
+        {
+          "question": "Todos apoyan la idea: ¿hay que probarla?",
+          "answer": "Una conclusión debe poder cambiar cuando cambian sus pruebas. Escribe qué haría cambiar de opinión al equipo, formula una hipótesis refutable y fija un experimento y una fecha de revisión.",
+          "method": "YJ-P03",
+          "methodTitle": "Revisar las creencias"
+        },
+        {
+          "question": "Hay usuarios: ¿por qué no hay ingresos suficientes?",
+          "answer": "Distingue quién usa, quién paga y quién soporta los costes. Traza el intercambio desde la demanda hasta producción, venta y entrega. Busca valor sin remuneración o costes que absorben el ingreso.",
+          "method": "YJ-P04",
+          "methodTitle": "Cerrar el circuito del negocio"
+        }
+      ]
+    },
+    {
+      "id": "zhang-xiaolong",
+      "name": "Allen Zhang",
+      "english": "Allen Zhang",
+      "focus": "Conducta · Moderación · Reglas",
+      "questions": [
+        {
+          "question": "¿Una herramienta debe aumentar el tiempo de uso?",
+          "answer": "Una herramienta puede mejorar ayudando a terminar antes. Mide finalización, tiempo y uso repetido; distingue el trabajo útil del tiempo perdido buscando cómo continuar.",
+          "method": "ZXL-P01",
+          "methodTitle": "Medir la eficiencia de la tarea"
+        },
+        {
+          "question": "¿Una función más hace pesado el producto?",
+          "answer": "La complejidad se mide por el esfuerzo de completar la tarea, no contando funciones. Recorre acceso, decisiones, envío y confirmación. Comprueba a quién facilita el trabajo y a quién se lo complica.",
+          "method": "ZXL-P02",
+          "methodTitle": "Evaluar la complejidad al usar"
+        },
+        {
+          "question": "¿Rechazamos una petición para seguir siendo simples?",
+          "answer": "La moderación debe ser el resultado de una decisión razonada. Anota el valor, las pruebas y el motivo de no hacerlo: objetivo inválido, mala experiencia o experimento fallido.",
+          "method": "ZXL-P03",
+          "methodTitle": "Justificar las renuncias"
+        },
+        {
+          "question": "Una alianza trae tráfico: ¿la aceptamos?",
+          "answer": "Que un socio quiera promocionar algo no implica que el usuario quiera recibirlo. Compara beneficios de ambas partes con atención y esfuerzo exigidos al usuario. Verifica beneficio real y voluntad del destinatario.",
+          "method": "ZXL-P04",
+          "methodTitle": "Examinar el valor de una alianza"
+        }
+      ]
+    },
+    {
+      "id": "wang-xing",
+      "name": "Wang Xing",
+      "english": "Wang Xing",
+      "focus": "Competencia · Capacidades · Largo plazo",
+      "questions": [
+        {
+          "question": "¿Conviene abrir otra línea de negocio?",
+          "answer": "Una necesidad cercana requiere capacidades y recursos compatibles para convertirse en oportunidad. Enumera lo reutilizable, lo que falta, los costes nuevos y el impacto en el negocio principal; empieza con una prueba limitada.",
+          "method": "WX-P01",
+          "methodTitle": "Expandirse reutilizando capacidades"
+        },
+        {
+          "question": "La competencia baja precios: ¿la seguimos?",
+          "answer": "La comodidad, el ahorro de tiempo y la fiabilidad también pueden motivar la compra. Identifica la incertidumbre que más le cuesta al usuario y compara precio, tiempo y garantía de entrega con tareas reales.",
+          "method": "WX-P02",
+          "methodTitle": "Valor más allá del descuento"
+        },
+        {
+          "question": "El mercado es enorme: ¿por qué no avanzamos?",
+          "answer": "En servicios locales importa el área donde la gente realmente elige. Examina oferta, demanda, conexión y cumplimiento dentro de ese radio; el tamaño nacional no demuestra viabilidad local.",
+          "method": "WX-P03",
+          "methodTitle": "Definir el mercado real"
+        },
+        {
+          "question": "Muchos miran y pocos compran: ¿qué falla?",
+          "answer": "El valor del servicio debe llegar desde el descubrimiento hasta la entrega. Recorre selección, compra, cumplimiento y repetición, y prueba el punto donde se interrumpe la tarea.",
+          "method": "WX-P04",
+          "methodTitle": "Seguir la transacción completa"
+        }
+      ]
+    },
+    {
+      "id": "liang-ning",
+      "name": "Liang Ning",
+      "english": "Liang Ning",
+      "focus": "Necesidades · Valor percibido · Modelo",
+      "questions": [
+        {
+          "question": "Trabajamos mucho: ¿por qué no pagan?",
+          "answer": "Esfuerzo y calidad no bastan para demostrar valor comercial. Busca una persona, una situación y un motivo concreto para elegir y pagar; observa decisiones y transacciones, no solo elogios.",
+          "method": "LN-P01",
+          "methodTitle": "Vincular el valor con la demanda"
+        },
+        {
+          "question": "Hay valor: ¿por qué el negocio no funciona?",
+          "answer": "Diagnostica por separado beneficio del usuario, obstáculos para acordar y sostenibilidad. Prueba primero la parte con menos evidencia; examina capacidades, pagador, flujo de caja y reparto de recursos y beneficios.",
+          "method": "LN-P02",
+          "methodTitle": "Separar valor, acuerdo y modelo"
+        },
+        {
+          "question": "Dicen que les gusta: ¿por qué no lo usan?",
+          "answer": "Apreciar una descripción no equivale a elegirla durante una tarea. Identifica el desencadenante, compara alternativas y observa uso y pago completos; empieza por una situación verificable.",
+          "method": "LN-P03",
+          "methodTitle": "Probar la situación real"
+        },
+        {
+          "question": "¿Compran utilidad o identidad?",
+          "answer": "Interpreta los motivos mediante conducta observada, no estereotipos demográficos. Pregunta por la última compra real, su contexto, alternativas y expresión deseada; contrasta la explicación en distintos grupos.",
+          "method": "LN-P04",
+          "methodTitle": "Verificar la expresión de identidad"
+        }
+      ]
+    },
+    {
+      "id": "sam-altman",
+      "name": "Sam Altman",
+      "english": "Sam Altman",
+      "focus": "Interés del usuario · Crecimiento · Economía",
+      "questions": [
+        {
+          "question": "¿Publicidad o mejorar la experiencia primero?",
+          "answer": "Busca usuarios que vuelvan por iniciativa propia y recomienden el producto. Comprueba si seguirían usando sin campañas; mejora la experiencia central y luego prueba captación a pequeña escala.",
+          "method": "SA-P01",
+          "methodTitle": "Validar el interés antes de crecer"
+        },
+        {
+          "question": "Los ingresos crecen rápido: ¿seguimos gastando?",
+          "answer": "Contribución por cliente, recuperación de captación y autonomía de caja son cuestiones distintas. Calcula cada una con gastos fijos y retención conservadora; estima cuánto dura la operación sin nueva financiación.",
+          "method": "SA-P02",
+          "methodTitle": "Separar rentabilidad y caja"
+        },
+        {
+          "question": "Estamos ocupados: ¿por qué no progresamos?",
+          "answer": "Hacer más rápido lo irrelevante no acerca al objetivo. Elimina tareas sin valor, elige pocas entregas importantes y reserva tiempo para pensar y recuperarse.",
+          "method": "SA-P03",
+          "methodTitle": "Elegir antes de optimizar"
+        },
+        {
+          "question": "¿Dónde encontrar una oportunidad de IA?",
+          "answer": "Conecta capacidades recién viables con tareas concretas y uso intensivo real. Registra qué ha cambiado, quién lo usa a menudo y sus alternativas; verifica uso sostenido con una muestra pequeña.",
+          "method": "SA-P04",
+          "methodTitle": "Buscar lo recién posible"
+        }
+      ]
+    },
+    {
+      "id": "dario-amodei",
+      "name": "Dario Amodei",
+      "english": "Dario Amodei",
+      "focus": "Evaluación · Evidencia independiente · Riesgo",
+      "questions": [
+        {
+          "question": "Un modelo es más barato: ¿cambiamos?",
+          "answer": "Compara la misma tarea, calidad exigida y definición de coste. Separa escala, ahorro a igual capacidad y cambios de entrenamiento; registra inferencia, entrenamiento, investigación y datos no verificables.",
+          "method": "DA-P01",
+          "methodTitle": "Comparar costes y capacidades"
+        },
+        {
+          "question": "¿Una respuesta más lógica demuestra mayor capacidad?",
+          "answer": "La corrección de la tarea y la impresión de la interfaz necesitan evaluaciones separadas. Mide éxito, utilidad de las explicaciones y preferencias; un razonamiento mostrado más largo no demuestra mejores resultados.",
+          "method": "DA-P02",
+          "methodTitle": "Separar capacidad e interfaz"
+        },
+        {
+          "question": "El Agent hace más cosas: ¿publicamos ya?",
+          "answer": "Más capacidad de actuar puede crear nuevas consecuencias de fallo. Lista cambios, riesgos, pruebas, permisos y condiciones de reversión antes de definir el alcance del lanzamiento.",
+          "method": "DA-P03",
+          "methodTitle": "Actualizar controles con la capacidad"
+        },
+        {
+          "question": "Sube la puntuación: ¿por qué siguen las quejas?",
+          "answer": "Optimizar repetidamente contra las mismas respuestas puede degradar la evaluación. Registra la exposición, protege un conjunto independiente y contrasta nuevos fallos y pruebas externas.",
+          "method": "DA-P04",
+          "methodTitle": "Mantener evaluaciones independientes"
+        }
+      ]
+    },
+    {
+      "id": "elon-musk",
+      "name": "Elon Musk",
+      "english": "Elon Musk",
+      "focus": "Restricciones · Objeciones · Ingeniería",
+      "questions": [
+        {
+          "question": "Todos lo hacen así: ¿debemos imitarlos?",
+          "answer": "Separa límites físicos, económicos y de la tarea de las costumbres heredadas. Enumera restricciones e hipótesis, mide la más importante y recompón la solución.",
+          "method": "EM-P01",
+          "methodTitle": "Reconstruir desde las restricciones"
+        },
+        {
+          "question": "El plan recibe apoyo: ¿qué hacemos ahora?",
+          "answer": "Invita a quienes puedan mostrar dónde falla. Pide la objeción más sólida a personas que conozcan las restricciones y conviértela en una pregunta comprobable.",
+          "method": "EM-P02",
+          "methodTitle": "Buscar objeciones"
+        },
+        {
+          "question": "La tecnología es cara: ¿cómo empezamos?",
+          "answer": "Divide la adopción a largo plazo en etapas entregables. Define clientes iniciales, razones para pagar, costes y pruebas necesarias para la siguiente reducción; no contabilices hoy beneficios futuros de escala.",
+          "method": "EM-P03",
+          "methodTitle": "Avanzar por etapas de coste"
+        },
+        {
+          "question": "El rendimiento es bueno: ¿por qué hay insatisfacción?",
+          "answer": "Esperas, cambios, mantenimiento e infraestructura forman parte de la experiencia. Prueba el recorrido completo junto con el producto; un beneficio puntual puede desaparecer por costes en otros pasos.",
+          "method": "EM-P04",
+          "methodTitle": "Diseñar el recorrido completo"
+        }
+      ]
+    },
+    {
+      "id": "andrew-ng",
+      "name": "Andrew Ng",
+      "english": "Andrew Ng",
+      "focus": "Flujos · Análisis de errores · Experimentos",
+      "questions": [
+        {
+          "question": "La IA acelera un paso: ¿por qué todo sigue lento?",
+          "answer": "El tiempo ahorrado puede convertirse en espera en el siguiente relevo. Dibuja el flujo completo con colas, capacidad y responsables; reorganiza pasos contiguos y mide la entrega real.",
+          "method": "AN-P01",
+          "methodTitle": "Convertir velocidad local en mejora global"
+        },
+        {
+          "question": "¿Necesitamos primero una evaluación enorme?",
+          "answer": "Un prototipo pequeño revela errores que importan a los usuarios. Revisa salidas, clasifica fallos y guarda ejemplos; separa criterios objetivos de juicios y actualiza la evaluación.",
+          "method": "AN-P02",
+          "methodTitle": "Observar salidas antes de evaluar"
+        },
+        {
+          "question": "¿Cambiamos el modelo o las instrucciones?",
+          "answer": "Identifica qué pasos dañan más el resultado final. Revisa trazas fallidas, agrupa errores y corrige la causa dominante antes de ampliar la muestra.",
+          "method": "AN-P03",
+          "methodTitle": "Localizar el fallo principal"
+        },
+        {
+          "question": "¿Conservamos el flujo tras mejorar el modelo?",
+          "answer": "Los pasos intermedios antiguos pueden perder información o limitar capacidad. Compara conservar, combinar y eliminar con la misma evaluación; guarda una versión recuperable y registra errores nuevos y resueltos.",
+          "method": "AN-P04",
+          "methodTitle": "Revisar la división del flujo"
+        }
+      ]
+    },
+    {
+      "id": "andrej-karpathy",
+      "name": "Andrej Karpathy",
+      "english": "Andrej Karpathy",
+      "focus": "Verificación · Base fiable · Entrega",
+      "questions": [
+        {
+          "question": "¿Podemos automatizar esta tarea con IA?",
+          "answer": "Comprueba si el resultado puede juzgarse y si repetir intentos es asequible. Enumera coste de reinicio, velocidad de prueba y forma de evaluar; mantén revisión explícita para juicios difíciles de verificar.",
+          "method": "AK-P01",
+          "methodTitle": "Comprobar la verificabilidad"
+        },
+        {
+          "question": "¿Un sistema más complejo arreglará los resultados?",
+          "answer": "Los errores de datos y preparación pueden importar más que la arquitectura. Inspecciona ejemplos, casos límite, etiquetas, duplicados y sesgos; verifica qué entra realmente antes de añadir complejidad.",
+          "method": "AK-P02",
+          "methodTitle": "Entender los datos primero"
+        },
+        {
+          "question": "¿Cómo sabemos que la mejora es real?",
+          "answer": "Una base sencilla y reproducible permite atribuir los cambios. Fija las condiciones, añade una modificación cada vez y retírala para comprobar su contribución.",
+          "method": "AK-P03",
+          "methodTitle": "Crear una base fiable"
+        },
+        {
+          "question": "No hay errores de ejecución: ¿podemos entregar?",
+          "answer": "Un sistema puede funcionar y producir errores lógicos persistentes. Diseña casos sencillos y controles, examina datos intermedios y confirma que usa la información necesaria.",
+          "method": "AK-P04",
+          "methodTitle": "Ejecutarse no equivale a acertar"
+        }
+      ]
+    },
+    {
+      "id": "ethan-mollick",
+      "name": "Ethan Mollick",
+      "english": "Ethan Mollick",
+      "focus": "Colaboración humano–IA · Aprendizaje · Tareas reales",
+      "questions": [
+        {
+          "question": "¿Un éxito permite confiar en tareas parecidas?",
+          "answer": "Tareas similares pueden estar a distintos lados de la frontera de capacidad. Registra éxitos, fallos, versiones y condiciones; conserva revisión humana y alternativas en ámbitos no comprobados.",
+          "method": "ETM-P01",
+          "methodTitle": "Delimitar capacidad por tarea"
+        },
+        {
+          "question": "¿Cómo repartir el trabajo entre personas e IA?",
+          "answer": "Delegar por partes y colaborar paso a paso son opciones que conviene comparar. Mide calidad, tiempo y retrabajo; asigna juicio, criterios de traspaso y aceptación final, revisando errores plausibles.",
+          "method": "ETM-P02",
+          "methodTitle": "Definir la responsabilidad compartida"
+        },
+        {
+          "question": "¿Basta con una clasificación para elegir modelo?",
+          "answer": "Prueba repetidamente muestras del trabajo que realmente tendrá que hacer. Usa revisión de especialistas y referencias humanas apropiadas; compara estabilidad y coste del fallo, y reevalúa.",
+          "method": "ETM-P03",
+          "methodTitle": "Entrevistar modelos con trabajo real"
+        },
+        {
+          "question": "¿Cómo convertir habilidad individual en capacidad colectiva?",
+          "answer": "La exploración de primera línea, la validación especializada y los incentivos deben conectarse. Facilita proponer y compartir oportunidades, prueba rápido y mide resultados después de extender lo útil.",
+          "method": "ETM-P04",
+          "methodTitle": "Conectar exploración y organización"
+        }
+      ]
+    },
+    {
+      "id": "kevin-weil",
+      "name": "Kevin Weil",
+      "english": "Kevin Weil",
+      "focus": "Problemas · Prototipos · Flujos de IA",
+      "questions": [
+        {
+          "question": "¿La primera versión debe servir a todos?",
+          "answer": "Busca un grupo pequeño cuyo trabajo empeoraría si el producto desapareciera. Define situación, alternativa y resultado no cubierto; observa uso sostenido y motivos de abandono antes de ampliar.",
+          "method": "KW-P01",
+          "methodTitle": "Empezar por una necesidad intensa"
+        },
+        {
+          "question": "¿Cómo terminar una discusión que no avanza?",
+          "answer": "Una experiencia utilizable sustituye debate abstracto por comportamiento observado. Haz que quien conoce el problema construya un mínimo y observa tareas reales; revisa calidad de producción y permisos antes de publicar.",
+          "method": "KW-P02",
+          "methodTitle": "Probar la propuesta con un prototipo"
+        },
+        {
+          "question": "¿Todas las funciones necesitan el modelo más potente?",
+          "answer": "Cada tarea exige su propio equilibrio de calidad, latencia y coste. Crea una base por tarea, compara en condiciones iguales y define cómo escalar cuando falla una opción económica.",
+          "method": "KW-P03",
+          "methodTitle": "Ajustar modelo y esfuerzo"
+        },
+        {
+          "question": "No quieren dejar sus herramientas: ¿qué hacemos?",
+          "answer": "Lleva la capacidad útil al lugar donde ya realizan el resto del trabajo. Identifica integraciones reales y carencias de interfaces, coordina interfaz y API y escucha a quienes las usan.",
+          "method": "KW-P04",
+          "methodTitle": "Integrarse en el trabajo existente"
+        }
+      ]
+    },
+    {
+      "id": "mike-krieger",
+      "name": "Mike Krieger",
+      "english": "Mike Krieger",
+      "focus": "Foco funcional · Primer uso · Comentarios",
+      "questions": [
+        {
+          "question": "La IA programa rápido: ¿añadimos más funciones?",
+          "answer": "Menor coste de construcción hace más importante proteger la comprensión del usuario. Define una primera tarea verificable, elimina combinaciones innecesarias y observa uso real antes de añadir o reescribir.",
+          "method": "MK-P01",
+          "methodTitle": "Reducir funciones al construir más rápido"
+        },
+        {
+          "question": "¿Cómo arrancar sin muchos datos del usuario?",
+          "answer": "El usuario nuevo debe obtener algo útil antes de aportar un historial largo. Prueba la primera sesión, reduce entradas iniciales, pregunta lo necesario y permite omitir y corregir.",
+          "method": "MK-P02",
+          "methodTitle": "Aportar valor desde el primer uso"
+        },
+        {
+          "question": "No mejora: ¿seguimos insistiendo?",
+          "answer": "Seguir invirtiendo debe convertirse en una prueba limitada de una hipótesis importante. Ordena experimentos capaces de cambiar la trayectoria y fija medidas y fecha; decide continuar, reducir o parar al revisarlos.",
+          "method": "MK-P03",
+          "methodTitle": "Poner plazo a la siguiente inversión"
+        },
+        {
+          "question": "¿Cómo aprovechar votos positivos y negativos?",
+          "answer": "La valoración sirve más cuando conserva contexto y razones. Agrupa cambios esperados por tipo de problema, conviértelos en casos repetibles y comprueba mejoras y regresiones.",
+          "method": "MK-P04",
+          "methodTitle": "Recoger motivos, no solo valoraciones"
+        }
+      ]
+    },
+    {
+      "id": "boris-cherny",
+      "name": "Boris Cherny",
+      "english": "Boris Cherny",
+      "focus": "Validación · Iteración · Colaboración",
+      "questions": [
+        {
+          "question": "Descubrimos un error: ¿terminamos el plan igualmente?",
+          "answer": "Actualiza el problema y el criterio de éxito cuando cambian las premisas. Aclara qué se sabe y qué falta, simplifica la propuesta y registra por qué cambió la decisión.",
+          "method": "BC-P01",
+          "methodTitle": "Reformular ante hechos nuevos"
+        },
+        {
+          "question": "¿Instrucciones más largas hacen al Agent más fiable?",
+          "answer": "Las reglas acumuladas pueden resolver defectos que el modelo actual ya no tiene. Guarda una base y compara cada instrucción o herramienta con y sin ella; añade solo lo que corrige fallos repetibles y valida antes de publicar.",
+          "method": "BC-P02",
+          "methodTitle": "Probar instrucciones por eliminación"
+        },
+        {
+          "question": "Pasan las pruebas: ¿necesitamos otras?",
+          "answer": "Una evaluación saturada puede dejar de distinguir los fallos importantes. Mantén regresiones clave y añade fallos reales nuevos; separa estabilidad anterior de capacidad en tareas nuevas.",
+          "method": "BC-P03",
+          "methodTitle": "Actualizar las evaluaciones"
+        },
+        {
+          "question": "¿Hay que dictar cada paso al Agent?",
+          "answer": "Para tareas verificables, define objetivo, restricciones, parada y aceptación. Distingue límites obligatorios de hábitos, permite explorar la implementación y ajusta según resultados.",
+          "method": "BC-P04",
+          "methodTitle": "Definir resultados y límites"
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "id": "SJ-P01",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Concentrar la inversión",
+      "summary": "Concentra los recursos en el valor más claro para el usuario.",
+      "conditions": [
+        "Recursos dispersos y valor principal claro."
+      ],
+      "boundaries": [
+        "Considera usuarios, empleados, activos y caja; no copies porcentajes históricos de recorte. Una alternativa imaginada después no es un resultado demostrado."
+      ],
+      "questions": [
+        "Sobran funciones: ¿cuál eliminamos primero?"
+      ],
+      "actions": [
+        "Define qué debe hacerse realmente bien y clasifica lo demás en conservar, combinar o detener, incluyendo los costes de migración y salida."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SJ-P02",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Acortar la respuesta a la demanda",
+      "summary": "Reducir el retraso entre la señal de demanda y la decisión de suministro limita las conjeturas.",
+      "conditions": [
+        "El inventario y la velocidad de respuesta afectan al ajuste de la oferta."
+      ],
+      "boundaries": [
+        "No descuides las economías de escala ni la resiliencia."
+      ],
+      "questions": [
+        "¿Cómo planificar cuando la demanda cambia?"
+      ],
+      "actions": [
+        "Localiza dónde se atasca la información, prueba un cambio pequeño y mide tiempo de respuesta y riesgo de inventario."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SJ-P03",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Comunicar el valor",
+      "summary": "Explica primero por qué le importa al usuario y demuéstralo con una experiencia concreta.",
+      "conditions": [
+        "Se necesita una identidad reconocible."
+      ],
+      "boundaries": [
+        "La narrativa no debe ocultar defectos del producto."
+      ],
+      "questions": [
+        "¿Presentamos funciones o beneficios?"
+      ],
+      "actions": [
+        "Elige un beneficio memorable y alinea el texto, la demostración y el primer uso con él."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SJ-P04",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Equilibrar calidad y entrega",
+      "summary": "Separa el mínimo exigible para publicar de las mejoras posteriores.",
+      "conditions": [
+        "La búsqueda de perfección bloquea la entrega."
+      ],
+      "boundaries": [
+        "La seguridad no se puede posponer para otra versión."
+      ],
+      "questions": [
+        "¿Lanzamos antes de alcanzar la perfección?"
+      ],
+      "actions": [
+        "Pregunta qué valor verificable aporta esperar otra iteración. Si la tarea principal funciona, prueba con un público reducido y define la siguiente mejora."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P01",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Valor relativo para el usuario",
+      "summary": "El usuario compara beneficios nuevos, beneficios actuales y coste de cambiar.",
+      "conditions": [
+        "La situación y las alternativas están claras."
+      ],
+      "boundaries": [
+        "Es una comparación cualitativa, no una fórmula de puntuación. Detectar debilidades de alternativas no autoriza a perjudicarlas."
+      ],
+      "questions": [
+        "¿Más funciones harán que cambien de producto?"
+      ],
+      "actions": [
+        "Observa cómo resuelve hoy la tarea y contrasta la mejora con los costes de aprendizaje y migración."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P02",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Comprender la situación",
+      "summary": "Una misma persona tiene necesidades distintas según la situación.",
+      "conditions": [
+        "Posicionamiento o entrevistas de usuarios."
+      ],
+      "boundaries": [
+        "Los datos demográficos pueden seguir aportando contexto útil."
+      ],
+      "questions": [
+        "¿Basta con dirigirnos a jóvenes?"
+      ],
+      "actions": [
+        "Describe quién intenta hacer qué y en qué momento; después observa sus decisiones y alternativas reales."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P03",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Revisar las creencias",
+      "summary": "Una conclusión debe poder cambiar cuando cambian sus pruebas.",
+      "conditions": [
+        "Decisiones tomadas con incertidumbre."
+      ],
+      "boundaries": [
+        "Dudar debe mejorar la decisión, no aplazarla indefinidamente."
+      ],
+      "questions": [
+        "Todos apoyan la idea: ¿hay que probarla?"
+      ],
+      "actions": [
+        "Escribe qué haría cambiar de opinión al equipo, formula una hipótesis refutable y fija un experimento y una fecha de revisión."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P04",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Cerrar el circuito del negocio",
+      "summary": "Distingue quién usa, quién paga y quién soporta los costes.",
+      "conditions": [
+        "Responsabilidad sobre el resultado global del negocio."
+      ],
+      "boundaries": [
+        "La responsabilidad integral no elimina la especialización. No todo componente debe dar beneficio inmediato, pero conocimiento, equipo y confianza necesitan evidencias comprobables."
+      ],
+      "questions": [
+        "Hay usuarios: ¿por qué no hay ingresos suficientes?"
+      ],
+      "actions": [
+        "Traza el intercambio desde la demanda hasta producción, venta y entrega. Busca valor sin remuneración o costes que absorben el ingreso."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P01",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Medir la eficiencia de la tarea",
+      "summary": "Una herramienta puede mejorar ayudando a terminar antes.",
+      "conditions": [
+        "El usuario tiene una tarea concreta."
+      ],
+      "boundaries": [
+        "El entretenimiento no siempre debe acabar antes y una herramienta también necesita retención. La intención de ahorrar tiempo no demuestra que se haya ahorrado."
+      ],
+      "questions": [
+        "¿Una herramienta debe aumentar el tiempo de uso?"
+      ],
+      "actions": [
+        "Mide finalización, tiempo y uso repetido; distingue el trabajo útil del tiempo perdido buscando cómo continuar."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P02",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Evaluar la complejidad al usar",
+      "summary": "La complejidad se mide por el esfuerzo de completar la tarea, no contando funciones.",
+      "conditions": [
+        "Diseño de usabilidad en productos multifunción."
+      ],
+      "boundaries": [
+        "Ocultar funciones no elimina aprendizaje ni mantenimiento. El mínimo funcional debe cubrir toda la tarea y no trasladar la complejidad al usuario."
+      ],
+      "questions": [
+        "¿Una función más hace pesado el producto?"
+      ],
+      "actions": [
+        "Recorre acceso, decisiones, envío y confirmación. Comprueba a quién facilita el trabajo y a quién se lo complica."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P03",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Justificar las renuncias",
+      "summary": "La moderación debe ser el resultado de una decisión razonada.",
+      "conditions": [
+        "Varias peticiones compiten por recursos."
+      ],
+      "boundaries": [
+        "Eliminar no es siempre acertado. Considera casos específicos y el daño o coste que continúa al aplazar la solución."
+      ],
+      "questions": [
+        "¿Rechazamos una petición para seguir siendo simples?"
+      ],
+      "actions": [
+        "Anota el valor, las pruebas y el motivo de no hacerlo: objetivo inválido, mala experiencia o experimento fallido."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P04",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Examinar el valor de una alianza",
+      "summary": "Que un socio quiera promocionar algo no implica que el usuario quiera recibirlo.",
+      "conditions": [
+        "Alianzas de plataforma, notificaciones o monetización."
+      ],
+      "boundaries": [
+        "Incluye la sostenibilidad comercial y de entrega en la evaluación."
+      ],
+      "questions": [
+        "Una alianza trae tráfico: ¿la aceptamos?"
+      ],
+      "actions": [
+        "Compara beneficios de ambas partes con atención y esfuerzo exigidos al usuario. Verifica beneficio real y voluntad del destinatario."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P01",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Expandirse reutilizando capacidades",
+      "summary": "Una necesidad cercana requiere capacidades y recursos compatibles para convertirse en oportunidad.",
+      "conditions": [
+        "Una nueva categoría o actividad."
+      ],
+      "boundaries": [
+        "No apliques los recursos de una gran plataforma a un equipo pequeño."
+      ],
+      "questions": [
+        "¿Conviene abrir otra línea de negocio?"
+      ],
+      "actions": [
+        "Enumera lo reutilizable, lo que falta, los costes nuevos y el impacto en el negocio principal; empieza con una prueba limitada."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P02",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Valor más allá del descuento",
+      "summary": "La comodidad, el ahorro de tiempo y la fiabilidad también pueden motivar la compra.",
+      "conditions": [
+        "Servicios transaccionales."
+      ],
+      "boundaries": [
+        "La sensibilidad al precio sigue existiendo y depende del contexto."
+      ],
+      "questions": [
+        "La competencia baja precios: ¿la seguimos?"
+      ],
+      "actions": [
+        "Identifica la incertidumbre que más le cuesta al usuario y compara precio, tiempo y garantía de entrega con tareas reales."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P03",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Definir el mercado real",
+      "summary": "En servicios locales importa el área donde la gente realmente elige.",
+      "conditions": [
+        "Mercados locales de dos lados."
+      ],
+      "boundaries": [
+        "Un umbral fijo de población no es una regla universal."
+      ],
+      "questions": [
+        "El mercado es enorme: ¿por qué no avanzamos?"
+      ],
+      "actions": [
+        "Examina oferta, demanda, conexión y cumplimiento dentro de ese radio; el tamaño nacional no demuestra viabilidad local."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P04",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Seguir la transacción completa",
+      "summary": "El valor del servicio debe llegar desde el descubrimiento hasta la entrega.",
+      "conditions": [
+        "La intención es consumir un servicio."
+      ],
+      "boundaries": [
+        "Consultar información también puede tener valor independiente."
+      ],
+      "questions": [
+        "Muchos miran y pocos compran: ¿qué falla?"
+      ],
+      "actions": [
+        "Recorre selección, compra, cumplimiento y repetición, y prueba el punto donde se interrumpe la tarea."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P01",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Vincular el valor con la demanda",
+      "summary": "Esfuerzo y calidad no bastan para demostrar valor comercial.",
+      "conditions": [
+        "Nuevo producto o revisión de la propuesta de valor."
+      ],
+      "boundaries": [
+        "El valor social o personal no siempre es cobrable; esto no invalida productos de interés público."
+      ],
+      "questions": [
+        "Trabajamos mucho: ¿por qué no pagan?"
+      ],
+      "actions": [
+        "Busca una persona, una situación y un motivo concreto para elegir y pagar; observa decisiones y transacciones, no solo elogios."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P02",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Separar valor, acuerdo y modelo",
+      "summary": "Diagnostica por separado beneficio del usuario, obstáculos para acordar y sostenibilidad.",
+      "conditions": [
+        "Pocas ventas o crecimiento sin rentabilidad."
+      ],
+      "boundaries": [
+        "Las tres dimensiones interactúan; no son etapas rígidas ni garantizan éxito."
+      ],
+      "questions": [
+        "Hay valor: ¿por qué el negocio no funciona?"
+      ],
+      "actions": [
+        "Prueba primero la parte con menos evidencia; examina capacidades, pagador, flujo de caja y reparto de recursos y beneficios."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P03",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Probar la situación real",
+      "summary": "Apreciar una descripción no equivale a elegirla durante una tarea.",
+      "conditions": [
+        "Revisión de funciones o precios."
+      ],
+      "boundaries": [
+        "Simulaciones y casos aislados no sustituyen decisiones reales."
+      ],
+      "questions": [
+        "Dicen que les gusta: ¿por qué no lo usan?"
+      ],
+      "actions": [
+        "Identifica el desencadenante, compara alternativas y observa uso y pago completos; empieza por una situación verificable."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P04",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Verificar la expresión de identidad",
+      "summary": "Interpreta los motivos mediante conducta observada, no estereotipos demográficos.",
+      "conditions": [
+        "Moda, belleza, contenidos y experiencias."
+      ],
+      "boundaries": [
+        "La explicación debe poder refutarse. No comprar puede deberse al presupuesto o al acceso, no a falta de deseo."
+      ],
+      "questions": [
+        "¿Compran utilidad o identidad?"
+      ],
+      "actions": [
+        "Pregunta por la última compra real, su contexto, alternativas y expresión deseada; contrasta la explicación en distintos grupos."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P01",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Validar el interés antes de crecer",
+      "summary": "Busca usuarios que vuelvan por iniciativa propia y recomienden el producto.",
+      "conditions": [
+        "Producto inicial que busca demanda estable."
+      ],
+      "boundaries": [
+        "Las recomendaciones son una señal, no un umbral universal. En usos poco frecuentes o empresariales, revisa renovación, uso y resultados."
+      ],
+      "questions": [
+        "¿Publicidad o mejorar la experiencia primero?"
+      ],
+      "actions": [
+        "Comprueba si seguirían usando sin campañas; mejora la experiencia central y luego prueba captación a pequeña escala."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P02",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Separar rentabilidad y caja",
+      "summary": "Contribución por cliente, recuperación de captación y autonomía de caja son cuestiones distintas.",
+      "conditions": [
+        "Más publicidad, descuentos o expansión tras una ronda."
+      ],
+      "boundaries": [
+        "No supongas retención infinita ni automatización futura que elimine costes. Clientes rentables no aseguran liquidez."
+      ],
+      "questions": [
+        "Los ingresos crecen rápido: ¿seguimos gastando?"
+      ],
+      "actions": [
+        "Calcula cada una con gastos fijos y retención conservadora; estima cuánto dura la operación sin nueva financiación."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P03",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Elegir antes de optimizar",
+      "summary": "Hacer más rápido lo irrelevante no acerca al objetivo.",
+      "conditions": [
+        "Mucha actividad con poco resultado o acumulación de herramientas."
+      ],
+      "boundaries": [
+        "Las rutinas personales no sirven para todos los puestos; la eficiencia no debe perjudicar descanso ni apoyo social."
+      ],
+      "questions": [
+        "Estamos ocupados: ¿por qué no progresamos?"
+      ],
+      "actions": [
+        "Elimina tareas sin valor, elige pocas entregas importantes y reserva tiempo para pensar y recuperarse."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P04",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Buscar lo recién posible",
+      "summary": "Conecta capacidades recién viables con tareas concretas y uso intensivo real.",
+      "conditions": [
+        "Nuevas plataformas o tecnologías generan ideas similares."
+      ],
+      "boundaries": [
+        "El uso intenso no prueba disposición a pagar; una tendencia real no garantiza que tú ganes."
+      ],
+      "questions": [
+        "¿Dónde encontrar una oportunidad de IA?"
+      ],
+      "actions": [
+        "Registra qué ha cambiado, quién lo usa a menudo y sus alternativas; verifica uso sostenido con una muestra pequeña."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P01",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Comparar costes y capacidades",
+      "summary": "Compara la misma tarea, calidad exigida y definición de coste.",
+      "conditions": [
+        "Elección de modelos o evaluación de anuncios de costes."
+      ],
+      "boundaries": [
+        "No mezcles costes de entrenamiento, inferencia e investigación total; algunos importes no se pueden verificar externamente."
+      ],
+      "questions": [
+        "Un modelo es más barato: ¿cambiamos?"
+      ],
+      "actions": [
+        "Separa escala, ahorro a igual capacidad y cambios de entrenamiento; registra inferencia, entrenamiento, investigación y datos no verificables."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P02",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Separar capacidad e interfaz",
+      "summary": "La corrección de la tarea y la impresión de la interfaz necesitan evaluaciones separadas.",
+      "conditions": [
+        "Diseño de interacción o comparación de productos de IA."
+      ],
+      "boundaries": [
+        "El razonamiento visible no es necesariamente un registro fiel del mecanismo interno."
+      ],
+      "questions": [
+        "¿Una respuesta más lógica demuestra mayor capacidad?"
+      ],
+      "actions": [
+        "Mide éxito, utilidad de las explicaciones y preferencias; un razonamiento mostrado más largo no demuestra mejores resultados."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P03",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Actualizar controles con la capacidad",
+      "summary": "Más capacidad de actuar puede crear nuevas consecuencias de fallo.",
+      "conditions": [
+        "Más herramientas o ejecución autónoma."
+      ],
+      "boundaries": [
+        "Adapta los umbrales al riesgo del negocio; no copies reglas de laboratorios avanzados a todas las aplicaciones."
+      ],
+      "questions": [
+        "El Agent hace más cosas: ¿publicamos ya?"
+      ],
+      "actions": [
+        "Lista cambios, riesgos, pruebas, permisos y condiciones de reversión antes de definir el alcance del lanzamiento."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P04",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Mantener evaluaciones independientes",
+      "summary": "Optimizar repetidamente contra las mismas respuestas puede degradar la evaluación.",
+      "conditions": [
+        "Ajustes repetidos de instrucciones, entrenamiento o evaluación de lanzamientos."
+      ],
+      "boundaries": [
+        "Las pruebas independientes no cubren todos los riesgos; separa exploración y evaluación formal."
+      ],
+      "questions": [
+        "Sube la puntuación: ¿por qué siguen las quejas?"
+      ],
+      "actions": [
+        "Registra la exposición, protege un conjunto independiente y contrasta nuevos fallos y pruebas externas."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P01",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Reconstruir desde las restricciones",
+      "summary": "Separa límites físicos, económicos y de la tarea de las costumbres heredadas.",
+      "conditions": [
+        "Se consideran inmutables el coste o rendimiento actuales."
+      ],
+      "boundaries": [
+        "Las analogías siguen siendo útiles; razonar desde principios no anula regulación, experiencia organizativa ni medición."
+      ],
+      "questions": [
+        "Todos lo hacen así: ¿debemos imitarlos?"
+      ],
+      "actions": [
+        "Enumera restricciones e hipótesis, mide la más importante y recompón la solución."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P02",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Buscar objeciones",
+      "summary": "Invita a quienes puedan mostrar dónde falla.",
+      "conditions": [
+        "Una visión fuerte dificulta cuestionar la propuesta."
+      ],
+      "boundaries": [
+        "Las críticas también necesitan evidencia; no prueban que una estrategia sea correcta."
+      ],
+      "questions": [
+        "El plan recibe apoyo: ¿qué hacemos ahora?"
+      ],
+      "actions": [
+        "Pide la objeción más sólida a personas que conozcan las restricciones y conviértela en una pregunta comprobable."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P03",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Avanzar por etapas de coste",
+      "summary": "Divide la adopción a largo plazo en etapas entregables.",
+      "conditions": [
+        "Tecnología costosa y diferencias entre mercado inicial y masivo."
+      ],
+      "boundaries": [
+        "Empezar por la gama alta no es universal; precios y plazos históricos no son promesas cumplidas hoy."
+      ],
+      "questions": [
+        "La tecnología es cara: ¿cómo empezamos?"
+      ],
+      "actions": [
+        "Define clientes iniciales, razones para pagar, costes y pruebas necesarias para la siguiente reducción; no contabilices hoy beneficios futuros de escala."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P04",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Diseñar el recorrido completo",
+      "summary": "Esperas, cambios, mantenimiento e infraestructura forman parte de la experiencia.",
+      "conditions": [
+        "Dependencia de despliegue, mantenimiento, recarga u otros apoyos."
+      ],
+      "boundaries": [
+        "Los ejemplos históricos son ilustrativos; observa rutinas e infraestructura reales."
+      ],
+      "questions": [
+        "El rendimiento es bueno: ¿por qué hay insatisfacción?"
+      ],
+      "actions": [
+        "Prueba el recorrido completo junto con el producto; un beneficio puntual puede desaparecer por costes en otros pasos."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P01",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Convertir velocidad local en mejora global",
+      "summary": "El tiempo ahorrado puede convertirse en espera en el siguiente relevo.",
+      "conditions": [
+        "Un paso acelerado por IA dentro de un flujo entre equipos."
+      ],
+      "boundaries": [
+        "Ahorrar tiempo no garantiza ingresos; cifras y casos ilustrativos no son compromisos comerciales."
+      ],
+      "questions": [
+        "La IA acelera un paso: ¿por qué todo sigue lento?"
+      ],
+      "actions": [
+        "Dibuja el flujo completo con colas, capacidad y responsables; reorganiza pasos contiguos y mide la entrega real."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P02",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Observar salidas antes de evaluar",
+      "summary": "Un prototipo pequeño revela errores que importan a los usuarios.",
+      "conditions": [
+        "La calidad generativa no cabe en una sola métrica."
+      ],
+      "boundaries": [
+        "Una muestra pequeña inicia el trabajo, no demuestra fiabilidad de lanzamiento; la evaluación por modelos requiere calibración."
+      ],
+      "questions": [
+        "¿Necesitamos primero una evaluación enorme?"
+      ],
+      "actions": [
+        "Revisa salidas, clasifica fallos y guarda ejemplos; separa criterios objetivos de juicios y actualiza la evaluación."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P03",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Localizar el fallo principal",
+      "summary": "Identifica qué pasos dañan más el resultado final.",
+      "conditions": [
+        "Flujos de IA de varios pasos con resultados inestables."
+      ],
+      "boundaries": [
+        "La referencia humana solo vale cuando encaja con la tarea; no ocultes problemas globales detrás de notas por paso."
+      ],
+      "questions": [
+        "¿Cambiamos el modelo o las instrucciones?"
+      ],
+      "actions": [
+        "Revisa trazas fallidas, agrupa errores y corrige la causa dominante antes de ampliar la muestra."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P04",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Revisar la división del flujo",
+      "summary": "Los pasos intermedios antiguos pueden perder información o limitar capacidad.",
+      "conditions": [
+        "Actualización de modelos o acumulación de reglas y procesamiento."
+      ],
+      "boundaries": [
+        "Eliminar pasos puede introducir fallos; mayor capacidad no justifica quitar controles necesarios."
+      ],
+      "questions": [
+        "¿Conservamos el flujo tras mejorar el modelo?"
+      ],
+      "actions": [
+        "Compara conservar, combinar y eliminar con la misma evaluación; guarda una versión recuperable y registra errores nuevos y resueltos."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P01",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Comprobar la verificabilidad",
+      "summary": "Comprueba si el resultado puede juzgarse y si repetir intentos es asequible.",
+      "conditions": [
+        "Elegir tareas para aprendizaje o mejora iterativa con IA."
+      ],
+      "boundaries": [
+        "La verificabilidad es solo un factor; una recompensa puede alejarse del valor real y no demuestra la sustitución de una profesión entera."
+      ],
+      "questions": [
+        "¿Podemos automatizar esta tarea con IA?"
+      ],
+      "actions": [
+        "Enumera coste de reinicio, velocidad de prueba y forma de evaluar; mantén revisión explícita para juicios difíciles de verificar."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P02",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Entender los datos primero",
+      "summary": "Los errores de datos y preparación pueden importar más que la arquitectura.",
+      "conditions": [
+        "Resultados poco claros en modelos o productos basados en datos."
+      ],
+      "boundaries": [
+        "Es una adaptación de prácticas de entrenamiento; más datos no siempre es mejor."
+      ],
+      "questions": [
+        "¿Un sistema más complejo arreglará los resultados?"
+      ],
+      "actions": [
+        "Inspecciona ejemplos, casos límite, etiquetas, duplicados y sesgos; verifica qué entra realmente antes de añadir complejidad."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P03",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Crear una base fiable",
+      "summary": "Una base sencilla y reproducible permite atribuir los cambios.",
+      "conditions": [
+        "No está claro de dónde vienen las mejoras de IA."
+      ],
+      "boundaries": [
+        "Menor pérdida de entrenamiento no implica mejores resultados para usuarios; conserva validación independiente."
+      ],
+      "questions": [
+        "¿Cómo sabemos que la mejora es real?"
+      ],
+      "actions": [
+        "Fija las condiciones, añade una modificación cada vez y retírala para comprobar su contribución."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P04",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Ejecutarse no equivale a acertar",
+      "summary": "Un sistema puede funcionar y producir errores lógicos persistentes.",
+      "conditions": [
+        "Anomalías de calidad o estabilidad sin fallos de ejecución."
+      ],
+      "boundaries": [
+        "Las pruebas deben abordar modos de fallo reales, no generar confianza con volumen irrelevante."
+      ],
+      "questions": [
+        "No hay errores de ejecución: ¿podemos entregar?"
+      ],
+      "actions": [
+        "Diseña casos sencillos y controles, examina datos intermedios y confirma que usa la información necesaria."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P01",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Delimitar capacidad por tarea",
+      "summary": "Tareas similares pueden estar a distintos lados de la frontera de capacidad.",
+      "conditions": [
+        "Selección de modelos o colaboración humano–IA."
+      ],
+      "boundaries": [
+        "Los estudios tempranos tienen muestras y tareas concretas; sus mejoras porcentuales no garantizan resultados actuales."
+      ],
+      "questions": [
+        "¿Un éxito permite confiar en tareas parecidas?"
+      ],
+      "actions": [
+        "Registra éxitos, fallos, versiones y condiciones; conserva revisión humana y alternativas en ámbitos no comprobados."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P02",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Definir la responsabilidad compartida",
+      "summary": "Delegar por partes y colaborar paso a paso son opciones que conviene comparar.",
+      "conditions": [
+        "Trabajo que combina experiencia humana y generación de IA."
+      ],
+      "boundaries": [
+        "El estilo de colaboración no garantiza calidad; la fluidez puede reducir la vigilancia."
+      ],
+      "questions": [
+        "¿Cómo repartir el trabajo entre personas e IA?"
+      ],
+      "actions": [
+        "Mide calidad, tiempo y retrabajo; asigna juicio, criterios de traspaso y aceptación final, revisando errores plausibles."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P03",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Entrevistar modelos con trabajo real",
+      "summary": "Prueba repetidamente muestras del trabajo que realmente tendrá que hacer.",
+      "conditions": [
+        "Selección organizativa o actualización de modelos."
+      ],
+      "boundaries": [
+        "Las demostraciones entretenidas no prueban fiabilidad a escala; revisa sesgos de la propia evaluación."
+      ],
+      "questions": [
+        "¿Basta con una clasificación para elegir modelo?"
+      ],
+      "actions": [
+        "Usa revisión de especialistas y referencias humanas apropiadas; compara estabilidad y coste del fallo, y reevalúa."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P04",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Conectar exploración y organización",
+      "summary": "La exploración de primera línea, la validación especializada y los incentivos deben conectarse.",
+      "conditions": [
+        "El uso individual de IA no produce beneficios organizativos."
+      ],
+      "boundaries": [
+        "El marco no garantiza crecimiento; contar experimentos no equivale a medir resultados."
+      ],
+      "questions": [
+        "¿Cómo convertir habilidad individual en capacidad colectiva?"
+      ],
+      "actions": [
+        "Facilita proponer y compartir oportunidades, prueba rápido y mide resultados después de extender lo útil."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P01",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Empezar por una necesidad intensa",
+      "summary": "Busca un grupo pequeño cuyo trabajo empeoraría si el producto desapareciera.",
+      "conditions": [
+        "Posicionamiento inicial o retención débil."
+      ],
+      "boundaries": [
+        "No hay un número universal de usuarios; entusiasmo exige verificar pago, costes de entrega y expansión."
+      ],
+      "questions": [
+        "¿La primera versión debe servir a todos?"
+      ],
+      "actions": [
+        "Define situación, alternativa y resultado no cubierto; observa uso sostenido y motivos de abandono antes de ampliar."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P02",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Probar la propuesta con un prototipo",
+      "summary": "Una experiencia utilizable sustituye debate abstracto por comportamiento observado.",
+      "conditions": [
+        "Herramientas de IA permiten prototipos a más perfiles."
+      ],
+      "boundaries": [
+        "Una demostración no es producción. Datos, costes y fiabilidad necesitan responsables; la documentación sigue sirviendo para coordinar y rendir cuentas."
+      ],
+      "questions": [
+        "¿Cómo terminar una discusión que no avanza?"
+      ],
+      "actions": [
+        "Haz que quien conoce el problema construya un mínimo y observa tareas reales; revisa calidad de producción y permisos antes de publicar."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P03",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Ajustar modelo y esfuerzo",
+      "summary": "Cada tarea exige su propio equilibrio de calidad, latencia y coste.",
+      "conditions": [
+        "Tareas distintas con calidad observable."
+      ],
+      "boundaries": [
+        "Más caro o lento no significa más fiable; no escondas fallos graves tras promedios ni uses previsiones de coste como garantías."
+      ],
+      "questions": [
+        "¿Todas las funciones necesitan el modelo más potente?"
+      ],
+      "actions": [
+        "Crea una base por tarea, compara en condiciones iguales y define cómo escalar cuando falla una opción económica."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P04",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Integrarse en el trabajo existente",
+      "summary": "Lleva la capacidad útil al lugar donde ya realizan el resto del trabajo.",
+      "conditions": [
+        "Flujos profesionales o socios de ecosistema."
+      ],
+      "boundaries": [
+        "Una API necesita permisos, estabilidad y mantenimiento. Abrir no equivale a exponer datos privados; promesas antiguas no aseguran servicios actuales."
+      ],
+      "questions": [
+        "No quieren dejar sus herramientas: ¿qué hacemos?"
+      ],
+      "actions": [
+        "Identifica integraciones reales y carencias de interfaces, coordina interfaz y API y escucha a quienes las usan."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P01",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Reducir funciones al construir más rápido",
+      "summary": "Menor coste de construcción hace más importante proteger la comprensión del usuario.",
+      "conditions": [
+        "Prototipos que crecen y se vuelven difíciles de explicar o probar."
+      ],
+      "boundaries": [
+        "Datos, dependencias y migración existentes no son desechables; revisa usos minoritarios críticos antes de borrar."
+      ],
+      "questions": [
+        "La IA programa rápido: ¿añadimos más funciones?"
+      ],
+      "actions": [
+        "Define una primera tarea verificable, elimina combinaciones innecesarias y observa uso real antes de añadir o reescribir."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P02",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Aportar valor desde el primer uso",
+      "summary": "El usuario nuevo debe obtener algo útil antes de aportar un historial largo.",
+      "conditions": [
+        "Personalización, recomendaciones o asistentes dependientes de contexto."
+      ],
+      "boundaries": [
+        "No justifica recoger datos a escondidas; la mejora futura no excusa un presente vacío."
+      ],
+      "questions": [
+        "¿Cómo arrancar sin muchos datos del usuario?"
+      ],
+      "actions": [
+        "Prueba la primera sesión, reduce entradas iniciales, pregunta lo necesario y permite omitir y corregir."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P03",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Poner plazo a la siguiente inversión",
+      "summary": "Seguir invirtiendo debe convertirse en una prueba limitada de una hipótesis importante.",
+      "conditions": [
+        "Iterar no mejora retención, crecimiento ni resultados principales."
+      ],
+      "boundaries": [
+        "No copies cantidades o plazos fijos. Considera ciclos de respuesta y obligaciones con usuarios, empleados y socios al salir."
+      ],
+      "questions": [
+        "No mejora: ¿seguimos insistiendo?"
+      ],
+      "actions": [
+        "Ordena experimentos capaces de cambiar la trayectoria y fija medidas y fecha; decide continuar, reducir o parar al revisarlos."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P04",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Recoger motivos, no solo valoraciones",
+      "summary": "La valoración sirve más cuando conserva contexto y razones.",
+      "conditions": [
+        "Experiencia de modelo variable y satisfacción difícil de resumir."
+      ],
+      "boundaries": [
+        "La muestra puede sobrerrepresentar extremos; respeta información y autorización vigentes, no políticas históricas asumidas."
+      ],
+      "questions": [
+        "¿Cómo aprovechar votos positivos y negativos?"
+      ],
+      "actions": [
+        "Agrupa cambios esperados por tipo de problema, conviértelos en casos repetibles y comprueba mejoras y regresiones."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P01",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Reformular ante hechos nuevos",
+      "summary": "Actualiza el problema y el criterio de éxito cuando cambian las premisas.",
+      "conditions": [
+        "Problema confuso, plan complejo o cambios desorientadores."
+      ],
+      "boundaries": [
+        "Explica la evidencia nueva; cambiar arbitrariamente no es aprender. La ejecución sigue limitada por recursos, autorización y riesgo."
+      ],
+      "questions": [
+        "Descubrimos un error: ¿terminamos el plan igualmente?"
+      ],
+      "actions": [
+        "Aclara qué se sabe y qué falta, simplifica la propuesta y registra por qué cambió la decisión."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P02",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Probar instrucciones por eliminación",
+      "summary": "Las reglas acumuladas pueden resolver defectos que el modelo actual ya no tiene.",
+      "conditions": [
+        "Cambio de modelo o acumulación de instrucciones y herramientas."
+      ],
+      "boundaries": [
+        "La ablación es controlada, no vaciar producción. Conserva permisos, seguridad, integridad de datos, base y reversión."
+      ],
+      "questions": [
+        "¿Instrucciones más largas hacen al Agent más fiable?"
+      ],
+      "actions": [
+        "Guarda una base y compara cada instrucción o herramienta con y sin ella; añade solo lo que corrige fallos repetibles y valida antes de publicar."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P03",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Actualizar las evaluaciones",
+      "summary": "Una evaluación saturada puede dejar de distinguir los fallos importantes.",
+      "conditions": [
+        "Puntuaciones casi perfectas con fallos claros en uso real."
+      ],
+      "boundaries": [
+        "Buscar dificultad no justifica perder regresiones; una nota alta no resuelve toda una categoría."
+      ],
+      "questions": [
+        "Pasan las pruebas: ¿necesitamos otras?"
+      ],
+      "actions": [
+        "Mantén regresiones clave y añade fallos reales nuevos; separa estabilidad anterior de capacidad en tareas nuevas."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P04",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Definir resultados y límites",
+      "summary": "Para tareas verificables, define objetivo, restricciones, parada y aceptación.",
+      "conditions": [
+        "El Agent tiene capacidad y el resultado se puede verificar."
+      ],
+      "boundaries": [
+        "Las acciones de alto impacto requieren autorización; no es autonomía ilimitada ni sirve para tareas no verificables o capacidad insuficiente."
+      ],
+      "questions": [
+        "¿Hay que dictar cada paso al Agent?"
+      ],
+      "actions": [
+        "Distingue límites obligatorios de hábitos, permite explorar la implementación y ajusta según resultados."
+      ],
+      "status": "method_synthesis"
+    }
+  ]
+}

@@ -2,21 +2,21 @@
 
 ## Scope
 
-One Chinese product landing page and 56 Chinese method pages. Five translated homepages link to the Chinese product explicitly; no nonexistent English product URL or hreflang equivalent is advertised. Public repository documentation is available in Chinese and English.
+Six complete locales (Simplified Chinese, Traditional Chinese, English, Japanese, Korean and Spanish), each with one landing page and 56 method pages: 342 routes. Homepages and language switches link to the corresponding locale and preserve the current method. Public repository documentation is available in Chinese and English. Localized examples and methods are editorial adaptations of the public source materials; the skill itself is primarily Chinese.
 
 ## Implemented
 
 - Distinct page titles and descriptions, self-referencing HTTPS canonicals, index/follow and large-image preview directives.
-- Open Graph and Twitter large-image cards with page-specific titles/descriptions, locale, canonical URL, author, image alt text and a 1200 × 630 PNG cover.
+- Open Graph and Twitter large-image cards with page-specific titles/descriptions, locale, canonical URL, author, image alt text and a localized 1200 × 630 PNG cover for each language.
 - JSON-LD: WebPage and BreadcrumbList on each page; SoftwareSourceCode for the actual skill repository and CreativeWork for method cards. No invented ratings, testimonials, or endorsements.
 - Static HTML includes all 56 answers and the front/back method content. JavaScript progressively adds selection and flipping; it is not required to retrieve the content.
 - Existing robots.txt permits crawling; the generated sitemap contains the new product and method pages. Six homepage project entries and previous/next method links provide crawlable navigation.
 - Avatars have intrinsic image dimensions. CSS respects reduced motion; phone widths and keyboard navigation were checked.
-- `npm run test:council` verifies all 57 routes, unique titles, canonical/OG agreement, structured breadcrumbs, sitemap inclusion, referenced method ownership, and share-image dimensions.
+- `npm run test:council` verifies all 342 routes, unique titles, canonical/OG agreement, structured breadcrumbs, sitemap inclusion, referenced method ownership, reciprocal hreflang links, locale completeness, localized homepage links, and six share-image dimensions.
 
 ## Documentation media
 
-Actual local page screenshots are stored in the public skill repository under `docs/images/` and reused by both README languages. They show the Chinese UI, explicitly stated in English documentation. The sharing cover uses the same public illustration assets; its reproducible HTML composition is `docs/council-social-preview.html` (serve it against the built site's asset root and capture at 1200 × 630).
+Actual local page screenshots are stored in the public skill repository under `docs/images/` with corresponding Chinese and English UI images in each README. The sharing cover uses the same public illustration assets; run `node scripts/council-share-previews.mjs` after building to generate six localized HTML compositions in `_site/`, then capture each at 1200 × 630. These compositions are preview artifacts and are removed by the next build.
 
 ## Limits
 

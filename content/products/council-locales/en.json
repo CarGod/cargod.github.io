@@ -1,0 +1,1630 @@
+{
+  "advisors": [
+    {
+      "id": "steve-jobs",
+      "name": "Steve Jobs",
+      "english": "Steve Jobs",
+      "focus": "Focus · Experience · Product narrative",
+      "questions": [
+        {
+          "question": "Too many features: which should go first?",
+          "answer": "Concentrate resources on the product's clearest user value. Ask what one thing must be excellent. Sort the rest into keep, merge, or stop, accounting for migration and exit costs.",
+          "method": "SJ-P01",
+          "methodTitle": "Focus your investment"
+        },
+        {
+          "question": "How can planning keep up with changing demand?",
+          "answer": "A shorter path from demand signals to supply decisions reduces long-range guessing. Find where feedback waits longest. Test a small adjustment and measure response time and inventory risk, instead of just revising the roadmap more often.",
+          "method": "SJ-P02",
+          "methodTitle": "Shorten the feedback loop"
+        },
+        {
+          "question": "Should a product introduction explain features or value?",
+          "answer": "Start with why users care, then demonstrate the experience that supports the promise. Choose one memorable benefit and align the copy, demo, and first-use experience around it.",
+          "method": "SJ-P03",
+          "methodTitle": "Communicate user value"
+        },
+        {
+          "question": "Should we launch before everything is perfect?",
+          "answer": "Separate the release baseline from improvements that can follow. Ask what verifiable user value another iteration would add. If the core task works, test with a smaller audience and define the next improvement.",
+          "method": "SJ-P04",
+          "methodTitle": "Balance quality and delivery"
+        }
+      ]
+    },
+    {
+      "id": "yu-jun",
+      "name": "Yu Jun",
+      "english": "Yu Jun",
+      "focus": "User value · Alternatives · Business viability",
+      "questions": [
+        {
+          "question": "Will extra features make users switch?",
+          "answer": "Users weigh the new benefits against their current solution and the cost of switching. Observe how they complete the task today. List added benefits, existing benefits, and learning or migration costs before testing the new offer.",
+          "method": "YJ-P01",
+          "methodTitle": "Relative user value"
+        },
+        {
+          "question": "Is “young people” a specific enough audience?",
+          "answer": "The same person has different needs in different situations. Describe who encounters which task at what moment, then observe actual choices and alternatives in that setting.",
+          "method": "YJ-P02",
+          "methodTitle": "Understand the situation"
+        },
+        {
+          "question": "Everyone likes this direction. Do we still need a test?",
+          "answer": "A decision should change when its underlying evidence changes. Write down what would change the team's mind, make the assumption falsifiable, and set an experiment and review date.",
+          "method": "YJ-P03",
+          "methodTitle": "Update beliefs with evidence"
+        },
+        {
+          "question": "People use it. Why does it not make money?",
+          "answer": "Distinguish the user, payer, and party bearing delivery costs. Map the exchange from demand through production, sales, and delivery. Find where value goes unpaid or costs absorb the revenue.",
+          "method": "YJ-P04",
+          "methodTitle": "Close the business loop"
+        }
+      ]
+    },
+    {
+      "id": "zhang-xiaolong",
+      "name": "Allen Zhang",
+      "english": "Allen Zhang",
+      "focus": "User behavior · Restraint · System rules",
+      "questions": [
+        {
+          "question": "Should a tool increase time spent in the product?",
+          "answer": "A tool can improve by helping people finish sooner. Measure completion, elapsed time, and repeat use together. Separate productive activity from time wasted looking for a way forward.",
+          "method": "ZXL-P01",
+          "methodTitle": "Measure task efficiency"
+        },
+        {
+          "question": "Does one more feature make the product bloated?",
+          "answer": "Count the effort users face in completing their task, not just the features. Walk through entry, choices, submission, and feedback. Compare who gains convenience and who takes on extra work.",
+          "method": "ZXL-P02",
+          "methodTitle": "Judge complexity in use"
+        },
+        {
+          "question": "Should we reject a request just to stay simple?",
+          "answer": "Restraint should follow a reasoned tradeoff about value and experience. Record the user value, evidence, and reason to decline: an invalid goal, poor experience, or a failed experiment.",
+          "method": "ZXL-P03",
+          "methodTitle": "Make restraint explainable"
+        },
+        {
+          "question": "A partnership brings traffic. Should we accept it?",
+          "answer": "A partner's willingness to promote is not evidence that users want the promotion. List each party's gain and the user's attention and interaction costs. Test recipients' actual benefit and willingness.",
+          "method": "ZXL-P04",
+          "methodTitle": "Check user value in partnerships"
+        }
+      ]
+    },
+    {
+      "id": "wang-xing",
+      "name": "Wang Xing",
+      "english": "Wang Xing",
+      "focus": "Competition · Capability reuse · Long-term economics",
+      "questions": [
+        {
+          "question": "Should we expand beyond the core business?",
+          "answer": "Adjacent demand is an opportunity only when resources and capabilities can support it. List what can be reused, what is missing, incremental costs, and possible harm to the core. Start with a limited experiment.",
+          "method": "WX-P01",
+          "methodTitle": "Expand through reusable capabilities"
+        },
+        {
+          "question": "A competitor cut prices. Should we follow?",
+          "answer": "Users may pay for convenience, saved time, and dependable delivery. Find the uncertainty that costs users most. Compare evidence for price, time savings, and reliability before choosing a discount.",
+          "method": "WX-P02",
+          "methodTitle": "Value beyond discounts"
+        },
+        {
+          "question": "The market is huge. Why are we struggling?",
+          "answer": "For local services, the relevant market is often the area in which people actually choose. Examine supply, demand, matching, and fulfillment within that area. National market size does not prove local viability.",
+          "method": "WX-P03",
+          "methodTitle": "Use the real market boundary"
+        },
+        {
+          "question": "Users browse, but do not buy. What should we fix?",
+          "answer": "Service value must survive the path from discovery to fulfillment. Trace discovery, selection, purchase, delivery, and repeat use. Test the actual break in the chain rather than optimizing views alone.",
+          "method": "WX-P04",
+          "methodTitle": "Follow the full transaction"
+        }
+      ]
+    },
+    {
+      "id": "liang-ning",
+      "name": "Liang Ning",
+      "english": "Liang Ning",
+      "focus": "Real needs · Perceived value · Business models",
+      "questions": [
+        {
+          "question": "We worked hard. Why will users not pay?",
+          "answer": "Effort and quality alone do not establish commercial value. Identify a specific person, moment, and reason to choose and pay. Look for actual choices and transactions, not only compliments.",
+          "method": "LN-P01",
+          "methodTitle": "Find where value meets demand"
+        },
+        {
+          "question": "The product has value. Why is the business failing?",
+          "answer": "Diagnose user benefit, barriers to agreement, and sustainable delivery separately. Find the weakest evidence. Examine capabilities, the payer and cash path, and how resources and returns are distributed before adding features.",
+          "method": "LN-P02",
+          "methodTitle": "Separate value, agreement, and model"
+        },
+        {
+          "question": "Research says people like it. Why does nobody use it?",
+          "answer": "Liking a description differs from choosing a solution during a real task. Identify the trigger and compare alternatives in a complete use and payment situation. Start with one testable setting.",
+          "method": "LN-P03",
+          "methodTitle": "Test the real situation"
+        },
+        {
+          "question": "Are people buying function or a sense of identity?",
+          "answer": "Interpret motives through actual behavior, not demographic stereotypes. Discuss the most recent real purchase: its setting, alternatives, and desired expression. Test explanations across situations and groups.",
+          "method": "LN-P04",
+          "methodTitle": "Verify identity through behavior"
+        }
+      ]
+    },
+    {
+      "id": "sam-altman",
+      "name": "Sam Altman",
+      "english": "Sam Altman",
+      "focus": "User love · Growth · Unit economics",
+      "questions": [
+        {
+          "question": "Should we buy ads or improve the experience first?",
+          "answer": "Look for users who return voluntarily and recommend the product. Check whether use continues without acquisition campaigns. Fix the core experience, then test new acquisition on a small scale.",
+          "method": "SA-P01",
+          "methodTitle": "Validate user love before growth"
+        },
+        {
+          "question": "Revenue is growing fast. Can we keep spending?",
+          "answer": "Customer contribution, acquisition payback, and cash runway are different questions. Model each separately, including fixed costs and a conservative retention case. Ask how long operations last without new financing.",
+          "method": "SA-P02",
+          "methodTitle": "Separate unit economics and runway"
+        },
+        {
+          "question": "We are busy every day. Why is progress weak?",
+          "answer": "Doing the wrong task twice as fast may not advance the goal. Remove low-value work, choose a few deliverable priorities, and reserve time for thought and recovery.",
+          "method": "SA-P03",
+          "methodTitle": "Choose the problem before optimizing"
+        },
+        {
+          "question": "Where should we look for an AI startup opportunity?",
+          "answer": "Connect newly feasible capabilities to concrete tasks and intensive real use. Record what changed, who uses it frequently, and their alternatives. Test sustained use with a small sample.",
+          "method": "SA-P04",
+          "methodTitle": "Look for newly possible behavior"
+        }
+      ]
+    },
+    {
+      "id": "dario-amodei",
+      "name": "Dario Amodei",
+      "english": "Dario Amodei",
+      "focus": "Capability evaluation · Independent evidence · Risk",
+      "questions": [
+        {
+          "question": "A new model is cheaper. Should we switch?",
+          "answer": "Compare the same task, required quality, and cost definitions. Separate scale, equivalent-capability savings, and training changes. Record inference, training, research costs, and unverifiable claims separately.",
+          "method": "DA-P01",
+          "methodTitle": "Compare capabilities and costs fairly"
+        },
+        {
+          "question": "Does a more logical-looking answer mean a better model?",
+          "answer": "Task correctness and perceived interaction quality need separate tests. Measure success, usefulness of explanations, and user preference. Longer visible reasoning is not proof of stronger capability.",
+          "method": "DA-P02",
+          "methodTitle": "Separate capability from presentation"
+        },
+        {
+          "question": "Our Agent can do more. Can we launch immediately?",
+          "answer": "More action capability can create new failure consequences. List the capability change, risks, tests, permission limits, and rollback conditions before deciding who gets access.",
+          "method": "DA-P03",
+          "methodTitle": "Update safeguards with capability"
+        },
+        {
+          "question": "Scores improve, but users still complain. Why?",
+          "answer": "Repeated optimization against the same answers can weaken an evaluation signal. Track exposure, keep a protected evaluation set, and check new failures or independent tests.",
+          "method": "DA-P04",
+          "methodTitle": "Keep evaluation independent"
+        }
+      ]
+    },
+    {
+      "id": "elon-musk",
+      "name": "Elon Musk",
+      "english": "Elon Musk",
+      "focus": "Constraints · Negative feedback · Engineering",
+      "questions": [
+        {
+          "question": "Everyone does it this way. Must we follow?",
+          "answer": "Separate physical, cost, and task constraints from inherited habits. List constraints and assumptions, measure the most important assumption, then recombine the solution.",
+          "method": "EM-P01",
+          "methodTitle": "Rebuild from basic constraints"
+        },
+        {
+          "question": "People support the plan. What next?",
+          "answer": "Invite people who can explain where the proposal fails. Ask people familiar with real constraints for the strongest objections, then turn those objections into testable questions.",
+          "method": "EM-P02",
+          "methodTitle": "Seek negative feedback"
+        },
+        {
+          "question": "The technology is expensive. How do we start?",
+          "answer": "Break a long-term adoption goal into deliverable stages. Define early customers, willingness to pay, current costs, and the evidence required for the next cost reduction. Do not book future scale benefits today.",
+          "method": "EM-P03",
+          "methodTitle": "Build a staged path through cost"
+        },
+        {
+          "question": "Core performance is strong. Why are users unhappy?",
+          "answer": "Waiting, switching, maintenance, and supporting infrastructure are part of the experience. Map the whole journey and test supporting steps with the product. A local performance gain may be canceled by other costs.",
+          "method": "EM-P04",
+          "methodTitle": "Design the complete journey"
+        }
+      ]
+    },
+    {
+      "id": "andrew-ng",
+      "name": "Andrew Ng",
+      "english": "Andrew Ng",
+      "focus": "Workflows · Error analysis · Small experiments",
+      "questions": [
+        {
+          "question": "AI sped up one step. Why is the whole process still slow?",
+          "answer": "Saved time can become a queue at the next handoff. Map the journey from request to result, including waits, capacity, and owners. Redesign adjacent steps and measure real delivery time.",
+          "method": "AN-P01",
+          "methodTitle": "Turn local speed into end-to-end value"
+        },
+        {
+          "question": "Should we build a huge evaluation set first?",
+          "answer": "A small prototype can reveal which failures matter to users. Inspect early outputs, classify important errors, and collect examples. Separate objective measures from subjective judgment and update the set as failures emerge.",
+          "method": "AN-P02",
+          "methodTitle": "Inspect outputs before designing evaluation"
+        },
+        {
+          "question": "Should we change the model or the prompt?",
+          "answer": "Locate the steps that most often damage the final result. Inspect a few failed traces, categorize the errors, and improve the dominant cause before expanding sampling.",
+          "method": "AN-P03",
+          "methodTitle": "Find the important failure step"
+        },
+        {
+          "question": "After a model upgrade, do we still need the old workflow?",
+          "answer": "Old intermediate steps may now lose information or restrict capability. Compare keeping, merging, and removing steps on the same evaluation set. Preserve a recoverable version and track new as well as reduced failures.",
+          "method": "AN-P04",
+          "methodTitle": "Revisit workflow decomposition"
+        }
+      ]
+    },
+    {
+      "id": "andrej-karpathy",
+      "name": "Andrej Karpathy",
+      "english": "Andrej Karpathy",
+      "focus": "Verifiability · Trusted baselines · Delivery",
+      "questions": [
+        {
+          "question": "Can this task be automated with AI?",
+          "answer": "Check whether outcomes can be judged reliably and attempts can be reset affordably. List reset costs, trial speed, and feedback methods. Keep explicit review for open-ended judgments that are hard to verify.",
+          "method": "AK-P01",
+          "methodTitle": "Check whether success is verifiable"
+        },
+        {
+          "question": "Poor results: should we build something more complex?",
+          "answer": "Data and preprocessing errors may matter more than model structure. Inspect real and edge-case samples, labels, duplicates, damage, and bias. Confirm what actually enters the system before adding complexity.",
+          "method": "AK-P02",
+          "methodTitle": "Understand data before complexity"
+        },
+        {
+          "question": "How do we know a new approach is better?",
+          "answer": "A simple, reproducible end-to-end baseline makes improvement attributable. Fix comparison conditions, add one change at a time, and remove it again to check its contribution.",
+          "method": "AK-P03",
+          "methodTitle": "Establish a trusted baseline"
+        },
+        {
+          "question": "The program runs. Is it ready to deliver?",
+          "answer": "A system can run successfully while producing persistent logical errors. Use simple cases and controls to inspect intermediate data and outputs. Verify that required information actually influences the result.",
+          "method": "AK-P04",
+          "methodTitle": "No errors does not mean correct"
+        }
+      ]
+    },
+    {
+      "id": "ethan-mollick",
+      "name": "Ethan Mollick",
+      "english": "Ethan Mollick",
+      "focus": "Human–AI collaboration · Learning · Real tasks",
+      "questions": [
+        {
+          "question": "One task worked. Can we trust similar tasks too?",
+          "answer": "Similar-looking tasks can lie on different sides of a capability boundary. Collect successes and failures by task, recording model versions and conditions. Keep human checks and fallback processes where capability is untested.",
+          "method": "ETM-P01",
+          "methodTitle": "Map capability task by task"
+        },
+        {
+          "question": "How should people and AI divide the work?",
+          "answer": "Clear delegation and step-by-step collaboration are different options worth testing. Compare quality, time, and rework. Assign judgment, handoff criteria, and final acceptance, checking especially for plausible-looking errors.",
+          "method": "ETM-P02",
+          "methodTitle": "Make human–AI responsibility explicit"
+        },
+        {
+          "question": "Is a leaderboard enough to choose a model?",
+          "answer": "Choose with repeated examples of the work the model will actually perform. Use domain reviewers and suitable human baselines. Compare stability and failure cost, and reassess as models change.",
+          "method": "ETM-P03",
+          "methodTitle": "Interview models with real work"
+        },
+        {
+          "question": "How do individual AI skills become organizational capability?",
+          "answer": "Frontline discovery, dedicated testing, and leadership incentives need a feedback loop. Provide ways to submit and share opportunities, test them rapidly, and track outcomes after rollout.",
+          "method": "ETM-P04",
+          "methodTitle": "Connect exploration to organizational learning"
+        }
+      ]
+    },
+    {
+      "id": "kevin-weil",
+      "name": "Kevin Weil",
+      "english": "Kevin Weil",
+      "focus": "User problems · Prototypes · AI workflows",
+      "questions": [
+        {
+          "question": "Should the first version serve everyone?",
+          "answer": "First find people whose work would suffer if the product disappeared. Describe their situation, current workaround, and unmet result. Check continued use and departure reasons before expanding.",
+          "method": "KW-P01",
+          "methodTitle": "Start with a small group's strong need"
+        },
+        {
+          "question": "How do we stop arguing over the proposal?",
+          "answer": "An experienceable prototype can replace abstract debate with observed behavior. Let people who understand the problem build a small version and watch target users work. Check production quality and permissions separately before release.",
+          "method": "KW-P02",
+          "methodTitle": "Test the promise with a prototype"
+        },
+        {
+          "question": "Should every feature use the strongest model?",
+          "answer": "Different tasks need different quality, latency, and cost tradeoffs. Establish task baselines, compare models under the same conditions, and define escalation when a cheaper approach fails.",
+          "method": "KW-P03",
+          "methodTitle": "Match model effort to the task"
+        },
+        {
+          "question": "Users will not leave their tools. What now?",
+          "answer": "Bring useful capability into the workflow where the rest of their work already happens. Identify genuine integration paths and missing interfaces, coordinate UI and API delivery, and follow partner feedback.",
+          "method": "KW-P04",
+          "methodTitle": "Join existing workflows"
+        }
+      ]
+    },
+    {
+      "id": "mike-krieger",
+      "name": "Mike Krieger",
+      "english": "Mike Krieger",
+      "focus": "Feature focus · First-use value · Feedback",
+      "questions": [
+        {
+          "question": "AI codes quickly. Should we add more features?",
+          "answer": "Lower implementation cost makes protecting users' understanding more important. Define one verifiable first task, remove unnecessary combinations, and observe real use before adding or rewriting.",
+          "method": "MK-P01",
+          "methodTitle": "Reduce features as building gets faster"
+        },
+        {
+          "question": "How do we handle a product that needs lots of user data?",
+          "answer": "A new user should get value before supplying a long history. Test the first session, reduce upfront input, ask a few clear questions, and allow skipping and correction.",
+          "method": "MK-P02",
+          "methodTitle": "Deliver value on the first use"
+        },
+        {
+          "question": "The product is not improving. Should we persist?",
+          "answer": "Continued investment should become a bounded test of a remaining important assumption. Rank experiments that could change the trajectory, set review dates and measures, then decide to continue, narrow, or stop.",
+          "method": "MK-P03",
+          "methodTitle": "Time-box the next investment"
+        },
+        {
+          "question": "We have likes and dislikes. How do we use them?",
+          "answer": "Feedback becomes more useful when its task context and reasons are preserved. Group desired changes by failure type, turn the main patterns into reproducible cases, and check improvements and regressions.",
+          "method": "MK-P04",
+          "methodTitle": "Collect reasons, not just ratings"
+        }
+      ]
+    },
+    {
+      "id": "boris-cherny",
+      "name": "Boris Cherny",
+      "english": "Boris Cherny",
+      "focus": "Tool validation · Iteration · Collaboration",
+      "questions": [
+        {
+          "question": "We found a wrong assumption. Should we finish the plan?",
+          "answer": "Update the problem and success criteria when new evidence changes a premise. State what is known and missing, choose a simpler plan, and record why the decision changed.",
+          "method": "BC-P01",
+          "methodTitle": "Rewrite the problem when facts change"
+        },
+        {
+          "question": "Does a longer prompt make the Agent more reliable?",
+          "answer": "Accumulated instructions may compensate for problems the current model no longer has. Keep a baseline and compare each instruction or tool with and without it. Add guidance only for repeatable defects and validate before deployment.",
+          "method": "BC-P02",
+          "methodTitle": "Test prompts and tools by subtraction"
+        },
+        {
+          "question": "Tests pass. Do we still need new evaluations?",
+          "answer": "A saturated test may stop distinguishing the failures users actually experience. Keep critical regression cases and add real new failures. Report old-baseline stability separately from new-boundary capability.",
+          "method": "BC-P03",
+          "methodTitle": "Update evaluation with the task boundary"
+        },
+        {
+          "question": "Should an Agent instruction prescribe every action?",
+          "answer": "For verifiable tasks, give clear goals, constraints, stopping conditions, and acceptance criteria. Separate genuine business constraints from habitual paths, let the Agent explore implementation, and refine from results.",
+          "method": "BC-P04",
+          "methodTitle": "Specify outcomes, not every step"
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "id": "SJ-P01",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Focus your investment",
+      "summary": "Concentrate resources on the product's clearest user value.",
+      "conditions": [
+        "Resources are fragmented and the core value is clear."
+      ],
+      "boundaries": [
+        "Include effects on users, employees, assets, and cash; do not copy a historical cutback ratio. A better path imagined afterward is not a proven business outcome."
+      ],
+      "questions": [
+        "Too many features: which should go first?"
+      ],
+      "actions": [
+        "Ask what one thing must be excellent. Sort the rest into keep, merge, or stop, accounting for migration and exit costs."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SJ-P02",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Shorten the feedback loop",
+      "summary": "A shorter path from demand signals to supply decisions reduces long-range guessing.",
+      "conditions": [
+        "Inventory and response time materially affect demand matching."
+      ],
+      "boundaries": [
+        "Preserve economies of scale and resilience; faster feedback is not the only objective."
+      ],
+      "questions": [
+        "How can planning keep up with changing demand?"
+      ],
+      "actions": [
+        "Find where feedback waits longest. Test a small adjustment and measure response time and inventory risk, instead of just revising the roadmap more often."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SJ-P03",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Communicate user value",
+      "summary": "Start with why users care, then demonstrate the experience that supports the promise.",
+      "conditions": [
+        "The product needs a recognizable identity."
+      ],
+      "boundaries": [
+        "Storytelling must not hide product defects."
+      ],
+      "questions": [
+        "Should a product introduction explain features or value?"
+      ],
+      "actions": [
+        "Choose one memorable benefit and align the copy, demo, and first-use experience around it."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SJ-P04",
+      "person": "steve-jobs",
+      "person_name": "Steve Jobs",
+      "kind": "principle",
+      "title": "Balance quality and delivery",
+      "summary": "Separate the release baseline from improvements that can follow.",
+      "conditions": [
+        "The pursuit of perfection is blocking delivery."
+      ],
+      "boundaries": [
+        "Safety requirements cannot be deferred to a later release."
+      ],
+      "questions": [
+        "Should we launch before everything is perfect?"
+      ],
+      "actions": [
+        "Ask what verifiable user value another iteration would add. If the core task works, test with a smaller audience and define the next improvement."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P01",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Relative user value",
+      "summary": "Users weigh the new benefits against their current solution and the cost of switching.",
+      "conditions": [
+        "The target situation and alternatives are understood."
+      ],
+      "boundaries": [
+        "This is a qualitative comparison, not a scoring formula. Finding weaknesses in alternatives does not justify deliberately damaging them."
+      ],
+      "questions": [
+        "Will extra features make users switch?"
+      ],
+      "actions": [
+        "Observe how they complete the task today. List added benefits, existing benefits, and learning or migration costs before testing the new offer."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P02",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Understand the situation",
+      "summary": "The same person has different needs in different situations.",
+      "conditions": [
+        "Product positioning or user interviews."
+      ],
+      "boundaries": [
+        "Demographic variables can still provide useful supporting context."
+      ],
+      "questions": [
+        "Is “young people” a specific enough audience?"
+      ],
+      "actions": [
+        "Describe who encounters which task at what moment, then observe actual choices and alternatives in that setting."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P03",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Update beliefs with evidence",
+      "summary": "A decision should change when its underlying evidence changes.",
+      "conditions": [
+        "Conclusions were formed under uncertainty."
+      ],
+      "boundaries": [
+        "Skepticism should improve decisions, not postpone them indefinitely."
+      ],
+      "questions": [
+        "Everyone likes this direction. Do we still need a test?"
+      ],
+      "actions": [
+        "Write down what would change the team's mind, make the assumption falsifiable, and set an experiment and review date."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "YJ-P04",
+      "person": "yu-jun",
+      "person_name": "Yu Jun",
+      "kind": "principle",
+      "title": "Close the business loop",
+      "summary": "Distinguish the user, payer, and party bearing delivery costs.",
+      "conditions": [
+        "You are responsible for the overall business outcome."
+      ],
+      "boundaries": [
+        "Overall responsibility does not remove specialist roles. Every component need not profit immediately, but accumulated knowledge, teamwork, and trust still need testable evidence."
+      ],
+      "questions": [
+        "People use it. Why does it not make money?"
+      ],
+      "actions": [
+        "Map the exchange from demand through production, sales, and delivery. Find where value goes unpaid or costs absorb the revenue."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P01",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Measure task efficiency",
+      "summary": "A tool can improve by helping people finish sooner.",
+      "conditions": [
+        "Users have a clear task."
+      ],
+      "boundaries": [
+        "Entertainment need not end quickly, and tools still need retention. An intention to save time is not proof of shorter tasks or better relationships."
+      ],
+      "questions": [
+        "Should a tool increase time spent in the product?"
+      ],
+      "actions": [
+        "Measure completion, elapsed time, and repeat use together. Separate productive activity from time wasted looking for a way forward."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P02",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Judge complexity in use",
+      "summary": "Count the effort users face in completing their task, not just the features.",
+      "conditions": [
+        "Usability design for a multifunction product."
+      ],
+      "boundaries": [
+        "Hidden functions still have learning and maintenance costs. Entry counts are not universal standards; a minimal product must still support the complete task."
+      ],
+      "questions": [
+        "Does one more feature make the product bloated?"
+      ],
+      "actions": [
+        "Walk through entry, choices, submission, and feedback. Compare who gains convenience and who takes on extra work."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P03",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Make restraint explainable",
+      "summary": "Restraint should follow a reasoned tradeoff about value and experience.",
+      "conditions": [
+        "Several candidate requests compete for resources."
+      ],
+      "boundaries": [
+        "Removing a feature is not automatically right. Check special use cases and the harm or costs that continue when work is postponed."
+      ],
+      "questions": [
+        "Should we reject a request just to stay simple?"
+      ],
+      "actions": [
+        "Record the user value, evidence, and reason to decline: an invalid goal, poor experience, or a failed experiment."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ZXL-P04",
+      "person": "zhang-xiaolong",
+      "person_name": "Allen Zhang",
+      "kind": "principle",
+      "title": "Check user value in partnerships",
+      "summary": "A partner's willingness to promote is not evidence that users want the promotion.",
+      "conditions": [
+        "Platform partnerships, notifications, or monetization."
+      ],
+      "boundaries": [
+        "User value must be considered alongside sustainable business and delivery conditions."
+      ],
+      "questions": [
+        "A partnership brings traffic. Should we accept it?"
+      ],
+      "actions": [
+        "List each party's gain and the user's attention and interaction costs. Test recipients' actual benefit and willingness."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P01",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Expand through reusable capabilities",
+      "summary": "Adjacent demand is an opportunity only when resources and capabilities can support it.",
+      "conditions": [
+        "A new business or category is being considered."
+      ],
+      "boundaries": [
+        "Do not apply a large platform's resources and assumptions to a small team."
+      ],
+      "questions": [
+        "Should we expand beyond the core business?"
+      ],
+      "actions": [
+        "List what can be reused, what is missing, incremental costs, and possible harm to the core. Start with a limited experiment."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P02",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Value beyond discounts",
+      "summary": "Users may pay for convenience, saved time, and dependable delivery.",
+      "conditions": [
+        "Transactional services."
+      ],
+      "boundaries": [
+        "Price sensitivity remains real and varies by situation."
+      ],
+      "questions": [
+        "A competitor cut prices. Should we follow?"
+      ],
+      "actions": [
+        "Find the uncertainty that costs users most. Compare evidence for price, time savings, and reliability before choosing a discount."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P03",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Use the real market boundary",
+      "summary": "For local services, the relevant market is often the area in which people actually choose.",
+      "conditions": [
+        "Local two-sided service markets."
+      ],
+      "boundaries": [
+        "A fixed population threshold is not a universal rule."
+      ],
+      "questions": [
+        "The market is huge. Why are we struggling?"
+      ],
+      "actions": [
+        "Examine supply, demand, matching, and fulfillment within that area. National market size does not prove local viability."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WX-P04",
+      "person": "wang-xing",
+      "person_name": "Wang Xing",
+      "kind": "principle",
+      "title": "Follow the full transaction",
+      "summary": "Service value must survive the path from discovery to fulfillment.",
+      "conditions": [
+        "The user's intent is to purchase a service."
+      ],
+      "boundaries": [
+        "Information consumption can also have independent value."
+      ],
+      "questions": [
+        "Users browse, but do not buy. What should we fix?"
+      ],
+      "actions": [
+        "Trace discovery, selection, purchase, delivery, and repeat use. Test the actual break in the chain rather than optimizing views alone."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P01",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Find where value meets demand",
+      "summary": "Effort and quality alone do not establish commercial value.",
+      "conditions": [
+        "Starting a product or revising its value proposition."
+      ],
+      "boundaries": [
+        "Meaning and social value are not always chargeable value; this does not invalidate public-interest products."
+      ],
+      "questions": [
+        "We worked hard. Why will users not pay?"
+      ],
+      "actions": [
+        "Identify a specific person, moment, and reason to choose and pay. Look for actual choices and transactions, not only compliments."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P02",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Separate value, agreement, and model",
+      "summary": "Diagnose user benefit, barriers to agreement, and sustainable delivery separately.",
+      "conditions": [
+        "Weak sales, or scale without profit."
+      ],
+      "boundaries": [
+        "These dimensions influence one another; they are not a rigid sequence and do not guarantee success."
+      ],
+      "questions": [
+        "The product has value. Why is the business failing?"
+      ],
+      "actions": [
+        "Find the weakest evidence. Examine capabilities, the payer and cash path, and how resources and returns are distributed before adding features."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P03",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Test the real situation",
+      "summary": "Liking a description differs from choosing a solution during a real task.",
+      "conditions": [
+        "Reviewing a feature or pricing proposal."
+      ],
+      "boundaries": [
+        "Simulated scenarios and individual cases cannot replace observing real choices."
+      ],
+      "questions": [
+        "Research says people like it. Why does nobody use it?"
+      ],
+      "actions": [
+        "Identify the trigger and compare alternatives in a complete use and payment situation. Start with one testable setting."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "LN-P04",
+      "person": "liang-ning",
+      "person_name": "Liang Ning",
+      "kind": "principle",
+      "title": "Verify identity through behavior",
+      "summary": "Interpret motives through actual behavior, not demographic stereotypes.",
+      "conditions": [
+        "Fashion, beauty, content, and experience products."
+      ],
+      "boundaries": [
+        "Allow explanations to be disproved. Non-purchase can reflect budget or access, not necessarily lack of desire."
+      ],
+      "questions": [
+        "Are people buying function or a sense of identity?"
+      ],
+      "actions": [
+        "Discuss the most recent real purchase: its setting, alternatives, and desired expression. Test explanations across situations and groups."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P01",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Validate user love before growth",
+      "summary": "Look for users who return voluntarily and recommend the product.",
+      "conditions": [
+        "An early product is seeking durable demand."
+      ],
+      "boundaries": [
+        "Referrals are one signal, not a universal threshold. In low-frequency or enterprise contexts, also examine renewal, use, and outcomes."
+      ],
+      "questions": [
+        "Should we buy ads or improve the experience first?"
+      ],
+      "actions": [
+        "Check whether use continues without acquisition campaigns. Fix the core experience, then test new acquisition on a small scale."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P02",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Separate unit economics and runway",
+      "summary": "Customer contribution, acquisition payback, and cash runway are different questions.",
+      "conditions": [
+        "Increasing acquisition, reducing prices, or expanding after fundraising."
+      ],
+      "boundaries": [
+        "Do not assume infinite retention or future automation that removes all costs. Profitable customers do not guarantee cash safety."
+      ],
+      "questions": [
+        "Revenue is growing fast. Can we keep spending?"
+      ],
+      "actions": [
+        "Model each separately, including fixed costs and a conservative retention case. Ask how long operations last without new financing."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P03",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Choose the problem before optimizing",
+      "summary": "Doing the wrong task twice as fast may not advance the goal.",
+      "conditions": [
+        "A busy team produces weak outcomes or keeps adding tools."
+      ],
+      "boundaries": [
+        "Personal time routines do not suit every role. Efficiency should not undermine rest or social support."
+      ],
+      "questions": [
+        "We are busy every day. Why is progress weak?"
+      ],
+      "actions": [
+        "Remove low-value work, choose a few deliverable priorities, and reserve time for thought and recovery."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "SA-P04",
+      "person": "sam-altman",
+      "person_name": "Sam Altman",
+      "kind": "principle",
+      "title": "Look for newly possible behavior",
+      "summary": "Connect newly feasible capabilities to concrete tasks and intensive real use.",
+      "conditions": [
+        "A new platform or technology creates many similar startup ideas."
+      ],
+      "boundaries": [
+        "Intensive use does not prove willingness to pay. A real trend does not guarantee that your company wins."
+      ],
+      "questions": [
+        "Where should we look for an AI startup opportunity?"
+      ],
+      "actions": [
+        "Record what changed, who uses it frequently, and their alternatives. Test sustained use with a small sample."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P01",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Compare capabilities and costs fairly",
+      "summary": "Compare the same task, required quality, and cost definitions.",
+      "conditions": [
+        "Choosing a model or assessing cost announcements."
+      ],
+      "boundaries": [
+        "Cost claims may not be independently verifiable. Training, inference, and total company research spending are not interchangeable."
+      ],
+      "questions": [
+        "A new model is cheaper. Should we switch?"
+      ],
+      "actions": [
+        "Separate scale, equivalent-capability savings, and training changes. Record inference, training, research costs, and unverifiable claims separately."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P02",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Separate capability from presentation",
+      "summary": "Task correctness and perceived interaction quality need separate tests.",
+      "conditions": [
+        "AI interaction design or competitor evaluation."
+      ],
+      "boundaries": [
+        "Displayed reasoning is not necessarily a faithful record of internal mechanisms."
+      ],
+      "questions": [
+        "Does a more logical-looking answer mean a better model?"
+      ],
+      "actions": [
+        "Measure success, usefulness of explanations, and user preference. Longer visible reasoning is not proof of stronger capability."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P03",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Update safeguards with capability",
+      "summary": "More action capability can create new failure consequences.",
+      "conditions": [
+        "Upgrading tool use or autonomous execution."
+      ],
+      "boundaries": [
+        "Calibrate thresholds to business risk rather than copying frontier-lab rules into every application."
+      ],
+      "questions": [
+        "Our Agent can do more. Can we launch immediately?"
+      ],
+      "actions": [
+        "List the capability change, risks, tests, permission limits, and rollback conditions before deciding who gets access."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "DA-P04",
+      "person": "dario-amodei",
+      "person_name": "Dario Amodei",
+      "kind": "principle",
+      "title": "Keep evaluation independent",
+      "summary": "Repeated optimization against the same answers can weaken an evaluation signal.",
+      "conditions": [
+        "Repeated prompt tuning, model training, or release evaluation."
+      ],
+      "boundaries": [
+        "Independent tests do not cover every unknown risk. Distinguish exploratory research from release assessment."
+      ],
+      "questions": [
+        "Scores improve, but users still complain. Why?"
+      ],
+      "actions": [
+        "Track exposure, keep a protected evaluation set, and check new failures or independent tests."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P01",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Rebuild from basic constraints",
+      "summary": "Separate physical, cost, and task constraints from inherited habits.",
+      "conditions": [
+        "Current cost or performance is treated as unchangeable."
+      ],
+      "boundaries": [
+        "Analogy remains useful. First-principles reasoning does not override regulations, organizational knowledge, or measurement."
+      ],
+      "questions": [
+        "Everyone does it this way. Must we follow?"
+      ],
+      "actions": [
+        "List constraints and assumptions, measure the most important assumption, then recombine the solution."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P02",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Seek negative feedback",
+      "summary": "Invite people who can explain where the proposal fails.",
+      "conditions": [
+        "A strong vision makes a team reluctant to question the plan."
+      ],
+      "boundaries": [
+        "Negative feedback also requires evidence; it does not prove any business path correct."
+      ],
+      "questions": [
+        "People support the plan. What next?"
+      ],
+      "actions": [
+        "Ask people familiar with real constraints for the strongest objections, then turn those objections into testable questions."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P03",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Build a staged path through cost",
+      "summary": "Break a long-term adoption goal into deliverable stages.",
+      "conditions": [
+        "New technology is costly and early customers differ from mass-market users."
+      ],
+      "boundaries": [
+        "Premium-first is not universal. Historical prices or schedules are not promises already fulfilled today."
+      ],
+      "questions": [
+        "The technology is expensive. How do we start?"
+      ],
+      "actions": [
+        "Define early customers, willingness to pay, current costs, and the evidence required for the next cost reduction. Do not book future scale benefits today."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "EM-P04",
+      "person": "elon-musk",
+      "person_name": "Elon Musk",
+      "kind": "principle",
+      "title": "Design the complete journey",
+      "summary": "Waiting, switching, maintenance, and supporting infrastructure are part of the experience.",
+      "conditions": [
+        "The product depends on deployment, maintenance, charging, or similar support."
+      ],
+      "boundaries": [
+        "Historical examples are illustrative; observe actual users' routines and infrastructure."
+      ],
+      "questions": [
+        "Core performance is strong. Why are users unhappy?"
+      ],
+      "actions": [
+        "Map the whole journey and test supporting steps with the product. A local performance gain may be canceled by other costs."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P01",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Turn local speed into end-to-end value",
+      "summary": "Saved time can become a queue at the next handoff.",
+      "conditions": [
+        "A cross-team workflow has one step substantially accelerated by AI."
+      ],
+      "boundaries": [
+        "Time saved does not automatically create revenue. Illustrative cases and numbers are not business guarantees."
+      ],
+      "questions": [
+        "AI sped up one step. Why is the whole process still slow?"
+      ],
+      "actions": [
+        "Map the journey from request to result, including waits, capacity, and owners. Redesign adjacent steps and measure real delivery time."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P02",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Inspect outputs before designing evaluation",
+      "summary": "A small prototype can reveal which failures matter to users.",
+      "conditions": [
+        "Generative quality cannot be captured by one metric."
+      ],
+      "boundaries": [
+        "Small samples are a starting point, not proof of release reliability; model-based grading also needs calibration."
+      ],
+      "questions": [
+        "Should we build a huge evaluation set first?"
+      ],
+      "actions": [
+        "Inspect early outputs, classify important errors, and collect examples. Separate objective measures from subjective judgment and update the set as failures emerge."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P03",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Find the important failure step",
+      "summary": "Locate the steps that most often damage the final result.",
+      "conditions": [
+        "An unstable multi-step AI workflow."
+      ],
+      "boundaries": [
+        "Use human performance as a reference only when appropriate. Step scores must not obscure overall workflow problems."
+      ],
+      "questions": [
+        "Should we change the model or the prompt?"
+      ],
+      "actions": [
+        "Inspect a few failed traces, categorize the errors, and improve the dominant cause before expanding sampling."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AN-P04",
+      "person": "andrew-ng",
+      "person_name": "Andrew Ng",
+      "kind": "principle",
+      "title": "Revisit workflow decomposition",
+      "summary": "Old intermediate steps may now lose information or restrict capability.",
+      "conditions": [
+        "A model upgrade or accumulated rules and preprocessing."
+      ],
+      "boundaries": [
+        "Removing steps can introduce errors. Greater capability does not justify dropping necessary controls."
+      ],
+      "questions": [
+        "After a model upgrade, do we still need the old workflow?"
+      ],
+      "actions": [
+        "Compare keeping, merging, and removing steps on the same evaluation set. Preserve a recoverable version and track new as well as reduced failures."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P01",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Check whether success is verifiable",
+      "summary": "Check whether outcomes can be judged reliably and attempts can be reset affordably.",
+      "conditions": [
+        "Selecting tasks for AI learning or iterative improvement."
+      ],
+      "boundaries": [
+        "Verifiability is one factor. A reward can diverge from real value; it does not prove a whole profession will be replaced."
+      ],
+      "questions": [
+        "Can this task be automated with AI?"
+      ],
+      "actions": [
+        "List reset costs, trial speed, and feedback methods. Keep explicit review for open-ended judgments that are hard to verify."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P02",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Understand data before complexity",
+      "summary": "Data and preprocessing errors may matter more than model structure.",
+      "conditions": [
+        "Unclear results in a data-driven product or model."
+      ],
+      "boundaries": [
+        "This adapts a training practice to product work; more data is not automatically better."
+      ],
+      "questions": [
+        "Poor results: should we build something more complex?"
+      ],
+      "actions": [
+        "Inspect real and edge-case samples, labels, duplicates, damage, and bias. Confirm what actually enters the system before adding complexity."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P03",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "Establish a trusted baseline",
+      "summary": "A simple, reproducible end-to-end baseline makes improvement attributable.",
+      "conditions": [
+        "AI improvements are hard to explain."
+      ],
+      "boundaries": [
+        "Lower training loss is not the same as better user outcomes; keep independent validation."
+      ],
+      "questions": [
+        "How do we know a new approach is better?"
+      ],
+      "actions": [
+        "Fix comparison conditions, add one change at a time, and remove it again to check its contribution."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "AK-P04",
+      "person": "andrej-karpathy",
+      "person_name": "Andrej Karpathy",
+      "kind": "principle",
+      "title": "No errors does not mean correct",
+      "summary": "A system can run successfully while producing persistent logical errors.",
+      "conditions": [
+        "A running system has unusual quality or stability problems."
+      ],
+      "boundaries": [
+        "Tests must address plausible failure modes, not create confidence through irrelevant volume."
+      ],
+      "questions": [
+        "The program runs. Is it ready to deliver?"
+      ],
+      "actions": [
+        "Use simple cases and controls to inspect intermediate data and outputs. Verify that required information actually influences the result."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P01",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Map capability task by task",
+      "summary": "Similar-looking tasks can lie on different sides of a capability boundary.",
+      "conditions": [
+        "Choosing models or designing human–AI collaboration."
+      ],
+      "boundaries": [
+        "Early studies have specific models, samples, and tasks; their percentage gains are not guarantees for your organization."
+      ],
+      "questions": [
+        "One task worked. Can we trust similar tasks too?"
+      ],
+      "actions": [
+        "Collect successes and failures by task, recording model versions and conditions. Keep human checks and fallback processes where capability is untested."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P02",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Make human–AI responsibility explicit",
+      "summary": "Clear delegation and step-by-step collaboration are different options worth testing.",
+      "conditions": [
+        "Work combines human expertise with AI generation."
+      ],
+      "boundaries": [
+        "Collaboration style is not a quality guarantee; fluent output can reduce human vigilance."
+      ],
+      "questions": [
+        "How should people and AI divide the work?"
+      ],
+      "actions": [
+        "Compare quality, time, and rework. Assign judgment, handoff criteria, and final acceptance, checking especially for plausible-looking errors."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P03",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Interview models with real work",
+      "summary": "Choose with repeated examples of the work the model will actually perform.",
+      "conditions": [
+        "Organizational model selection or upgrades."
+      ],
+      "boundaries": [
+        "Fun demonstrations do not prove reliability at scale. Check the evaluation itself for bias."
+      ],
+      "questions": [
+        "Is a leaderboard enough to choose a model?"
+      ],
+      "actions": [
+        "Use domain reviewers and suitable human baselines. Compare stability and failure cost, and reassess as models change."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "ETM-P04",
+      "person": "ethan-mollick",
+      "person_name": "Ethan Mollick",
+      "kind": "principle",
+      "title": "Connect exploration to organizational learning",
+      "summary": "Frontline discovery, dedicated testing, and leadership incentives need a feedback loop.",
+      "conditions": [
+        "Individual AI use is not becoming organizational value."
+      ],
+      "boundaries": [
+        "The framework does not guarantee growth. Experiment counts are not business results."
+      ],
+      "questions": [
+        "How do individual AI skills become organizational capability?"
+      ],
+      "actions": [
+        "Provide ways to submit and share opportunities, test them rapidly, and track outcomes after rollout."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P01",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Start with a small group's strong need",
+      "summary": "First find people whose work would suffer if the product disappeared.",
+      "conditions": [
+        "Early positioning or weak retention."
+      ],
+      "boundaries": [
+        "A user count is not a universal threshold. Enthusiasm still needs payment, delivery-cost, and expansion tests."
+      ],
+      "questions": [
+        "Should the first version serve everyone?"
+      ],
+      "actions": [
+        "Describe their situation, current workaround, and unmet result. Check continued use and departure reasons before expanding."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P02",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Test the promise with a prototype",
+      "summary": "An experienceable prototype can replace abstract debate with observed behavior.",
+      "conditions": [
+        "AI tools make prototyping accessible to more roles."
+      ],
+      "boundaries": [
+        "A working demo is not production readiness. Reliability, costs, data, and permissions need owners; documentation still supports coordination and accountability."
+      ],
+      "questions": [
+        "How do we stop arguing over the proposal?"
+      ],
+      "actions": [
+        "Let people who understand the problem build a small version and watch target users work. Check production quality and permissions separately before release."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P03",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Match model effort to the task",
+      "summary": "Different tasks need different quality, latency, and cost tradeoffs.",
+      "conditions": [
+        "Task types differ and output quality is observable."
+      ],
+      "boundaries": [
+        "More cost or delay does not guarantee reliability. Do not hide severe errors behind averages or treat cost forecasts as budget guarantees."
+      ],
+      "questions": [
+        "Should every feature use the strongest model?"
+      ],
+      "actions": [
+        "Establish task baselines, compare models under the same conditions, and define escalation when a cheaper approach fails."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "KW-P04",
+      "person": "kevin-weil",
+      "person_name": "Kevin Weil",
+      "kind": "principle",
+      "title": "Join existing workflows",
+      "summary": "Bring useful capability into the workflow where the rest of their work already happens.",
+      "conditions": [
+        "Professional workflows or ecosystem integrations."
+      ],
+      "boundaries": [
+        "Interfaces still require permissions, stability, and maintenance. Openness does not mean unrestricted private data; old API promises are not current guarantees."
+      ],
+      "questions": [
+        "Users will not leave their tools. What now?"
+      ],
+      "actions": [
+        "Identify genuine integration paths and missing interfaces, coordinate UI and API delivery, and follow partner feedback."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P01",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Reduce features as building gets faster",
+      "summary": "Lower implementation cost makes protecting users' understanding more important.",
+      "conditions": [
+        "Prototypes expand rapidly and become hard to explain or test."
+      ],
+      "boundaries": [
+        "Existing dependencies, data, and migration are not disposable. Check critical minority use cases before deleting a feature."
+      ],
+      "questions": [
+        "AI codes quickly. Should we add more features?"
+      ],
+      "actions": [
+        "Define one verifiable first task, remove unnecessary combinations, and observe real use before adding or rewriting."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P02",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Deliver value on the first use",
+      "summary": "A new user should get value before supplying a long history.",
+      "conditions": [
+        "Personalization, recommendations, or assistants need accumulated context."
+      ],
+      "boundaries": [
+        "Immediate usefulness does not justify covert data collection. Future personalization cannot excuse an empty first experience."
+      ],
+      "questions": [
+        "How do we handle a product that needs lots of user data?"
+      ],
+      "actions": [
+        "Test the first session, reduce upfront input, ask a few clear questions, and allow skipping and correction."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P03",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Time-box the next investment",
+      "summary": "Continued investment should become a bounded test of a remaining important assumption.",
+      "conditions": [
+        "Iteration has not improved retention, growth, or core outcomes."
+      ],
+      "boundaries": [
+        "Do not copy a fixed number of experiments or deadlines. Account for feedback cycles and obligations to users, employees, and partners when exiting."
+      ],
+      "questions": [
+        "The product is not improving. Should we persist?"
+      ],
+      "actions": [
+        "Rank experiments that could change the trajectory, set review dates and measures, then decide to continue, narrow, or stop."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "MK-P04",
+      "person": "mike-krieger",
+      "person_name": "Mike Krieger",
+      "kind": "principle",
+      "title": "Collect reasons, not just ratings",
+      "summary": "Feedback becomes more useful when its task context and reasons are preserved.",
+      "conditions": [
+        "Model behavior varies and satisfaction is hard to reduce to a score."
+      ],
+      "boundaries": [
+        "Feedback may overrepresent extremes. Follow current notices and authorization; historical data policies are not present promises."
+      ],
+      "questions": [
+        "We have likes and dislikes. How do we use them?"
+      ],
+      "actions": [
+        "Group desired changes by failure type, turn the main patterns into reproducible cases, and check improvements and regressions."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P01",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Rewrite the problem when facts change",
+      "summary": "Update the problem and success criteria when new evidence changes a premise.",
+      "conditions": [
+        "An unclear problem, complicated plan, or confusing changes."
+      ],
+      "boundaries": [
+        "Explain the new evidence rather than labeling arbitrary changes learning. Execution remains subject to resources, authorization, and risk."
+      ],
+      "questions": [
+        "We found a wrong assumption. Should we finish the plan?"
+      ],
+      "actions": [
+        "State what is known and missing, choose a simpler plan, and record why the decision changed."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P02",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Test prompts and tools by subtraction",
+      "summary": "Accumulated instructions may compensate for problems the current model no longer has.",
+      "conditions": [
+        "Model changes or accumulated prompts and tools."
+      ],
+      "boundaries": [
+        "Ablation is a controlled experiment, not clearing production settings. Keep permissions, safety, data-integrity requirements, baselines, and rollback."
+      ],
+      "questions": [
+        "Does a longer prompt make the Agent more reliable?"
+      ],
+      "actions": [
+        "Keep a baseline and compare each instruction or tool with and without it. Add guidance only for repeatable defects and validate before deployment."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P03",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Update evaluation with the task boundary",
+      "summary": "A saturated test may stop distinguishing the failures users actually experience.",
+      "conditions": [
+        "Near-perfect benchmark scores coexist with real failures."
+      ],
+      "boundaries": [
+        "Harder tests do not replace regression checks, and one high score does not solve an entire task category."
+      ],
+      "questions": [
+        "Tests pass. Do we still need new evaluations?"
+      ],
+      "actions": [
+        "Keep critical regression cases and add real new failures. Report old-baseline stability separately from new-boundary capability."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BC-P04",
+      "person": "boris-cherny",
+      "person_name": "Boris Cherny",
+      "kind": "principle",
+      "title": "Specify outcomes, not every step",
+      "summary": "For verifiable tasks, give clear goals, constraints, stopping conditions, and acceptance criteria.",
+      "conditions": [
+        "The Agent has the capability and results can be verified."
+      ],
+      "boundaries": [
+        "High-impact actions still require authorization. This is not unlimited autonomy and does not fit unverifiable tasks or insufficient capability."
+      ],
+      "questions": [
+        "Should an Agent instruction prescribe every action?"
+      ],
+      "actions": [
+        "Separate genuine business constraints from habitual paths, let the Agent explore implementation, and refine from results."
+      ],
+      "status": "method_synthesis"
+    }
+  ]
+}

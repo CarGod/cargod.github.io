@@ -1,3 +1,4 @@
+import { councilLocales, localizedCouncil, councilPath, councilAlternates } from './lib/council-i18n.mjs';
 import { createHash } from "node:crypto";
 import { promises as fs } from "node:fs";
 import path from "node:path";
@@ -690,13 +691,15 @@ async function build() {
   const articles = [...posts, ...tutorials];
   await copyContentAssets(articles);
   const generatedPages = [];
-  await write("product-advisory-council/index.html", renderCouncil({ header: siteHeader("zh-CN", "", {}), footer: siteFooter("zh-CN") }));
-  generatedPages.push({ url: "/product-advisory-council/", lastmod: "2026-09-22", locale: "zh-CN", section: "products" });
-
-  for (const method of councilMethods) {
-    const url = `/product-advisory-council/cards/${method.id.toLowerCase()}/`;
-    await write(`${url.slice(1)}index.html`, renderMethodCard(method, { header: siteHeader("zh-CN", "", {}), footer: siteFooter("zh-CN") }));
-    generatedPages.push({ url, lastmod: "2026-09-22", locale: "zh-CN", section: "products" });
+  for (const locale of Object.keys(councilLocales)) {
+    const url = councilPath(locale);
+    await write(`${url.slice(1)}index.html`, renderCouncil({ locale, header: siteHeader(locale, "", councilAlternates()), footer: siteFooter(locale) }));
+    generatedPages.push({ url, lastmod: "2026-09-22", locale, section: "products" });
+    for (const method of localizedCouncil(locale).methods) {
+      const url = councilPath(locale, method.id);
+      await write(`${url.slice(1)}index.html`, renderMethodCard(method, { locale, header: siteHeader(locale, "", councilAlternates(method.id)), footer: siteFooter(locale) }));
+      generatedPages.push({ url, lastmod: "2026-09-22", locale, section: "products" });
+    }
   }
 
   const localeCodes = Object.keys(LOCALES);
