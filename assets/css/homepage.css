@@ -177,3 +177,5 @@
 .council-home-wall:hover img:nth-child(odd){transform:translateY(-4px)}
 .council-home-caption{font:9px/1.8 "Courier New",monospace;letter-spacing:1px;margin-top:22px;text-align:center}
 @media(prefers-reduced-motion:reduce){.council-home-wall img{transition:none}.council-home-wall:hover img{transform:none}}
+@media (max-width:980px){.council-home-wall{grid-column:1 / -1;min-width:0}}
+@media (max-width:640px){.council-home-wall{padding:20px}.council-home-portraits{grid-template-columns:repeat(4,minmax(0,1fr))}}
