@@ -70,11 +70,6 @@
 
 .quote-author { margin: 17px 0 0; color: var(--muted); font: 500 10px DM Mono, monospace; letter-spacing: .1em; }
 
-.interest-line { min-height: 58px; padding-inline: 24px; display: flex; align-items: center; justify-content: center; gap: 26px; overflow: hidden; border-block: 1px solid rgba(20,22,26,.10); background: rgba(255,255,255,.55); white-space: nowrap; }
-.interest-line span { color: var(--muted); font: 500 10px DM Mono, monospace; letter-spacing: .1em; text-transform: uppercase; }
-.interest-line strong { color: var(--ink-2); font-size: 11px; }
-.interest-line i { width: 5px; height: 5px; border-radius: 50%; background: var(--flame); }
-
 .selected-work { padding-top: 110px; }
 .selected-work .section-heading { grid-template-columns: 1fr; }
 .work-row { display: grid; grid-template-columns: 70px minmax(0, 1fr) minmax(340px, .9fr); min-height: 520px; border-block: 1px solid var(--line); }
@@ -144,7 +139,6 @@
   .threads-note { padding: 28px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .experiment-strip { grid-template-columns: 1fr; gap: 20px; padding: 24px 22px; }
   .experiment-link { grid-column: 1; }
-  .interest-line { justify-content: flex-start; gap: 16px; }
   .section-heading p:last-child { max-width: none; }
   .work-row { grid-template-columns: 38px 1fr; min-height: 0; }
   .work-row-number { padding-top: 34px; }
@@ -165,7 +159,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .interest-line { background: rgba(22,25,32,.65); }
   .experiment-strip-light { background: transparent; }
 }
 
