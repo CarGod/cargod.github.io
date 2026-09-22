@@ -83,6 +83,7 @@
       if (preferred === 'zh-CN') location.replace(`/fanfan-cards/${location.search}${location.hash}`);
     })();
   </script>
+  <style>.product-hero{padding-block:44px 30px}.product-hero .tagline{margin-top:18px}.motion-showcase{margin-top:24px}.motion-heading{margin-bottom:0}.motion-heading h2{font-size:22px;letter-spacing:-.02em}</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -102,25 +103,18 @@
   <nav class="mobile-content-nav" aria-label="Primary content" data-pagefind-ignore><a href="/en/tutorials/">Tutorials</a><a href="/en/blog/">Blog</a><a href="/en/blog/search/">Search</a></nav>
   <main id="main" class="page-shell">
     <section class="product-hero">
-      <div class="product-icon-wrap">
-        <img class="product-icon" src="/assets/fanfan/icon-128.png" width="88" height="88" alt="FanFan Cards app icon">
-        <span aria-hidden="true">F</span>
-      </div>
       <p class="eyebrow"><span class="status-dot"></span> FanFan Cards · Chrome Extension</p>
-      <h1>FanFan Cards</h1>
-      <p class="tagline">When a word you saved appears again, FanFan mode marks it softly in the page. Click to revisit what you already learned; for a new word, ask AI what it means right here.</p>
+      <h1>Words you looked up light up next time</h1>
+      <p class="tagline">Stuck on a word in English docs? Select it and see what it means in this sentence. Words you looked up light up the next time you meet them, on any page.</p>
       <div class="hero-actions product-actions">
         <a class="button button-primary" href="https://chromewebstore.google.com/detail/%E7%BF%BB%E7%BF%BB%E8%AF%8D%E5%8D%A1-%E2%80%94-ai-%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B/ejhmidlnfffkpolnaiflfaojgfbngjba" target="_blank" rel="noreferrer">Add to Chrome ↗</a>
         <a class="button button-quiet" href="https://github.com/CarGod/fanfan-cards" target="_blank" rel="noreferrer">Source on GitHub ↗</a>
       </div>
-      <p class="release-note">Live on the Chrome Web Store · Open source · Free · Local first</p>
+      <p class="release-note">Live on the Chrome Web Store · Open source · Local first · Free translation · Your own AI key for context</p>
     </section>
 
     <section class="motion-showcase" aria-labelledby="motion-title">
-      <div class="motion-heading">
-        <div><p class="section-kicker">Product in motion</p><h2 id="motion-title">Not a screenshot.<br>A real reading moment.</h2></div>
-        <div><p>From opening a page to recognizing a word you learned; from pressing one button to reading original and translated subtitles together. Both demos loop automatically and pause on hover.</p><span class="motion-live"><i></i> Live demo</span></div>
-      </div>
+      <div class="motion-heading"><div><p class="section-kicker">Product in motion</p><h2 id="motion-title">Real reading moments, playing on a loop; hover to pause.</h2></div></div>
 
       <article class="motion-demo fanfan-demo">
         <header class="motion-demo-head"><span><b>01</b> FanFan mode</span><strong>Your saved words return to the page</strong></header>
@@ -168,17 +162,17 @@
       <div><span>01</span><strong>Highlight saved words</strong><small>One click to revisit, with no new AI call</small></div>
       <div><span>02</span><strong>Translate selections or pages</strong><small>Append the translation without rewriting the page</small></div>
       <div><span>03</span><strong>Bilingual YouTube subtitles</strong><small>Original and translation move with the video</small></div>
-      <div><span>04</span><strong>Local first</strong><small>Cards and keys stay in your browser by default</small></div>
+      <div><span>04</span><strong>Local first</strong><small>Cards stay in your browser; keys can be kept local-only</small></div>
     </section>
 
     <section class="manifesto">
       <div><p class="section-kicker">How it works</p><h2>FanFan helps when you get stuck—and when a word returns.</h2></div>
       <div class="manifesto-copy">
-        <article><h3>01 · FanFan mode brings your library back to the page</h3><p>Saved words are marked with a restrained orange highlight on any page. Click one to read the stored meaning, examples, and synonyms—no network request and no additional model cost.</p></article>
+        <article><h3>01 · FanFan mode brings your library back to the page</h3><p>Saved words are marked on any page, coloured by how well you know them. Click one to read the stored meaning, examples, and synonyms—no network request and no additional model cost.</p></article>
         <article><h3>02 · For a new word, understand this occurrence</h3><p>Select a word, phrase, or sentence. AI first works out what it means in that specific passage, then gives a concise meaning, English definition, examples, and synonyms.</p></article>
         <article><h3>03 · Read long pages and videos without losing the thread</h3><p>Translate the hovered paragraph or the whole page. On YouTube, turn on bilingual subtitles and adjust the text size, display mode, and backdrop.</p></article>
         <article><h3>04 · Save the context, then review on schedule</h3><p>Each card keeps its sentence, page, and date. Four confidence levels drive spaced review; the dashboard shows what is due, your streak, and familiarity.</p></article>
-        <article><h3>05 · Keep ownership of your data</h3><p>Cards, settings, and keys stay in your browser by default and can be exported as JSON or CSV. Optional sync writes to a private repository in your own GitHub account.</p></article>
+        <article><h3>05 · Keep ownership of your data</h3><p>Cards stay in your browser and can be exported as JSON or CSV. Settings and keys sync with your Chrome account by default and can be kept local-only. Optional sync writes to a private repository in your own GitHub account.</p></article>
       </div>
     </section>
 
