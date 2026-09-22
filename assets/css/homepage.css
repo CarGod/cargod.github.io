@@ -168,3 +168,12 @@
   .interest-line { background: rgba(22,25,32,.65); }
   .experiment-strip-light { background: transparent; }
 }
+
+/* Product Advisory Council: second selected work. */
+.council-home{margin-top:42px;padding-top:42px;border-top:1px solid var(--line)}
+.council-home-wall{display:flex;flex-direction:column;justify-content:center;padding:28px;background:#eceee3;border:1px solid #dde1d1;border-radius:20px;color:#454b3a}
+.council-home-portraits{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+.council-home-portraits img{width:100%;height:auto;transition:transform .2s}
+.council-home-wall:hover img:nth-child(odd){transform:translateY(-4px)}
+.council-home-caption{font:9px/1.8 "Courier New",monospace;letter-spacing:1px;margin-top:22px;text-align:center}
+@media(prefers-reduced-motion:reduce){.council-home-wall img{transition:none}.council-home-wall:hover img{transform:none}}

@@ -1,0 +1,1249 @@
+[
+  {
+    "id": "SJ-P01",
+    "person": "steve-jobs",
+    "person_name": "乔布斯",
+    "kind": "principle",
+    "title": "聚焦投入",
+    "summary": "删减分散路线图以提升关键产品投入。",
+    "conditions": [
+      "资源分散、核心价值清楚"
+    ],
+    "boundaries": [
+      "聚焦须同时核算退出业务的用户、员工、资产与现金代价，不照搬削减比例。",
+      "事后设想的更好路径不等于已经验证的经营结果。"
+    ],
+    "questions": [
+      "哪个项目没有独立存在理由？",
+      "为了支持核心业务而维持的附带业务，实际带来现金还是持续吸收资金与注意力？",
+      "停止后要承担哪些用户、员工、资产与资金代价？"
+    ],
+    "actions": [
+      "列保留/合并/停止候选及迁移影响，分列现金贡献、资金需求和退出成本",
+      "把已经观察到的结果与如果当初改走另一条路的回想分开"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SJ-P02",
+    "person": "steve-jobs",
+    "person_name": "乔布斯",
+    "kind": "principle",
+    "title": "需求反馈速度",
+    "summary": "缩短供给链反馈可减少长周期猜测。",
+    "conditions": [
+      "库存和响应时间显著影响匹配"
+    ],
+    "boundaries": [
+      "不忽视规模效率与韧性"
+    ],
+    "questions": [
+      "多久后需求才影响生产？"
+    ],
+    "actions": [
+      "测量反馈延迟与库存风险"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SJ-P03",
+    "person": "steve-jobs",
+    "person_name": "乔布斯",
+    "kind": "principle",
+    "title": "品牌与价值",
+    "summary": "品牌表达应清楚说明用户为何在乎。",
+    "conditions": [
+      "需要形成稳定辨识"
+    ],
+    "boundaries": [
+      "不能用叙事掩盖产品缺陷"
+    ],
+    "questions": [
+      "用户愿意记住哪项价值？"
+    ],
+    "actions": [
+      "将主张关联可展示体验"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SJ-P04",
+    "person": "steve-jobs",
+    "person_name": "乔布斯",
+    "kind": "principle",
+    "title": "交付质量平衡",
+    "summary": "对最好与可逐步改善的更好作明确取舍。",
+    "conditions": [
+      "完美追求已阻碍交付"
+    ],
+    "boundaries": [
+      "不能牺牲安全底线"
+    ],
+    "questions": [
+      "多等一轮能带来什么可验证价值？"
+    ],
+    "actions": [
+      "定义发布底线及下一轮提升"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "YJ-P01",
+    "person": "yu-jun",
+    "person_name": "俞军",
+    "kind": "principle",
+    "title": "相对用户价值",
+    "summary": "评价新方案须同时看旧方案和换用成本。",
+    "conditions": [
+      "目标情境与替代品明确"
+    ],
+    "boundaries": [
+      "这是定性比较工具，不能直接套公式估分。",
+      "发现替代方案的不足，不意味着可以主动破坏替代品。"
+    ],
+    "questions": [
+      "用户今天怎么做？"
+    ],
+    "actions": [
+      "分列新增收益、旧收益和迁移成本"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "YJ-P02",
+    "person": "yu-jun",
+    "person_name": "俞军",
+    "kind": "principle",
+    "title": "用户是情境需求",
+    "summary": "同一个人在不同场景有不同需求，人口标签不够。",
+    "conditions": [
+      "产品定位或需求访谈"
+    ],
+    "boundaries": [
+      "不否定人口变量的辅助价值"
+    ],
+    "questions": [
+      "哪个时刻什么任务触发使用？"
+    ],
+    "actions": [
+      "按情境采样并记录替代方案"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "YJ-P03",
+    "person": "yu-jun",
+    "person_name": "俞军",
+    "kind": "principle",
+    "title": "怀疑和自我更新",
+    "summary": "结论与个人身份分开，持续检查前提与证据。",
+    "conditions": [
+      "结论在不确定条件下形成"
+    ],
+    "boundaries": [
+      "怀疑不是永不决策"
+    ],
+    "questions": [
+      "什么证据会使你改主意？"
+    ],
+    "actions": [
+      "写出可证伪假设及复盘日期"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "YJ-P04",
+    "person": "yu-jun",
+    "person_name": "俞军",
+    "kind": "principle",
+    "title": "商业闭环",
+    "summary": "需求、生产、销售和成本收益应共同进入产品判断。",
+    "conditions": [
+      "承担完整业务结果"
+    ],
+    "boundaries": [
+      "完整业务责任不取消专业执行分工。",
+      "整体长期盈利不要求每个组成部分立即盈利，但知识、团队和信任的积累也需要可检验依据。"
+    ],
+    "questions": [
+      "谁使用、谁付费、谁负担成本？"
+    ],
+    "actions": [
+      "画价值交换及交付路径"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ZXL-P01",
+    "person": "zhang-xiaolong",
+    "person_name": "张小龙",
+    "kind": "principle",
+    "title": "用任务效率而非滞留衡量工具价值",
+    "summary": "工具型产品应帮助完成任务，并通过持续价值促使用户再次使用。",
+    "conditions": [
+      "用户有明确任务"
+    ],
+    "boundaries": [
+      "娱乐消费不以越快结束越好，工具也仍需持续留存。",
+      "节省用户时间的设计意图不等于已经改善实际耗时或关系。"
+    ],
+    "questions": [
+      "用户本次要完成什么？"
+    ],
+    "actions": [
+      "测完成率、时间与复用；分离任务时长和无效停留"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ZXL-P02",
+    "person": "zhang-xiaolong",
+    "person_name": "张小龙",
+    "kind": "principle",
+    "title": "把复杂度放到用户体验中衡量",
+    "summary": "功能数量不是臃肿的充分判据，能否方便实现目标更关键。",
+    "conditions": [
+      "多功能产品可用性设计"
+    ],
+    "boundaries": [
+      "隐藏功能不能消除维护和学习成本。",
+      "界面入口数量不是普适标准，应按任务判断。",
+      "最小功能范围仍须覆盖完整操作，不能把复杂度转嫁给用户。"
+    ],
+    "questions": [
+      "新功能让谁多做几步？",
+      "最常做的切换是否多一步？选完选项是否会被误认为已提交？"
+    ],
+    "actions": [
+      "比较现流程、增加能力与不做；走查关键任务",
+      "按关键任务走查入口、选择、提交及完成反馈，记录频率与错误，而非只数功能。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ZXL-P03",
+    "person": "zhang-xiaolong",
+    "person_name": "张小龙",
+    "kind": "principle",
+    "title": "用明确合理性做取舍",
+    "summary": "舍弃应因目标不成立、体验不好或验证行不通，而不是把克制当自我目的。",
+    "conditions": [
+      "多个候选需求争夺资源"
+    ],
+    "boundaries": [
+      "删除功能并不自动正确，可能牺牲特定情境的便利。",
+      "暂缓实施可能让原有损害持续，须记录不做的成本。"
+    ],
+    "questions": [
+      "为什么不做？依据是什么？",
+      "候选方案新增了什么副作用？暂缓时原问题还有多大损害？"
+    ],
+    "actions": [
+      "记录用户价值、验证信号与舍弃原因"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ZXL-P04",
+    "person": "zhang-xiaolong",
+    "person_name": "张小龙",
+    "kind": "principle",
+    "title": "平台合作先审查用户价值",
+    "summary": "资源互换与运营目标不能替代用户实际收益。",
+    "conditions": [
+      "平台合作、推送、商业化"
+    ],
+    "boundaries": [
+      "用户价值判断须结合可持续的商业与交付条件。"
+    ],
+    "questions": [
+      "谁得益，谁被打扰？"
+    ],
+    "actions": [
+      "列双方收益及用户成本，检验接收者自主意愿"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "WX-P01",
+    "person": "wang-xing",
+    "person_name": "王兴",
+    "kind": "principle",
+    "title": "扩张同时看客户任务与能力复用",
+    "summary": "相邻需求只有与现有能力和资源匹配时才构成可试验的扩张方向。",
+    "conditions": [
+      "考虑新业务或品类"
+    ],
+    "boundaries": [
+      "不能把大平台条件套到小团队"
+    ],
+    "questions": [
+      "可复用什么，缺什么？"
+    ],
+    "actions": [
+      "列需求、能力、增量成本、主业损伤；先小范围试验"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "WX-P02",
+    "person": "wang-xing",
+    "person_name": "王兴",
+    "kind": "principle",
+    "title": "价值不只来自折扣",
+    "summary": "用户可能为便利、省心和确定性选择服务，而非只为低价。",
+    "conditions": [
+      "交易型服务"
+    ],
+    "boundaries": [
+      "需按场景判断，不能否认价格敏感"
+    ],
+    "questions": [
+      "哪种不确定性最贵？"
+    ],
+    "actions": [
+      "比较省钱、时间、履约保证的任务证据"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "WX-P03",
+    "person": "wang-xing",
+    "person_name": "王兴",
+    "kind": "principle",
+    "title": "本地市场按真实供需范围分析",
+    "summary": "消费者与商户的选择往往在城市或更小区域内，不能只看全国规模。",
+    "conditions": [
+      "本地生活双边市场"
+    ],
+    "boundaries": [
+      "不能把固定人口门槛当通用标准"
+    ],
+    "questions": [
+      "用户实际在哪个半径内选择？"
+    ],
+    "actions": [
+      "按区域看供给、需求、匹配和履约"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "WX-P04",
+    "person": "wang-xing",
+    "person_name": "王兴",
+    "kind": "principle",
+    "title": "交易闭环检验服务价值",
+    "summary": "对O2O任务，获取信息通常还需导向真实交易与体验。",
+    "conditions": [
+      "用户意图是消费服务"
+    ],
+    "boundaries": [
+      "信息消费本身可能有独立价值"
+    ],
+    "questions": [
+      "用户最终要完成什么？"
+    ],
+    "actions": [
+      "跟踪发现、选择、购买、履约和复购断点"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "LN-P01",
+    "person": "liang-ning",
+    "person_name": "梁宁",
+    "kind": "principle",
+    "title": "需求决定价值的落点",
+    "summary": "投入与质量本身不证明商业价值；先确认具体人的需求与买单理由。",
+    "conditions": [
+      "新产品立项或价值主张重做"
+    ],
+    "boundaries": [
+      "意义、社会价值不都等于可收费价值；别否定公益产品"
+    ],
+    "questions": [
+      "谁在何时为什么选择我们？",
+      "支付方和使用者是否相同？"
+    ],
+    "actions": [
+      "写使用场景与替代品",
+      "记录实际选择和交易证据"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "LN-P02",
+    "person": "liang-ning",
+    "person_name": "梁宁",
+    "kind": "principle",
+    "title": "价值、共识、模式分别诊断",
+    "summary": "分别检查对方需要的价值、形成成交或协作关系的共识，以及自身可持续的模式；模式再拆成能力系统、变现逻辑和分配机制。",
+    "conditions": [
+      "产品卖不动或有规模无利润"
+    ],
+    "boundaries": [
+      "三者相互影响，不是机械单线阶段；不保证成功"
+    ],
+    "questions": [
+      "究竟哪一环证据最弱？"
+    ],
+    "actions": [
+      "分别列用户收益、成交障碍、单位经济",
+      "优先实验最不确定一环",
+      "分别写出能力短板、实际付款方与现金路径、资源和收益如何分配，再检查三者是否相互支持"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "LN-P03",
+    "person": "liang-ning",
+    "person_name": "梁宁",
+    "kind": "principle",
+    "title": "用场景检验应然",
+    "summary": "逻辑上好看的产品方案必须在真实使用场景胜过替代方案。",
+    "conditions": [
+      "功能需求或价格方案评审"
+    ],
+    "boundaries": [
+      "情境模拟和个案不能代替实际选择验证。"
+    ],
+    "questions": [
+      "触发场景是什么？",
+      "用户会拿它与什么竞争方案比较？"
+    ],
+    "actions": [
+      "模拟完整使用与支付情境",
+      "验证替代品选择而非只问喜好",
+      "先穷举具体工作/生活场景，再比较出现频率、感知强度和替代方案；选择一个可验证的起步场景"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "LN-P04",
+    "person": "liang-ning",
+    "person_name": "梁宁",
+    "kind": "principle",
+    "title": "身份表达需行为证据",
+    "summary": "弹性消费可能服务自我认同，仅人口标签不足以解释选择。",
+    "conditions": [
+      "服装、美妆、内容与体验产品"
+    ],
+    "boundaries": [
+      "不得按性别年龄固化人设，行为解释必须允许被推翻。",
+      "持续不购买也可能受预算或可及性限制，不能一律归因于不想要。"
+    ],
+    "questions": [
+      "用户想表达什么？",
+      "这种表达影响支付还是仅口头赞同？"
+    ],
+    "actions": [
+      "访谈最近一次真实购买",
+      "分群测试场景与表达"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SA-P01",
+    "person": "sam-altman",
+    "person_name": "山姆·奥特曼",
+    "kind": "principle",
+    "title": "先验证用户喜爱再追增长",
+    "summary": "先找到会主动推荐且愿意持续使用的用户，再扩大获客。",
+    "conditions": [
+      "早期产品仍在寻找稳定需求"
+    ],
+    "boundaries": [
+      "主动推荐是线索而非唯一指标；企业采购等低频场景须结合续约、使用和结果；不能把历史建议当固定增长门槛。"
+    ],
+    "questions": [
+      "现有用户为何主动回来？增长停下来还会用吗？"
+    ],
+    "actions": [
+      "先跟踪留存与主动推荐，修复核心体验，再小规模验证新增获客。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SA-P02",
+    "person": "sam-altman",
+    "person_name": "山姆·奥特曼",
+    "kind": "principle",
+    "title": "把单位经济与现金跑道分开核算",
+    "summary": "业务整体亏损、单个客户亏损与现金不足是三个不同问题。",
+    "conditions": [
+      "扩大投放、降价或融资后加速扩张"
+    ],
+    "boundaries": [
+      "不能假设无限留存或未来机器人自动消除成本；单客盈利也不代表现金安全。"
+    ],
+    "questions": [
+      "每个客户的净贡献如何？停融资后还能运行多久？"
+    ],
+    "actions": [
+      "分别列客户贡献、获客回收期、总固定开支和现金消耗，并做保守留存情境。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SA-P03",
+    "person": "sam-altman",
+    "person_name": "山姆·奥特曼",
+    "kind": "principle",
+    "title": "先选对问题再优化效率",
+    "summary": "投入方向比把每一分钟排满更重要，需专门留出选择问题的时间。",
+    "conditions": [
+      "团队忙碌但业务结果弱或工具不断增加"
+    ],
+    "boundaries": [
+      "个人时间习惯不通用于所有岗位；不能借效率之名损害休息与人际支持。"
+    ],
+    "questions": [
+      "如果这件事做快一倍，对目标有什么影响？"
+    ],
+    "actions": [
+      "先删除无价值任务，再把年度目标拆成少量可交付重点，并保留思考与恢复时间。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "SA-P04",
+    "person": "sam-altman",
+    "person_name": "山姆·奥特曼",
+    "kind": "principle",
+    "title": "从新可能与深度使用中寻找机会",
+    "summary": "追踪刚出现的可行能力，并观察少数人是否已高强度使用。",
+    "conditions": [
+      "新平台、新技术引出大量相似创业想法"
+    ],
+    "boundaries": [
+      "深度使用不等于付费需求；时代趋势成立不代表自己会赢。"
+    ],
+    "questions": [
+      "今年能做而去年不能做的是什么？谁已经频繁使用？"
+    ],
+    "actions": [
+      "记录能力变化、具体用户任务和现行替代方案，做小样本高频使用验证。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "DA-P01",
+    "person": "dario-amodei",
+    "person_name": "达里奥·阿莫代伊",
+    "kind": "principle",
+    "title": "分开比较规模效率与训练范式",
+    "summary": "评估模型突破时分别看投入规模、同能力成本下降和训练方法变化。",
+    "conditions": [
+      "模型选型或对新模型成本宣传的判断"
+    ],
+    "boundaries": [
+      "成本数字常不可外部验证；训练、推理和公司总研发成本不可混比。"
+    ],
+    "questions": [
+      "比较对象的时间、能力任务和成本口径一致吗？"
+    ],
+    "actions": [
+      "建立同任务同质量比较表，分别记录训练、推理、研发费用与不可核实项。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "DA-P02",
+    "person": "dario-amodei",
+    "person_name": "达里奥·阿莫代伊",
+    "kind": "principle",
+    "title": "把模型能力与产品交互分开评测",
+    "summary": "可见推理过程等界面设计会影响用户感受，但不自动证明底层能力更强。",
+    "conditions": [
+      "AI产品交互设计与竞品评测"
+    ],
+    "boundaries": [
+      "展示的推理文字不能当内部机制的忠实记录；用户偏好与任务正确性需分别测试。"
+    ],
+    "questions": [
+      "用户喜欢的是能力提升还是交互方式？"
+    ],
+    "actions": [
+      "分别测任务成功率、解释可用性与交互偏好，不将展示效果替代结果。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "DA-P03",
+    "person": "dario-amodei",
+    "person_name": "达里奥·阿莫代伊",
+    "kind": "principle",
+    "title": "安全证据跟随能力升级",
+    "summary": "系统获得更强行动能力时，重新要求与风险匹配的测试、权限与发布条件。",
+    "conditions": [
+      "具有工具调用或自主执行能力的产品升级"
+    ],
+    "boundaries": [
+      "不是所有应用都套用前沿实验室门槛；具体阈值须按业务风险校准。"
+    ],
+    "questions": [
+      "新能力使哪种过去不可能的损害成为可能？"
+    ],
+    "actions": [
+      "列能力变化、对应风险、验证方式、授权限制与回退条件，再决定发布范围。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "DA-P04",
+    "person": "dario-amodei",
+    "person_name": "达里奥·阿莫代伊",
+    "kind": "principle",
+    "title": "保留独立评估信号",
+    "summary": "训练与优化不应反复窥探同一评估答案，否则漂亮分数可能失去诊断价值。",
+    "conditions": [
+      "反复调提示词、模型训练或发布评测"
+    ],
+    "boundaries": [
+      "独立评测并不覆盖所有未知风险；研究探索和正式发布评估需区分。"
+    ],
+    "questions": [
+      "哪些测试已被开发过程反复针对性优化？"
+    ],
+    "actions": [
+      "隔离正式评测集，记录暴露情况，结合外部测试与新的失败样例复核。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "EM-P01",
+    "person": "elon-musk",
+    "person_name": "埃隆·马斯克",
+    "kind": "principle",
+    "title": "从基本约束重建方案",
+    "summary": "把沿袭的做法拆成可验证的物理、成本与任务约束，再重新组合方案。",
+    "conditions": [
+      "现有成本或性能被当作不可改变的事实"
+    ],
+    "boundaries": [
+      "类比在日常任务仍有价值；第一性原理不等于忽视法规、组织知识或实测。"
+    ],
+    "questions": [
+      "哪些限制来自自然规律，哪些只是现行做法？"
+    ],
+    "actions": [
+      "列基本约束与假设，为最关键假设设计小规模测量。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "EM-P02",
+    "person": "elon-musk",
+    "person_name": "埃隆·马斯克",
+    "kind": "principle",
+    "title": "主动获取负面反馈",
+    "summary": "在方案形成后主动邀请能指出错误的人，而非只收集赞同。",
+    "conditions": [
+      "团队因愿景强烈而难以质疑方案"
+    ],
+    "boundaries": [
+      "负面意见本身也需证据；此建议不能证明任何商业路线一定正确。"
+    ],
+    "questions": [
+      "最有力的反对意见是什么？谁能发现我们看不到的问题？"
+    ],
+    "actions": [
+      "邀请熟悉实际约束的人指出失败路径，将反驳转为待验证问题。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "EM-P03",
+    "person": "elon-musk",
+    "person_name": "埃隆·马斯克",
+    "kind": "principle",
+    "title": "用阶段路径跨越新技术成本",
+    "summary": "将长期普及目标拆成可交付的早期版本和逐步降低成本的路线。",
+    "conditions": [
+      "新技术成本高、早期市场与大众市场差异大"
+    ],
+    "boundaries": [
+      "不是每个产品都适合先高端后大众；历史价格和时间计划不作为今天已兑现事实。"
+    ],
+    "questions": [
+      "第一批客户为什么愿意支付？下一阶段的成本下降由什么实现？"
+    ],
+    "actions": [
+      "列各阶段用户、成本、产量与进入下一阶段的证据要求。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "EM-P04",
+    "person": "elon-musk",
+    "person_name": "埃隆·马斯克",
+    "kind": "principle",
+    "title": "将用户完整旅程纳入系统设计",
+    "summary": "功能优势需要与使用节奏和配套设施配合，才会变成可用体验。",
+    "conditions": [
+      "核心产品依赖补能、部署、维护等外部环节"
+    ],
+    "boundaries": [
+      "历史充电安排只是例子；不同用户节奏与基础设施条件须实际观察。"
+    ],
+    "questions": [
+      "用户在等待、切换、维护环节承受什么代价？"
+    ],
+    "actions": [
+      "画完整使用旅程，把配套环节与主产品共同测试，而不只展示单点性能。"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AN-P01",
+    "person": "andrew-ng",
+    "person_name": "吴恩达",
+    "kind": "principle",
+    "title": "把局部提效转成端到端产品改善",
+    "summary": "AI加速一个步骤后，要重排相邻流程，才能让用户真正获得更快、更好的服务。",
+    "conditions": [
+      "业务链路跨部门且某一步被AI显著加速"
+    ],
+    "boundaries": [
+      "单步节时不等于收入增长；贷款只是说明性案例，不能把示例数字当业务承诺。"
+    ],
+    "questions": [
+      "用户等待时间减少了吗，还是节省的时间卡在下一环？"
+    ],
+    "actions": [
+      "画出客户端到端流程，标明等待、交接、容量及责任人",
+      "用真实交付时间和用户结果验证改造"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AN-P02",
+    "person": "andrew-ng",
+    "person_name": "吴恩达",
+    "kind": "principle",
+    "title": "先看真实输出再设计评测",
+    "summary": "用小原型暴露失败方式，再围绕重要错误逐步建立评测集。",
+    "conditions": [
+      "生成式任务的输出质量难以用单一指标描述"
+    ],
+    "boundaries": [
+      "小样本用于起步，不能代表上线可靠性；模型评分也需要校准。"
+    ],
+    "questions": [
+      "哪些输出错误会真正伤害用户？"
+    ],
+    "actions": [
+      "人工检查首批输出，整理失败分类和代表性样本",
+      "明确客观指标与主观判断，随新错误更新评测"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AN-P03",
+    "person": "andrew-ng",
+    "person_name": "吴恩达",
+    "kind": "principle",
+    "title": "沿执行轨迹定位主要失误",
+    "summary": "检查任务中间步骤，把改善资源投向最影响最终结果的失误。",
+    "conditions": [
+      "多步AI工作流表现不稳定"
+    ],
+    "boundaries": [
+      "人类表现只有在适合作为目标时才是参考；不能只看单步分数忽略整体结构。"
+    ],
+    "questions": [
+      "哪一步最经常导致最终结果变差？"
+    ],
+    "actions": [
+      "从少量失败轨迹开始逐步归类，比较各步骤与可接受结果的差距",
+      "优先修复主要错误，再扩展更系统的抽样"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AN-P04",
+    "person": "andrew-ng",
+    "person_name": "吴恩达",
+    "kind": "principle",
+    "title": "能力变化后重审工作流拆分",
+    "summary": "当各步骤看似正常而整体仍差，应检查过时的约束和拆分是否成为瓶颈。",
+    "conditions": [
+      "模型升级或已有多层规则与中间处理"
+    ],
+    "boundaries": [
+      "删除步骤可能引入新的错误；不能因模型更强就移除必要控制。"
+    ],
+    "questions": [
+      "这段处理仍在提升结果，还是在丢失信息？"
+    ],
+    "actions": [
+      "在同一评测集上比较保留、合并和删除步骤的结果",
+      "保留可恢复版本并记录失败类型变化"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AK-P01",
+    "person": "andrej-karpathy",
+    "person_name": "安德烈·卡帕西",
+    "kind": "principle",
+    "title": "先判断任务是否可验证",
+    "summary": "评估自动化机会时，检查尝试能否重置、反馈是否可负担、结果能否可靠判定。",
+    "conditions": [
+      "寻找适合AI学习或反复改进的任务"
+    ],
+    "boundaries": [
+      "可验证性只是一个判断维度；奖励指标可能偏离真实价值，不能据此断言整个职业会被替代。"
+    ],
+    "questions": [
+      "能自动判好坏的是实际目标，还是容易被钻空子的代理指标？"
+    ],
+    "actions": [
+      "列出重置成本、试验速度与评判方法",
+      "把难验证的开放式判断交给明确的复核流程"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AK-P02",
+    "person": "andrej-karpathy",
+    "person_name": "安德烈·卡帕西",
+    "kind": "principle",
+    "title": "先理解数据再选择复杂方案",
+    "summary": "在建模之前检查真实样本、标签、分布和异常，避免用模型复杂度掩盖数据问题。",
+    "conditions": [
+      "数据驱动产品或模型效果不明"
+    ],
+    "boundaries": [
+      "来源是神经网络训练实践；迁移到产品研究是方法类比，不意味着数据越多必然越好。"
+    ],
+    "questions": [
+      "最异常的样本和最常见的错误标签是什么？"
+    ],
+    "actions": [
+      "抽看不同类别和边缘样本，记录重复、损坏及偏差",
+      "核对预处理后实际进入系统的数据"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AK-P03",
+    "person": "andrej-karpathy",
+    "person_name": "安德烈·卡帕西",
+    "kind": "principle",
+    "title": "先建可信基线再增加复杂度",
+    "summary": "用简单端到端系统和可复现评测确认正确性，再逐项加入更复杂能力。",
+    "conditions": [
+      "AI系统迭代难以解释增益来源"
+    ],
+    "boundaries": [
+      "训练损失变好不是用户效果变好；必须保留独立验证。"
+    ],
+    "questions": [
+      "简单方案表现如何，这次增益能归因到哪个变化？"
+    ],
+    "actions": [
+      "建立简单基线，固定比较条件",
+      "每次加入一个变化并检验预期结果，保留消融记录"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "AK-P04",
+    "person": "andrej-karpathy",
+    "person_name": "安德烈·卡帕西",
+    "kind": "principle",
+    "title": "不要把无报错当作正确",
+    "summary": "AI系统可以正常运行却持续产生逻辑错误，必须验证输入、输出及依赖关系。",
+    "conditions": [
+      "系统能运行但质量或稳定性异常"
+    ],
+    "boundaries": [
+      "诊断应针对具体失败模式，不能靠增加无关测试制造可信感。"
+    ],
+    "questions": [
+      "有没有一种错误会被系统部分补偿，从而长期隐藏？"
+    ],
+    "actions": [
+      "设计能暴露错误的简单案例和对照",
+      "观察中间数据与输出变化，确认系统真正使用了所需信息"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ETM-P01",
+    "person": "ethan-mollick",
+    "person_name": "伊桑·莫利克",
+    "kind": "principle",
+    "title": "按任务摸清AI能力边界",
+    "summary": "在真实任务上分别测试强项和失误，不把一种任务的成功扩展为全面可靠。",
+    "conditions": [
+      "设计人机协作或选用模型"
+    ],
+    "boundaries": [
+      "早期研究的模型、样本和任务有特定范围；不能把其中提升比例当作当前公司的保证。"
+    ],
+    "questions": [
+      "哪些看起来相近的任务，实际有不同的失败风险？"
+    ],
+    "actions": [
+      "收集成功与失败任务，记录模型版本和使用条件",
+      "在边界外保留人工检查及替代流程"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ETM-P02",
+    "person": "ethan-mollick",
+    "person_name": "伊桑·莫利克",
+    "kind": "principle",
+    "title": "明确人机分工或协同方式",
+    "summary": "根据任务选择清晰分工或逐步共同完成，并明确人承担的判断和校验。",
+    "conditions": [
+      "工作流程需要结合人类专长与AI生成"
+    ],
+    "boundaries": [
+      "协同方式不是质量保证；人可能因流畅输出放松警惕。"
+    ],
+    "questions": [
+      "哪一步由人负责判断，哪一步能交给AI，交接如何验收？"
+    ],
+    "actions": [
+      "试验分段委派与逐步协作，比较质量、耗时及返工",
+      "指定最终验收责任，特别检查看似可信的错误"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ETM-P03",
+    "person": "ethan-mollick",
+    "person_name": "伊桑·莫利克",
+    "kind": "principle",
+    "title": "用真实岗位任务面试模型",
+    "summary": "以实际工作样本、多次运行和领域评审选择模型，而不是只看通用榜单。",
+    "conditions": [
+      "组织选型或模型升级"
+    ],
+    "boundaries": [
+      "趣味测试只能提供感觉，不能证明规模化可靠性；评测本身也要检查偏差。"
+    ],
+    "questions": [
+      "哪个模型在我们的关键任务上更稳定，失败代价多大？"
+    ],
+    "actions": [
+      "构造真实任务并重复测试，比较模型与适当的人类基线",
+      "定期复评，记录质量、风险偏好和明显失误"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "ETM-P04",
+    "person": "ethan-mollick",
+    "person_name": "伊桑·莫利克",
+    "kind": "principle",
+    "title": "把领导、一线探索与专门小组连成反馈循环",
+    "summary": "领导明确方向和激励，一线发现机会，跨职能小组测试并推广可用方法。",
+    "conditions": [
+      "个人AI使用没有转化为组织收益"
+    ],
+    "boundaries": [
+      "框架不保证增长；推广需要实际测量，不是把试验数量当成成效。"
+    ],
+    "questions": [
+      "谁提出问题，谁验证，谁负责把可用方法扩展到流程？"
+    ],
+    "actions": [
+      "建立一线提交与分享入口，由专门小组快速试验",
+      "领导明确成果用途，追踪推广后的业务效果"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "KW-P01",
+    "person": "kevin-weil",
+    "person_name": "凯文·韦尔",
+    "kind": "principle",
+    "title": "先抓住小群体的强需求",
+    "summary": "先把一个具体问题解决到让小群体离不开，再扩展人群。",
+    "conditions": [
+      "早期产品定位或留存薄弱"
+    ],
+    "boundaries": [
+      "人数是表达需求强度的示例，不是必须达到的门槛。",
+      "小众热爱仍需检验付费、交付成本和市场扩展，不把使用热情等同商业成立。"
+    ],
+    "questions": [
+      "谁在什么情境下会因产品消失而明显受损？",
+      "我们描述的是用户问题，还是笼统的功能愿望？"
+    ],
+    "actions": [
+      "把问题写成具体用户、情境、现有办法及未满足结果",
+      "用小范围持续使用和流失访谈检验需求强度，再决定扩展"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "KW-P02",
+    "person": "kevin-weil",
+    "person_name": "凯文·韦尔",
+    "kind": "principle",
+    "title": "用可体验原型验证产品主张",
+    "summary": "让懂问题的人尽快做出可体验原型，以实际行为和反馈替代只在文档中争论。",
+    "conditions": [
+      "AI工具已使非工程岗位能够制作原型或内部工具"
+    ],
+    "boundaries": [
+      "原型可用不等于生产可用；权限、数据、运行成本和可靠性仍需负责人验收。",
+      "文档用于协作与责任记录时仍有价值，不把演讲中的强措辞变成全面取消文档。"
+    ],
+    "questions": [
+      "这项主张今天能做成什么可体验的最小原型？",
+      "原型验证了用户价值，还是仅证明能生成界面？"
+    ],
+    "actions": [
+      "由问题拥有者构建演示并观察目标用户完成任务",
+      "发布前另做生产质量和数据权限检查"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "KW-P03",
+    "person": "kevin-weil",
+    "person_name": "凯文·韦尔",
+    "kind": "principle",
+    "title": "按任务选择模型与算力",
+    "summary": "把任务的质量、速度和成本要求分开，选择合适的模型与推理投入。",
+    "conditions": [
+      "任务种类不同且可观察其输出质量"
+    ],
+    "boundaries": [
+      "更贵或更慢不自动更可靠；重大错误成本不能只用平均成功率掩盖。",
+      "原方的成本下降预测不是预算保证，需以当前实测价格和任务数据决策。"
+    ],
+    "questions": [
+      "哪些步骤只需快速重复处理，哪些需要更强推理？",
+      "增加算力带来的改进是否值得等待和成本？"
+    ],
+    "actions": [
+      "按任务建立质量、延迟、成本基线",
+      "对候选模型做同任务比较并设计失败升级路线"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "KW-P04",
+    "person": "kevin-weil",
+    "person_name": "凯文·韦尔",
+    "kind": "principle",
+    "title": "把平台能力接入既有工作流",
+    "summary": "平台不仅提供自有界面，还应让外部工具以可靠接口接入用户既有流程。",
+    "conditions": [
+      "产品要服务已有专业工作流或生态合作方"
+    ],
+    "boundaries": [
+      "接口能力扩展仍需权限、稳定性和维护能力；历史API承诺不是当前服务保证。",
+      "开放接口不等于无限开放私有数据，也不能用生态想象替代真实集成需求。"
+    ],
+    "questions": [
+      "用户今天在哪个工具中完成其余工作？",
+      "新能力是否只在自有界面可用，使集成方被迫绕路？"
+    ],
+    "actions": [
+      "优先梳理真实集成路径与接口缺口",
+      "让重要能力的界面和接口交付协调，并跟踪合作方使用反馈"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "MK-P01",
+    "person": "mike-krieger",
+    "person_name": "迈克·克里格",
+    "kind": "principle",
+    "title": "开发变快时更要减功能",
+    "summary": "生成和实现成本下降后，主动删除不必要功能，用早期真实使用判断产品取舍。",
+    "conditions": [
+      "原型迅速膨胀、解释困难或功能组合难测试"
+    ],
+    "boundaries": [
+      "快速重写适用于成本可控的阶段；存量依赖、数据和迁移不能视作可随意丢弃。",
+      "不能只因用户暂未发现某功能就删除，先检查关键少数场景。"
+    ],
+    "questions": [
+      "如果明天交给新用户，哪些功能只增加理解负担？",
+      "我们是否在用第九个功能补救前八个未验证的假设？"
+    ],
+    "actions": [
+      "定义首个可验证任务并删减不必要组合",
+      "让真实用户尽早使用，再决定新增或重写"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "MK-P02",
+    "person": "mike-krieger",
+    "person_name": "迈克·克里格",
+    "kind": "principle",
+    "title": "冷启动就应交付价值",
+    "summary": "不能要求用户先投入大量训练和历史数据，产品才开始有用；第一轮体验也要解决问题。",
+    "conditions": [
+      "个性化、推荐或AI助手依赖累积用户信息"
+    ],
+    "boundaries": [
+      "首次有用不等于偷偷获取更多个人数据。",
+      "长期个性化可以更强，但不能用未来收益掩盖当下空白。"
+    ],
+    "questions": [
+      "新用户没有历史数据时能得到什么？",
+      "我们多久才让用户体验到与替代方案不同的价值？"
+    ],
+    "actions": [
+      "实测首次会话或首次任务，缩短价值出现前的输入成本",
+      "用少量明确问题获取意图，并允许用户跳过和修正"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "MK-P03",
+    "person": "mike-krieger",
+    "person_name": "迈克·克里格",
+    "kind": "principle",
+    "title": "把继续投入变成有期限的实验",
+    "summary": "在继续坚持前列出真正可能改变轨迹的尝试，并约定何时根据结果停止或转向。",
+    "conditions": [
+      "持续迭代仍未改变留存、增长或核心业务结果"
+    ],
+    "boundaries": [
+      "不是照搬三个实验或某个期限；实验数量和期限取决于反馈周期及资源。",
+      "退出仍需履行对用户、员工和合作方的责任。"
+    ],
+    "questions": [
+      "还有哪项关键假设是没试过、现在停止会后悔的？",
+      "什么结果算轨迹改变，而不只是新增功能？"
+    ],
+    "actions": [
+      "列出剩余关键假设、排序并明确验证时间与指标",
+      "到期复盘并与相关责任方讨论继续、缩减或停止"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "MK-P04",
+    "person": "mike-krieger",
+    "person_name": "迈克·克里格",
+    "kind": "principle",
+    "title": "收集反馈理由而非只有赞踩",
+    "summary": "把单次好坏评价背后的理由聚合成模式，再决定下一轮体验该保持什么、改变什么。",
+    "conditions": [
+      "模型体验多变且用户满意度难用单一分数解释"
+    ],
+    "boundaries": [
+      "反馈样本可能偏向极端用户，不能当作全部人群。",
+      "历史数据使用政策不是当前承诺，使用反馈仍需遵守实际告知与授权。"
+    ],
+    "questions": [
+      "用户为什么不满意，具体希望怎样回应？",
+      "同一反馈是否在不同任务中意味着相反要求？"
+    ],
+    "actions": [
+      "保留任务情境及评价理由，按问题类型聚合",
+      "把主要问题变成可复测案例，并比较改进与回归"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "BC-P01",
+    "person": "boris-cherny",
+    "person_name": "鲍里斯·切尔尼",
+    "kind": "principle",
+    "title": "新事实到来就重写问题与方案",
+    "summary": "先弄清信息、问题、简单方案和目标；遇到新证据就更新，而不是为保持一致硬推旧计划。",
+    "conditions": [
+      "问题不清、计划复杂或团队因改动而混乱"
+    ],
+    "boundaries": [
+      "改变须说明新证据，不能把任意反复包装为学习。",
+      "紧迫执行仍受资源、授权和实际风险约束。"
+    ],
+    "questions": [
+      "目前真正要解决的问题是什么？",
+      "哪项新事实要求调整目标或方案？"
+    ],
+    "actions": [
+      "明确已知与缺失信息，再写问题、方案和成功条件",
+      "用及时反馈纠偏，并记录为何改变判断"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "BC-P02",
+    "person": "boris-cherny",
+    "person_name": "鲍里斯·切尔尼",
+    "kind": "principle",
+    "title": "用消融检验提示与工具的价值",
+    "summary": "模型升级后通过对照删减检查旧提示、工具和补偿逻辑是否仍然有用，再按反复出现的问题加回。",
+    "conditions": [
+      "更换模型或历史提示和工具持续堆积"
+    ],
+    "boundaries": [
+      "消融是受控实验，不是直接清空生产配置。",
+      "权限、安全和数据完整性要求不能因一次能力展示就取消；保留回滚与基准。"
+    ],
+    "questions": [
+      "这条指令解决的是当前模型仍存在的问题吗？",
+      "删掉以后，任务质量和行为约束分别如何变化？"
+    ],
+    "actions": [
+      "保存基线并逐项做有/无对照",
+      "只对稳定复现的缺陷加入必要说明，验证后再部署"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "BC-P03",
+    "person": "boris-cherny",
+    "person_name": "鲍里斯·切尔尼",
+    "kind": "principle",
+    "title": "评测也要随任务边界更新",
+    "summary": "保留可比较的历史基线，同时用真实困难任务更新已失去区分度的评测。",
+    "conditions": [
+      "模型分数接近满分但真实使用仍有明显失败"
+    ],
+    "boundaries": [
+      "不是为了追逐难度而丢掉回归测试；旧场景仍可能受影响。",
+      "一次高分不证明解决整个任务类别。"
+    ],
+    "questions": [
+      "当前评测还能区分我们关心的失误吗？",
+      "模型在真实任务中反复卡在哪里？"
+    ],
+    "actions": [
+      "保留关键回归集并新增现实故障样本",
+      "分开报告旧基线稳定性和新边界能力"
+    ],
+    "status": "method_synthesis"
+  },
+  {
+    "id": "BC-P04",
+    "person": "boris-cherny",
+    "person_name": "鲍里斯·切尔尼",
+    "kind": "principle",
+    "title": "说明目标边界而非替代理做每一步",
+    "summary": "对可验证任务清楚给出目标、约束和完成标准，避免用未经验证的步骤限制代理。",
+    "conditions": [
+      "代理具备完成任务的能力且结果可以验证"
+    ],
+    "boundaries": [
+      "高影响动作仍需授权；不适用没有验证方法或模型能力不足的任务。",
+      "这是任务设计原则，不是让代理无限自主行动。"
+    ],
+    "questions": [
+      "哪些步骤是业务约束，哪些只是我们习惯的做法？",
+      "代理完成后用什么证据判断结果合格？"
+    ],
+    "actions": [
+      "区分硬性约束与可探索路径",
+      "给出目标、边界、停止条件和验收方式，再依据结果调整"
+    ],
+    "status": "method_synthesis"
+  }
+]
