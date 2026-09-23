@@ -13,20 +13,20 @@
           "methodTitle": "Focus your investment"
         },
         {
-          "question": "How can planning keep up with changing demand?",
-          "answer": "A shorter path from demand signals to supply decisions reduces long-range guessing. Find where feedback waits longest. Test a small adjustment and measure response time and inventory risk, instead of just revising the roadmap more often.",
+          "question": "How can supply planning respond sooner to demand?",
+          "answer": "When demand changes faster than supply, measure where signals wait: purchasing, production or distribution. Shorten one stage in a small trial and compare stockouts, inventory losses and delivery times. Buffers may still be necessary for resilience and delivery promises; less inventory is not automatically better.",
           "method": "SJ-P02",
           "methodTitle": "Shorten the feedback loop"
         },
         {
           "question": "Should a product introduction explain features or value?",
-          "answer": "Start with why users care, then demonstrate the experience that supports the promise. Choose one memorable benefit and align the copy, demo, and first-use experience around it.",
+          "answer": "Choose one value users should remember and the product behavior that supports it. Ask target users to explain the message back. If the promise conflicts with experience, improve the experience or narrow the claim; a successful advertising story does not prove causation.",
           "method": "SJ-P03",
           "methodTitle": "Communicate user value"
         },
         {
           "question": "Should we launch before everything is perfect?",
-          "answer": "Separate the release baseline from improvements that can follow. Ask what verifiable user value another iteration would add. If the core task works, test with a smaller audience and define the next improvement.",
+          "answer": "State the safety, reliability and experience baseline before deciding what can improve later. Compare waiting, a controlled launch and staged improvements, and schedule a review. Iteration is not permission to lower promises, and launching sooner is not a universal winning rule.",
           "method": "SJ-P04",
           "methodTitle": "Balance quality and delivery"
         }
@@ -104,25 +104,25 @@
       "questions": [
         {
           "question": "Should we expand beyond the core business?",
-          "answer": "Adjacent demand is an opportunity only when resources and capabilities can support it. List what can be reused, what is missing, incremental costs, and possible harm to the core. Start with a limited experiment.",
+          "answer": "Map the adjacent customer task to reusable capabilities, missing pieces, incremental costs and possible harm to the core business. Test in a limited region or audience with continue, shrink and exit thresholds. Synergy is a hypothesis, and a large platform’s resources cannot be assumed for a small team.",
           "method": "WX-P01",
           "methodTitle": "Expand through reusable capabilities"
         },
         {
           "question": "A competitor cut prices. Should we follow?",
-          "answer": "Users may pay for convenience, saved time, and dependable delivery. Find the uncertainty that costs users most. Compare evidence for price, time savings, and reliability before choosing a discount.",
+          "answer": "Compare price, waiting time, delivery certainty and mistake costs for the same customer task. Test whether one improvement increases completion or repeat use rather than only asking preferences. The value of convenience depends on the situation; price sensitivity still matters.",
           "method": "WX-P02",
           "methodTitle": "Value beyond discounts"
         },
         {
           "question": "The market is huge. Why are we struggling?",
-          "answer": "For local services, the relevant market is often the area in which people actually choose. Examine supply, demand, matching, and fulfillment within that area. National market size does not prove local viability.",
+          "answer": "Measure effective supply, active demand and delivery reach within the area users can actually choose from. Inspect matching failures, waiting and repeat purchases by area. National scale can hide local gaps, and no fixed population threshold works everywhere.",
           "method": "WX-P03",
           "methodTitle": "Use the real market boundary"
         },
         {
           "question": "Users browse, but do not buy. What should we fix?",
-          "answer": "Service value must survive the path from discovery to fulfillment. Trace discovery, selection, purchase, delivery, and repeat use. Test the actual break in the chain rather than optimizing views alone.",
+          "answer": "Trace discovery, comparison, ordering, delivery and after-sales failures for a specific service task. Check whether information helps complete the user’s goal. If knowledge alone is the goal, it can have value without a transaction.",
           "method": "WX-P04",
           "methodTitle": "Follow the full transaction"
         }
@@ -340,13 +340,13 @@
         },
         {
           "question": "Is a leaderboard enough to choose a model?",
-          "answer": "Choose with repeated examples of the work the model will actually perform. Use domain reviewers and suitable human baselines. Compare stability and failure cost, and reassess as models change.",
+          "answer": "Use actual job tasks and repeated runs, with an appropriate human baseline where useful. When feasible, hide model identity and ask domain reviewers to score against preset criteria. Track quality, risks and failures over time; entertaining demos cannot establish reliability at scale.",
           "method": "ETM-P03",
           "methodTitle": "Interview models with real work"
         },
         {
           "question": "How do individual AI skills become organizational capability?",
-          "answer": "Frontline discovery, dedicated testing, and leadership incentives need a feedback loop. Provide ways to submit and share opportunities, test them rapidly, and track outcomes after rollout.",
+          "answer": "Connect leadership direction, frontline discoveries and a cross-functional group that tests and shares useful practices. Measure business effects after adoption, not just experiment counts. Check the current tool, contract and permitted use; historical privacy or compliance claims are not a substitute.",
           "method": "ETM-P04",
           "methodTitle": "Connect exploration to organizational learning"
         }
@@ -372,7 +372,7 @@
         },
         {
           "question": "Should every feature use the strongest model?",
-          "answer": "Different tasks need different quality, latency, and cost tradeoffs. Establish task baselines, compare models under the same conditions, and define escalation when a cheaper approach fails.",
+          "answer": "Compare quality, latency and cost on the same task, and define when failures escalate. More expensive or slower is not automatically safer. Repeated attempts on low-pass-rate tasks require an independent correctness check; sampling more cannot replace acceptance testing for high-risk work.",
           "method": "KW-P03",
           "methodTitle": "Match model effort to the task"
         },
@@ -447,6 +447,134 @@
           "methodTitle": "Specify outcomes, not every step"
         }
       ]
+    },
+    {
+      "id": "charlie-munger",
+      "name": "Charlie Munger",
+      "english": "Charlie Munger",
+      "focus": "Models · Incentives · Judgment biases",
+      "questions": [
+        {
+          "question": "Which discipline or mechanism does our explanation omit, and could it change the conclusion?",
+          "answer": "Place the facts within complementary models instead of explaining every problem through your familiar specialty. Examine resource constraints, probability, incentives and psychological influences separately. Write observable predictions for the leading explanations and use facts to rule out models that do not fit. An analogy is not causal evidence; piling up terminology cannot replace validation.",
+          "method": "CM-P01",
+          "methodTitle": "Use complementary models"
+        },
+        {
+          "question": "What does the proposer gain, and does that align with our intended outcome?",
+          "answer": "Check what advisers and implementers gain from a proposal, then use independent evidence to correct incentive-driven bias. List each party’s gains, costs and metrics that could be manipulated. Independently test key assumptions and compare doing no transaction or using a different fee structure. Having an interest does not mean someone is lying; evaluate the advice itself.",
+          "method": "CM-P02",
+          "methodTitle": "Examine incentives behind advice"
+        },
+        {
+          "question": "Are we trusting verifiable evidence, or the proposer’s authority and unanimous agreement?",
+          "answer": "Alongside interests and probabilities, examine how authority, conformity and persuasive explanations affect judgment. Record evidence for and against, and let people form views independently before discussion. Check whether several biases push in the same direction and arrange a review of contrary evidence. Do not use bias labels to dismiss people who disagree.",
+          "method": "CM-P03",
+          "methodTitle": "Check reasoning and bias separately"
+        },
+        {
+          "question": "Does the person executing know why, and which changed conditions should trigger reassessment?",
+          "answer": "When assigning work, explain the goal, reasons and constraints so the recipient can understand and question the decision. Specify who does what by when, why it matters and what constraints apply. Let recipients test the rationale and report assumptions that do not hold. Giving a reason does not make it correct; a plausible explanation can still mislead.",
+          "method": "CM-P04",
+          "methodTitle": "Explain the reason for an action"
+        }
+      ]
+    },
+    {
+      "id": "warren-buffett",
+      "name": "Warren Buffett",
+      "english": "Warren Buffett",
+      "focus": "Returns · Business quality · Long-term costs",
+      "questions": [
+        {
+          "question": "If investment stopped, how would service capacity or competitive position deteriorate?",
+          "answer": "When assessing operating returns, deduct the capital and working capital needed to maintain current competitiveness and business volume. Separate maintenance, expansion and one-off investments, and check working-capital needs. Reconcile accounting profit to cash generation and disclose the key estimates. Maintenance investment often requires estimates: use ranges and scenarios rather than false precision.",
+          "method": "WB-P01",
+          "methodTitle": "Account for the investment needed to stay competitive"
+        },
+        {
+          "question": "For each additional unit of business, how many resources are continually needed, and how much profit can be retained?",
+          "answer": "Examine both growth’s returns and its additional capital needs; revenue scale alone does not establish business quality. Compare scenarios for growth, capital tied up and incremental returns. Record the advantages behind retention or willingness to pay, then seek evidence that those advantages could fail. High capital requirements do not automatically make a business bad; consider risk and adequate returns.",
+          "method": "WB-P02",
+          "methodTitle": "Distinguish growth worth funding"
+        },
+        {
+          "question": "Which options are we giving up, and what changes could remove the advantage?",
+          "answer": "Before committing resources, record the competitive advantage and what is surrendered in exchange; later check whether the original assumptions held. Preserve the original forecasts and triggers, and schedule a comparison with actual outcomes. Examine the transaction structure, the opportunity cost of the assets used to pay and the business prospects separately. Historical reviews contain hindsight bias; cases do not prove that the future can be predicted accurately.",
+          "method": "WB-P03",
+          "methodTitle": "Compare acquisition assumptions with outcomes"
+        },
+        {
+          "question": "Without this budget or the leader’s preference, would we still propose the same project?",
+          "answer": "Check whether a project follows a real opportunity or merely a leader’s preference, a competitor’s move or an available budget. Independently write down the do-nothing option and opposing evidence. Record key forecasts before choosing the direction; later check whether reasons were added merely to support the conclusion. This is an observation about organizational behavior, not proof that every response to a competitor is blind imitation.",
+          "method": "WB-P04",
+          "methodTitle": "Avoid manufacturing reasons for a prior decision"
+        }
+      ]
+    },
+    {
+      "id": "tim-cook",
+      "name": "Tim Cook",
+      "english": "Tim Cook",
+      "focus": "Execution · Supply chain · Product responsibility",
+      "questions": [
+        {
+          "question": "Which factors were already in the forecast, and whose impact was misjudged?",
+          "answer": "Compare each original forecast with the actual deviation, distinguishing supply, demand, comparison bases and measures within your control. Record forecasts, actual results and factor-level differences; seek independent evidence for the key explanations. Choose controllable measures and an observation window while retaining explicit environmental assumptions. A public letter presents management’s explanation, not verified causation.",
+          "method": "TC-P01",
+          "methodTitle": "Separate forecast factors from judgment errors"
+        },
+        {
+          "question": "Which capability must remain ours, and where is the partner stronger?",
+          "answer": "Assess internal and partner strengths separately, retain responsibility for product quality and delivery, then combine external capabilities. List capabilities, quality acceptance criteria, responsible owners and replacement costs. Test interfaces, demand variation and failure recovery on a small scale before making larger commitments. Adapted from a third-party biography’s account of mixed outsourcing, not a complete operating manual written by Cook.",
+          "method": "TC-P02",
+          "methodTitle": "Design partnerships around capabilities"
+        },
+        {
+          "question": "Why did this number change, and what mechanism explains it?",
+          "answer": "Ask for causes and evidence behind specific anomalies while letting responsible people propose and execute solutions within clear roles. Choose anomalies that affect the objective and record the explanation, evidence and next verification. Agree on an owner and feedback time; distinguish examining a judgment from taking over its execution. The biography includes interviewees’ recollections; not every management story has been independently verified.",
+          "method": "TC-P03",
+          "methodTitle": "Investigate anomalies without taking over execution"
+        },
+        {
+          "question": "Who benefits, and who bears the costs of errors, leaks or surveillance?",
+          "answer": "Assess both benefits and harms to users, particularly how data use affects their ability to choose for themselves. Assign responsibility for preventing, receiving feedback on and remedying major harms. Test whether data minimization and user choice work in the actual process. A speech about values does not establish a company’s actual performance.",
+          "method": "TC-P04",
+          "methodTitle": "Design for product impact and responsibility"
+        }
+      ]
+    },
+    {
+      "id": "bill-gates",
+      "name": "Bill Gates",
+      "english": "Bill Gates",
+      "focus": "Platform shifts · Agent tasks · Access to services",
+      "questions": [
+        {
+          "question": "Do users and content or service supply actually reinforce each other?",
+          "answer": "Observe a new platform’s experience and how users and supply reinforce one another; let new evidence change strategic priorities. Try it directly and compare adoption by users, partners and competitors. Record the basis for strategic revisions and cross-team dependencies; review them regularly. Excerpts from a historical memo do not mean any new platform is bound to win.",
+          "method": "BG-P01",
+          "methodTitle": "Reassess platforms through usage and ecosystem feedback"
+        },
+        {
+          "question": "Where must users still repeat explanations or perform manual handoffs?",
+          "answer": "Organize the agent experience around a complete user goal and continuous context, checking whether it delivers an authorized result rather than just advice. Select one frequent task and test end-to-end success using current capabilities. Compare manual steps, accuracy and recovery costs before widening the scope. Adoption timelines and industry replacement in the article are historical forecasts, not facts about current capabilities.",
+          "method": "BG-P02",
+          "methodTitle": "Test agents against cross-application goals"
+        },
+        {
+          "question": "Does remembering information authorize its use in another context?",
+          "answer": "For agent memory and collaboration across contexts, define what can be read, for which tasks and to whom it may be disclosed. List data sources, purposes and recipients by task, with revocable permission. Test misuse and leakage across work and personal contexts, leaving the final decision with the user. Personalization does not authorize unlimited reading or sharing.",
+          "method": "BG-P03",
+          "methodTitle": "Separate memory access from permission to use it"
+        },
+        {
+          "question": "Once the technology is cheaper, which language, device or local barriers still prevent use?",
+          "answer": "When assessing a technology opportunity, examine underserved users’ costs, language, setting and actual outcomes, separating social need from a commercial source of payment. Run a small trial under the target population’s conditions, recording effectiveness and access costs separately. Specify user payments, institutional purchasing or funding paths; do not assume markets will automatically provide coverage. Large needs do not imply an ability to pay; a social mission is not evidence of commercial revenue.",
+          "method": "BG-P04",
+          "methodTitle": "Evaluate access alongside effectiveness"
+        }
+      ]
     }
   ],
   "methods": [
@@ -477,18 +605,20 @@
       "person_name": "Steve Jobs",
       "kind": "principle",
       "title": "Shorten the feedback loop",
-      "summary": "A shorter path from demand signals to supply decisions reduces long-range guessing.",
+      "summary": "When inventory and supply lead times force long-range demand guesses, shorten the delay from demand signals to production changes.",
       "conditions": [
-        "Inventory and response time materially affect demand matching."
+        "Demand fluctuates and inventory or supply adjustment delays can be measured."
       ],
       "boundaries": [
-        "Preserve economies of scale and resilience; faster feedback is not the only objective."
+        "Shorter inventory cycles do not mean less inventory is always better: disruption risk, delivery promises and scale efficiencies may require buffers.",
+        "The historical speech describes a plan and a judgment, not an independent evaluation of inventory reduction."
       ],
       "questions": [
-        "How can planning keep up with changing demand?"
+        "How can supply planning respond sooner to demand?"
       ],
       "actions": [
-        "Find where feedback waits longest. Test a small adjustment and measure response time and inventory risk, instead of just revising the roadmap more often."
+        "Measure delays in customer signals, purchasing, production and distribution separately; identify the main bottleneck.",
+        "Shorten one stage in a limited trial and compare stockouts, inventory losses and delivery times before expanding."
       ],
       "status": "method_synthesis"
     },
@@ -498,18 +628,20 @@
       "person_name": "Steve Jobs",
       "kind": "principle",
       "title": "Communicate user value",
-      "summary": "Start with why users care, then demonstrate the experience that supports the promise.",
+      "summary": "With limited communication space, choose the core value users should remember and align the brand promise with product behavior.",
       "conditions": [
         "The product needs a recognizable identity."
       ],
       "boundaries": [
-        "Storytelling must not hide product defects."
+        "A brand promise cannot replace product quality or demand validation; an advertising success story is not independent causal evidence.",
+        "Continuity of values does not make every positioning choice permanent: new customers and evidence still require reassessment."
       ],
       "questions": [
         "Should a product introduction explain features or value?"
       ],
       "actions": [
-        "Choose one memorable benefit and align the copy, demo, and first-use experience around it."
+        "State one value users should remember and the product behavior that supports it.",
+        "Ask target users to explain the message back; if it conflicts with experience, improve the experience or narrow the claim."
       ],
       "status": "method_synthesis"
     },
@@ -524,13 +656,15 @@
         "The pursuit of perfection is blocking delivery."
       ],
       "boundaries": [
-        "Safety requirements cannot be deferred to a later release."
+        "Iteration is not a reason to lower safety, reliability or promised experience baselines.",
+        "A personal admission of excessive idealism does not prove that launching sooner always wins."
       ],
       "questions": [
         "Should we launch before everything is perfect?"
       ],
       "actions": [
-        "Ask what verifiable user value another iteration would add. If the core task works, test with a smaller audience and define the next improvement."
+        "List the experience and safety baseline for this release and the time needed for further improvement.",
+        "Compare waiting, a controlled launch and staged improvements; schedule a review."
       ],
       "status": "method_synthesis"
     },
@@ -713,13 +847,15 @@
         "A new business or category is being considered."
       ],
       "boundaries": [
-        "Do not apply a large platform's resources and assumptions to a small team."
+        "A large platform’s cash, traffic and offline capabilities do not transfer directly to a small team.",
+        "Adjacency and synergy remain hypotheses. Later company disclosures still call for selective expansion and lower losses; early optimism is not an outcome."
       ],
       "questions": [
         "Should we expand beyond the core business?"
       ],
       "actions": [
-        "List what can be reused, what is missing, incremental costs, and possible harm to the core. Start with a limited experiment."
+        "List the customer task, reusable capabilities, missing pieces, incremental costs and possible harm to the core business.",
+        "Test in a limited region or audience and set evidence thresholds for continuing, reducing scope or exiting."
       ],
       "status": "method_synthesis"
     },
@@ -740,7 +876,8 @@
         "A competitor cut prices. Should we follow?"
       ],
       "actions": [
-        "Find the uncertainty that costs users most. Compare evidence for price, time savings, and reliability before choosing a discount."
+        "Have target users compare price, waiting time, delivery certainty and the cost of mistakes.",
+        "Test whether one improvement increases task completion or repeat use for the same task; do not rely only on stated preference."
       ],
       "status": "method_synthesis"
     },
@@ -761,7 +898,8 @@
         "The market is huge. Why are we struggling?"
       ],
       "actions": [
-        "Examine supply, demand, matching, and fulfillment within that area. National market size does not prove local viability."
+        "Count effective supply, active demand and delivery reach within the area users can actually choose from.",
+        "Inspect matching failures, waiting and repeat purchases by area; national totals can hide local gaps."
       ],
       "status": "method_synthesis"
     },
@@ -782,7 +920,8 @@
         "Users browse, but do not buy. What should we fix?"
       ],
       "actions": [
-        "Trace discovery, selection, purchase, delivery, and repeat use. Test the actual break in the chain rather than optimizing views alone."
+        "Trace discovery, comparison, ordering, delivery and after-sales failures for one specific service task.",
+        "Check whether information helps users achieve their goal; do not force a transaction when knowledge alone is what they need."
       ],
       "status": "method_synthesis"
     },
@@ -1349,7 +1488,9 @@
         "Is a leaderboard enough to choose a model?"
       ],
       "actions": [
-        "Use domain reviewers and suitable human baselines. Compare stability and failure cost, and reassess as models change."
+        "Use real job tasks and repeated runs, comparing models with an appropriate human baseline.",
+        "Reassess periodically and record quality, risk preferences and obvious failures.",
+        "Where feasible, hide model identity and have domain reviewers score against preset criteria to reduce brand and taste bias."
       ],
       "status": "method_synthesis"
     },
@@ -1364,13 +1505,15 @@
         "Individual AI use is not becoming organizational value."
       ],
       "boundaries": [
-        "The framework does not guarantee growth. Experiment counts are not business results."
+        "This framework does not guarantee growth. Measure business effects after rollout rather than counting experiments as success.",
+        "Historical claims about enterprise-tool privacy or compliance cannot replace checks of the current service, contract and permitted use."
       ],
       "questions": [
         "How do individual AI skills become organizational capability?"
       ],
       "actions": [
-        "Provide ways to submit and share opportunities, test them rapidly, and track outcomes after rollout."
+        "Create a channel for frontline proposals and shared findings, with a dedicated group running rapid trials.",
+        "Have leadership clarify how the results will be used, and track business effects after rollout."
       ],
       "status": "method_synthesis"
     },
@@ -1427,13 +1570,17 @@
         "Task types differ and output quality is observable."
       ],
       "boundaries": [
-        "More cost or delay does not guarantee reliability. Do not hide severe errors behind averages or treat cost forecasts as budget guarantees."
+        "A slower or more expensive model is not automatically more reliable; average success rates must not hide costly errors.",
+        "Historical cost-decline forecasts are not budget guarantees; use current measured prices and task data.",
+        "Repeated attempts on low-pass-rate tasks require independent verification of correctness; sampling more is not acceptance testing for high-risk tasks."
       ],
       "questions": [
-        "Should every feature use the strongest model?"
+        "Which steps need fast, repeatable processing, and which require stronger reasoning?",
+        "Is the improvement from additional compute worth the waiting time and cost?"
       ],
       "actions": [
-        "Establish task baselines, compare models under the same conditions, and define escalation when a cheaper approach fails."
+        "Establish quality, latency and cost baselines for each task.",
+        "Compare candidate models on the same task and define an escalation path for failures."
       ],
       "status": "method_synthesis"
     },
@@ -1623,6 +1770,382 @@
       ],
       "actions": [
         "Separate genuine business constraints from habitual paths, let the Agent explore implementation, and refine from results."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P01",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Use complementary models",
+      "summary": "Place the facts within complementary models instead of explaining every problem through your familiar specialty.",
+      "conditions": [
+        "The problem spans technology, behavior and business mechanisms."
+      ],
+      "boundaries": [
+        "An analogy is not causal evidence; piling up terminology cannot replace validation.",
+        "Models may conflict: state their assumptions and the evidence that would distinguish them."
+      ],
+      "questions": [
+        "Which discipline or mechanism does our explanation omit, and could it change the conclusion?"
+      ],
+      "actions": [
+        "Examine resource constraints, probability, incentives and psychological influences separately.",
+        "Write observable predictions for the leading explanations and use facts to rule out models that do not fit."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P02",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Examine incentives behind advice",
+      "summary": "Check what advisers and implementers gain from a proposal, then use independent evidence to correct incentive-driven bias.",
+      "conditions": [
+        "Procurement, outside advice, sales mechanisms or reward design."
+      ],
+      "boundaries": [
+        "Having an interest does not mean someone is lying; evaluate the advice itself.",
+        "Incentives do not explain all behavior, and punishment cannot replace capability and process development."
+      ],
+      "questions": [
+        "What does the proposer gain, and does that align with our intended outcome?"
+      ],
+      "actions": [
+        "List each party’s gains, costs and metrics that could be manipulated.",
+        "Independently test key assumptions and compare doing no transaction or using a different fee structure."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P03",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Check reasoning and bias separately",
+      "summary": "Alongside interests and probabilities, examine how authority, conformity and persuasive explanations affect judgment.",
+      "conditions": [
+        "A group has strong consensus or decision-makers differ greatly in status."
+      ],
+      "boundaries": [
+        "Do not use bias labels to dismiss people who disagree.",
+        "The psychological examples are historical explanations; they have not been independently rechecked against modern experiments here."
+      ],
+      "questions": [
+        "Are we trusting verifiable evidence, or the proposer’s authority and unanimous agreement?"
+      ],
+      "actions": [
+        "Record evidence for and against, and let people form views independently before discussion.",
+        "Check whether several biases push in the same direction and arrange a review of contrary evidence."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P04",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Explain the reason for an action",
+      "summary": "When assigning work, explain the goal, reasons and constraints so the recipient can understand and question the decision.",
+      "conditions": [
+        "Cross-functional collaboration or execution under uncertainty."
+      ],
+      "boundaries": [
+        "Giving a reason does not make it correct; a plausible explanation can still mislead.",
+        "Do not copy the punitive practices in the author’s examples."
+      ],
+      "questions": [
+        "Does the person executing know why, and which changed conditions should trigger reassessment?"
+      ],
+      "actions": [
+        "Specify who does what by when, why it matters and what constraints apply.",
+        "Let recipients test the rationale and report assumptions that do not hold."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P01",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Account for the investment needed to stay competitive",
+      "summary": "When assessing operating returns, deduct the capital and working capital needed to maintain current competitiveness and business volume.",
+      "conditions": [
+        "Assessing an established business’s continuing earning capacity or comparing expansion options."
+      ],
+      "boundaries": [
+        "Maintenance investment often requires estimates: use ranges and scenarios rather than false precision.",
+        "Learning investment during exploration differs from maintenance in a mature business; this is not grounds to reject all early losses."
+      ],
+      "questions": [
+        "If investment stopped, how would service capacity or competitive position deteriorate?"
+      ],
+      "actions": [
+        "Separate maintenance, expansion and one-off investments, and check working-capital needs.",
+        "Reconcile accounting profit to cash generation and disclose the key estimates."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P02",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Distinguish growth worth funding",
+      "summary": "Examine both growth’s returns and its additional capital needs; revenue scale alone does not establish business quality.",
+      "conditions": [
+        "Choosing growth projects or comparing business models."
+      ],
+      "boundaries": [
+        "High capital requirements do not automatically make a business bad; consider risk and adequate returns.",
+        "Historical industry judgments are not permanent rankings; an airline example from the past is not a conclusion for every era."
+      ],
+      "questions": [
+        "For each additional unit of business, how many resources are continually needed, and how much profit can be retained?"
+      ],
+      "actions": [
+        "Compare scenarios for growth, capital tied up and incremental returns.",
+        "Record the advantages behind retention or willingness to pay, then seek evidence that those advantages could fail."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P03",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Compare acquisition assumptions with outcomes",
+      "summary": "Before committing resources, record the competitive advantage and what is surrendered in exchange; later check whether the original assumptions held.",
+      "conditions": [
+        "Acquisitions, major partnerships or resource commitments that are difficult to reverse."
+      ],
+      "boundaries": [
+        "Historical reviews contain hindsight bias; cases do not prove that the future can be predicted accurately.",
+        "The cost of equity cannot be measured only by its accounting amount on the transaction date, nor judged solely by a later share price."
+      ],
+      "questions": [
+        "Which options are we giving up, and what changes could remove the advantage?"
+      ],
+      "actions": [
+        "Preserve the original forecasts and triggers, and schedule a comparison with actual outcomes.",
+        "Examine the transaction structure, the opportunity cost of the assets used to pay and the business prospects separately."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P04",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Avoid manufacturing reasons for a prior decision",
+      "summary": "Check whether a project follows a real opportunity or merely a leader’s preference, a competitor’s move or an available budget.",
+      "conditions": [
+        "Resource-allocation discussions are already under pressure to favor a direction."
+      ],
+      "boundaries": [
+        "This is an observation about organizational behavior, not proof that every response to a competitor is blind imitation.",
+        "Suspicion alone cannot invalidate professional analysis; inspect its evidence and assumptions."
+      ],
+      "questions": [
+        "Without this budget or the leader’s preference, would we still propose the same project?"
+      ],
+      "actions": [
+        "Independently write down the do-nothing option and opposing evidence.",
+        "Record key forecasts before choosing the direction; later check whether reasons were added merely to support the conclusion."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P01",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Separate forecast factors from judgment errors",
+      "summary": "Compare each original forecast with the actual deviation, distinguishing supply, demand, comparison bases and measures within your control.",
+      "conditions": [
+        "Results diverge from the plan and require corrective choices rather than a blanket explanation about the environment."
+      ],
+      "boundaries": [
+        "A public letter presents management’s explanation, not verified causation.",
+        "Also examine data that challenges the explanation; historical figures are not benchmarks for the current business."
+      ],
+      "questions": [
+        "Which factors were already in the forecast, and whose impact was misjudged?",
+        "Which part of the buying or usage friction can we change?"
+      ],
+      "actions": [
+        "Record forecasts, actual results and factor-level differences; seek independent evidence for the key explanations.",
+        "Choose controllable measures and an observation window while retaining explicit environmental assumptions."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P02",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Design partnerships around capabilities",
+      "summary": "Assess internal and partner strengths separately, retain responsibility for product quality and delivery, then combine external capabilities.",
+      "conditions": [
+        "Choosing whether to build, buy, outsource or partner when demand and scale may fluctuate."
+      ],
+      "boundaries": [
+        "Adapted from a third-party biography’s account of mixed outsourcing, not a complete operating manual written by Cook.",
+        "Cost and flexibility must not conceal labor rights, supplier concentration or switching risks; applying hardware experience to software requires new validation."
+      ],
+      "questions": [
+        "Which capability must remain ours, and where is the partner stronger?",
+        "Who can diagnose and correct a quality or supply failure?"
+      ],
+      "actions": [
+        "List capabilities, quality acceptance criteria, responsible owners and replacement costs.",
+        "Test interfaces, demand variation and failure recovery on a small scale before making larger commitments."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P03",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Investigate anomalies without taking over execution",
+      "summary": "Ask for causes and evidence behind specific anomalies while letting responsible people propose and execute solutions within clear roles.",
+      "conditions": [
+        "Reports are plentiful but key anomalies go unexplained, or managers take over frontline judgment."
+      ],
+      "boundaries": [
+        "The biography includes interviewees’ recollections; not every management story has been independently verified.",
+        "Humiliation, overwork and endless questioning are not endorsed as effective management; scrutiny should be proportionate to risk."
+      ],
+      "questions": [
+        "Why did this number change, and what mechanism explains it?",
+        "What information, authority and resources does the owner need?"
+      ],
+      "actions": [
+        "Choose anomalies that affect the objective and record the explanation, evidence and next verification.",
+        "Agree on an owner and feedback time; distinguish examining a judgment from taking over its execution."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P04",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Design for product impact and responsibility",
+      "summary": "Assess both benefits and harms to users, particularly how data use affects their ability to choose for themselves.",
+      "conditions": [
+        "Products collect sensitive data, influence behavior or create significant effects beyond the immediate interaction."
+      ],
+      "boundaries": [
+        "A speech about values does not establish a company’s actual performance.",
+        "Tie responsibility to real risks and remedies; abstract values cannot replace functional, legal or safety validation."
+      ],
+      "questions": [
+        "Who benefits, and who bears the costs of errors, leaks or surveillance?",
+        "Can users understand and control how their data is used?"
+      ],
+      "actions": [
+        "Assign responsibility for preventing, receiving feedback on and remedying major harms.",
+        "Test whether data minimization and user choice work in the actual process."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P01",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Reassess platforms through usage and ecosystem feedback",
+      "summary": "Observe a new platform’s experience and how users and supply reinforce one another; let new evidence change strategic priorities.",
+      "conditions": [
+        "A new technology or standard may change distribution and competition."
+      ],
+      "boundaries": [
+        "Excerpts from a historical memo do not mean any new platform is bound to win.",
+        "Positive feedback needs observable evidence in the current setting; a historical analogy cannot prove demand."
+      ],
+      "questions": [
+        "Do users and content or service supply actually reinforce each other?",
+        "Which new fact would justify changing our resource allocation?"
+      ],
+      "actions": [
+        "Try it directly and compare adoption by users, partners and competitors.",
+        "Record the basis for strategic revisions and cross-team dependencies; review them regularly."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P02",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Test agents against cross-application goals",
+      "summary": "Organize the agent experience around a complete user goal and continuous context, checking whether it delivers an authorized result rather than just advice.",
+      "conditions": [
+        "A task spans applications and requires repeated context entry or manual handoffs."
+      ],
+      "boundaries": [
+        "Adoption timelines and industry replacement in the article are historical forecasts, not facts about current capabilities.",
+        "More applications are not inherently better; subtract the costs of errors, confirmations and recovery from the value."
+      ],
+      "questions": [
+        "Where must users still repeat explanations or perform manual handoffs?",
+        "Does the system achieve the result or only suggest the next step?"
+      ],
+      "actions": [
+        "Select one frequent task and test end-to-end success using current capabilities.",
+        "Compare manual steps, accuracy and recovery costs before widening the scope."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P03",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Separate memory access from permission to use it",
+      "summary": "For agent memory and collaboration across contexts, define what can be read, for which tasks and to whom it may be disclosed.",
+      "conditions": [
+        "Agents retain long-term context or collaborate across work, personal life and other services."
+      ],
+      "boundaries": [
+        "Personalization does not authorize unlimited reading or sharing.",
+        "The historical article raises questions, not a finished permission architecture; the concrete design needs current validation."
+      ],
+      "questions": [
+        "Does remembering information authorize its use in another context?",
+        "Which details must not be disclosed when agents communicate?"
+      ],
+      "actions": [
+        "List data sources, purposes and recipients by task, with revocable permission.",
+        "Test misuse and leakage across work and personal contexts, leaving the final decision with the user."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P04",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Evaluate access alongside effectiveness",
+      "summary": "When assessing a technology opportunity, examine underserved users’ costs, language, setting and actual outcomes, separating social need from a commercial source of payment.",
+      "conditions": [
+        "Using AI to make professional services more accessible or serve people with limited resources."
+      ],
+      "boundaries": [
+        "Large needs do not imply an ability to pay; a social mission is not evidence of commercial revenue.",
+        "High-impact areas such as education and healthcare require independent evidence of effectiveness and professional validation, not just demonstrations."
+      ],
+      "questions": [
+        "Once the technology is cheaper, which language, device or local barriers still prevent use?",
+        "Who pays, who benefits and who bears the ongoing cost?"
+      ],
+      "actions": [
+        "Run a small trial under the target population’s conditions, recording effectiveness and access costs separately.",
+        "Specify user payments, institutional purchasing or funding paths; do not assume markets will automatically provide coverage."
       ],
       "status": "method_synthesis"
     }

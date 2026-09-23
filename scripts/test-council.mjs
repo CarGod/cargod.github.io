@@ -7,15 +7,21 @@ const sitemapIndex=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
 const sitemapFiles=[...sitemapIndex.matchAll(/<loc>https:\/\/luffyliu\.com\/(sitemaps\/[^<]+)<\/loc>/g)].map(m=>m[1]);
 const sitemap=(await Promise.all(sitemapFiles.map(file=>fs.readFile(path.join(out,file),'utf8')))).join('\n');
 const ids=councilMethods.map(m=>m.id).sort();
+assert.equal(new Set(ids).size,72);
+assert.equal(council.sourceCommit,"ee26918621ef281ebcdf46c1bc5b0dd7f074134c");
+assert(!/source_ids|source_locators|local_path|drive\.google\.com|\/Users\//.test(JSON.stringify(councilMethods)));
 const uiKeys=Object.keys(localizedCouncil('zh-CN').ui).sort();
 let count=0;
 for(const locale of Object.keys(councilLocales)){
  const {ui,advisors,methods}=localizedCouncil(locale);
- assert.equal(advisors.length,14); assert.deepEqual(methods.map(m=>m.id).sort(),ids);
+ assert.equal(advisors.length,18); assert.equal(methods.length,72); assert.equal(council.methodCount,255); assert.equal(council.version,"2.3.1"); assert.deepEqual(methods.map(m=>m.id).sort(),ids);
  assert.deepEqual(Object.keys(ui).sort(),uiKeys);
  assert(Object.entries(ui).every(([key,v])=>typeof v==='string'&&(v.trim()||key==='heroBefore')),`Missing UI text: ${locale}`);
  for(const advisor of advisors){
   assert.equal(advisor.questions.length,4);
+  const avatar=await fs.readFile(`assets/council/${advisor.id}.png`);
+  assert.equal(avatar.subarray(1,4).toString(),"PNG");
+  assert(avatar.readUInt32BE(16)>0&&avatar.readUInt32BE(20)>0);
   for(const q of advisor.questions){
    const method=methods.find(m=>m.id===q.method&&m.person===advisor.id);
    assert(method,`${locale}:${q.method}`);assert.equal(method.title,q.methodTitle);

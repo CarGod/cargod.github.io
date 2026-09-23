@@ -13,20 +13,20 @@
           "methodTitle": "Concentrar la inversión"
         },
         {
-          "question": "¿Cómo planificar cuando la demanda cambia?",
-          "answer": "Reducir el retraso entre la señal de demanda y la decisión de suministro limita las conjeturas. Localiza dónde se atasca la información, prueba un cambio pequeño y mide tiempo de respuesta y riesgo de inventario.",
+          "question": "¿Cómo puede el suministro responder antes a la demanda?",
+          "answer": "Cuando la demanda cambia más rápido que el suministro, mide dónde se retrasa la señal: compras, producción o distribución. Acorta una etapa en una prueba limitada y compara faltantes, pérdidas de inventario y plazos de entrega. La resiliencia y los compromisos pueden exigir reservas; menos inventario no siempre es mejor.",
           "method": "SJ-P02",
           "methodTitle": "Acortar la respuesta a la demanda"
         },
         {
           "question": "¿Presentamos funciones o beneficios?",
-          "answer": "Explica primero por qué le importa al usuario y demuéstralo con una experiencia concreta. Elige un beneficio memorable y alinea el texto, la demostración y el primer uso con él.",
+          "answer": "Elige un valor que el usuario deba recordar y el comportamiento del producto que lo respalda. Pide a los usuarios que expliquen el mensaje. Si la promesa contradice la experiencia, mejora esta o limita la afirmación; un caso publicitario exitoso no demuestra causalidad.",
           "method": "SJ-P03",
           "methodTitle": "Comunicar el valor"
         },
         {
           "question": "¿Lanzamos antes de alcanzar la perfección?",
-          "answer": "Separa el mínimo exigible para publicar de las mejoras posteriores. Pregunta qué valor verificable aporta esperar otra iteración. Si la tarea principal funciona, prueba con un público reducido y define la siguiente mejora.",
+          "answer": "Define primero los mínimos de seguridad, fiabilidad y experiencia. Compara esperar, lanzar de forma controlada y mejorar por etapas; fija una revisión. Iterar no autoriza a rebajar compromisos y lanzar antes no garantiza ganar.",
           "method": "SJ-P04",
           "methodTitle": "Equilibrar calidad y entrega"
         }
@@ -104,25 +104,25 @@
       "questions": [
         {
           "question": "¿Conviene abrir otra línea de negocio?",
-          "answer": "Una necesidad cercana requiere capacidades y recursos compatibles para convertirse en oportunidad. Enumera lo reutilizable, lo que falta, los costes nuevos y el impacto en el negocio principal; empieza con una prueba limitada.",
+          "answer": "Relaciona la tarea adyacente del cliente con capacidades reutilizables, carencias, costes adicionales y posibles daños al negocio principal. Prueba en una región o grupo limitado, con umbrales para continuar, reducir o salir. La sinergia es una hipótesis; un equipo pequeño no dispone automáticamente de los recursos de una gran plataforma.",
           "method": "WX-P01",
           "methodTitle": "Expandirse reutilizando capacidades"
         },
         {
           "question": "La competencia baja precios: ¿la seguimos?",
-          "answer": "La comodidad, el ahorro de tiempo y la fiabilidad también pueden motivar la compra. Identifica la incertidumbre que más le cuesta al usuario y compara precio, tiempo y garantía de entrega con tareas reales.",
+          "answer": "Compara precio, espera, certeza de entrega y coste de errores para una misma tarea. Prueba si una mejora aumenta la finalización o repetición, en vez de preguntar solo preferencias. La comodidad depende del contexto y la sensibilidad al precio sigue importando.",
           "method": "WX-P02",
           "methodTitle": "Valor más allá del descuento"
         },
         {
           "question": "El mercado es enorme: ¿por qué no avanzamos?",
-          "answer": "En servicios locales importa el área donde la gente realmente elige. Examina oferta, demanda, conexión y cumplimiento dentro de ese radio; el tamaño nacional no demuestra viabilidad local.",
+          "answer": "Mide oferta efectiva, demanda activa y alcance de entrega dentro del área donde el usuario realmente puede elegir. Examina fallos de emparejamiento, esperas y compras repetidas por zona. La escala nacional puede ocultar carencias locales; no existe un umbral de población universal.",
           "method": "WX-P03",
           "methodTitle": "Definir el mercado real"
         },
         {
           "question": "Muchos miran y pocos compran: ¿qué falla?",
-          "answer": "El valor del servicio debe llegar desde el descubrimiento hasta la entrega. Recorre selección, compra, cumplimiento y repetición, y prueba el punto donde se interrumpe la tarea.",
+          "answer": "Sigue los fallos entre descubrimiento, comparación, pedido, entrega y posventa para una tarea concreta. Comprueba si la información permite alcanzar el objetivo del usuario. Si solo busca conocimiento, este puede tener valor sin una transacción.",
           "method": "WX-P04",
           "methodTitle": "Seguir la transacción completa"
         }
@@ -340,13 +340,13 @@
         },
         {
           "question": "¿Basta con una clasificación para elegir modelo?",
-          "answer": "Prueba repetidamente muestras del trabajo que realmente tendrá que hacer. Usa revisión de especialistas y referencias humanas apropiadas; compara estabilidad y coste del fallo, y reevalúa.",
+          "answer": "Usa tareas reales y varias ejecuciones, con una referencia humana adecuada cuando sea útil. Si es posible, oculta la identidad del modelo y pide a especialistas puntuar con criterios previos. Revisa calidad, riesgos y errores a lo largo del tiempo; una demostración entretenida no prueba fiabilidad a escala.",
           "method": "ETM-P03",
           "methodTitle": "Entrevistar modelos con trabajo real"
         },
         {
           "question": "¿Cómo convertir habilidad individual en capacidad colectiva?",
-          "answer": "La exploración de primera línea, la validación especializada y los incentivos deben conectarse. Facilita proponer y compartir oportunidades, prueba rápido y mide resultados después de extender lo útil.",
+          "answer": "Conecta la orientación de líderes, descubrimientos de primera línea y un equipo transversal que pruebe y comparta prácticas útiles. Mide efectos de negocio después de adoptarlas, no solo experimentos. Revisa herramienta, contrato y uso permitido actuales; las afirmaciones históricas sobre privacidad o cumplimiento no los sustituyen.",
           "method": "ETM-P04",
           "methodTitle": "Conectar exploración y organización"
         }
@@ -372,7 +372,7 @@
         },
         {
           "question": "¿Todas las funciones necesitan el modelo más potente?",
-          "answer": "Cada tarea exige su propio equilibrio de calidad, latencia y coste. Crea una base por tarea, compara en condiciones iguales y define cómo escalar cuando falla una opción económica.",
+          "answer": "Compara calidad, latencia y coste en la misma tarea y define cuándo escalar los fallos. Más caro o lento no significa más seguro. Repetir tareas de baja tasa de acierto exige verificar la corrección de forma independiente; más muestras no sustituyen la aceptación de trabajo de alto riesgo.",
           "method": "KW-P03",
           "methodTitle": "Ajustar modelo y esfuerzo"
         },
@@ -447,6 +447,134 @@
           "methodTitle": "Definir resultados y límites"
         }
       ]
+    },
+    {
+      "id": "charlie-munger",
+      "name": "Charlie Munger",
+      "english": "Charlie Munger",
+      "focus": "Modelos · Incentivos · Sesgos de juicio",
+      "questions": [
+        {
+          "question": "¿Qué disciplina o mecanismo omite nuestra explicación y podría cambiar la conclusión?",
+          "answer": "Sitúa los hechos en modelos complementarios en vez de explicar todos los problemas desde tu especialidad habitual. Examina por separado restricciones de recursos, probabilidades, incentivos e influencias psicológicas. Formula predicciones observables para las explicaciones principales y descarta con hechos los modelos que no encajen. Una analogía no es evidencia causal; acumular términos no sustituye la validación.",
+          "method": "CM-P01",
+          "methodTitle": "Combinar modelos complementarios"
+        },
+        {
+          "question": "¿Qué gana quien propone esta opción y coincide con nuestro resultado deseado?",
+          "answer": "Comprueba qué ganan quienes recomiendan y ejecutan una propuesta y usa evidencia independiente para corregir los sesgos de interés. Enumera beneficios, costes e indicadores manipulables de cada parte. Verifica de forma independiente los supuestos clave y compara no hacer la operación o usar otra estructura de honorarios. Tener un interés no equivale a mentir; evalúa también el consejo en sí.",
+          "method": "CM-P02",
+          "methodTitle": "Examinar los incentivos del consejo"
+        },
+        {
+          "question": "¿Confiamos en evidencia verificable o en la autoridad del proponente y el acuerdo unánime?",
+          "answer": "Además de intereses y probabilidades, examina cómo afectan al juicio la autoridad, la conformidad y las explicaciones persuasivas. Registra evidencia a favor y en contra y permite formar opiniones independientes antes de debatir. Comprueba si varios sesgos empujan en la misma dirección y organiza una revisión de evidencia contraria. No uses etiquetas de sesgos para descalificar a quien discrepa.",
+          "method": "CM-P03",
+          "methodTitle": "Revisar razonamiento y sesgos por separado"
+        },
+        {
+          "question": "¿Quien ejecuta sabe por qué actúa y qué cambios deberían llevar a reevaluar?",
+          "answer": "Al asignar trabajo, explica objetivo, razones y restricciones para que quien lo ejecuta pueda comprender y cuestionar la decisión. Especifica quién hace qué, para cuándo, por qué y con qué restricciones. Permite comprobar el razonamiento y comunicar los supuestos que no se cumplan. Dar una razón no demuestra que sea correcta; una explicación plausible también puede inducir a error.",
+          "method": "CM-P04",
+          "methodTitle": "Explicar el porqué de la acción"
+        }
+      ]
+    },
+    {
+      "id": "warren-buffett",
+      "name": "Warren Buffett",
+      "english": "Warren Buffett",
+      "focus": "Rendimiento · Calidad del negocio · Costes a largo plazo",
+      "questions": [
+        {
+          "question": "Si dejáramos de invertir, ¿cómo se deteriorarían la capacidad de servicio o la posición competitiva?",
+          "answer": "Al evaluar el rendimiento operativo, descuenta el capital y capital circulante necesarios para mantener la competitividad y el volumen actuales. Separa inversiones de mantenimiento, expansión y puntuales; comprueba las necesidades de capital circulante. Reconcilia el beneficio contable con la generación de caja y explicita las estimaciones clave. La inversión de mantenimiento suele ser estimada: usa intervalos y escenarios, sin falsa precisión.",
+          "method": "WB-P01",
+          "methodTitle": "Descontar la inversión necesaria para seguir compitiendo"
+        },
+        {
+          "question": "Por cada unidad adicional de negocio, ¿cuántos recursos exige de forma continua y cuánto beneficio permite retener?",
+          "answer": "Examina tanto el rendimiento del crecimiento como el capital adicional que exige; el volumen de ingresos no demuestra por sí solo la calidad del negocio. Compara escenarios de crecimiento, capital inmovilizado y rendimiento incremental. Registra qué ventajas sostienen la retención o la disposición a pagar y busca evidencia de que puedan fallar. Necesitar mucho capital no hace malo a un negocio: considera su riesgo y una rentabilidad adecuada.",
+          "method": "WB-P02",
+          "methodTitle": "Distinguir el crecimiento que merece inversión"
+        },
+        {
+          "question": "¿A qué opciones renunciamos y qué cambios podrían eliminar la ventaja?",
+          "answer": "Antes de comprometer recursos, registra la ventaja competitiva y lo que se entrega a cambio; después comprueba si se cumplieron las hipótesis originales. Conserva las previsiones y condiciones originales y programa una comparación con los resultados reales. Evalúa por separado la estructura de la operación, el coste de oportunidad de los activos usados como pago y las perspectivas del negocio. Las revisiones históricas contienen sesgo retrospectivo; los casos no demuestran que se pueda predecir el futuro con precisión.",
+          "method": "WB-P03",
+          "methodTitle": "Contrastar las hipótesis de adquisición con los resultados"
+        },
+        {
+          "question": "Sin ese presupuesto o preferencia del líder, ¿propondríamos el mismo proyecto?",
+          "answer": "Comprueba si un proyecto responde a una oportunidad real o solo a preferencias del líder, movimientos de competidores o un presupuesto disponible. Escribe de forma independiente la opción de no actuar y la evidencia contraria. Registra las previsiones clave antes de elegir; después revisa si se añadieron razones solo para apoyar la conclusión. Es una observación del comportamiento organizativo, no prueba de que toda respuesta a un competidor sea imitación ciega.",
+          "method": "WB-P04",
+          "methodTitle": "Evitar justificar una decisión ya tomada"
+        }
+      ]
+    },
+    {
+      "id": "tim-cook",
+      "name": "Tim Cook",
+      "english": "Tim Cook",
+      "focus": "Ejecución · Cadena de suministro · Responsabilidad del producto",
+      "questions": [
+        {
+          "question": "¿Qué factores ya incluía la previsión y de cuáles se calculó mal el impacto?",
+          "answer": "Compara cada previsión con la desviación real, distinguiendo oferta, demanda, bases de comparación y medidas bajo tu control. Registra previsiones, resultados y diferencias por factor; busca evidencia independiente para las explicaciones clave. Elige medidas controlables y un plazo de observación, manteniendo explícitos los supuestos sobre el entorno. Una carta pública presenta la explicación de la dirección, no causalidad verificada.",
+          "method": "TC-P01",
+          "methodTitle": "Separar factores previstos de errores de juicio"
+        },
+        {
+          "question": "¿Qué capacidad debemos conservar y en qué es más fuerte el socio?",
+          "answer": "Evalúa por separado las fortalezas propias y del socio, conserva la responsabilidad por calidad y entrega y luego combina capacidades externas. Enumera capacidades, criterios de aceptación de calidad, responsables y costes de sustitución. Prueba a pequeña escala interfaces, variaciones de demanda y recuperación de fallos antes de ampliar los compromisos. Adaptado del relato sobre externalización mixta de una biografía de terceros; no es un manual operativo completo escrito por Cook.",
+          "method": "TC-P02",
+          "methodTitle": "Diseñar alianzas según las capacidades"
+        },
+        {
+          "question": "¿Por qué cambió esta cifra y qué mecanismo lo explica?",
+          "answer": "Pregunta por causas y evidencia de anomalías concretas, dejando que los responsables propongan y ejecuten soluciones dentro de funciones claras. Elige anomalías que afecten al objetivo y registra explicación, pruebas y siguiente verificación. Acuerda responsable y fecha de seguimiento; distingue examinar el juicio de sustituir la ejecución. La biografía incluye recuerdos de entrevistados; no se ha verificado de forma independiente cada historia de gestión.",
+          "method": "TC-P03",
+          "methodTitle": "Investigar anomalías sin sustituir a quien ejecuta"
+        },
+        {
+          "question": "¿Quién se beneficia y quién soporta errores, filtraciones o vigilancia?",
+          "answer": "Evalúa beneficios y perjuicios para los usuarios, especialmente cómo el uso de datos afecta a su capacidad de decidir por sí mismos. Asigna responsabilidades de prevención, recepción de comentarios y reparación de los principales perjuicios. Comprueba si la minimización de datos y la elección del usuario funcionan en el proceso real. Un discurso sobre valores no demuestra el desempeño real de una empresa.",
+          "method": "TC-P04",
+          "methodTitle": "Incluir impacto y responsabilidad en el diseño"
+        }
+      ]
+    },
+    {
+      "id": "bill-gates",
+      "name": "Bill Gates",
+      "english": "Bill Gates",
+      "focus": "Cambios de plataforma · Tareas de agentes · Acceso a servicios",
+      "questions": [
+        {
+          "question": "¿Los usuarios y la oferta de contenidos o servicios realmente se refuerzan?",
+          "answer": "Observa la experiencia de una nueva plataforma y cómo usuarios y oferta se refuerzan; deja que nueva evidencia cambie las prioridades estratégicas. Pruébala directamente y compara la adopción entre usuarios, socios y competidores. Registra el fundamento de los cambios estratégicos y las dependencias entre equipos; revísalos periódicamente. Un fragmento de un memorando histórico no implica que cualquier plataforma nueva vaya a triunfar.",
+          "method": "BG-P01",
+          "methodTitle": "Reevaluar plataformas a partir del uso y su ecosistema"
+        },
+        {
+          "question": "¿Dónde debe el usuario repetir explicaciones o realizar traspasos manuales?",
+          "answer": "Organiza la experiencia del agente alrededor del objetivo completo y un contexto continuo; comprueba si entrega un resultado autorizado y no solo consejos. Elige una tarea frecuente y prueba el éxito de principio a fin con las capacidades actuales. Compara pasos manuales, precisión y costes de recuperación antes de ampliar el alcance. Los plazos de adopción y sustitución sectorial del artículo son predicciones históricas, no hechos sobre capacidades actuales.",
+          "method": "BG-P02",
+          "methodTitle": "Validar agentes con tareas entre aplicaciones"
+        },
+        {
+          "question": "¿Recordar una información autoriza usarla en otro contexto?",
+          "answer": "En la memoria del agente y la colaboración entre contextos, define qué se puede leer, para qué tareas y a quién se puede revelar. Enumera por tarea fuentes de datos, finalidades y destinatarios, con permisos revocables. Prueba usos indebidos y filtraciones entre trabajo y vida privada, manteniendo la decisión final del usuario. La personalización no autoriza leer o compartir sin límites.",
+          "method": "BG-P03",
+          "methodTitle": "Separar acceso a la memoria y permiso de uso"
+        },
+        {
+          "question": "Aunque la tecnología sea más barata, ¿qué barreras de idioma, dispositivo o contexto local impiden usarla?",
+          "answer": "Al valorar una oportunidad tecnológica, examina costes, idioma, entorno y resultados de personas desatendidas, separando necesidad social de una fuente comercial de pago. Haz una prueba pequeña en las condiciones del grupo objetivo y registra eficacia y costes de acceso por separado. Especifica pago del usuario, compra institucional o financiación; no supongas que el mercado dará cobertura automáticamente. Una gran necesidad no implica capacidad de pago; la misión social no demuestra ingresos comerciales.",
+          "method": "BG-P04",
+          "methodTitle": "Evaluar acceso y eficacia conjuntamente"
+        }
+      ]
     }
   ],
   "methods": [
@@ -477,18 +605,20 @@
       "person_name": "Steve Jobs",
       "kind": "principle",
       "title": "Acortar la respuesta a la demanda",
-      "summary": "Reducir el retraso entre la señal de demanda y la decisión de suministro limita las conjeturas.",
+      "summary": "Cuando el inventario y los plazos de suministro obligan a anticipar la demanda a largo plazo, reduce la demora entre las señales de demanda y los ajustes de producción.",
       "conditions": [
-        "El inventario y la velocidad de respuesta afectan al ajuste de la oferta."
+        "La demanda fluctúa y se pueden medir los retrasos de ajuste del inventario o suministro."
       ],
       "boundaries": [
-        "No descuides las economías de escala ni la resiliencia."
+        "Acortar el ciclo no significa que menos inventario siempre sea mejor: las interrupciones, los compromisos de entrega y las economías de escala pueden exigir reservas.",
+        "El discurso histórico describe un plan y un juicio, no una evaluación independiente de los efectos de reducir inventario."
       ],
       "questions": [
-        "¿Cómo planificar cuando la demanda cambia?"
+        "¿Cómo puede el suministro responder antes a la demanda?"
       ],
       "actions": [
-        "Localiza dónde se atasca la información, prueba un cambio pequeño y mide tiempo de respuesta y riesgo de inventario."
+        "Mide por separado las demoras en señales del cliente, compras, fabricación y distribución; localiza el principal cuello de botella.",
+        "Acorta una etapa en una prueba limitada y compara faltantes, pérdidas de inventario y plazos de entrega antes de ampliar."
       ],
       "status": "method_synthesis"
     },
@@ -498,18 +628,20 @@
       "person_name": "Steve Jobs",
       "kind": "principle",
       "title": "Comunicar el valor",
-      "summary": "Explica primero por qué le importa al usuario y demuéstralo con una experiencia concreta.",
+      "summary": "Con espacio de comunicación limitado, define el valor central que el usuario debe recordar y alinea la promesa de marca con el comportamiento del producto.",
       "conditions": [
         "Se necesita una identidad reconocible."
       ],
       "boundaries": [
-        "La narrativa no debe ocultar defectos del producto."
+        "La promesa de marca no sustituye la calidad ni la validación de demanda; un caso publicitario exitoso no constituye evidencia causal independiente.",
+        "Mantener valores no vuelve permanente todo posicionamiento: los nuevos clientes y hechos exigen revisarlo."
       ],
       "questions": [
         "¿Presentamos funciones o beneficios?"
       ],
       "actions": [
-        "Elige un beneficio memorable y alinea el texto, la demostración y el primer uso con él."
+        "Expresa un valor que el usuario deba recordar y qué comportamiento del producto lo respalda.",
+        "Pide a los usuarios objetivo que expliquen el mensaje; si contradice la experiencia, mejora esta o limita la promesa."
       ],
       "status": "method_synthesis"
     },
@@ -524,13 +656,15 @@
         "La búsqueda de perfección bloquea la entrega."
       ],
       "boundaries": [
-        "La seguridad no se puede posponer para otra versión."
+        "Iterar no justifica rebajar los mínimos de seguridad, fiabilidad o experiencia prometida.",
+        "Reconocer un exceso de idealismo no demuestra que lanzar antes siempre dé mejores resultados."
       ],
       "questions": [
         "¿Lanzamos antes de alcanzar la perfección?"
       ],
       "actions": [
-        "Pregunta qué valor verificable aporta esperar otra iteración. Si la tarea principal funciona, prueba con un público reducido y define la siguiente mejora."
+        "Enumera los mínimos de experiencia y seguridad de esta entrega y el tiempo necesario para mejorarla.",
+        "Compara esperar, un lanzamiento controlado y mejoras por etapas; fija una revisión."
       ],
       "status": "method_synthesis"
     },
@@ -713,13 +847,15 @@
         "Una nueva categoría o actividad."
       ],
       "boundaries": [
-        "No apliques los recursos de una gran plataforma a un equipo pequeño."
+        "El capital, tráfico y capacidad operativa de una gran plataforma no se trasladan directamente a un equipo pequeño.",
+        "La proximidad y las sinergias siguen siendo hipótesis. Las comunicaciones posteriores de la empresa todavía exigen expansión selectiva y reducción de pérdidas; el optimismo inicial no es un resultado."
       ],
       "questions": [
         "¿Conviene abrir otra línea de negocio?"
       ],
       "actions": [
-        "Enumera lo reutilizable, lo que falta, los costes nuevos y el impacto en el negocio principal; empieza con una prueba limitada."
+        "Enumera la tarea del cliente, capacidades reutilizables, carencias, costes adicionales y posibles daños al negocio principal.",
+        "Prueba en una región o grupo limitado y fija qué evidencia permitirá continuar, reducir el alcance o salir."
       ],
       "status": "method_synthesis"
     },
@@ -740,7 +876,8 @@
         "La competencia baja precios: ¿la seguimos?"
       ],
       "actions": [
-        "Identifica la incertidumbre que más le cuesta al usuario y compara precio, tiempo y garantía de entrega con tareas reales."
+        "Haz que los usuarios objetivo comparen precio, espera, certeza de entrega y coste de los errores.",
+        "Prueba si una mejora aumenta la finalización o la repetición de la misma tarea; no te bases solo en preferencias declaradas."
       ],
       "status": "method_synthesis"
     },
@@ -761,7 +898,8 @@
         "El mercado es enorme: ¿por qué no avanzamos?"
       ],
       "actions": [
-        "Examina oferta, demanda, conexión y cumplimiento dentro de ese radio; el tamaño nacional no demuestra viabilidad local."
+        "Cuenta oferta efectiva, demanda activa y alcance de entrega dentro del área en la que el usuario realmente puede elegir.",
+        "Examina fallos de emparejamiento, esperas y compras repetidas por zona; los totales nacionales pueden ocultar carencias locales."
       ],
       "status": "method_synthesis"
     },
@@ -782,7 +920,8 @@
         "Muchos miran y pocos compran: ¿qué falla?"
       ],
       "actions": [
-        "Recorre selección, compra, cumplimiento y repetición, y prueba el punto donde se interrumpe la tarea."
+        "Sigue los fallos entre descubrimiento, comparación, pedido, entrega y posventa de una tarea de servicio concreta.",
+        "Comprueba si la información ayuda a lograr el objetivo; no fuerces una transacción si el usuario solo necesita conocimiento."
       ],
       "status": "method_synthesis"
     },
@@ -1349,7 +1488,9 @@
         "¿Basta con una clasificación para elegir modelo?"
       ],
       "actions": [
-        "Usa revisión de especialistas y referencias humanas apropiadas; compara estabilidad y coste del fallo, y reevalúa."
+        "Usa tareas reales del puesto y varias ejecuciones, comparando modelos con una referencia humana adecuada.",
+        "Reevalúa periódicamente y registra calidad, preferencias ante el riesgo y errores evidentes.",
+        "Cuando sea posible, oculta la identidad del modelo y encarga a especialistas una evaluación con criterios previos para reducir sesgos de marca y gusto personal."
       ],
       "status": "method_synthesis"
     },
@@ -1364,13 +1505,15 @@
         "El uso individual de IA no produce beneficios organizativos."
       ],
       "boundaries": [
-        "El marco no garantiza crecimiento; contar experimentos no equivale a medir resultados."
+        "Este marco no garantiza crecimiento. Mide efectos de negocio tras desplegarlo, en lugar de contar experimentos como éxitos.",
+        "Las afirmaciones históricas sobre privacidad o cumplimiento de herramientas empresariales no sustituyen la revisión del servicio, contrato y uso permitido actuales."
       ],
       "questions": [
         "¿Cómo convertir habilidad individual en capacidad colectiva?"
       ],
       "actions": [
-        "Facilita proponer y compartir oportunidades, prueba rápido y mide resultados después de extender lo útil."
+        "Crea un canal para propuestas y hallazgos de primera línea, con un equipo especializado que haga pruebas rápidas.",
+        "Pide a la dirección que aclare cómo se utilizarán los resultados y mide los efectos de negocio tras desplegarlos."
       ],
       "status": "method_synthesis"
     },
@@ -1427,13 +1570,17 @@
         "Tareas distintas con calidad observable."
       ],
       "boundaries": [
-        "Más caro o lento no significa más fiable; no escondas fallos graves tras promedios ni uses previsiones de coste como garantías."
+        "Un modelo más lento o caro no es automáticamente más fiable; las tasas medias no deben ocultar errores costosos.",
+        "Las previsiones históricas de reducción de costes no garantizan presupuestos; usa precios y datos de tareas medidos actualmente.",
+        "Repetir intentos en tareas de baja tasa de acierto exige verificar la corrección de forma independiente; más muestras no sustituyen la aceptación de tareas de alto riesgo."
       ],
       "questions": [
-        "¿Todas las funciones necesitan el modelo más potente?"
+        "¿Qué pasos solo necesitan un procesamiento rápido y repetible, y cuáles exigen un razonamiento más sólido?",
+        "¿La mejora al añadir cómputo compensa la espera y el coste?"
       ],
       "actions": [
-        "Crea una base por tarea, compara en condiciones iguales y define cómo escalar cuando falla una opción económica."
+        "Establece referencias de calidad, latencia y coste para cada tarea.",
+        "Compara los modelos candidatos en la misma tarea y define una vía de escalamiento ante fallos."
       ],
       "status": "method_synthesis"
     },
@@ -1623,6 +1770,382 @@
       ],
       "actions": [
         "Distingue límites obligatorios de hábitos, permite explorar la implementación y ajusta según resultados."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P01",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Combinar modelos complementarios",
+      "summary": "Sitúa los hechos en modelos complementarios en vez de explicar todos los problemas desde tu especialidad habitual.",
+      "conditions": [
+        "El problema combina mecanismos tecnológicos, de comportamiento y de negocio."
+      ],
+      "boundaries": [
+        "Una analogía no es evidencia causal; acumular términos no sustituye la validación.",
+        "Los modelos pueden contradecirse: explicita sus supuestos y qué evidencia permitiría distinguirlos."
+      ],
+      "questions": [
+        "¿Qué disciplina o mecanismo omite nuestra explicación y podría cambiar la conclusión?"
+      ],
+      "actions": [
+        "Examina por separado restricciones de recursos, probabilidades, incentivos e influencias psicológicas.",
+        "Formula predicciones observables para las explicaciones principales y descarta con hechos los modelos que no encajen."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P02",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Examinar los incentivos del consejo",
+      "summary": "Comprueba qué ganan quienes recomiendan y ejecutan una propuesta y usa evidencia independiente para corregir los sesgos de interés.",
+      "conditions": [
+        "Compras, asesoramiento, mecanismos de venta o diseño de recompensas."
+      ],
+      "boundaries": [
+        "Tener un interés no equivale a mentir; evalúa también el consejo en sí.",
+        "Los incentivos no explican todo comportamiento, y castigar no sustituye desarrollar capacidades y procesos."
+      ],
+      "questions": [
+        "¿Qué gana quien propone esta opción y coincide con nuestro resultado deseado?"
+      ],
+      "actions": [
+        "Enumera beneficios, costes e indicadores manipulables de cada parte.",
+        "Verifica de forma independiente los supuestos clave y compara no hacer la operación o usar otra estructura de honorarios."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P03",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Revisar razonamiento y sesgos por separado",
+      "summary": "Además de intereses y probabilidades, examina cómo afectan al juicio la autoridad, la conformidad y las explicaciones persuasivas.",
+      "conditions": [
+        "El grupo tiene un consenso fuerte o hay grandes diferencias de estatus entre quienes deciden."
+      ],
+      "boundaries": [
+        "No uses etiquetas de sesgos para descalificar a quien discrepa.",
+        "Los ejemplos psicológicos son explicaciones históricas; aquí no se han contrastado de forma independiente con experimentos modernos."
+      ],
+      "questions": [
+        "¿Confiamos en evidencia verificable o en la autoridad del proponente y el acuerdo unánime?"
+      ],
+      "actions": [
+        "Registra evidencia a favor y en contra y permite formar opiniones independientes antes de debatir.",
+        "Comprueba si varios sesgos empujan en la misma dirección y organiza una revisión de evidencia contraria."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "CM-P04",
+      "person": "charlie-munger",
+      "person_name": "Charlie Munger",
+      "kind": "principle",
+      "title": "Explicar el porqué de la acción",
+      "summary": "Al asignar trabajo, explica objetivo, razones y restricciones para que quien lo ejecuta pueda comprender y cuestionar la decisión.",
+      "conditions": [
+        "Colaboración entre funciones o ejecución en condiciones inciertas."
+      ],
+      "boundaries": [
+        "Dar una razón no demuestra que sea correcta; una explicación plausible también puede inducir a error.",
+        "No copies las prácticas punitivas de los ejemplos del autor."
+      ],
+      "questions": [
+        "¿Quien ejecuta sabe por qué actúa y qué cambios deberían llevar a reevaluar?"
+      ],
+      "actions": [
+        "Especifica quién hace qué, para cuándo, por qué y con qué restricciones.",
+        "Permite comprobar el razonamiento y comunicar los supuestos que no se cumplan."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P01",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Descontar la inversión necesaria para seguir compitiendo",
+      "summary": "Al evaluar el rendimiento operativo, descuenta el capital y capital circulante necesarios para mantener la competitividad y el volumen actuales.",
+      "conditions": [
+        "Evaluar la capacidad de generar resultados de un negocio establecido o comparar opciones de expansión."
+      ],
+      "boundaries": [
+        "La inversión de mantenimiento suele ser estimada: usa intervalos y escenarios, sin falsa precisión.",
+        "Invertir en aprendizaje durante la exploración no es lo mismo que mantener un negocio maduro; esto no justifica rechazar todas las pérdidas iniciales."
+      ],
+      "questions": [
+        "Si dejáramos de invertir, ¿cómo se deteriorarían la capacidad de servicio o la posición competitiva?"
+      ],
+      "actions": [
+        "Separa inversiones de mantenimiento, expansión y puntuales; comprueba las necesidades de capital circulante.",
+        "Reconcilia el beneficio contable con la generación de caja y explicita las estimaciones clave."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P02",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Distinguir el crecimiento que merece inversión",
+      "summary": "Examina tanto el rendimiento del crecimiento como el capital adicional que exige; el volumen de ingresos no demuestra por sí solo la calidad del negocio.",
+      "conditions": [
+        "Elegir proyectos de crecimiento o comparar modelos de negocio."
+      ],
+      "boundaries": [
+        "Necesitar mucho capital no hace malo a un negocio: considera su riesgo y una rentabilidad adecuada.",
+        "Los juicios históricos sobre sectores no son clasificaciones permanentes; un caso de aerolíneas del pasado no vale para todas las épocas."
+      ],
+      "questions": [
+        "Por cada unidad adicional de negocio, ¿cuántos recursos exige de forma continua y cuánto beneficio permite retener?"
+      ],
+      "actions": [
+        "Compara escenarios de crecimiento, capital inmovilizado y rendimiento incremental.",
+        "Registra qué ventajas sostienen la retención o la disposición a pagar y busca evidencia de que puedan fallar."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P03",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Contrastar las hipótesis de adquisición con los resultados",
+      "summary": "Antes de comprometer recursos, registra la ventaja competitiva y lo que se entrega a cambio; después comprueba si se cumplieron las hipótesis originales.",
+      "conditions": [
+        "Adquisiciones, alianzas importantes o compromisos de recursos difíciles de revertir."
+      ],
+      "boundaries": [
+        "Las revisiones históricas contienen sesgo retrospectivo; los casos no demuestran que se pueda predecir el futuro con precisión.",
+        "El coste de pagar con acciones no se mide solo por su importe contable en la fecha de la operación ni se juzga únicamente por una cotización posterior."
+      ],
+      "questions": [
+        "¿A qué opciones renunciamos y qué cambios podrían eliminar la ventaja?"
+      ],
+      "actions": [
+        "Conserva las previsiones y condiciones originales y programa una comparación con los resultados reales.",
+        "Evalúa por separado la estructura de la operación, el coste de oportunidad de los activos usados como pago y las perspectivas del negocio."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "WB-P04",
+      "person": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "kind": "principle",
+      "title": "Evitar justificar una decisión ya tomada",
+      "summary": "Comprueba si un proyecto responde a una oportunidad real o solo a preferencias del líder, movimientos de competidores o un presupuesto disponible.",
+      "conditions": [
+        "La discusión sobre recursos ya está presionada hacia una dirección."
+      ],
+      "boundaries": [
+        "Es una observación del comportamiento organizativo, no prueba de que toda respuesta a un competidor sea imitación ciega.",
+        "La sospecha no invalida un análisis profesional: examina sus pruebas y supuestos."
+      ],
+      "questions": [
+        "Sin ese presupuesto o preferencia del líder, ¿propondríamos el mismo proyecto?"
+      ],
+      "actions": [
+        "Escribe de forma independiente la opción de no actuar y la evidencia contraria.",
+        "Registra las previsiones clave antes de elegir; después revisa si se añadieron razones solo para apoyar la conclusión."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P01",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Separar factores previstos de errores de juicio",
+      "summary": "Compara cada previsión con la desviación real, distinguiendo oferta, demanda, bases de comparación y medidas bajo tu control.",
+      "conditions": [
+        "Los resultados se apartan del plan y exigen correcciones en lugar de atribuirlo todo al entorno."
+      ],
+      "boundaries": [
+        "Una carta pública presenta la explicación de la dirección, no causalidad verificada.",
+        "Examina también datos contrarios a la explicación; las cifras históricas no son referencias para el negocio actual."
+      ],
+      "questions": [
+        "¿Qué factores ya incluía la previsión y de cuáles se calculó mal el impacto?",
+        "¿Qué fricción de compra o uso podemos cambiar?"
+      ],
+      "actions": [
+        "Registra previsiones, resultados y diferencias por factor; busca evidencia independiente para las explicaciones clave.",
+        "Elige medidas controlables y un plazo de observación, manteniendo explícitos los supuestos sobre el entorno."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P02",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Diseñar alianzas según las capacidades",
+      "summary": "Evalúa por separado las fortalezas propias y del socio, conserva la responsabilidad por calidad y entrega y luego combina capacidades externas.",
+      "conditions": [
+        "Decidir entre desarrollar, comprar, externalizar o asociarse cuando demanda y escala pueden fluctuar."
+      ],
+      "boundaries": [
+        "Adaptado del relato sobre externalización mixta de una biografía de terceros; no es un manual operativo completo escrito por Cook.",
+        "El coste y la flexibilidad no deben ocultar derechos laborales, concentración de proveedores o riesgos de cambio; trasladar experiencia de hardware a software exige validación nueva."
+      ],
+      "questions": [
+        "¿Qué capacidad debemos conservar y en qué es más fuerte el socio?",
+        "¿Quién puede diagnosticar y corregir un fallo de calidad o suministro?"
+      ],
+      "actions": [
+        "Enumera capacidades, criterios de aceptación de calidad, responsables y costes de sustitución.",
+        "Prueba a pequeña escala interfaces, variaciones de demanda y recuperación de fallos antes de ampliar los compromisos."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P03",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Investigar anomalías sin sustituir a quien ejecuta",
+      "summary": "Pregunta por causas y evidencia de anomalías concretas, dejando que los responsables propongan y ejecuten soluciones dentro de funciones claras.",
+      "conditions": [
+        "Sobran informes pero nadie explica anomalías clave, o la dirección sustituye el juicio de primera línea."
+      ],
+      "boundaries": [
+        "La biografía incluye recuerdos de entrevistados; no se ha verificado de forma independiente cada historia de gestión.",
+        "La humillación, el exceso de trabajo y el interrogatorio interminable no se presentan como buena gestión; la revisión debe ser proporcional al riesgo."
+      ],
+      "questions": [
+        "¿Por qué cambió esta cifra y qué mecanismo lo explica?",
+        "¿Qué información, autoridad y recursos necesita la persona responsable?"
+      ],
+      "actions": [
+        "Elige anomalías que afecten al objetivo y registra explicación, pruebas y siguiente verificación.",
+        "Acuerda responsable y fecha de seguimiento; distingue examinar el juicio de sustituir la ejecución."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "TC-P04",
+      "person": "tim-cook",
+      "person_name": "Tim Cook",
+      "kind": "principle",
+      "title": "Incluir impacto y responsabilidad en el diseño",
+      "summary": "Evalúa beneficios y perjuicios para los usuarios, especialmente cómo el uso de datos afecta a su capacidad de decidir por sí mismos.",
+      "conditions": [
+        "El producto recoge datos sensibles, influye en conductas o genera efectos relevantes más allá de la interacción inmediata."
+      ],
+      "boundaries": [
+        "Un discurso sobre valores no demuestra el desempeño real de una empresa.",
+        "Vincula la responsabilidad a riesgos y remedios concretos; los valores abstractos no sustituyen verificaciones funcionales, legales o de seguridad."
+      ],
+      "questions": [
+        "¿Quién se beneficia y quién soporta errores, filtraciones o vigilancia?",
+        "¿Puede el usuario comprender y controlar el uso de sus datos?"
+      ],
+      "actions": [
+        "Asigna responsabilidades de prevención, recepción de comentarios y reparación de los principales perjuicios.",
+        "Comprueba si la minimización de datos y la elección del usuario funcionan en el proceso real."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P01",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Reevaluar plataformas a partir del uso y su ecosistema",
+      "summary": "Observa la experiencia de una nueva plataforma y cómo usuarios y oferta se refuerzan; deja que nueva evidencia cambie las prioridades estratégicas.",
+      "conditions": [
+        "Una tecnología o estándar nuevo puede cambiar la distribución y la competencia."
+      ],
+      "boundaries": [
+        "Un fragmento de un memorando histórico no implica que cualquier plataforma nueva vaya a triunfar.",
+        "El refuerzo mutuo necesita evidencia observable en el contexto actual; la analogía histórica no demuestra demanda."
+      ],
+      "questions": [
+        "¿Los usuarios y la oferta de contenidos o servicios realmente se refuerzan?",
+        "¿Qué hecho nuevo justificaría reasignar recursos?"
+      ],
+      "actions": [
+        "Pruébala directamente y compara la adopción entre usuarios, socios y competidores.",
+        "Registra el fundamento de los cambios estratégicos y las dependencias entre equipos; revísalos periódicamente."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P02",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Validar agentes con tareas entre aplicaciones",
+      "summary": "Organiza la experiencia del agente alrededor del objetivo completo y un contexto continuo; comprueba si entrega un resultado autorizado y no solo consejos.",
+      "conditions": [
+        "La tarea abarca varias aplicaciones y exige repetir contexto o realizar traspasos manuales."
+      ],
+      "boundaries": [
+        "Los plazos de adopción y sustitución sectorial del artículo son predicciones históricas, no hechos sobre capacidades actuales.",
+        "Conectar más aplicaciones no siempre es mejor: descuenta el coste de errores, confirmaciones y recuperación."
+      ],
+      "questions": [
+        "¿Dónde debe el usuario repetir explicaciones o realizar traspasos manuales?",
+        "¿El sistema consigue el resultado o solo sugiere el siguiente paso?"
+      ],
+      "actions": [
+        "Elige una tarea frecuente y prueba el éxito de principio a fin con las capacidades actuales.",
+        "Compara pasos manuales, precisión y costes de recuperación antes de ampliar el alcance."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P03",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Separar acceso a la memoria y permiso de uso",
+      "summary": "En la memoria del agente y la colaboración entre contextos, define qué se puede leer, para qué tareas y a quién se puede revelar.",
+      "conditions": [
+        "El agente conserva contexto a largo plazo o colabora entre trabajo, vida privada y otros servicios."
+      ],
+      "boundaries": [
+        "La personalización no autoriza leer o compartir sin límites.",
+        "El artículo histórico plantea preguntas, no una arquitectura de permisos terminada; el diseño concreto exige validación actual."
+      ],
+      "questions": [
+        "¿Recordar una información autoriza usarla en otro contexto?",
+        "¿Qué detalles no deben revelarse cuando los agentes se comunican?"
+      ],
+      "actions": [
+        "Enumera por tarea fuentes de datos, finalidades y destinatarios, con permisos revocables.",
+        "Prueba usos indebidos y filtraciones entre trabajo y vida privada, manteniendo la decisión final del usuario."
+      ],
+      "status": "method_synthesis"
+    },
+    {
+      "id": "BG-P04",
+      "person": "bill-gates",
+      "person_name": "Bill Gates",
+      "kind": "principle",
+      "title": "Evaluar acceso y eficacia conjuntamente",
+      "summary": "Al valorar una oportunidad tecnológica, examina costes, idioma, entorno y resultados de personas desatendidas, separando necesidad social de una fuente comercial de pago.",
+      "conditions": [
+        "Usar IA para facilitar servicios profesionales o atender a personas con pocos recursos."
+      ],
+      "boundaries": [
+        "Una gran necesidad no implica capacidad de pago; la misión social no demuestra ingresos comerciales.",
+        "Ámbitos de alto impacto como educación y salud requieren evidencia independiente de eficacia y validación profesional, no solo demostraciones."
+      ],
+      "questions": [
+        "Aunque la tecnología sea más barata, ¿qué barreras de idioma, dispositivo o contexto local impiden usarla?",
+        "¿Quién paga, quién se beneficia y quién asume el coste continuo?"
+      ],
+      "actions": [
+        "Haz una prueba pequeña en las condiciones del grupo objetivo y registra eficacia y costes de acceso por separado.",
+        "Especifica pago del usuario, compra institucional o financiación; no supongas que el mercado dará cobertura automáticamente."
       ],
       "status": "method_synthesis"
     }
