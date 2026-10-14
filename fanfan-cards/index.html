@@ -83,7 +83,50 @@
       if (preferred === 'en') location.replace(`/en/fanfan-cards/${location.search}${location.hash}`);
     })();
   </script>
-  <style>.product-hero{padding-block:44px 30px}.product-hero .tagline{margin-top:18px}.motion-showcase{margin-top:24px}.motion-heading{margin-bottom:0}.motion-heading h2{font-size:22px;letter-spacing:-.02em}</style>
+  <style>.product-hero{padding-block:44px 30px}.product-hero .tagline{margin-top:18px}.motion-showcase{margin-top:24px}.motion-heading{margin-bottom:0}.motion-heading h2{font-size:22px;letter-spacing:-.02em}.product-faq{margin-bottom:24px;padding:44px;border-radius:28px;border:1px solid var(--line,rgba(0,0,0,.12))}.product-faq h2{margin:8px 0 18px}.product-faq details{border-top:1px solid var(--line,rgba(0,0,0,.12));padding:14px 0}.product-faq summary{cursor:pointer;font-weight:700}.product-faq details p{margin:10px 0 0;line-height:1.75}</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://luffyliu.com/fanfan-cards/#faq",
+    "url": "https://luffyliu.com/fanfan-cards/",
+    "inLanguage": "zh-CN",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "翻翻词卡是什么？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "翻翻词卡是一款开源、本地优先的 Chrome 英语阅读扩展，已在 Chrome Web Store 上线。它支持收藏词自动高亮、AI 语境解释、划词与整页翻译、YouTube 双语字幕和间隔复习。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "它和普通翻译插件有什么不同？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "普通翻译只在你卡住时出现；翻翻词卡会在你再次遇见时提醒。开启翻翻模式后，收藏过的词会按熟悉度在任何网页上高亮，点击即可读取已保存的释义、例句和近义词，不发网络请求，也不产生新的模型费用。译文追加呈现，不改原网页。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "怎么安装和使用？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "从 Chrome Web Store 安装。选中单词、短语或句子即可获得语境解释；悬停可翻译当前段落，也可用快捷键翻译整页；在 YouTube 播放器里可开启双语字幕。翻译免费，语境解释需要你自己的 AI Key。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "我的数据存在哪里？会被上传吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "词卡只存在本机，可导出 JSON / CSV；设置和密钥默认随 Chrome 账号同步，可改为仅本机，也可主动同步到你自己账号下的 GitHub 私有仓库。翻翻模式只在本机匹配网页文本，不会把页面发送给任何模型；只有你主动划词、翻译或开启字幕翻译时，所需内容才会直接发往你选择的模型服务商。开发者没有中转服务器，不使用广告、分析或追踪服务。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
@@ -184,6 +227,15 @@
         <p>翻翻模式只在本机把当前网页文本与本地词库匹配，不会把页面发送给任何模型。只有你主动划词、翻译或开启字幕翻译时，所需内容才会直接发往你选择的模型服务商；开发者没有中转服务器，不使用广告、分析或追踪服务。</p>
         <a href="/fanfan-cards/privacy/">查看完整隐私政策 ↗</a>
       </div>
+    </section>
+
+    <section class="product-faq" id="faq" aria-labelledby="faq-heading">
+      <p class="section-kicker">FAQ</p>
+      <h2 id="faq-heading">常见问题</h2>
+      <details><summary>翻翻词卡是什么？</summary><p>翻翻词卡是一款开源、本地优先的 Chrome 英语阅读扩展，已在 Chrome Web Store 上线。它支持收藏词自动高亮、AI 语境解释、划词与整页翻译、YouTube 双语字幕和间隔复习。</p></details>
+      <details><summary>它和普通翻译插件有什么不同？</summary><p>普通翻译只在你卡住时出现；翻翻词卡会在你再次遇见时提醒。开启翻翻模式后，收藏过的词会按熟悉度在任何网页上高亮，点击即可读取已保存的释义、例句和近义词，不发网络请求，也不产生新的模型费用。译文追加呈现，不改原网页。</p></details>
+      <details><summary>怎么安装和使用？</summary><p>从 Chrome Web Store 安装。选中单词、短语或句子即可获得语境解释；悬停可翻译当前段落，也可用快捷键翻译整页；在 YouTube 播放器里可开启双语字幕。翻译免费，语境解释需要你自己的 AI Key。</p></details>
+      <details><summary>我的数据存在哪里？会被上传吗？</summary><p>词卡只存在本机，可导出 JSON / CSV；设置和密钥默认随 Chrome 账号同步，可改为仅本机，也可主动同步到你自己账号下的 GitHub 私有仓库。翻翻模式只在本机匹配网页文本，不会把页面发送给任何模型；只有你主动划词、翻译或开启字幕翻译时，所需内容才会直接发往你选择的模型服务商。开发者没有中转服务器，不使用广告、分析或追踪服务。</p></details>
     </section>
 
     <section class="product-cta">

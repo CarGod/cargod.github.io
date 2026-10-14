@@ -83,7 +83,50 @@
       if (preferred === 'zh-CN') location.replace(`/fanfan-cards/${location.search}${location.hash}`);
     })();
   </script>
-  <style>.product-hero{padding-block:44px 30px}.product-hero .tagline{margin-top:18px}.motion-showcase{margin-top:24px}.motion-heading{margin-bottom:0}.motion-heading h2{font-size:22px;letter-spacing:-.02em}</style>
+  <style>.product-hero{padding-block:44px 30px}.product-hero .tagline{margin-top:18px}.motion-showcase{margin-top:24px}.motion-heading{margin-bottom:0}.motion-heading h2{font-size:22px;letter-spacing:-.02em}.product-faq{margin-bottom:24px;padding:44px;border-radius:28px;border:1px solid var(--line,rgba(0,0,0,.12))}.product-faq h2{margin:8px 0 18px}.product-faq details{border-top:1px solid var(--line,rgba(0,0,0,.12));padding:14px 0}.product-faq summary{cursor:pointer;font-weight:700}.product-faq details p{margin:10px 0 0;line-height:1.75}</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://luffyliu.com/en/fanfan-cards/#faq",
+    "url": "https://luffyliu.com/en/fanfan-cards/",
+    "inLanguage": "en",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is FanFan Cards?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FanFan Cards is an open-source, local-first Chrome extension for reading English, available on the Chrome Web Store. It highlights saved words, explains words in context with AI, translates selections or whole pages, adds bilingual YouTube subtitles, and schedules spaced review."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is it different from a regular translation extension?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FanFan helps when you get stuck—and when a word returns. In FanFan mode, saved words are marked on any page, coloured by how well you know them. Clicking one shows the stored meaning, examples, and synonyms with no network request and no additional model cost. Translations are appended without rewriting the page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install and use it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install it from the Chrome Web Store. Select a word, phrase, or sentence for an in-context explanation; translate the hovered paragraph or the whole page with a shortcut; turn on bilingual subtitles in the YouTube player. Translation is free; contextual explanations use your own AI key."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is my data stored? Is anything uploaded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cards stay in your browser and can be exported as JSON or CSV. Settings and keys sync with your Chrome account by default and can be kept local-only; optional sync writes to a private repository in your own GitHub account. FanFan mode matches pages on-device and sends nothing to a model. Only when you ask for an explanation, translation, or subtitle translation does the required content go directly to your chosen provider. There is no developer-operated relay server and no advertising, analytics, or tracking service."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -184,6 +227,15 @@
         <p>FanFan mode matches the current page against your local library on-device and sends nothing to a model. Only when you ask for an explanation, translation, or subtitle translation does the required content go directly to your chosen provider. There is no developer-operated relay server and no advertising, analytics, or tracking service.</p>
         <a href="/en/fanfan-cards/privacy/">Read the full privacy policy ↗</a>
       </div>
+    </section>
+
+    <section class="product-faq" id="faq" aria-labelledby="faq-heading">
+      <p class="section-kicker">FAQ</p>
+      <h2 id="faq-heading">FAQ</h2>
+      <details><summary>What is FanFan Cards?</summary><p>FanFan Cards is an open-source, local-first Chrome extension for reading English, available on the Chrome Web Store. It highlights saved words, explains words in context with AI, translates selections or whole pages, adds bilingual YouTube subtitles, and schedules spaced review.</p></details>
+      <details><summary>How is it different from a regular translation extension?</summary><p>FanFan helps when you get stuck—and when a word returns. In FanFan mode, saved words are marked on any page, coloured by how well you know them. Clicking one shows the stored meaning, examples, and synonyms with no network request and no additional model cost. Translations are appended without rewriting the page.</p></details>
+      <details><summary>How do I install and use it?</summary><p>Install it from the Chrome Web Store. Select a word, phrase, or sentence for an in-context explanation; translate the hovered paragraph or the whole page with a shortcut; turn on bilingual subtitles in the YouTube player. Translation is free; contextual explanations use your own AI key.</p></details>
+      <details><summary>Where is my data stored? Is anything uploaded?</summary><p>Cards stay in your browser and can be exported as JSON or CSV. Settings and keys sync with your Chrome account by default and can be kept local-only; optional sync writes to a private repository in your own GitHub account. FanFan mode matches pages on-device and sends nothing to a model. Only when you ask for an explanation, translation, or subtitle translation does the required content go directly to your chosen provider. There is no developer-operated relay server and no advertising, analytics, or tracking service.</p></details>
     </section>
 
     <section class="product-cta">

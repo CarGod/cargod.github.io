@@ -1,0 +1,42 @@
+{
+  "fanfan": {
+    "zh-CN": {
+      "title": "常见问题",
+      "items": [
+        ["翻翻词卡是什么？", "翻翻词卡是一款开源、本地优先的 Chrome 英语阅读扩展，已在 Chrome Web Store 上线。它支持收藏词自动高亮、AI 语境解释、划词与整页翻译、YouTube 双语字幕和间隔复习。"],
+        ["它和普通翻译插件有什么不同？", "普通翻译只在你卡住时出现；翻翻词卡会在你再次遇见时提醒。开启翻翻模式后，收藏过的词会按熟悉度在任何网页上高亮，点击即可读取已保存的释义、例句和近义词，不发网络请求，也不产生新的模型费用。译文追加呈现，不改原网页。"],
+        ["怎么安装和使用？", "从 Chrome Web Store 安装。选中单词、短语或句子即可获得语境解释；悬停可翻译当前段落，也可用快捷键翻译整页；在 YouTube 播放器里可开启双语字幕。翻译免费，语境解释需要你自己的 AI Key。"],
+        ["我的数据存在哪里？会被上传吗？", "词卡只存在本机，可导出 JSON / CSV；设置和密钥默认随 Chrome 账号同步，可改为仅本机，也可主动同步到你自己账号下的 GitHub 私有仓库。翻翻模式只在本机匹配网页文本，不会把页面发送给任何模型；只有你主动划词、翻译或开启字幕翻译时，所需内容才会直接发往你选择的模型服务商。开发者没有中转服务器，不使用广告、分析或追踪服务。"]
+      ]
+    },
+    "en": {
+      "title": "FAQ",
+      "items": [
+        ["What is FanFan Cards?", "FanFan Cards is an open-source, local-first Chrome extension for reading English, available on the Chrome Web Store. It highlights saved words, explains words in context with AI, translates selections or whole pages, adds bilingual YouTube subtitles, and schedules spaced review."],
+        ["How is it different from a regular translation extension?", "FanFan helps when you get stuck—and when a word returns. In FanFan mode, saved words are marked on any page, coloured by how well you know them. Clicking one shows the stored meaning, examples, and synonyms with no network request and no additional model cost. Translations are appended without rewriting the page."],
+        ["How do I install and use it?", "Install it from the Chrome Web Store. Select a word, phrase, or sentence for an in-context explanation; translate the hovered paragraph or the whole page with a shortcut; turn on bilingual subtitles in the YouTube player. Translation is free; contextual explanations use your own AI key."],
+        ["Where is my data stored? Is anything uploaded?", "Cards stay in your browser and can be exported as JSON or CSV. Settings and keys sync with your Chrome account by default and can be kept local-only; optional sync writes to a private repository in your own GitHub account. FanFan mode matches pages on-device and sends nothing to a model. Only when you ask for an explanation, translation, or subtitle translation does the required content go directly to your chosen provider. There is no developer-operated relay server and no advertising, analytics, or tracking service."]
+      ]
+    }
+  },
+  "council": {
+    "zh-CN": {
+      "title": "常见问题",
+      "items": [
+        ["产品顾问团是什么？", "产品顾问团是一套帮你思考产品决策的开源 AI Skill：18 个产品与 AI 分析视角，完整技能包含 255 张方法卡。网站精选了 72 组问答与方法页，可查看适用条件与行动建议。"],
+        ["它和直接问 AI 有什么不同？", "它让不同视角一起拆解“做什么、为谁做、值不值得做”：可以指定一位顾问，也可以按问题组织顾问团，比较前提、替代方案和反例，保留分歧而不靠票数决定，最后形成条件化建议和最小实验。示例为基于公开方法卡编写的 AI 分析，不是本人回答或背书。"],
+        ["怎么安装和使用？", "下载完整技能包，导入支持 Skills 的 AI 客户端（如 Claude、Codex、Cursor、Workbuddy），或复制页面上的 AI 安装指令发给你的 Agent。请保留完整的 product-advisory-council 文件夹，不要只复制 SKILL.md。安装后，把你的产品问题发给 AI 助手即可。"],
+        ["需要 API 密钥吗？我的数据会去哪里？", "技能包不附带模型或 API 密钥，它在你自己使用的 AI 客户端中运行。方法卡用于启发决策，不替代业务事实核查。"]
+      ]
+    },
+    "en": {
+      "title": "FAQ",
+      "items": [
+        ["What is Product Advisory Council?", "Product Advisory Council is an open-source AI Skill for thinking through product decisions: 18 product and AI analysis perspectives, with 255 method cards in the full skill. The site features 72 curated Q&A examples and method pages showing when each method applies and what to do next."],
+        ["How is it different from just asking an AI?", "It lets several perspectives take apart what to build, for whom, and whether it is worth it. Pick one advisor or convene a council, compare assumptions, alternatives and counterexamples, keep disagreements instead of voting, and end with conditional recommendations and a minimal experiment. Examples are AI analyses based on public method cards, not the views or endorsements of real people."],
+        ["How do I install and use it?", "Download the full skill package and import it into an AI client that supports Skills (such as Claude, Codex, Cursor or Workbuddy), or copy the AI install prompt on this page and send it to your Agent. Keep the entire product-advisory-council folder rather than copying only SKILL.md. Then ask your AI assistant your product question."],
+        ["Do I need an API key? Where does my data go?", "The skill package does not include a model or API key; it runs inside the AI client you already use. Method cards support decisions and do not replace checking your business facts."]
+      ]
+    }
+  }
+}
