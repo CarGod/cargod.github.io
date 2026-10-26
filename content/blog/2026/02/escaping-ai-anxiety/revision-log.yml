@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "contentKey": "blog.escaping-ai-anxiety",
+  "slug": "escaping-ai-anxiety",
+  "source_url": "https://mp.weixin.qq.com/s/lzLgO3bYhtj8wkYRCgF6OA",
+  "revision_date": "2026-10-26",
+  "policy": "source-preserving-migration",
+  "correction_categories": [
+    "source-migration",
+    "markdown-formatting",
+    "source-attribution",
+    "translation-sync",
+    "illustration-insertion",
+    "web-image-encoding"
+  ],
+  "locale_status": {
+    "zh-CN": "synced",
+    "zh-TW": "synced",
+    "en": "synced",
+    "ja": "synced",
+    "ko": "synced",
+    "es": "synced"
+  },
+  "illustrations": [
+    {
+      "file": "inline-01-work-transformation-v2.webp",
+      "placement_anchor": "再去寻找属于人的不可替代性。",
+      "text_free": true,
+      "shared_locales": [
+        "zh-CN",
+        "zh-TW",
+        "en",
+        "ja",
+        "ko",
+        "es"
+      ],
+      "website_encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "original_dimensions_preserved": true,
+        "original_png_archived": true
+      }
+    },
+    {
+      "file": "inline-02-apple-curiosity-v2.webp",
+      "placement_anchor": "那一天的灵光乍现，以及后来的再次验证，建立了人类物理学的根基。",
+      "text_free": true,
+      "shared_locales": [
+        "zh-CN",
+        "zh-TW",
+        "en",
+        "ja",
+        "ko",
+        "es"
+      ],
+      "website_encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "original_dimensions_preserved": true,
+        "original_png_archived": true
+      }
+    },
+    {
+      "file": "inline-03-imagination-collaboration-v2.webp",
+      "placement_anchor": "律师应该思考卷宗背后的蛛丝马迹，告诉AI，让它找出来。",
+      "text_free": true,
+      "shared_locales": [
+        "zh-CN",
+        "zh-TW",
+        "en",
+        "ja",
+        "ko",
+        "es"
+      ],
+      "website_encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "original_dimensions_preserved": true,
+        "original_png_archived": true
+      }
+    }
+  ]
+}
