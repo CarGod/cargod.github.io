@@ -5,7 +5,7 @@ contentKey: "blog.escaping-ai-anxiety"
 translation_of: "/blog/escaping-ai-anxiety/"
 locale: "ko"
 description: "AI에 거듭 좌절했던 경험을 바탕으로 사람의 창조력, 상상력, 표현력을 돌아본다. 기계가 할 일은 기계에 맡기고, AI와의 대화 속에서 자신의 생각을 구체화하자는 이야기."
-published: "2026-02-07"
+published: "2026-10-26"
 updated: "2026-10-26"
 tags:
   - id: "ai"
@@ -215,5 +215,3 @@ AI의 능력은 누구에게나 똑같다. 차이를 벌리는 것은 오직 사
 자, 여러분.
 
 생각하고, 발견하고, 창조하자.
-
-원문은 위챗 공식 계정 ‘刘路飞’에 게재되었다. [원문 읽기](https://mp.weixin.qq.com/s/lzLgO3bYhtj8wkYRCgF6OA).

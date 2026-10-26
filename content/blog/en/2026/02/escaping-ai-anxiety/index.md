@@ -5,7 +5,7 @@ contentKey: "blog.escaping-ai-anxiety"
 translation_of: "/blog/escaping-ai-anxiety/"
 locale: "en"
 description: "A personal reflection on AI anxiety, repetitive work, and the creativity, imagination, and expression we can develop as we learn to work with AI."
-published: "2026-02-07"
+published: "2026-10-26"
 updated: "2026-10-26"
 tags:
   - id: "ai"
@@ -215,5 +215,3 @@ What looks efficient for a moment brings the pain of long-term maintenance later
 Go, my friends.
 
 Think, discover, create.
-
-Originally published on the WeChat official account [“刘路飞”](https://mp.weixin.qq.com/s/lzLgO3bYhtj8wkYRCgF6OA).

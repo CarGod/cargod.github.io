@@ -5,7 +5,7 @@ contentKey: "blog.escaping-ai-anxiety"
 translation_of: "/blog/escaping-ai-anxiety/"
 locale: "ja"
 description: "AIに繰り返し打ちのめされた経験から、人にとっての創造力、想像力、表現力を考える。機械に任せられる仕事を手放し、自分の考えをAIとの対話で形にするために。"
-published: "2026-02-07"
+published: "2026-10-26"
 updated: "2026-10-26"
 tags:
   - id: "ai"
@@ -215,5 +215,3 @@ AIの能力は、誰にとっても同じです。差を生むのは、人だけ
 さあ、皆さん。
 
 考え、発見し、創造しましょう。
-
-原文はWeChat公式アカウント「刘路飞」に掲載されています。[原文を読む](https://mp.weixin.qq.com/s/lzLgO3bYhtj8wkYRCgF6OA)。

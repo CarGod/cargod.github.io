@@ -5,7 +5,7 @@ contentKey: "blog.escaping-ai-anxiety"
 translation_of: "/blog/escaping-ai-anxiety/"
 locale: "zh-CN"
 description: "从 AI 替代重复工作的焦虑出发，聊聊人的创造力、想象力与表达力，以及如何用 AI 提升生产力，重新发现、思考和创造。"
-published: "2026-02-07"
+published: "2026-10-26"
 updated: "2026-10-26"
 tags:
   - id: "ai"
@@ -215,5 +215,3 @@ AI的能力对所有人都是固定的，唯一能拉开差距的是人。
 **去吧，朋友们。**
 
 **去思考、去发现、去创造。**
-
-原文发布于微信公众号「刘路飞」：[阅读公众号原文](https://mp.weixin.qq.com/s/lzLgO3bYhtj8wkYRCgF6OA)。

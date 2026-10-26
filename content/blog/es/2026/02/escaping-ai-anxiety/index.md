@@ -6,7 +6,7 @@ contentKey: "blog.escaping-ai-anxiety"
 translation_of: "/blog/escaping-ai-anxiety/"
 locale: "es"
 description: "Una reflexión personal sobre la ansiedad por la IA, el trabajo repetitivo y la creatividad, la imaginación y la expresión que podemos desarrollar al aprender a trabajar con ella."
-published: "2026-02-07"
+published: "2026-10-26"
 updated: "2026-10-26"
 tags:
   - id: "ai"
@@ -216,5 +216,3 @@ Lo que parece eficiencia momentánea trae después el sufrimiento de mantenerlo 
 Adelante, amigos.
 
 Pensad, descubrid, cread.
-
-Publicado originalmente en la cuenta oficial de WeChat [«刘路飞»](https://mp.weixin.qq.com/s/lzLgO3bYhtj8wkYRCgF6OA).

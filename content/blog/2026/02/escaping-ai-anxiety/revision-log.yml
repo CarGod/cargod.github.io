@@ -11,7 +11,9 @@
     "source-attribution",
     "translation-sync",
     "illustration-insertion",
-    "web-image-encoding"
+    "web-image-encoding",
+    "source-footer-removal",
+    "website-publication-date"
   ],
   "locale_status": {
     "zh-CN": "synced",
@@ -79,5 +81,9 @@
         "original_png_archived": true
       }
     }
-  ]
+  ],
+  "original_source_published": "2026-02-07",
+  "website_published": "2026-10-26",
+  "publication_date_semantics": "published is the date first published on luffyliu.com; the earlier WeChat publication date is retained only in this internal revision record.",
+  "source_footer_removed": true
 }
