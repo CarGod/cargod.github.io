@@ -195,6 +195,12 @@ async function loadCollection(section, directory) {
     const published = dateOnly(parsed.data.published, "published");
     const updated = dateOnly(parsed.data.updated, "updated");
     const locale = String(parsed.data.locale);
+    if (parsed.data.original_author !== undefined) {
+      const author = parsed.data.original_author;
+      if (!author || typeof author !== "object" || typeof author.name !== "string" || !author.name.trim()) throw new Error(`${slug}: original_author requires a name`);
+      if (author.url !== undefined && (typeof author.url !== "string" || !/^https?:\/\//.test(author.url))) throw new Error(`${slug}: original_author.url must be an HTTP(S) URL`);
+      if (typeof parsed.data.source_url !== "string" || !/^https?:\/\//.test(parsed.data.source_url)) throw new Error(`${slug}: original_author requires an HTTP(S) source_url`);
+    }
     const contentKey = String(parsed.data.contentKey);
     if (!/^[a-z]+(?:\.[a-z0-9]+(?:-[a-z0-9]+)*)+$/.test(contentKey)) throw new Error(`${slug}: invalid contentKey`);
     const sourceDir = path.dirname(sourcePath);
@@ -311,12 +317,12 @@ function siteFooter(locale) {
   return `<footer class="footer content-shell" data-pagefind-ignore><span>© 2026 Luffy Liu</span><span><a href="${localePath(locale, "/blog/")}">${text.blog}</a> · <a href="${localePath(locale, "/blog/search/")}">${text.search}</a> · <a href="${localePath(locale, "/tutorials/")}">${text.tutorials}</a> · <a href="${feedPath(locale)}">RSS</a></span></footer>`;
 }
 
-function baseHead({ title, description, canonical, locale = "zh-CN", alternates = {}, robots = "index, follow, max-image-preview:large", image = `${SITE_URL}/assets/og.png`, type = "website", extra = "" }) {
+function baseHead({ title, description, canonical, locale = "zh-CN", alternates = {}, robots = "index, follow, max-image-preview:large", image = `${SITE_URL}/assets/og.png`, type = "website", author = "Luffy Liu", extra = "" }) {
   return `<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f9">
   <meta name="robots" content="${robots}">
-  <meta name="author" content="Luffy Liu">
+  <meta name="author" content="${escapeHtml(author)}">
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${canonical}">
   ${hreflangLinks(alternates)}
@@ -466,6 +472,13 @@ function renderArticle(post) {
   headingIds.clear();
   const body = md.render(markdown);
   const coverAbsolute = post.coverUrl ? (post.coverUrl.startsWith("http") ? post.coverUrl : `${SITE_URL}${post.coverUrl}`) : null;
+  const originalAuthor = post.original_author;
+  const authorName = originalAuthor?.name || "Luffy Liu";
+  const authorLd = originalAuthor ? { "@type": "Person", name: authorName, ...(originalAuthor.url ? { url: originalAuthor.url } : {}) } : { "@id": `${SITE_URL}/#person` };
+  const sourceLabels = { "zh-CN": "原作者 · 原文", "zh-TW": "原作者 · 原文", en: "Original author · Original article", ja: "原著者 · 原文", ko: "원저자 · 원문", es: "Autor original · Artículo original" };
+  const authorCard = originalAuthor
+    ? `<div class="author-card" data-pagefind-ignore><div style="grid-column: 1 / -1"><strong>${originalAuthor.url ? `<a href="${escapeHtml(originalAuthor.url)}">${escapeHtml(authorName)}</a>` : escapeHtml(authorName)}</strong><p><a href="${escapeHtml(post.source_url)}">${sourceLabels[post.locale]}</a></p></div></div>`
+    : `<div class="author-card" data-pagefind-ignore><img src="/assets/luffy-avatar.png" width="58" height="58" alt="Luffy Liu"><div><strong>Luffy Liu</strong><p>Independent product builder · AI, agents and real workflows.</p></div></div>`;
   const tags = post.tags.map((tag) => post.section === "blog" ? `<a href="${localePath(post.locale, `/blog/tags/${tag.id}/`)}" data-pagefind-filter="tag:${tag.id}" data-pagefind-meta="tag">${escapeHtml(tag.label)}</a>` : `<span data-pagefind-filter="tag:${tag.id}" data-pagefind-meta="tag">${escapeHtml(tag.label)}</span>`).join(" · ");
   const toc = headings.map((heading) => `<a href="#${escapeHtml(heading.id)}">${escapeHtml(heading.title)}</a>`).join("\n");
   const alternates = Object.fromEntries([...post.translations].map(([locale, translation]) => [locale, translation.absoluteUrl]));
@@ -479,18 +492,18 @@ function renderArticle(post) {
   const articleLd = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": post.section === "blog" ? "BlogPosting" : "TechArticle", "@id": `${post.absoluteUrl}#article`, url: post.absoluteUrl, mainEntityOfPage: post.absoluteUrl, headline: post.title, description: post.description, ...(coverAbsolute ? { image: coverAbsolute } : {}), datePublished: post.published, dateModified: post.updated, inLanguage: LOCALES[post.locale].html, author: { "@id": `${SITE_URL}/#person` }, publisher: { "@id": `${SITE_URL}/#person` }, articleSection: post.tags[0].label, keywords: post.tags.map((tag) => tag.label) },
+      { "@type": post.section === "blog" ? "BlogPosting" : "TechArticle", "@id": `${post.absoluteUrl}#article`, url: post.absoluteUrl, mainEntityOfPage: post.absoluteUrl, headline: post.title, description: post.description, ...(coverAbsolute ? { image: coverAbsolute } : {}), datePublished: post.published, dateModified: post.updated, inLanguage: LOCALES[post.locale].html, author: authorLd, publisher: { "@id": `${SITE_URL}/#person` }, ...(post.source_url ? { isBasedOn: post.source_url } : {}), articleSection: post.tags[0].label, keywords: post.tags.map((tag) => tag.label) },
       { "@type": "BreadcrumbList", itemListElement: breadcrumbItems }
     ]
   };
   const extra = `<meta property="article:published_time" content="${post.published}">
   <meta property="article:modified_time" content="${post.updated}">
-  <meta property="article:author" content="Luffy Liu">
+  <meta property="article:author" content="${escapeHtml(authorName)}">
   ${post.tags.map((tag) => `<meta property="article:tag" content="${escapeHtml(tag.label)}">`).join("\n  ")}`;
 
   return `<!doctype html>
 <html lang="${LOCALES[post.locale].html}"><head>
-  ${baseHead({ title: post.seoTitle || `${post.title} | Luffy Liu`, description: post.description, canonical: post.absoluteUrl, locale: post.locale, alternates, ...(coverAbsolute ? { image: coverAbsolute } : {}), type: "article", extra })}
+  ${baseHead({ title: post.seoTitle || `${post.title} | Luffy Liu`, description: post.description, canonical: post.absoluteUrl, locale: post.locale, alternates, ...(coverAbsolute ? { image: coverAbsolute } : {}), type: "article", author: authorName, extra })}
   <script type="application/ld+json">${json(articleLd)}</script>
 </head><body>
   <a class="skip-link" href="#main">${escapeHtml(TUTORIAL_COPY[post.locale].skip)}</a>
@@ -501,12 +514,12 @@ function renderArticle(post) {
       <p class="eyebrow">${escapeHtml(post.tags.map((tag) => tag.label).join(" · "))}</p>
       <h1 data-pagefind-meta="title">${escapeHtml(post.title)}</h1>
       <p class="content-lede" data-pagefind-meta="description">${escapeHtml(post.description)}</p>
-      <div class="content-meta"><span>Luffy Liu</span><time datetime="${post.published}" data-pagefind-meta="date" data-pagefind-sort="date">${post.published}</time>${post.section === "blog" ? `<a href="${localePath(post.locale, `/blog/archive/${post.year}/`)}" data-pagefind-filter="year:${post.year}">${post.year}</a>` : `<span data-pagefind-filter="year:${post.year}">${post.year}</span>`}<span>${tags}</span>${post.series ? `<span data-pagefind-filter="series:${escapeHtml(post.series)}" data-pagefind-meta="series">${escapeHtml(seriesNav.seriesTitle)}</span>` : ""}</div>
+      <div class="content-meta"><span>${escapeHtml(authorName)}</span><time datetime="${post.published}" data-pagefind-meta="date" data-pagefind-sort="date">${post.published}</time>${post.section === "blog" ? `<a href="${localePath(post.locale, `/blog/archive/${post.year}/`)}" data-pagefind-filter="year:${post.year}">${post.year}</a>` : `<span data-pagefind-filter="year:${post.year}">${post.year}</span>`}<span>${tags}</span>${post.series ? `<span data-pagefind-filter="series:${escapeHtml(post.series)}" data-pagefind-meta="series">${escapeHtml(seriesNav.seriesTitle)}</span>` : ""}</div>
       ${post.coverUrl ? `<figure class="article-cover"><img src="${post.coverUrl}" alt="${escapeHtml(post.cover_alt || post.title)}" fetchpriority="high"></figure>` : ""}
     </header>
     <div class="content-layout content-shell">
       <aside class="content-sidebar" data-pagefind-ignore>${seriesNav.sidebar}${toc ? `<nav class="content-toc" aria-label="${escapeHtml(TUTORIAL_COPY[post.locale].toc)}"><strong>${escapeHtml(TUTORIAL_COPY[post.locale].toc)}</strong>${toc}</nav>` : ""}</aside>
-      <article class="prose" data-pagefind-body data-pagefind-filter="section:${post.section}">${body}${seriesNav.footer}<div class="author-card" data-pagefind-ignore><img src="/assets/luffy-avatar.png" width="58" height="58" alt="Luffy Liu"><div><strong>Luffy Liu</strong><p>Independent product builder · AI, agents and real workflows.</p></div></div></article>
+      <article class="prose" data-pagefind-body data-pagefind-filter="section:${post.section}">${body}${seriesNav.footer}${authorCard}</article>
     </div>
   </main>
   ${siteFooter(post.locale)}
@@ -656,10 +669,10 @@ async function writeSitemaps(articles, generatedPages) {
 }
 
 async function writeRss(locale, posts) {
-  const items = posts.slice(0, RSS_SIZE).map((post) => `<item><title>${escapeXml(post.title)}</title><link>${post.absoluteUrl}</link><guid isPermaLink="true">${post.absoluteUrl}</guid><pubDate>${new Date(`${post.published}T00:00:00+08:00`).toUTCString()}</pubDate><author>luffyliux@gmail.com (Luffy Liu)</author>${post.tags.map((tag) => `<category>${escapeXml(tag.label)}</category>`).join("")}<description>${escapeXml(post.description)}</description></item>`).join("\n");
+  const items = posts.slice(0, RSS_SIZE).map((post) => `<item><title>${escapeXml(post.title)}</title><link>${post.absoluteUrl}</link><guid isPermaLink="true">${post.absoluteUrl}</guid><pubDate>${new Date(`${post.published}T00:00:00+08:00`).toUTCString()}</pubDate>${post.original_author ? `<dc:creator>${escapeXml(post.original_author.name)}</dc:creator>` : `<author>luffyliux@gmail.com (Luffy Liu)</author>`}${post.tags.map((tag) => `<category>${escapeXml(tag.label)}</category>`).join("")}<description>${escapeXml(post.description)}</description></item>`).join("\n");
   const last = posts[0]?.updated || "2026-08-30";
   const relative = feedPath(locale).slice(1);
-  await write(relative, `<?xml version="1.0" encoding="utf-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>${escapeXml(COPY[locale].blogTitle)} | Luffy Liu</title><link>${localeUrl(locale, "/blog/")}</link><description>${escapeXml(COPY[locale].blogLede)}</description><language>${LOCALES[locale].html}</language><lastBuildDate>${new Date(`${last}T00:00:00+08:00`).toUTCString()}</lastBuildDate><atom:link href="${SITE_URL}${feedPath(locale)}" rel="self" type="application/rss+xml"/>${items}</channel></rss>\n`);
+  await write(relative, `<?xml version="1.0" encoding="utf-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>${escapeXml(COPY[locale].blogTitle)} | Luffy Liu</title><link>${localeUrl(locale, "/blog/")}</link><description>${escapeXml(COPY[locale].blogLede)}</description><language>${LOCALES[locale].html}</language><lastBuildDate>${new Date(`${last}T00:00:00+08:00`).toUTCString()}</lastBuildDate><atom:link href="${SITE_URL}${feedPath(locale)}" rel="self" type="application/rss+xml"/>${items}</channel></rss>\n`);
 }
 
 async function enforceSizeBudget() {

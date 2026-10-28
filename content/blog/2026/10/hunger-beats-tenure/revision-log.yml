@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "contentKey": "blog.hunger-beats-tenure",
+  "slug": "hunger-beats-tenure",
+  "source_url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+  "original_author": "Felix Rieseberg",
+  "original_source_published": "2026-10-27",
+  "website_published": "2026-10-28",
+  "revision_date": "2026-10-28",
+  "policy": "authorized-full-republication-and-translation",
+  "permission_record": "用户于2026-10-28自述已获得此文翻译转载许可。本站未独立审验授权合同或邮件；此记录不声明通用开放许可证，也不扩展至其他文章或网站。",
+  "correction_categories": [
+    "source-preserving-republication",
+    "original-author-attribution",
+    "translation-sync",
+    "illustration-insertion",
+    "website-publication-date"
+  ],
+  "source_paragraphs": {
+    "argument_paragraphs": 23,
+    "section_headings": 3,
+    "original_image_credit": "P24 credits the original Turner painting. That painting was not reused; the original-image credit is retained only in the source evidence, not attributed to this republication’s new illustrations."
+  },
+  "source_sha256": "0d61a1d4c1b7d951a11e277055f3eb94fe74522d7c89a03481b2d83c896f0c38",
+  "locale_status": {
+    "zh-CN": "synced",
+    "zh-TW": "synced",
+    "en": "synced",
+    "ja": "synced",
+    "ko": "synced",
+    "es": "synced"
+  },
+  "illustrations": [
+    {
+      "file": "cover-hunger-beats-tenure-v1.webp",
+      "type": "cover",
+      "text_free": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "686a80e05156ba485a2bb1d2de94607bdcc7613cc0b240c3e6b2f8f0bb67c477",
+      "bytes": 191036,
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "original_dimensions_preserved": true,
+        "original_png_archived": true
+      }
+    },
+    {
+      "file": "inline-01-fresh-perspective-v1.webp",
+      "placement_after_original_paragraph": "P13",
+      "text_free": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "c24f47954dde44b5160c7e57ba46e2b3c66a45bb9f8a64fe6e145ec78dbb0d57",
+      "bytes": 173206,
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "original_dimensions_preserved": true,
+        "original_png_archived": true
+      }
+    },
+    {
+      "file": "inline-02-weekend-prototype-v1.webp",
+      "placement_after_original_paragraph": "P19",
+      "text_free": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "9e8df98cc9ce4724c6f720829bfcb9e6489746e2442dfc5f7cb50626988ca6d4",
+      "bytes": 175274,
+      "encoding": {
+        "format": "WebP",
+        "quality": 88,
+        "original_dimensions_preserved": true,
+        "original_png_archived": true
+      }
+    }
+  ],
+  "validation": {
+    "build": "passed",
+    "validate": "passed",
+    "original_author_regression": "passed across six locales and twelve existing articles",
+    "six_locale_desktop_mobile_qa": "passed, 1440px desktop / 390px mobile, no horizontal overflow",
+    "paragraph_review": "23 source argument paragraphs preserved in every locale; English paragraphs match original exactly"
+  }
+}
